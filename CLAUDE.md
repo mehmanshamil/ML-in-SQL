@@ -44,3 +44,8 @@ Versiya təsdiqləndi (2026-11-03): birinci məqalənin Şəkil 8–10-u bu kodl
 - Əsas tapıntı: dataset artefaktı — zərərli sorğuların 95%-ində ikiqat boşluq (sqlmap formatı), təmizlərdə 30%; LR-in ən güclü siqnalı boşluq n-gram-larıdır.
 - Müdafiə: `src/normalize.py::normalize` (decode ×3, şərhlər, whitespace, lowercase, `( ) = ,` ətrafı boşluqlar) + augmentation (LOTO ilə yoxlanılır).
 - Middleware üçün model: `models/lr_norm_aug_v2.joblib` (normalize + augmentation + LR; `src/` import yolunda olmalıdır).
+
+## Qara siyahı filtri (05) və MySQL testi
+- `src/blacklist.py` = `server.js`-dəki `sanitizeInput`/`sanitizeSearch`-in Python portu; Node.js ilə 50/50 eyniliyi notebook-da sübut olunub (ASCII case-fold, JS `trim()` boşluq dəsti).
+- MySQL testi: ayrıca `sqli_ml_eval` bazası, yalnız SELECT hüquqlu `sqli_eval` istifadəçisi (`sql/setup_eval_db.sql`, şifrə `.env`-də). Bazanı root ilə Workbench-dən qurmaq lazımdır (root şifrəsi dəyişib, `mysql2026` işləmir).
+- `data/processed/05_mysql_runs.csv` (13 MB) git-də izlənmir — notebook-dan yenidən yaranır.

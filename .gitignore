@@ -3,3 +3,5 @@ data/raw/
 .ipynb_checkpoints/
 __pycache__/
 models/
+.env
+data/processed/05_mysql_runs.csv
