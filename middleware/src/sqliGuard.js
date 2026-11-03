@@ -30,11 +30,31 @@ function sqliGuard(options = {}) {
   const m = options.model || model();
   const onBlock = options.onBlock || defaultLog;
   const scoreAll = Boolean(options.scoreAll); // keep scoring after the first hit (for analysis)
+  // Bound per-field scoring cost: an attacker could otherwise send a huge value
+  // to burn CPU (scoring is ~linear in length). maxLengthAction decides what a
+  // value longer than maxLength means:
+  //   'truncate' (default) — score the first maxLength chars. Safe here because
+  //      normalize+char-ngrams are local: a truncated injection keeps the tokens
+  //      that make it malicious at the start, so recall is essentially unchanged,
+  //      while cost is capped. A benign long value stays allowed.
+  //   'block' — treat over-length as malicious outright. Strictly safer against
+  //      evasion (no unscanned tail at all) but blocks long benign inputs, so it
+  //      trades availability for safety; use it where inputs are known-short.
+  const maxLength = options.maxLength == null ? 4096 : options.maxLength;
+  const maxLengthAction = options.maxLengthAction || 'truncate';
 
   return function (req, res, next) {
     let worst = { score: -1, field: null };
     for (const src of sources) {
-      for (const [field, value] of stringValues(req[src], src)) {
+      for (const [field, rawValue] of stringValues(req[src], src)) {
+        let value = rawValue;
+        if (maxLength && value.length > maxLength) {
+          if (maxLengthAction === 'block') {
+            worst = { score: 1, field, value: value.slice(0, 64), overLength: true };
+            return block(req, res, worst, threshold, onBlock);
+          }
+          value = value.slice(0, maxLength);
+        }
         const score = probaRaw(value, m);
         if (score > worst.score) worst = { score, field, value };
         if (score >= threshold && !scoreAll) {

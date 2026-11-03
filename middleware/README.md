@@ -36,10 +36,20 @@ app.use(sqliGuard({ threshold: 0.5 }));        // 403 when any field scores >= t
 
 | option      | default                      | meaning                                               |
 |-------------|------------------------------|-------------------------------------------------------|
-| `threshold` | `0.5`                        | block when a field's malicious probability ≥ this     |
-| `sources`   | `['query','body','params']`  | request parts to scan (all string values, recursively)|
-| `onBlock`   | logs hash + score            | callback on a block; never receives the raw payload   |
-| `model`     | bundled `model.json`         | a model loaded via `loadModel(path)`                  |
+| `threshold`       | `0.5`                       | block when a field's malicious probability ≥ this (selected on validation: max recall at FPR=0) |
+| `sources`         | `['query','body','params']` | request parts to scan (all string values, recursively)|
+| `maxLength`       | `4096`                      | cap per-field scoring cost (scoring is ~linear in length) |
+| `maxLengthAction` | `'truncate'`                | `'truncate'` scores the first `maxLength` chars; `'block'` rejects over-length values outright |
+| `onBlock`         | logs hash + score           | callback on a block; never receives the raw payload   |
+| `model`           | bundled `model.json`        | a model loaded via `loadModel(path)`                  |
+
+`maxLength` defends against a long-input DoS: scoring a 1 MB value takes ~1.2 s
+uncapped but ~5 ms at `maxLength=4096` (251× faster, `bench/dos_test.js`).
+`'truncate'` is the default because normalize + char n-grams are local — a
+truncated injection keeps its malicious tokens at the start, so recall is
+unchanged (no effective attack in the test set exceeds 422 chars) while cost is
+bounded. `'block'` is strictly safer against evasion (no unscanned tail) but
+rejects long benign inputs, so prefer it only where inputs are known to be short.
 
 On a block it responds `403 {"error": "..."}` and logs only the method, path,
 field, score and a SHA-1 hash of the value — never the payload itself.

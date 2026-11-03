@@ -1,0 +1,8 @@
+,value
+unique_effective_payloads,111.0
+test_malicious,1745.0
+semantics_preserved_forms,881.0
+semantics_total_forms,1026.0
+semantics_preserved_pct,85.9
+semantics_ci_low,83.6
+semantics_ci_high,87.9
