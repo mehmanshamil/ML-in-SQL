@@ -1,0 +1,6 @@
+detector,effective_forms,passed_forms,passed_unique_payloads,passed_pct,cluster_ci_low,cluster_ci_high
+Blacklist (Input),996,30,20,3.01,1.43,4.99
+Blacklist (Search),996,123,22,12.35,7.88,17.74
+LR baseline,996,46,23,4.62,2.92,6.43
+LR + normallaşdırma,996,1,1,0.1,0.0,0.31
+LR + norm. + augmentation,996,1,1,0.1,0.0,0.31
