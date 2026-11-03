@@ -1,0 +1,253 @@
+scenario,model,row,config,value
+A,LR,original (recall),Baseline,0.99599
+A,LR,random_case,Baseline,1.0
+A,LR,inline_comment_space,Baseline,1.0
+A,LR,alt_whitespace,Baseline,0.77771
+A,LR,alt_whitespace_url,Baseline,0.77771
+A,LR,url_encode,Baseline,0.99885
+A,LR,double_url_encode ‡,Baseline,0.98391
+A,LR,versioned_comment,Baseline,1.0
+A,LR,logical_operator,Baseline,1.0
+A,LR,hex_strings,Baseline,0.99841
+A,LR,keyword_split_comment †,Baseline,1.0
+A,LR,combination,Baseline,0.96424
+A,LR,F1 — orijinal test,Baseline,0.99713
+A,LR,Recall — orijinal test,Baseline,0.99599
+A,LR,FPR — orijinal test,Baseline,0.00107
+A,LR,F1 — insan formatı,Baseline,0.96017
+A,LR,Recall — insan formatı,Baseline,0.9255
+A,LR,FPR — insan formatı,Baseline,0.00143
+A,LR,original (recall),Normallaşdırma,0.99484
+A,LR,random_case,Normallaşdırma,0.99883
+A,LR,inline_comment_space,Normallaşdırma,0.99885
+A,LR,alt_whitespace,Normallaşdırma,0.99885
+A,LR,alt_whitespace_url,Normallaşdırma,0.99885
+A,LR,url_encode,Normallaşdırma,0.9977
+A,LR,double_url_encode ‡,Normallaşdırma,0.9977
+A,LR,versioned_comment,Normallaşdırma,0.99883
+A,LR,logical_operator,Normallaşdırma,1.0
+A,LR,hex_strings,Normallaşdırma,1.0
+A,LR,keyword_split_comment †,Normallaşdırma,0.99636
+A,LR,combination,Normallaşdırma,0.99824
+A,LR,F1 — orijinal test,Normallaşdırma,0.99627
+A,LR,Recall — orijinal test,Normallaşdırma,0.99484
+A,LR,FPR — orijinal test,Normallaşdırma,0.00143
+A,LR,F1 — insan formatı,Normallaşdırma,0.99627
+A,LR,Recall — insan formatı,Normallaşdırma,0.99484
+A,LR,FPR — insan formatı,Normallaşdırma,0.00143
+A,LR,original (recall),Augmentation (LOTO),0.99312
+A,LR,random_case,Augmentation (LOTO),0.99708
+A,LR,inline_comment_space,Augmentation (LOTO),1.0
+A,LR,alt_whitespace,Augmentation (LOTO),0.82159
+A,LR,alt_whitespace_url,Augmentation (LOTO),0.99942
+A,LR,url_encode,Augmentation (LOTO),0.99655
+A,LR,double_url_encode ‡,Augmentation (LOTO),0.9977
+A,LR,versioned_comment,Augmentation (LOTO),1.0
+A,LR,logical_operator,Augmentation (LOTO),0.99813
+A,LR,hex_strings,Augmentation (LOTO),0.99363
+A,LR,keyword_split_comment †,Augmentation (LOTO),1.0
+A,LR,combination,Augmentation (LOTO),1.0
+A,LR,F1 — orijinal test,Augmentation (LOTO),0.99569
+A,LR,Recall — orijinal test,Augmentation (LOTO),0.99312
+A,LR,FPR — orijinal test,Augmentation (LOTO),0.00107
+A,LR,F1 — insan formatı,Augmentation (LOTO),0.98106
+A,LR,Recall — insan formatı,Augmentation (LOTO),0.96447
+A,LR,FPR — insan formatı,Augmentation (LOTO),0.00107
+A,LR,original (recall),Hər ikisi (LOTO),0.9937
+A,LR,random_case,Hər ikisi (LOTO),0.99767
+A,LR,inline_comment_space,Hər ikisi (LOTO),0.99885
+A,LR,alt_whitespace,Hər ikisi (LOTO),0.99885
+A,LR,alt_whitespace_url,Hər ikisi (LOTO),0.99885
+A,LR,url_encode,Hər ikisi (LOTO),0.99828
+A,LR,double_url_encode ‡,Hər ikisi (LOTO),0.99828
+A,LR,versioned_comment,Hər ikisi (LOTO),0.99883
+A,LR,logical_operator,Hər ikisi (LOTO),0.99813
+A,LR,hex_strings,Hər ikisi (LOTO),0.99682
+A,LR,keyword_split_comment †,Hər ikisi (LOTO),0.99757
+A,LR,combination,Hər ikisi (LOTO),0.99766
+A,LR,F1 — orijinal test,Hər ikisi (LOTO),0.99627
+A,LR,Recall — orijinal test,Hər ikisi (LOTO),0.9937
+A,LR,FPR — orijinal test,Hər ikisi (LOTO),0.00072
+A,LR,F1 — insan formatı,Hər ikisi (LOTO),0.99627
+A,LR,Recall — insan formatı,Hər ikisi (LOTO),0.9937
+A,LR,FPR — insan formatı,Hər ikisi (LOTO),0.00072
+A,LR,original (recall),Norm. (6-cı addımsız),0.99599
+A,LR,random_case,Norm. (6-cı addımsız),1.0
+A,LR,inline_comment_space,Norm. (6-cı addımsız),1.0
+A,LR,alt_whitespace,Norm. (6-cı addımsız),1.0
+A,LR,alt_whitespace_url,Norm. (6-cı addımsız),1.0
+A,LR,url_encode,Norm. (6-cı addımsız),0.99885
+A,LR,double_url_encode ‡,Norm. (6-cı addımsız),0.99885
+A,LR,versioned_comment,Norm. (6-cı addımsız),1.0
+A,LR,logical_operator,Norm. (6-cı addımsız),1.0
+A,LR,hex_strings,Norm. (6-cı addımsız),0.99841
+A,LR,keyword_split_comment †,Norm. (6-cı addımsız),0.99818
+A,LR,combination,Norm. (6-cı addımsız),0.99941
+A,LR,F1 — orijinal test,Norm. (6-cı addımsız),0.99713
+A,LR,Recall — orijinal test,Norm. (6-cı addımsız),0.99599
+A,LR,FPR — orijinal test,Norm. (6-cı addımsız),0.00107
+A,LR,F1 — insan formatı,Norm. (6-cı addımsız),0.96692
+A,LR,Recall — insan formatı,Norm. (6-cı addımsız),0.93811
+A,LR,FPR — insan formatı,Norm. (6-cı addımsız),0.00143
+A,LR,original (recall),Augmentation (görmüş),0.99312
+A,LR,random_case,Augmentation (görmüş),0.99708
+A,LR,inline_comment_space,Augmentation (görmüş),1.0
+A,LR,alt_whitespace,Augmentation (görmüş),0.99942
+A,LR,alt_whitespace_url,Augmentation (görmüş),0.99942
+A,LR,url_encode,Augmentation (görmüş),0.99598
+A,LR,double_url_encode ‡,Augmentation (görmüş),1.0
+A,LR,versioned_comment,Augmentation (görmüş),1.0
+A,LR,logical_operator,Augmentation (görmüş),0.99813
+A,LR,hex_strings,Augmentation (görmüş),0.99522
+A,LR,keyword_split_comment †,Augmentation (görmüş),1.0
+A,LR,combination,Augmentation (görmüş),1.0
+A,LR,F1 — orijinal test,Augmentation (görmüş),0.99569
+A,LR,Recall — orijinal test,Augmentation (görmüş),0.99312
+A,LR,FPR — orijinal test,Augmentation (görmüş),0.00107
+A,LR,F1 — insan formatı,Augmentation (görmüş),0.98106
+A,LR,Recall — insan formatı,Augmentation (görmüş),0.96447
+A,LR,FPR — insan formatı,Augmentation (görmüş),0.00107
+A,LR,original (recall),Hər ikisi (görmüş),0.9937
+A,LR,random_case,Hər ikisi (görmüş),0.99767
+A,LR,inline_comment_space,Hər ikisi (görmüş),0.99769
+A,LR,alt_whitespace,Hər ikisi (görmüş),0.99769
+A,LR,alt_whitespace_url,Hər ikisi (görmüş),0.99769
+A,LR,url_encode,Hər ikisi (görmüş),0.99655
+A,LR,double_url_encode ‡,Hər ikisi (görmüş),0.99655
+A,LR,versioned_comment,Hər ikisi (görmüş),0.99767
+A,LR,logical_operator,Hər ikisi (görmüş),1.0
+A,LR,hex_strings,Hər ikisi (görmüş),0.99841
+A,LR,keyword_split_comment †,Hər ikisi (görmüş),0.99757
+A,LR,combination,Hər ikisi (görmüş),0.99766
+A,LR,F1 — orijinal test,Hər ikisi (görmüş),0.99627
+A,LR,Recall — orijinal test,Hər ikisi (görmüş),0.9937
+A,LR,FPR — orijinal test,Hər ikisi (görmüş),0.00072
+A,LR,F1 — insan formatı,Hər ikisi (görmüş),0.99627
+A,LR,Recall — insan formatı,Hər ikisi (görmüş),0.9937
+A,LR,FPR — insan formatı,Hər ikisi (görmüş),0.00072
+B,LR,original (recall),Baseline,0.99599
+B,LR,random_case,Baseline,1.0
+B,LR,inline_comment_space,Baseline,1.0
+B,LR,alt_whitespace,Baseline,0.77771
+B,LR,alt_whitespace_url,Baseline,0.76386
+B,LR,url_encode,Baseline,0.98391
+B,LR,double_url_encode ‡,Baseline,0.39943
+B,LR,versioned_comment,Baseline,1.0
+B,LR,logical_operator,Baseline,1.0
+B,LR,hex_strings,Baseline,0.99841
+B,LR,keyword_split_comment †,Baseline,1.0
+B,LR,combination,Baseline,0.90328
+B,LR,F1 — orijinal test,Baseline,0.99713
+B,LR,Recall — orijinal test,Baseline,0.99599
+B,LR,FPR — orijinal test,Baseline,0.00107
+B,LR,F1 — insan formatı,Baseline,0.96017
+B,LR,Recall — insan formatı,Baseline,0.9255
+B,LR,FPR — insan formatı,Baseline,0.00143
+B,LR,original (recall),Normallaşdırma,0.99484
+B,LR,random_case,Normallaşdırma,0.99883
+B,LR,inline_comment_space,Normallaşdırma,0.99885
+B,LR,alt_whitespace,Normallaşdırma,0.99885
+B,LR,alt_whitespace_url,Normallaşdırma,0.99885
+B,LR,url_encode,Normallaşdırma,0.9977
+B,LR,double_url_encode ‡,Normallaşdırma,0.9977
+B,LR,versioned_comment,Normallaşdırma,0.99883
+B,LR,logical_operator,Normallaşdırma,1.0
+B,LR,hex_strings,Normallaşdırma,1.0
+B,LR,keyword_split_comment †,Normallaşdırma,0.99636
+B,LR,combination,Normallaşdırma,0.99824
+B,LR,F1 — orijinal test,Normallaşdırma,0.99627
+B,LR,Recall — orijinal test,Normallaşdırma,0.99484
+B,LR,FPR — orijinal test,Normallaşdırma,0.00143
+B,LR,F1 — insan formatı,Normallaşdırma,0.99627
+B,LR,Recall — insan formatı,Normallaşdırma,0.99484
+B,LR,FPR — insan formatı,Normallaşdırma,0.00143
+B,LR,original (recall),Augmentation (LOTO),0.99312
+B,LR,random_case,Augmentation (LOTO),0.99708
+B,LR,inline_comment_space,Augmentation (LOTO),1.0
+B,LR,alt_whitespace,Augmentation (LOTO),0.82159
+B,LR,alt_whitespace_url,Augmentation (LOTO),0.99538
+B,LR,url_encode,Augmentation (LOTO),1.0
+B,LR,double_url_encode ‡,Augmentation (LOTO),0.98678
+B,LR,versioned_comment,Augmentation (LOTO),1.0
+B,LR,logical_operator,Augmentation (LOTO),0.99813
+B,LR,hex_strings,Augmentation (LOTO),0.99363
+B,LR,keyword_split_comment †,Augmentation (LOTO),1.0
+B,LR,combination,Augmentation (LOTO),1.0
+B,LR,F1 — orijinal test,Augmentation (LOTO),0.99569
+B,LR,Recall — orijinal test,Augmentation (LOTO),0.99312
+B,LR,FPR — orijinal test,Augmentation (LOTO),0.00107
+B,LR,F1 — insan formatı,Augmentation (LOTO),0.98106
+B,LR,Recall — insan formatı,Augmentation (LOTO),0.96447
+B,LR,FPR — insan formatı,Augmentation (LOTO),0.00107
+B,LR,original (recall),Hər ikisi (LOTO),0.9937
+B,LR,random_case,Hər ikisi (LOTO),0.99767
+B,LR,inline_comment_space,Hər ikisi (LOTO),0.99885
+B,LR,alt_whitespace,Hər ikisi (LOTO),0.99885
+B,LR,alt_whitespace_url,Hər ikisi (LOTO),0.99885
+B,LR,url_encode,Hər ikisi (LOTO),0.99828
+B,LR,double_url_encode ‡,Hər ikisi (LOTO),0.99828
+B,LR,versioned_comment,Hər ikisi (LOTO),0.99883
+B,LR,logical_operator,Hər ikisi (LOTO),0.99813
+B,LR,hex_strings,Hər ikisi (LOTO),0.99682
+B,LR,keyword_split_comment †,Hər ikisi (LOTO),0.99757
+B,LR,combination,Hər ikisi (LOTO),0.99766
+B,LR,F1 — orijinal test,Hər ikisi (LOTO),0.99627
+B,LR,Recall — orijinal test,Hər ikisi (LOTO),0.9937
+B,LR,FPR — orijinal test,Hər ikisi (LOTO),0.00072
+B,LR,F1 — insan formatı,Hər ikisi (LOTO),0.99627
+B,LR,Recall — insan formatı,Hər ikisi (LOTO),0.9937
+B,LR,FPR — insan formatı,Hər ikisi (LOTO),0.00072
+B,LR,original (recall),Norm. (6-cı addımsız),0.99599
+B,LR,random_case,Norm. (6-cı addımsız),1.0
+B,LR,inline_comment_space,Norm. (6-cı addımsız),1.0
+B,LR,alt_whitespace,Norm. (6-cı addımsız),1.0
+B,LR,alt_whitespace_url,Norm. (6-cı addımsız),1.0
+B,LR,url_encode,Norm. (6-cı addımsız),0.99885
+B,LR,double_url_encode ‡,Norm. (6-cı addımsız),0.99885
+B,LR,versioned_comment,Norm. (6-cı addımsız),1.0
+B,LR,logical_operator,Norm. (6-cı addımsız),1.0
+B,LR,hex_strings,Norm. (6-cı addımsız),0.99841
+B,LR,keyword_split_comment †,Norm. (6-cı addımsız),0.99818
+B,LR,combination,Norm. (6-cı addımsız),0.99941
+B,LR,F1 — orijinal test,Norm. (6-cı addımsız),0.99713
+B,LR,Recall — orijinal test,Norm. (6-cı addımsız),0.99599
+B,LR,FPR — orijinal test,Norm. (6-cı addımsız),0.00107
+B,LR,F1 — insan formatı,Norm. (6-cı addımsız),0.96692
+B,LR,Recall — insan formatı,Norm. (6-cı addımsız),0.93811
+B,LR,FPR — insan formatı,Norm. (6-cı addımsız),0.00143
+B,LR,original (recall),Augmentation (görmüş),0.99312
+B,LR,random_case,Augmentation (görmüş),0.99708
+B,LR,inline_comment_space,Augmentation (görmüş),1.0
+B,LR,alt_whitespace,Augmentation (görmüş),0.99942
+B,LR,alt_whitespace_url,Augmentation (görmüş),1.0
+B,LR,url_encode,Augmentation (görmüş),1.0
+B,LR,double_url_encode ‡,Augmentation (görmüş),1.0
+B,LR,versioned_comment,Augmentation (görmüş),1.0
+B,LR,logical_operator,Augmentation (görmüş),0.99813
+B,LR,hex_strings,Augmentation (görmüş),0.99522
+B,LR,keyword_split_comment †,Augmentation (görmüş),1.0
+B,LR,combination,Augmentation (görmüş),1.0
+B,LR,F1 — orijinal test,Augmentation (görmüş),0.99569
+B,LR,Recall — orijinal test,Augmentation (görmüş),0.99312
+B,LR,FPR — orijinal test,Augmentation (görmüş),0.00107
+B,LR,F1 — insan formatı,Augmentation (görmüş),0.98106
+B,LR,Recall — insan formatı,Augmentation (görmüş),0.96447
+B,LR,FPR — insan formatı,Augmentation (görmüş),0.00107
+B,LR,original (recall),Hər ikisi (görmüş),0.9937
+B,LR,random_case,Hər ikisi (görmüş),0.99767
+B,LR,inline_comment_space,Hər ikisi (görmüş),0.99769
+B,LR,alt_whitespace,Hər ikisi (görmüş),0.99769
+B,LR,alt_whitespace_url,Hər ikisi (görmüş),0.99769
+B,LR,url_encode,Hər ikisi (görmüş),0.99655
+B,LR,double_url_encode ‡,Hər ikisi (görmüş),0.99655
+B,LR,versioned_comment,Hər ikisi (görmüş),0.99767
+B,LR,logical_operator,Hər ikisi (görmüş),1.0
+B,LR,hex_strings,Hər ikisi (görmüş),0.99841
+B,LR,keyword_split_comment †,Hər ikisi (görmüş),0.99757
+B,LR,combination,Hər ikisi (görmüş),0.99766
+B,LR,F1 — orijinal test,Hər ikisi (görmüş),0.99627
+B,LR,Recall — orijinal test,Hər ikisi (görmüş),0.9937
+B,LR,FPR — orijinal test,Hər ikisi (görmüş),0.00072
+B,LR,F1 — insan formatı,Hər ikisi (görmüş),0.99627
+B,LR,Recall — insan formatı,Hər ikisi (görmüş),0.9937
+B,LR,FPR — insan formatı,Hər ikisi (görmüş),0.00072

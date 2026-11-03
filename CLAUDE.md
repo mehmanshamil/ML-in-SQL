@@ -39,3 +39,8 @@ Versiya təsdiqləndi (2026-11-03): birinci məqalənin Şəkil 8–10-u bu kodl
 - **Əsas model: Logistic Regression** (ehtimal çıxışı verir → middleware-də hədd tənzimlənir). Linear SVM ikinci əsas model kimi müqayisədə qalır; RF və NB də cədvəllərdə.
 - Əsas dataset: `clean_v2.csv` (Excel pozuntuları çıxarılıb). Məqalədə həm v1 (`clean.csv`), həm v2 nəticələri göstərilir.
 - Obfuskasiya: `src/obfuscation.py`, yalnız test dəstinin zərərli sorğularına tətbiq olunur.
+- Təhdid modeli: **ssenari A** = middleware (Express bir dəfə decode edir → `unquote`), real ssenari; **ssenari B** = xam trafik.
+  `mysql_valid`: yes / conditional (`double_url_encode` — yalnız ikiqat decode edən tətbiqdə) / no (`keyword_split_comment`).
+- Əsas tapıntı: dataset artefaktı — zərərli sorğuların 95%-ində ikiqat boşluq (sqlmap formatı), təmizlərdə 30%; LR-in ən güclü siqnalı boşluq n-gram-larıdır.
+- Müdafiə: `src/normalize.py::normalize` (decode ×3, şərhlər, whitespace, lowercase, `( ) = ,` ətrafı boşluqlar) + augmentation (LOTO ilə yoxlanılır).
+- Middleware üçün model: `models/lr_norm_aug_v2.joblib` (normalize + augmentation + LR; `src/` import yolunda olmalıdır).
