@@ -1,0 +1,22 @@
+{
+  "name": "sqli-ml-guard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pure-JS char n-gram TF-IDF + logistic-regression SQL injection detector as Express middleware (research artifact; not published)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/parity.js",
+    "demo": "node demo/app.js",
+    "attack-test": "node demo/attack_test.js",
+    "bench": "node bench/run_bench.js"
+  },
+  "keywords": ["sql-injection", "security", "express", "middleware", "machine-learning"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "autocannon": "^7.15.0",
+    "mysql2": "^3.11.5"
+  }
+}

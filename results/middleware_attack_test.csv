@@ -1,0 +1,13 @@
+variant,forms,blocked,blocked_pct
+canonical_paper,3,3,100.0
+original,111,110,99.1
+random_case,109,109,100.0
+inline_comment_space,107,107,100.0
+alt_whitespace,108,108,100.0
+alt_whitespace_url,105,105,100.0
+url_encode,110,110,100.0
+double_url_encode,1,1,100.0
+versioned_comment,109,109,100.0
+logical_operator,94,94,100.0
+hex_strings,59,59,100.0
+combination,83,83,100.0
