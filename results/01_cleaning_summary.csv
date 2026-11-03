@@ -1,0 +1,3 @@
+stage,total,benign_0,malicious_1,benign_pct,malicious_pct,removed_vs_raw
+raw,30919,19537,11382,63.19,36.81,0
+clean,30902,19527,11375,63.19,36.81,17

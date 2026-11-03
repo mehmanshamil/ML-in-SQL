@@ -1,0 +1,8 @@
+metric,value
+Tam dublikat sətirlər (Query+Label),12
+Təkrarlanan sorğu sətirləri (yalnız Query),14
+Birdən çox dəfə görünən unikal sorğular,8
+Fərqli label ilə təkrarlanan unikal sorğular,2
+Ziddiyyətli sorğulara aid sətirlər,10
+Normallaşdırılmış dublikat sətirlər,102
+Normallaşdırılmış ziddiyyətli sorğular,2
