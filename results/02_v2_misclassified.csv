@@ -1,0 +1,11 @@
+Query,Label,pred,score,length,error
+"SELECT * FROM Users WHERE Name  = """" or """" = """" AND Pass  = """" or """" = """"",0,1,0.9958884,73,FP
+sandler,0,1,0.54629225,7,FP
+ntpadmin,0,1,0.51065046,8,FP
+a,1,0,1.559539e-05,1,FN
+os,1,0,0.0008037083,2,FN
+PRINT,1,0,0.00084246084,5,FN
+truncate,1,0,0.005711591,8,FN
+!,1,0,0.006349626,1,FN
+UEv,1,0,0.1262399,3,FN
+1\'1,1,0,0.2629345,4,FN

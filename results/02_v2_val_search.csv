@@ -1,0 +1,16 @@
+model,param,val_f1
+Logistic Regression,0.1,0.9879
+Logistic Regression,1,0.99308
+Logistic Regression,10,0.9952
+Logistic Regression,100,0.9955
+Linear SVM,0.01,0.98912
+Linear SVM,0.1,0.99338
+Linear SVM,1,0.9961
+Linear SVM,10,0.9958
+Random Forest,"(200, 1)",0.9967
+Random Forest,"(200, 2)",0.99429
+Random Forest,"(400, 1)",0.9961
+Multinomial NB,0.001,0.93195
+Multinomial NB,0.01,0.92855
+Multinomial NB,0.1,0.92492
+Multinomial NB,1.0,0.92235

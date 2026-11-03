@@ -28,3 +28,14 @@ Bu, elmi məqalə üçün tədqiqat layihəsidir.
 ## Birinci məqalənin qara siyahı filtri (4-cü mərhələ üçün)
 Orijinal kod: `C:\Users\Mehman\OneDrive\Desktop\Aztu-projects\meqale son\project-teqdimat\sql-injection - Copy (2)\server.js`
 — `sanitizeInput()` və `sanitizeSearch()`. Python-a eyni məntiqlə (eyni regex ardıcıllığı) köçürülməlidir.
+
+Versiya təsdiqləndi (2026-11-03): birinci məqalənin Şəkil 8–10-u bu kodla üst-üstə düşür.
+- `sql-injection/` = zəif versiya, `sql-injection - Copy/` = Prepared Statements, `sql-injection - Copy (2)/` = Input Validation.
+- Login/register: `isValidEmail()` + `sanitizeInput()` (OR/AND söz sərhədsiz silinir → `password` → `passwd`).
+- Axtarış (`/products?search=`): yalnız `sanitizeSearch()` (OR/AND/UPDATE/DELETE silinmir) + 100 simvol limiti.
+  Şəkil 9 (UNION) və Şəkil 10 (EXTRACTVALUE) bu funksiyanın nəticəsidir.
+
+## Modellər
+- **Əsas model: Logistic Regression** (ehtimal çıxışı verir → middleware-də hədd tənzimlənir). Linear SVM ikinci əsas model kimi müqayisədə qalır; RF və NB də cədvəllərdə.
+- Əsas dataset: `clean_v2.csv` (Excel pozuntuları çıxarılıb). Məqalədə həm v1 (`clean.csv`), həm v2 nəticələri göstərilir.
+- Obfuskasiya: `src/obfuscation.py`, yalnız test dəstinin zərərli sorğularına tətbiq olunur.
