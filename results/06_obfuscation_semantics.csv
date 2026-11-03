@@ -1,0 +1,12 @@
+technique,forms,preserved_forms,unique_payloads,preserved_unique_payloads,preserved_pct,ci_low,ci_high
+random_case,109,109,109,109,100.0,96.6,100.0
+inline_comment_space,109,107,109,107,98.2,93.6,99.5
+alt_whitespace,109,108,109,108,99.1,95.0,99.8
+alt_whitespace_url,109,105,109,105,96.3,90.9,98.6
+url_encode,110,110,110,110,100.0,96.6,100.0
+double_url_encode,110,0,110,0,0.0,0.0,3.4
+versioned_comment,109,109,109,109,100.0,96.6,100.0
+logical_operator,94,94,94,94,100.0,96.1,100.0
+hex_strings,57,57,57,57,100.0,93.7,100.0
+keyword_split_comment,98,0,98,0,0.0,0.0,3.8
+combination,110,82,110,82,74.5,65.7,81.8

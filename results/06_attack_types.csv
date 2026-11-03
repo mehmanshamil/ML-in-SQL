@@ -1,0 +1,8 @@
+attack_type,effektiv payload,test dəstindəki payload,effektivlik %
+boolean,23,874,2.6
+digər,3,47,6.4
+error-based,38,158,24.1
+stacked,0,2,0.0
+time-based,41,324,12.7
+union,6,340,1.8
+CƏMI,111,1745,6.4

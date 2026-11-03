@@ -5,3 +5,4 @@ __pycache__/
 models/
 .env
 data/processed/05_mysql_runs.csv
+data/processed/06_mysql_effectiveness.csv

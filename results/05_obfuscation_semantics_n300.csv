@@ -1,0 +1,12 @@
+technique,n_effective_original,parses_pct,still_effective_pct,semantics_preserved_pct
+random_case,19,100.0,100.0,100.0
+inline_comment_space,19,100.0,100.0,100.0
+alt_whitespace,19,100.0,100.0,100.0
+alt_whitespace_url,19,100.0,100.0,100.0
+url_encode,19,100.0,100.0,100.0
+double_url_encode,19,100.0,0.0,0.0
+versioned_comment,19,100.0,100.0,100.0
+logical_operator,14,100.0,100.0,100.0
+hex_strings,11,100.0,100.0,100.0
+keyword_split_comment,17,100.0,0.0,0.0
+combination,19,100.0,84.2,84.2

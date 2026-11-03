@@ -1,0 +1,5 @@
+payloads,sanitizer,n_effective_forms,survives_forms,survives_unique_payloads,survives_pct,ci_low,ci_high,neutralized_pct
+orijinal,sanitizeInput(),111,3,3,2.7,0.9,7.6,97.3
+orijinal,sanitizeSearch(),111,21,21,18.9,12.7,27.2,81.1
+"obfuskasiya (A, etibarlı texnikalar)",sanitizeInput(),885,27,19,3.1,2.1,4.4,96.9
+"obfuskasiya (A, etibarlı texnikalar)",sanitizeSearch(),885,102,21,11.5,9.6,13.8,88.5
