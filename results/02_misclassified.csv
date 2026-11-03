@@ -1,0 +1,16 @@
+Query,Label,pred,score,length,error
+3.10E+17,1,0,0.005,8,FN
+truncate,1,0,0.025,8,FN
+PRINT,1,0,0.03,5,FN
+grant connect to name; grant resource to name;,1,0,0.05,46,FN
+# from wapiti,1,0,0.13,13,FN
+or,1,0,0.15,2,FN
+29%,1,0,0.29,3,FN
+create user name identified by 'pass123',1,0,0.32,40,FN
+0x730065006c0065006300740020004000400076006500 ...,1,0,0.41,50,FN
+@var select @var as var into temp end --,1,0,0.415,40,FN
+"1'qhfy<'"">utwq",1,0,0.46,14,FN
+"exec sp_addlogin 'name' , 'password'",1,0,0.475,36,FN
+; exec xp_regread,1,0,0.485,17,FN
+or   (  EXISTS  ) ,1,0,0.485,18,FN
+" union select 1,load_file  (  '/etc/passwd'  )  ,1,1,1;",1,0,0.495,55,FN

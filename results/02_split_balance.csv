@@ -1,0 +1,4 @@
+split,rows,share_pct,benign_0,malicious_1,malicious_pct
+train,21633,70.01,13686,7947,36.74
+val,4634,15.0,2955,1679,36.23
+test,4635,15.0,2886,1749,37.73

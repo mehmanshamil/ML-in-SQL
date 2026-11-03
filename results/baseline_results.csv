@@ -1,0 +1,6 @@
+model,features,best_param,accuracy,precision,recall,f1,roc_auc,fpr,latency_ms,val_f1,tp,fp,tn,fn
+Logistic Regression,char TF-IDF 1-5,100,0.9972,1.0,0.9926,0.9963,0.9987,0.0,1.0639,0.9964,1736,0,2886,13
+Linear SVM,char TF-IDF 1-5,1,0.9972,1.0,0.9926,0.9963,0.9989,0.0,1.0207,0.9964,1736,0,2886,13
+Random Forest,char TF-IDF 1-5,"(200, 1)",0.9968,1.0,0.9914,0.9957,0.9996,0.0,50.075,0.9967,1734,0,2886,15
+Multinomial NB,char TF-IDF 1-5,0.001,0.9592,0.9105,0.9891,0.9482,0.9984,0.0589,1.9067,0.934,1730,170,2716,19
+Length-only LR,log(1+length),-,0.765,0.7364,0.5878,0.6537,0.824,0.1275,0.4608,0.6556,1028,368,2518,721
