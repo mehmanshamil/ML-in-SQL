@@ -136,15 +136,19 @@ _COMBO_SLOTS = [
 ]
 
 
-def combination(q, rng):
+def combination(q, rng, exclude=()):
     """2-3 randomly chosen valid techniques applied together.
 
     Returns (obfuscated_query, [technique names]). keyword_split_comment is
-    excluded so the combined payload stays executable.
+    excluded so the combined payload stays executable. ``exclude`` removes
+    techniques from the pool (used for leave-one-technique-out training).
     """
+    slots = [opts for _, opts in _COMBO_SLOTS]
+    slots = [[t for t in opts if t not in exclude] for opts in slots]
+    slots = [opts for opts in slots if opts]
     k = rng.choice([2, 3])
-    slots = rng.sample(range(len(_COMBO_SLOTS)), k)
-    chosen = [rng.choice(_COMBO_SLOTS[i][1]) for i in sorted(slots)]
+    picked = rng.sample(range(len(slots)), k)
+    chosen = [rng.choice(slots[i]) for i in sorted(picked)]
     for name in chosen:
         q = TECHNIQUES[name](q, rng)
     return q, chosen

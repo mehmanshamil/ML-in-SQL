@@ -1,0 +1,5 @@
+pattern,təmiz,zərərli
+'  (  ' (mötərizə ətrafında 2+ boşluq),1.01,86.71
+' = ' (boşluqlu bərabərlik),14.78,81.06
+hər hansı boşluq,69.93,99.24
+ikiqat boşluq (2+ ardıcıl),29.81,94.91
