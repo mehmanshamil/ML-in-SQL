@@ -1,0 +1,23 @@
+model,metric,mean,std,min,max,count
+LR + norm. + augmentation,fpr,0.02,0.01,0.02,0.03,5
+LR + norm. + augmentation,recall,99.98,0.0,99.97,99.98,5
+LR + norm. + augmentation,recall_alt_whitespace_A,100.0,0.0,100.0,100.0,5
+LR + normallaşdırma,fpr,0.02,0.01,0.01,0.03,5
+LR + normallaşdırma,recall,99.98,0.01,99.96,99.98,5
+LR + normallaşdırma,recall_alt_whitespace_A,100.0,0.0,100.0,100.0,5
+LR baza,fpr,0.02,0.01,0.0,0.03,5
+LR baza,recall,96.91,0.75,95.66,97.54,5
+LR baza,recall_alt_whitespace_A,81.83,4.65,75.23,88.06,5
+Qara siyahı (sanitizeInput),fpr,8.56,0.09,8.47,8.68,5
+Qara siyahı (sanitizeInput),recall,99.49,0.0,99.49,99.49,5
+Qara siyahı (sanitizeInput),recall_alt_whitespace_A,99.71,0.0,99.71,99.71,5
+Qara siyahı (sanitizeSearch),fpr,0.24,0.01,0.23,0.26,5
+Qara siyahı (sanitizeSearch),recall,96.39,0.01,96.38,96.4,5
+Qara siyahı (sanitizeSearch),recall_alt_whitespace_A,96.59,0.01,96.58,96.6,5
+RF baza,fpr,0.01,0.0,0.01,0.02,5
+RF baza,recall,94.31,0.49,93.75,95.04,5
+SVM baza,fpr,0.03,0.02,0.02,0.05,5
+SVM baza,recall,97.23,0.35,96.71,97.63,5
+libinjection 4.0.1,fpr,0.0,0.0,0.0,0.0,5
+libinjection 4.0.1,recall,96.8,0.01,96.79,96.8,5
+libinjection 4.0.1,recall_alt_whitespace_A,97.22,0.02,97.2,97.24,5

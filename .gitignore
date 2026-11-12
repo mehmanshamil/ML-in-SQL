@@ -8,3 +8,4 @@ data/processed/05_mysql_runs.csv
 data/processed/06_mysql_effectiveness.csv
 middleware/node_modules/
 middleware/npm-debug.log
+third_party/

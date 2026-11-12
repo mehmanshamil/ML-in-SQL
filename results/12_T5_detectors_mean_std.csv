@@ -1,0 +1,36 @@
+model,metric,mean,std,min,max,count
+LR + norm. + augmentation,fpr,0.04,0.03,0.0,0.07,5
+LR + norm. + augmentation,fpr_plain_input,0.04,0.05,0.0,0.09,5
+LR + norm. + augmentation,recall,99.36,0.12,99.19,99.48,5
+LR + norm. + augmentation,worst_is::combination,100.0,,100.0,100.0,1
+LR + norm. + augmentation,worst_is::hex_strings,100.0,,100.0,100.0,1
+LR + norm. + augmentation,worst_is::url_encode,100.0,0.0,100.0,100.0,3
+LR + norm. + augmentation,worst_recall_A,99.67,0.05,99.63,99.77,5
+LR + normallaşdırma,fpr,0.06,0.05,0.0,0.14,5
+LR + normallaşdırma,fpr_plain_input,0.05,0.08,0.0,0.18,5
+LR + normallaşdırma,recall,99.35,0.22,98.96,99.48,5
+LR + normallaşdırma,worst_is::combination,100.0,0.0,100.0,100.0,2
+LR + normallaşdırma,worst_is::inline_comment_space,100.0,,100.0,100.0,1
+LR + normallaşdırma,worst_is::url_encode,100.0,0.0,100.0,100.0,2
+LR + normallaşdırma,worst_recall_A,99.67,0.14,99.42,99.77,5
+LR baza,fpr,0.04,0.04,0.0,0.11,5
+LR baza,fpr_plain_input,0.04,0.08,0.0,0.18,5
+LR baza,recall,99.43,0.15,99.19,99.6,5
+LR baza,worst_is::alt_whitespace,100.0,0.0,100.0,100.0,3
+LR baza,worst_is::double_url_encode,100.0,0.0,100.0,100.0,2
+LR baza,worst_recall_A,63.71,21.97,30.93,82.91,5
+Qara siyahı (sanitizeInput),fpr,64.8,0.26,64.41,65.08,5
+Qara siyahı (sanitizeInput),fpr_plain_input,10.72,1.09,9.7,12.32,5
+Qara siyahı (sanitizeInput),recall,97.51,0.46,96.7,97.84,5
+Qara siyahı (sanitizeInput),worst_is::double_url_encode,100.0,0.0,100.0,100.0,5
+Qara siyahı (sanitizeInput),worst_recall_A,91.97,0.48,91.38,92.67,5
+Qara siyahı (sanitizeSearch),fpr,60.63,0.43,59.91,61.07,5
+Qara siyahı (sanitizeSearch),fpr_plain_input,1.77,0.21,1.56,2.12,5
+Qara siyahı (sanitizeSearch),recall,94.32,0.82,93.11,95.19,5
+Qara siyahı (sanitizeSearch),worst_is::double_url_encode,100.0,0.0,100.0,100.0,5
+Qara siyahı (sanitizeSearch),worst_recall_A,71.36,1.07,70.1,73.02,5
+libinjection 4.0.1,fpr,37.42,0.76,36.96,38.76,5
+libinjection 4.0.1,fpr_plain_input,0.0,0.0,0.0,0.0,5
+libinjection 4.0.1,recall,91.49,0.8,90.54,92.41,5
+libinjection 4.0.1,worst_is::double_url_encode,100.0,0.0,100.0,100.0,5
+libinjection 4.0.1,worst_recall_A,0.0,0.0,0.0,0.0,5

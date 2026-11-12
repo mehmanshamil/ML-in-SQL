@@ -1,0 +1,49 @@
+technique,n,model,recall
+random_case,10457,LR baza,0.9739887156928373
+random_case,10457,RF baza,0.9538108444104427
+random_case,10457,LR + normallaşdırma,1.0
+random_case,10457,LR + norm. + augmentation,1.0
+inline_comment_space,10457,LR baza,1.0
+inline_comment_space,10457,RF baza,0.5160179783876829
+inline_comment_space,10457,LR + normallaşdırma,1.0
+inline_comment_space,10457,LR + norm. + augmentation,1.0
+alt_whitespace,10457,LR baza,0.833986803098403
+alt_whitespace,10457,RF baza,0.3871091135124797
+alt_whitespace,10457,LR + normallaşdırma,1.0
+alt_whitespace,10457,LR + norm. + augmentation,1.0
+alt_whitespace_url,10457,LR baza,0.833986803098403
+alt_whitespace_url,10457,RF baza,0.3871091135124797
+alt_whitespace_url,10457,LR + normallaşdırma,1.0
+alt_whitespace_url,10457,LR + norm. + augmentation,1.0
+url_encode,10529,LR baza,0.9726469750213695
+url_encode,10529,RF baza,0.9506125937885839
+url_encode,10529,LR + normallaşdırma,1.0
+url_encode,10529,LR + norm. + augmentation,1.0
+double_url_encode,10529,LR baza,0.9741665875201824
+double_url_encode,10529,RF baza,0.11976446006268401
+double_url_encode,10529,LR + normallaşdırma,1.0
+double_url_encode,10529,LR + norm. + augmentation,1.0
+versioned_comment,10457,LR baza,1.0
+versioned_comment,10457,RF baza,0.7491632399349718
+versioned_comment,10457,LR + normallaşdırma,1.0
+versioned_comment,10457,LR + norm. + augmentation,1.0
+logical_operator,6599,LR baza,0.9751477496590393
+logical_operator,6599,RF baza,0.9384755265949386
+logical_operator,6599,LR + normallaşdırma,1.0
+logical_operator,6599,LR + norm. + augmentation,1.0
+hex_strings,3807,LR baza,0.9876543209876543
+hex_strings,3807,RF baza,0.9524560021013921
+hex_strings,3807,LR + normallaşdırma,1.0
+hex_strings,3807,LR + norm. + augmentation,1.0
+keyword_split_comment,10105,LR baza,1.0
+keyword_split_comment,10105,RF baza,0.9192478970806531
+keyword_split_comment,10105,LR + normallaşdırma,1.0
+keyword_split_comment,10105,LR + norm. + augmentation,1.0
+combination,10365,LR baza,0.9758803666184274
+combination,10365,RF baza,0.5919922817173179
+combination,10365,LR + normallaşdırma,1.0
+combination,10365,LR + norm. + augmentation,1.0
+original,10531,LR baza,0.9724622542968379
+original,10531,RF baza,0.9504320577343083
+original,10531,LR + normallaşdırma,0.999810084512392
+original,10531,LR + norm. + augmentation,0.999810084512392

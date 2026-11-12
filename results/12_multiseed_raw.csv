@@ -1,0 +1,1446 @@
+seed,table,model,metric,value
+42,meta,-,n_train,21181.0
+42,meta,-,n_test,4539.0
+42,meta,-,n_test_malicious,1745.0
+42,meta,-,n_httpparams,23720.0
+42,T2_baseline,LR,f1,0.9971313826735514
+42,T2_baseline,LR,recall,0.9959885386819485
+42,T2_baseline,LR,fpr,0.0010737294201861132
+42,T2_baseline,LR,f1_human,0.9601664684898928
+42,T3_obf_A,LR,random_case,1.0
+42,T3_obf_A,LR,inline_comment_space,1.0
+42,T3_obf_A,LR,alt_whitespace,0.7777136258660509
+42,T3_obf_A,LR,alt_whitespace_url,0.7777136258660509
+42,T3_obf_A,LR,url_encode,0.9988505747126437
+42,T3_obf_A,LR,double_url_encode,0.9839080459770115
+42,T3_obf_A,LR,versioned_comment,1.0
+42,T3_obf_A,LR,logical_operator,1.0
+42,T3_obf_A,LR,hex_strings,0.9984076433121019
+42,T3_obf_A,LR,keyword_split_comment,1.0
+42,T3_obf_A,LR,combination,0.9642438452520515
+42,T3_obf_B,LR,random_case,1.0
+42,T3_obf_B,LR,inline_comment_space,1.0
+42,T3_obf_B,LR,alt_whitespace,0.7777136258660509
+42,T3_obf_B,LR,alt_whitespace_url,0.7638568129330254
+42,T3_obf_B,LR,url_encode,0.9839080459770115
+42,T3_obf_B,LR,double_url_encode,0.3994252873563218
+42,T3_obf_B,LR,versioned_comment,1.0
+42,T3_obf_B,LR,logical_operator,1.0
+42,T3_obf_B,LR,hex_strings,0.9984076433121019
+42,T3_obf_B,LR,keyword_split_comment,1.0
+42,T3_obf_B,LR,combination,0.9032825322391559
+42,T3_obf_A,LR,original,0.9959885386819485
+42,T3_obf_B,LR,original,0.9959885386819485
+42,T2_baseline,SVM,f1,0.9974175035868006
+42,T2_baseline,SVM,recall,0.9959885386819485
+42,T2_baseline,SVM,fpr,0.0007158196134574087
+42,T2_baseline,SVM,f1_human,0.9604519774011299
+42,T3_obf_A,SVM,random_case,1.0
+42,T3_obf_A,SVM,inline_comment_space,1.0
+42,T3_obf_A,SVM,alt_whitespace,0.6836027713625866
+42,T3_obf_A,SVM,alt_whitespace_url,0.6836027713625866
+42,T3_obf_A,SVM,url_encode,0.9988505747126437
+42,T3_obf_A,SVM,double_url_encode,0.7850574712643679
+42,T3_obf_A,SVM,versioned_comment,1.0
+42,T3_obf_A,SVM,logical_operator,1.0
+42,T3_obf_A,SVM,hex_strings,0.9968152866242038
+42,T3_obf_A,SVM,keyword_split_comment,1.0
+42,T3_obf_A,SVM,combination,0.9279015240328253
+42,T3_obf_B,SVM,random_case,1.0
+42,T3_obf_B,SVM,inline_comment_space,1.0
+42,T3_obf_B,SVM,alt_whitespace,0.6836027713625866
+42,T3_obf_B,SVM,alt_whitespace_url,0.4035796766743649
+42,T3_obf_B,SVM,url_encode,0.7850574712643679
+42,T3_obf_B,SVM,double_url_encode,0.09137931034482759
+42,T3_obf_B,SVM,versioned_comment,1.0
+42,T3_obf_B,SVM,logical_operator,1.0
+42,T3_obf_B,SVM,hex_strings,0.9968152866242038
+42,T3_obf_B,SVM,keyword_split_comment,1.0
+42,T3_obf_B,SVM,combination,0.8065650644783119
+42,T3_obf_A,SVM,original,0.9959885386819485
+42,T3_obf_B,SVM,original,0.9959885386819485
+42,T2_baseline,RF,f1,0.9959770114942529
+42,T2_baseline,RF,recall,0.9931232091690544
+42,T2_baseline,RF,fpr,0.0007158196134574087
+42,T2_baseline,RF,f1_human,0.9399271844660194
+42,T3_obf_A,RF,random_case,0.9970828471411902
+42,T3_obf_A,RF,inline_comment_space,0.38394919168591224
+42,T3_obf_A,RF,alt_whitespace,0.331986143187067
+42,T3_obf_A,RF,alt_whitespace_url,0.331986143187067
+42,T3_obf_A,RF,url_encode,0.9959770114942529
+42,T3_obf_A,RF,double_url_encode,0.04310344827586207
+42,T3_obf_A,RF,versioned_comment,0.955075845974329
+42,T3_obf_A,RF,logical_operator,0.9962616822429906
+42,T3_obf_A,RF,hex_strings,0.9952229299363057
+42,T3_obf_A,RF,keyword_split_comment,0.9890710382513661
+42,T3_obf_A,RF,combination,0.5873388042203986
+42,T3_obf_B,RF,random_case,0.9970828471411902
+42,T3_obf_B,RF,inline_comment_space,0.38394919168591224
+42,T3_obf_B,RF,alt_whitespace,0.331986143187067
+42,T3_obf_B,RF,alt_whitespace_url,0.4636258660508083
+42,T3_obf_B,RF,url_encode,0.04310344827586207
+42,T3_obf_B,RF,double_url_encode,0.0017241379310344827
+42,T3_obf_B,RF,versioned_comment,0.955075845974329
+42,T3_obf_B,RF,logical_operator,0.9962616822429906
+42,T3_obf_B,RF,hex_strings,0.9952229299363057
+42,T3_obf_B,RF,keyword_split_comment,0.9890710382513661
+42,T3_obf_B,RF,combination,0.4437280187573271
+42,T3_obf_A,RF,original,0.9936962750716333
+42,T3_obf_B,RF,original,0.9931232091690544
+42,T2_baseline,NB,f1,0.9362625440737727
+42,T2_baseline,NB,recall,0.9891117478510029
+42,T2_baseline,NB,fpr,0.07730851825340014
+42,T2_baseline,NB,f1_human,0.9356153219233904
+42,T3_obf_A,NB,random_case,0.9947491248541424
+42,T3_obf_A,NB,inline_comment_space,0.9982678983833718
+42,T3_obf_A,NB,alt_whitespace,0.9826789838337182
+42,T3_obf_A,NB,alt_whitespace_url,0.9826789838337182
+42,T3_obf_A,NB,url_encode,0.9919540229885058
+42,T3_obf_A,NB,double_url_encode,0.9896551724137931
+42,T3_obf_A,NB,versioned_comment,0.9959159859976663
+42,T3_obf_A,NB,logical_operator,0.9962616822429906
+42,T3_obf_A,NB,hex_strings,0.9984076433121019
+42,T3_obf_A,NB,keyword_split_comment,0.9969641772920461
+42,T3_obf_A,NB,combination,0.9929660023446659
+42,T3_obf_B,NB,random_case,0.9947491248541424
+42,T3_obf_B,NB,inline_comment_space,0.9982678983833718
+42,T3_obf_B,NB,alt_whitespace,0.9826789838337182
+42,T3_obf_B,NB,alt_whitespace_url,0.7419168591224018
+42,T3_obf_B,NB,url_encode,0.9896551724137931
+42,T3_obf_B,NB,double_url_encode,0.9850574712643678
+42,T3_obf_B,NB,versioned_comment,0.9959159859976663
+42,T3_obf_B,NB,logical_operator,0.9962616822429906
+42,T3_obf_B,NB,hex_strings,0.9984076433121019
+42,T3_obf_B,NB,keyword_split_comment,0.9969641772920461
+42,T3_obf_B,NB,combination,0.9912075029308324
+42,T3_obf_A,NB,original,0.9891117478510029
+42,T3_obf_B,NB,original,0.9891117478510029
+42,T2_baseline,Length-only LR,f1,0.6515054452274183
+42,T2_baseline,Length-only LR,recall,0.5828080229226361
+42,T2_baseline,Length-only LR,fpr,0.12884753042233357
+42,NORM_all,LR | Baseline,f1_test,0.9971313826735514
+42,NORM_all,LR | Baseline,fpr_test,0.0010737294201861132
+42,NORM_all,LR | Baseline,f1_human,0.9601664684898928
+42,NORM_all,LR | Baseline,min_recall_A,0.7777136258660509
+42,NORM_all,LR | Normallaşdırma,f1_test,0.9962697274031563
+42,NORM_all,LR | Normallaşdırma,fpr_test,0.0014316392269148174
+42,NORM_all,LR | Normallaşdırma,f1_human,0.9962697274031563
+42,NORM_all,LR | Normallaşdırma,min_recall_A,0.9963570127504554
+42,NORM_all,SVM | Baseline,f1_test,0.9974175035868006
+42,NORM_all,SVM | Baseline,fpr_test,0.0007158196134574087
+42,NORM_all,SVM | Baseline,f1_human,0.9604519774011299
+42,NORM_all,SVM | Baseline,min_recall_A,0.6836027713625866
+42,NORM_all,SVM | Normallaşdırma,f1_test,0.9968418030433533
+42,NORM_all,SVM | Normallaşdırma,fpr_test,0.0007158196134574087
+42,NORM_all,SVM | Normallaşdırma,f1_human,0.9968418030433533
+42,NORM_all,SVM | Normallaşdırma,min_recall_A,0.9952229299363057
+42,NORM_all,RF | Baseline,f1_test,0.9959770114942529
+42,NORM_all,RF | Baseline,fpr_test,0.0007158196134574087
+42,NORM_all,RF | Baseline,f1_human,0.9399271844660194
+42,NORM_all,RF | Baseline,min_recall_A,0.04310344827586207
+42,NORM_all,RF | Normallaşdırma,f1_test,0.9959746981023576
+42,NORM_all,RF | Normallaşdırma,fpr_test,0.00035790980672870435
+42,NORM_all,RF | Normallaşdırma,f1_human,0.9959746981023576
+42,NORM_all,RF | Normallaşdırma,min_recall_A,0.9884638737097754
+42,NORM_all,NB | Baseline,f1_test,0.9362625440737727
+42,NORM_all,NB | Baseline,fpr_test,0.07730851825340014
+42,NORM_all,NB | Baseline,f1_human,0.9356153219233904
+42,NORM_all,NB | Baseline,min_recall_A,0.9826789838337182
+42,NORM_all,NB | Normallaşdırma,f1_test,0.9355362946912243
+42,NORM_all,NB | Normallaşdırma,fpr_test,0.07874015748031496
+42,NORM_all,NB | Normallaşdırma,f1_human,0.9355362946912243
+42,NORM_all,NB | Normallaşdırma,min_recall_A,0.9925287356321839
+42,T4_defense_A,Baza,random_case,1.0
+42,T4_defense_A,Baza,inline_comment_space,1.0
+42,T4_defense_A,Baza,alt_whitespace,0.7777136258660509
+42,T4_defense_A,Baza,alt_whitespace_url,0.7777136258660509
+42,T4_defense_A,Baza,url_encode,0.9988505747126437
+42,T4_defense_A,Baza,double_url_encode,0.9839080459770115
+42,T4_defense_A,Baza,versioned_comment,1.0
+42,T4_defense_A,Baza,logical_operator,1.0
+42,T4_defense_A,Baza,hex_strings,0.9984076433121019
+42,T4_defense_A,Baza,keyword_split_comment,1.0
+42,T4_defense_A,Baza,combination,0.9642438452520515
+42,T4_defense_A,Baza,original,0.9959885386819485
+42,T4_defense_A,Baza,f1_test,0.9971313826735514
+42,T4_defense_A,Baza,fpr_test,0.0010737294201861132
+42,T4_defense_A,Baza,f1_human,0.9601664684898928
+42,T4_defense_A,Baza,fpr_human,0.0014316392269148174
+42,T4_defense_A,Normallaşdırma,random_case,0.9988331388564761
+42,T4_defense_A,Normallaşdırma,inline_comment_space,0.9988452655889145
+42,T4_defense_A,Normallaşdırma,alt_whitespace,0.9988452655889145
+42,T4_defense_A,Normallaşdırma,alt_whitespace_url,0.9988452655889145
+42,T4_defense_A,Normallaşdırma,url_encode,0.9977011494252873
+42,T4_defense_A,Normallaşdırma,double_url_encode,0.9977011494252873
+42,T4_defense_A,Normallaşdırma,versioned_comment,0.9988331388564761
+42,T4_defense_A,Normallaşdırma,logical_operator,1.0
+42,T4_defense_A,Normallaşdırma,hex_strings,1.0
+42,T4_defense_A,Normallaşdırma,keyword_split_comment,0.9963570127504554
+42,T4_defense_A,Normallaşdırma,combination,0.9982415005861665
+42,T4_defense_A,Normallaşdırma,original,0.9948424068767908
+42,T4_defense_A,Normallaşdırma,f1_test,0.9962697274031563
+42,T4_defense_A,Normallaşdırma,fpr_test,0.0014316392269148174
+42,T4_defense_A,Normallaşdırma,f1_human,0.9962697274031563
+42,T4_defense_A,Normallaşdırma,fpr_human,0.0014316392269148174
+42,T4_defense_A,Augmentation (LOTO),original,0.9931232091690544
+42,T4_defense_A,Augmentation (LOTO),f1_test,0.9956908934214307
+42,T4_defense_A,Augmentation (LOTO),fpr_test,0.0010737294201861132
+42,T4_defense_A,Augmentation (LOTO),f1_human,0.9810550859807635
+42,T4_defense_A,Augmentation (LOTO),fpr_human,0.0010737294201861132
+42,T4_defense_A,Augmentation (görmüş),random_case,0.9970828471411902
+42,T4_defense_A,Augmentation (görmüş),inline_comment_space,1.0
+42,T4_defense_A,Augmentation (görmüş),alt_whitespace,0.9994226327944573
+42,T4_defense_A,Augmentation (görmüş),alt_whitespace_url,0.9994226327944573
+42,T4_defense_A,Augmentation (görmüş),url_encode,0.9959770114942529
+42,T4_defense_A,Augmentation (görmüş),double_url_encode,1.0
+42,T4_defense_A,Augmentation (görmüş),versioned_comment,1.0
+42,T4_defense_A,Augmentation (görmüş),logical_operator,0.9981308411214953
+42,T4_defense_A,Augmentation (görmüş),hex_strings,0.9952229299363057
+42,T4_defense_A,Augmentation (görmüş),keyword_split_comment,1.0
+42,T4_defense_A,Augmentation (görmüş),combination,1.0
+42,T4_defense_A,Hər ikisi (LOTO),original,0.9936962750716333
+42,T4_defense_A,Hər ikisi (LOTO),f1_test,0.99626544096524
+42,T4_defense_A,Hər ikisi (LOTO),fpr_test,0.0007158196134574087
+42,T4_defense_A,Hər ikisi (LOTO),f1_human,0.99626544096524
+42,T4_defense_A,Hər ikisi (LOTO),fpr_human,0.0007158196134574087
+42,T4_defense_A,Hər ikisi (görmüş),random_case,0.9976662777129521
+42,T4_defense_A,Hər ikisi (görmüş),inline_comment_space,0.9976905311778291
+42,T4_defense_A,Hər ikisi (görmüş),alt_whitespace,0.9976905311778291
+42,T4_defense_A,Hər ikisi (görmüş),alt_whitespace_url,0.9976905311778291
+42,T4_defense_A,Hər ikisi (görmüş),url_encode,0.996551724137931
+42,T4_defense_A,Hər ikisi (görmüş),double_url_encode,0.996551724137931
+42,T4_defense_A,Hər ikisi (görmüş),versioned_comment,0.9976662777129521
+42,T4_defense_A,Hər ikisi (görmüş),logical_operator,1.0
+42,T4_defense_A,Hər ikisi (görmüş),hex_strings,0.9984076433121019
+42,T4_defense_A,Hər ikisi (görmüş),keyword_split_comment,0.9975713418336369
+42,T4_defense_A,Hər ikisi (görmüş),combination,0.9976553341148886
+42,T4_defense_A,Augmentation (LOTO),random_case,0.9970828471411902
+42,T4_defense_A,Hər ikisi (LOTO),random_case,0.9976662777129521
+42,T4_defense_A,Augmentation (LOTO),inline_comment_space,1.0
+42,T4_defense_A,Hər ikisi (LOTO),inline_comment_space,0.9988452655889145
+42,T4_defense_A,Augmentation (LOTO),alt_whitespace,0.8221709006928406
+42,T4_defense_A,Hər ikisi (LOTO),alt_whitespace,0.9988452655889145
+42,T4_defense_A,Augmentation (LOTO),alt_whitespace_url,0.9994226327944573
+42,T4_defense_A,Hər ikisi (LOTO),alt_whitespace_url,0.9988452655889145
+42,T4_defense_A,Augmentation (LOTO),url_encode,0.996551724137931
+42,T4_defense_A,Hər ikisi (LOTO),url_encode,0.9982758620689656
+42,T4_defense_A,Augmentation (LOTO),double_url_encode,0.9977011494252873
+42,T4_defense_A,Hər ikisi (LOTO),double_url_encode,0.9982758620689656
+42,T4_defense_A,Augmentation (LOTO),versioned_comment,1.0
+42,T4_defense_A,Hər ikisi (LOTO),versioned_comment,0.9988331388564761
+42,T4_defense_A,Augmentation (LOTO),logical_operator,0.9981308411214953
+42,T4_defense_A,Hər ikisi (LOTO),logical_operator,0.9981308411214953
+42,T4_defense_A,Augmentation (LOTO),hex_strings,0.9936305732484076
+42,T4_defense_A,Hər ikisi (LOTO),hex_strings,0.9968152866242038
+42,T4_defense_A,Augmentation (LOTO),keyword_split_comment,1.0
+42,T4_defense_A,Hər ikisi (LOTO),keyword_split_comment,0.9975713418336369
+42,T4_defense_A,Augmentation (LOTO),combination,1.0
+42,T4_defense_A,Hər ikisi (LOTO),combination,0.9976553341148886
+42,T5_detectors,Qara siyahı (sanitizeInput),recall,0.9759312320916905
+42,T5_detectors,Qara siyahı (sanitizeInput),fpr,0.6485325697924124
+42,T5_detectors,Qara siyahı (sanitizeInput),fpr_plain_input,0.12321428571428572
+42,T5_detectors,Qara siyahı (sanitizeInput),worst_recall_A,0.9137931034482759
+42,T5_detectors,Qara siyahı (sanitizeInput),worst_is::double_url_encode,1.0
+42,HTTPPARAMS,Qara siyahı (sanitizeInput),recall,0.9948722818345836
+42,HTTPPARAMS,Qara siyahı (sanitizeInput),fpr,0.08681476988399424
+42,HTTPPARAMS,Qara siyahı (sanitizeInput),recall_alt_whitespace_A,0.9971311083484747
+42,T5_detectors,Qara siyahı (sanitizeSearch),recall,0.9495702005730658
+42,T5_detectors,Qara siyahı (sanitizeSearch),fpr,0.5991410164638511
+42,T5_detectors,Qara siyahı (sanitizeSearch),fpr_plain_input,0.017857142857142856
+42,T5_detectors,Qara siyahı (sanitizeSearch),worst_recall_A,0.7126436781609196
+42,T5_detectors,Qara siyahı (sanitizeSearch),worst_is::double_url_encode,1.0
+42,HTTPPARAMS,Qara siyahı (sanitizeSearch),recall,0.9639160573544773
+42,HTTPPARAMS,Qara siyahı (sanitizeSearch),fpr,0.002274622791720373
+42,HTTPPARAMS,Qara siyahı (sanitizeSearch),recall_alt_whitespace_A,0.9659558190685665
+42,T5_detectors,libinjection 4.0.1,recall,0.9054441260744985
+42,T5_detectors,libinjection 4.0.1,fpr,0.3876163206871868
+42,T5_detectors,libinjection 4.0.1,fpr_plain_input,0.0
+42,T5_detectors,libinjection 4.0.1,worst_recall_A,0.0
+42,T5_detectors,libinjection 4.0.1,worst_is::double_url_encode,1.0
+42,HTTPPARAMS,libinjection 4.0.1,recall,0.9679042825942455
+42,HTTPPARAMS,libinjection 4.0.1,fpr,0.0
+42,HTTPPARAMS,libinjection 4.0.1,recall_alt_whitespace_A,0.9720761212584872
+42,T5_detectors,LR baza,recall,0.9959885386819485
+42,T5_detectors,LR baza,fpr,0.0010737294201861132
+42,T5_detectors,LR baza,fpr_plain_input,0.0017857142857142857
+42,T5_detectors,LR baza,worst_recall_A,0.7777136258660509
+42,T5_detectors,LR baza,worst_is::alt_whitespace,1.0
+42,HTTPPARAMS,LR baza,recall,0.9724622542968379
+42,HTTPPARAMS,LR baza,fpr,0.00030328303889604974
+42,HTTPPARAMS,LR baza,recall_alt_whitespace_A,0.833986803098403
+42,T5_detectors,LR + normallaşdırma,recall,0.9948424068767908
+42,T5_detectors,LR + normallaşdırma,fpr,0.0014316392269148174
+42,T5_detectors,LR + normallaşdırma,fpr_plain_input,0.0017857142857142857
+42,T5_detectors,LR + normallaşdırma,worst_recall_A,0.9977011494252873
+42,T5_detectors,LR + normallaşdırma,worst_is::url_encode,1.0
+42,HTTPPARAMS,LR + normallaşdırma,recall,0.999810084512392
+42,HTTPPARAMS,LR + normallaşdırma,fpr,0.00030328303889604974
+42,HTTPPARAMS,LR + normallaşdırma,recall_alt_whitespace_A,1.0
+42,T5_detectors,LR + norm. + augmentation,recall,0.9936962750716333
+42,T5_detectors,LR + norm. + augmentation,fpr,0.0007158196134574087
+42,T5_detectors,LR + norm. + augmentation,fpr_plain_input,0.0008928571428571428
+42,T5_detectors,LR + norm. + augmentation,worst_recall_A,0.996551724137931
+42,T5_detectors,LR + norm. + augmentation,worst_is::url_encode,1.0
+42,HTTPPARAMS,LR + norm. + augmentation,recall,0.999810084512392
+42,HTTPPARAMS,LR + norm. + augmentation,fpr,0.00030328303889604974
+42,HTTPPARAMS,LR + norm. + augmentation,recall_alt_whitespace_A,1.0
+42,HTTPPARAMS,RF baza,recall,0.9504320577343083
+42,HTTPPARAMS,RF baza,fpr,0.00015164151944802487
+42,HTTPPARAMS,SVM baza,recall,0.9717975500902098
+42,HTTPPARAMS,SVM baza,fpr,0.00015164151944802487
+43,meta,-,n_train,21174.0
+43,meta,-,n_test,4541.0
+43,meta,-,n_test_malicious,1728.0
+43,meta,-,n_httpparams,23682.0
+43,T2_baseline,LR,f1,0.9959325973271353
+43,T2_baseline,LR,recall,0.9918981481481481
+43,T2_baseline,LR,fpr,0.0
+43,T2_baseline,LR,f1_human,0.9425076452599389
+43,T3_obf_A,LR,random_case,0.9982290436835891
+43,T3_obf_A,LR,inline_comment_space,0.9988304093567252
+43,T3_obf_A,LR,alt_whitespace,0.6953216374269006
+43,T3_obf_A,LR,alt_whitespace_url,0.6953216374269006
+43,T3_obf_A,LR,url_encode,0.9965116279069768
+43,T3_obf_A,LR,double_url_encode,0.30930232558139537
+43,T3_obf_A,LR,versioned_comment,1.0
+43,T3_obf_A,LR,logical_operator,1.0
+43,T3_obf_A,LR,hex_strings,0.9982608695652174
+43,T3_obf_A,LR,keyword_split_comment,0.9993800371977681
+43,T3_obf_A,LR,combination,0.8551236749116607
+43,T3_obf_B,LR,random_case,0.9982290436835891
+43,T3_obf_B,LR,inline_comment_space,0.9988304093567252
+43,T3_obf_B,LR,alt_whitespace,0.6953216374269006
+43,T3_obf_B,LR,alt_whitespace_url,0.5491228070175439
+43,T3_obf_B,LR,url_encode,0.30930232558139537
+43,T3_obf_B,LR,double_url_encode,0.040697674418604654
+43,T3_obf_B,LR,versioned_comment,1.0
+43,T3_obf_B,LR,logical_operator,1.0
+43,T3_obf_B,LR,hex_strings,0.9982608695652174
+43,T3_obf_B,LR,keyword_split_comment,0.9993800371977681
+43,T3_obf_B,LR,combination,0.6613663133097762
+43,T3_obf_A,LR,original,0.9913194444444444
+43,T3_obf_B,LR,original,0.9918981481481481
+43,T2_baseline,SVM,f1,0.9965156794425087
+43,T2_baseline,SVM,recall,0.9930555555555556
+43,T2_baseline,SVM,fpr,0.0
+43,T2_baseline,SVM,f1_human,0.9534180278281911
+43,T3_obf_A,SVM,random_case,0.9982290436835891
+43,T3_obf_A,SVM,inline_comment_space,1.0
+43,T3_obf_A,SVM,alt_whitespace,0.7748538011695907
+43,T3_obf_A,SVM,alt_whitespace_url,0.7748538011695907
+43,T3_obf_A,SVM,url_encode,0.9976744186046511
+43,T3_obf_A,SVM,double_url_encode,0.9627906976744186
+43,T3_obf_A,SVM,versioned_comment,1.0
+43,T3_obf_A,SVM,logical_operator,1.0
+43,T3_obf_A,SVM,hex_strings,0.9965217391304347
+43,T3_obf_A,SVM,keyword_split_comment,1.0
+43,T3_obf_A,SVM,combination,0.9740871613663133
+43,T3_obf_B,SVM,random_case,0.9982290436835891
+43,T3_obf_B,SVM,inline_comment_space,1.0
+43,T3_obf_B,SVM,alt_whitespace,0.7748538011695907
+43,T3_obf_B,SVM,alt_whitespace_url,0.5046783625730994
+43,T3_obf_B,SVM,url_encode,0.9627906976744186
+43,T3_obf_B,SVM,double_url_encode,0.6075581395348837
+43,T3_obf_B,SVM,versioned_comment,1.0
+43,T3_obf_B,SVM,logical_operator,1.0
+43,T3_obf_B,SVM,hex_strings,0.9965217391304347
+43,T3_obf_B,SVM,keyword_split_comment,1.0
+43,T3_obf_B,SVM,combination,0.9228504122497055
+43,T3_obf_A,SVM,original,0.9930555555555556
+43,T3_obf_B,SVM,original,0.9930555555555556
+43,T2_baseline,RF,f1,0.9947674418604651
+43,T2_baseline,RF,recall,0.9901620370370371
+43,T2_baseline,RF,fpr,0.00035549235691432633
+43,T2_baseline,RF,f1_human,0.9122365523749606
+43,T3_obf_A,RF,random_case,0.9946871310507674
+43,T3_obf_A,RF,inline_comment_space,0.22280701754385965
+43,T3_obf_A,RF,alt_whitespace,0.19941520467836257
+43,T3_obf_A,RF,alt_whitespace_url,0.19941520467836257
+43,T3_obf_A,RF,url_encode,0.9936046511627907
+43,T3_obf_A,RF,double_url_encode,0.004069767441860465
+43,T3_obf_A,RF,versioned_comment,0.9527744982290437
+43,T3_obf_A,RF,logical_operator,1.0
+43,T3_obf_A,RF,hex_strings,1.0
+43,T3_obf_A,RF,keyword_split_comment,0.9801611903285803
+43,T3_obf_A,RF,combination,0.5217903415783275
+43,T3_obf_B,RF,random_case,0.9946871310507674
+43,T3_obf_B,RF,inline_comment_space,0.22280701754385965
+43,T3_obf_B,RF,alt_whitespace,0.19941520467836257
+43,T3_obf_B,RF,alt_whitespace_url,0.1631578947368421
+43,T3_obf_B,RF,url_encode,0.004069767441860465
+43,T3_obf_B,RF,double_url_encode,0.0011627906976744186
+43,T3_obf_B,RF,versioned_comment,0.9527744982290437
+43,T3_obf_B,RF,logical_operator,1.0
+43,T3_obf_B,RF,hex_strings,1.0
+43,T3_obf_B,RF,keyword_split_comment,0.9801611903285803
+43,T3_obf_B,RF,combination,0.3674911660777385
+43,T3_obf_A,RF,original,0.9901620370370371
+43,T3_obf_B,RF,original,0.9901620370370371
+43,T2_baseline,NB,f1,0.9364731653888281
+43,T2_baseline,NB,recall,0.9895833333333334
+43,T2_baseline,NB,fpr,0.07607536437966583
+43,T2_baseline,NB,f1_human,0.9362168081029292
+43,T3_obf_A,NB,random_case,0.9946871310507674
+43,T3_obf_A,NB,inline_comment_space,0.9988304093567252
+43,T3_obf_A,NB,alt_whitespace,0.9836257309941521
+43,T3_obf_A,NB,alt_whitespace_url,0.9836257309941521
+43,T3_obf_A,NB,url_encode,0.9936046511627907
+43,T3_obf_A,NB,double_url_encode,0.9819767441860465
+43,T3_obf_A,NB,versioned_comment,0.9988193624557261
+43,T3_obf_A,NB,logical_operator,0.9971936389148737
+43,T3_obf_A,NB,hex_strings,1.0
+43,T3_obf_A,NB,keyword_split_comment,1.0
+43,T3_obf_A,NB,combination,0.9858657243816255
+43,T3_obf_B,NB,random_case,0.9946871310507674
+43,T3_obf_B,NB,inline_comment_space,0.9988304093567252
+43,T3_obf_B,NB,alt_whitespace,0.9836257309941521
+43,T3_obf_B,NB,alt_whitespace_url,0.7087719298245614
+43,T3_obf_B,NB,url_encode,0.9819767441860465
+43,T3_obf_B,NB,double_url_encode,0.9924418604651163
+43,T3_obf_B,NB,versioned_comment,0.9988193624557261
+43,T3_obf_B,NB,logical_operator,0.9971936389148737
+43,T3_obf_B,NB,hex_strings,1.0
+43,T3_obf_B,NB,keyword_split_comment,1.0
+43,T3_obf_B,NB,combination,0.9782096584216725
+43,T3_obf_A,NB,original,0.9890046296296297
+43,T3_obf_B,NB,original,0.9895833333333334
+43,T2_baseline,Length-only LR,f1,0.633018560729404
+43,T2_baseline,Length-only LR,recall,0.5625
+43,T2_baseline,Length-only LR,fpr,0.13188766441521507
+43,NORM_all,LR | Baseline,f1_test,0.9959325973271353
+43,NORM_all,LR | Baseline,fpr_test,0.0
+43,NORM_all,LR | Baseline,f1_human,0.9425076452599389
+43,NORM_all,LR | Baseline,min_recall_A,0.30930232558139537
+43,NORM_all,LR | Normallaşdırma,f1_test,0.9947643979057591
+43,NORM_all,LR | Normallaşdırma,fpr_test,0.0
+43,NORM_all,LR | Normallaşdırma,f1_human,0.9947643979057591
+43,NORM_all,LR | Normallaşdırma,min_recall_A,0.9941860465116279
+43,NORM_all,SVM | Baseline,f1_test,0.9965156794425087
+43,NORM_all,SVM | Baseline,fpr_test,0.0
+43,NORM_all,SVM | Baseline,f1_human,0.9534180278281911
+43,NORM_all,SVM | Baseline,min_recall_A,0.7748538011695907
+43,NORM_all,SVM | Normallaşdırma,f1_test,0.9953488372093023
+43,NORM_all,SVM | Normallaşdırma,fpr_test,0.0
+43,NORM_all,SVM | Normallaşdırma,f1_human,0.9953488372093023
+43,NORM_all,SVM | Normallaşdırma,min_recall_A,0.9953488372093023
+43,NORM_all,RF | Baseline,f1_test,0.9947674418604651
+43,NORM_all,RF | Baseline,fpr_test,0.00035549235691432633
+43,NORM_all,RF | Baseline,f1_human,0.9122365523749606
+43,NORM_all,RF | Baseline,min_recall_A,0.004069767441860465
+43,NORM_all,RF | Normallaşdırma,f1_test,0.995059575704737
+43,NORM_all,RF | Normallaşdırma,fpr_test,0.00035549235691432633
+43,NORM_all,RF | Normallaşdırma,f1_human,0.995059575704737
+43,NORM_all,RF | Normallaşdırma,min_recall_A,0.9900805951642901
+43,NORM_all,NB | Baseline,f1_test,0.9364731653888281
+43,NORM_all,NB | Baseline,fpr_test,0.07607536437966583
+43,NORM_all,NB | Baseline,f1_human,0.9362168081029292
+43,NORM_all,NB | Baseline,min_recall_A,0.9819767441860465
+43,NORM_all,NB | Normallaşdırma,f1_test,0.9351927809680066
+43,NORM_all,NB | Normallaşdırma,fpr_test,0.07785282616423747
+43,NORM_all,NB | Normallaşdırma,f1_human,0.9351927809680066
+43,NORM_all,NB | Normallaşdırma,min_recall_A,0.9919404835709857
+43,T4_defense_A,Baza,random_case,0.9982290436835891
+43,T4_defense_A,Baza,inline_comment_space,0.9988304093567252
+43,T4_defense_A,Baza,alt_whitespace,0.6953216374269006
+43,T4_defense_A,Baza,alt_whitespace_url,0.6953216374269006
+43,T4_defense_A,Baza,url_encode,0.9965116279069768
+43,T4_defense_A,Baza,double_url_encode,0.30930232558139537
+43,T4_defense_A,Baza,versioned_comment,1.0
+43,T4_defense_A,Baza,logical_operator,1.0
+43,T4_defense_A,Baza,hex_strings,0.9982608695652174
+43,T4_defense_A,Baza,keyword_split_comment,0.9993800371977681
+43,T4_defense_A,Baza,combination,0.8551236749116607
+43,T4_defense_A,Baza,original,0.9913194444444444
+43,T4_defense_A,Baza,f1_test,0.9959325973271353
+43,T4_defense_A,Baza,fpr_test,0.0
+43,T4_defense_A,Baza,f1_human,0.9425076452599389
+43,T4_defense_A,Baza,fpr_human,0.00035549235691432633
+43,T4_defense_A,Normallaşdırma,random_case,0.9958677685950413
+43,T4_defense_A,Normallaşdırma,inline_comment_space,0.995906432748538
+43,T4_defense_A,Normallaşdırma,alt_whitespace,0.995906432748538
+43,T4_defense_A,Normallaşdırma,alt_whitespace_url,0.995906432748538
+43,T4_defense_A,Normallaşdırma,url_encode,0.9941860465116279
+43,T4_defense_A,Normallaşdırma,double_url_encode,0.9941860465116279
+43,T4_defense_A,Normallaşdırma,versioned_comment,0.9958677685950413
+43,T4_defense_A,Normallaşdırma,logical_operator,0.9962581852198317
+43,T4_defense_A,Normallaşdırma,hex_strings,0.9965217391304347
+43,T4_defense_A,Normallaşdırma,keyword_split_comment,0.9950402975821451
+43,T4_defense_A,Normallaşdırma,combination,0.9952885747938751
+43,T4_defense_A,Normallaşdırma,original,0.9895833333333334
+43,T4_defense_A,Normallaşdırma,f1_test,0.9947643979057591
+43,T4_defense_A,Normallaşdırma,fpr_test,0.0
+43,T4_defense_A,Normallaşdırma,f1_human,0.9947643979057591
+43,T4_defense_A,Normallaşdırma,fpr_human,0.0
+43,T4_defense_A,Augmentation (LOTO),original,0.9918981481481481
+43,T4_defense_A,Augmentation (LOTO),f1_test,0.9959349593495934
+43,T4_defense_A,Augmentation (LOTO),fpr_test,0.00035549235691432633
+43,T4_defense_A,Augmentation (LOTO),f1_human,0.9708680142687277
+43,T4_defense_A,Augmentation (LOTO),fpr_human,0.001066477070742979
+43,T4_defense_A,Augmentation (görmüş),random_case,0.9982290436835891
+43,T4_defense_A,Augmentation (görmüş),inline_comment_space,1.0
+43,T4_defense_A,Augmentation (görmüş),alt_whitespace,0.9988304093567252
+43,T4_defense_A,Augmentation (görmüş),alt_whitespace_url,0.9988304093567252
+43,T4_defense_A,Augmentation (görmüş),url_encode,0.997093023255814
+43,T4_defense_A,Augmentation (görmüş),double_url_encode,0.9976744186046511
+43,T4_defense_A,Augmentation (görmüş),versioned_comment,1.0
+43,T4_defense_A,Augmentation (görmüş),logical_operator,1.0
+43,T4_defense_A,Augmentation (görmüş),hex_strings,0.9965217391304347
+43,T4_defense_A,Augmentation (görmüş),keyword_split_comment,0.9993800371977681
+43,T4_defense_A,Augmentation (görmüş),combination,0.9976442873969376
+43,T4_defense_A,Hər ikisi (LOTO),original,0.9918981481481481
+43,T4_defense_A,Hər ikisi (LOTO),f1_test,0.9959325973271353
+43,T4_defense_A,Hər ikisi (LOTO),fpr_test,0.0
+43,T4_defense_A,Hər ikisi (LOTO),f1_human,0.9959325973271353
+43,T4_defense_A,Hər ikisi (LOTO),fpr_human,0.0
+43,T4_defense_A,Hər ikisi (görmüş),random_case,0.9976387249114522
+43,T4_defense_A,Hər ikisi (görmüş),inline_comment_space,0.9976608187134502
+43,T4_defense_A,Hər ikisi (görmüş),alt_whitespace,0.9976608187134502
+43,T4_defense_A,Hər ikisi (görmüş),alt_whitespace_url,0.9976608187134502
+43,T4_defense_A,Hər ikisi (görmüş),url_encode,0.9965116279069768
+43,T4_defense_A,Hər ikisi (görmüş),double_url_encode,0.9965116279069768
+43,T4_defense_A,Hər ikisi (görmüş),versioned_comment,0.9976387249114522
+43,T4_defense_A,Hər ikisi (görmüş),logical_operator,1.0
+43,T4_defense_A,Hər ikisi (görmüş),hex_strings,0.9965217391304347
+43,T4_defense_A,Hər ikisi (görmüş),keyword_split_comment,0.9975201487910725
+43,T4_defense_A,Hər ikisi (görmüş),combination,0.997055359246172
+43,T4_defense_A,Augmentation (LOTO),random_case,0.9976387249114522
+43,T4_defense_A,Hər ikisi (LOTO),random_case,0.9964580873671782
+43,T4_defense_A,Augmentation (LOTO),inline_comment_space,0.9994152046783625
+43,T4_defense_A,Hər ikisi (LOTO),inline_comment_space,0.995906432748538
+43,T4_defense_A,Augmentation (LOTO),alt_whitespace,0.8842105263157894
+43,T4_defense_A,Hər ikisi (LOTO),alt_whitespace,0.995906432748538
+43,T4_defense_A,Augmentation (LOTO),alt_whitespace_url,0.9988304093567252
+43,T4_defense_A,Hər ikisi (LOTO),alt_whitespace_url,0.995906432748538
+43,T4_defense_A,Augmentation (LOTO),url_encode,0.9941860465116279
+43,T4_defense_A,Hər ikisi (LOTO),url_encode,0.9930232558139535
+43,T4_defense_A,Augmentation (LOTO),double_url_encode,0.9976744186046511
+43,T4_defense_A,Hər ikisi (LOTO),double_url_encode,0.9930232558139535
+43,T4_defense_A,Augmentation (LOTO),versioned_comment,0.9988193624557261
+43,T4_defense_A,Hər ikisi (LOTO),versioned_comment,0.9976387249114522
+43,T4_defense_A,Augmentation (LOTO),logical_operator,1.0
+43,T4_defense_A,Hər ikisi (LOTO),logical_operator,1.0
+43,T4_defense_A,Augmentation (LOTO),hex_strings,0.9982608695652174
+43,T4_defense_A,Hər ikisi (LOTO),hex_strings,0.9965217391304347
+43,T4_defense_A,Augmentation (LOTO),keyword_split_comment,0.9993800371977681
+43,T4_defense_A,Hər ikisi (LOTO),keyword_split_comment,0.9981401115933044
+43,T4_defense_A,Augmentation (LOTO),combination,0.9988221436984688
+43,T4_defense_A,Hər ikisi (LOTO),combination,0.997055359246172
+43,T5_detectors,Qara siyahı (sanitizeInput),recall,0.9670138888888888
+43,T5_detectors,Qara siyahı (sanitizeInput),fpr,0.6498400284393886
+43,T5_detectors,Qara siyahı (sanitizeInput),fpr_plain_input,0.09881061299176579
+43,T5_detectors,Qara siyahı (sanitizeInput),worst_recall_A,0.9197674418604651
+43,T5_detectors,Qara siyahı (sanitizeInput),worst_is::double_url_encode,1.0
+43,HTTPPARAMS,Qara siyahı (sanitizeInput),recall,0.9948664321703584
+43,HTTPPARAMS,Qara siyahı (sanitizeInput),fpr,0.08493504520246145
+43,HTTPPARAMS,Qara siyahı (sanitizeInput),recall_alt_whitespace_A,0.9971278123504069
+43,T5_detectors,Qara siyahı (sanitizeSearch),recall,0.9311342592592593
+43,T5_detectors,Qara siyahı (sanitizeSearch),fpr,0.6107358691788126
+43,T5_detectors,Qara siyahı (sanitizeSearch),fpr_plain_input,0.01555352241537054
+43,T5_detectors,Qara siyahı (sanitizeSearch),worst_recall_A,0.7093023255813954
+43,T5_detectors,Qara siyahı (sanitizeSearch),worst_is::double_url_encode,1.0
+43,HTTPPARAMS,Qara siyahı (sanitizeSearch),recall,0.963779826979751
+43,HTTPPARAMS,Qara siyahı (sanitizeSearch),fpr,0.0022791157031071944
+43,HTTPPARAMS,Qara siyahı (sanitizeSearch),recall_alt_whitespace_A,0.965820966969842
+43,T5_detectors,libinjection 4.0.1,recall,0.9207175925925926
+43,T5_detectors,libinjection 4.0.1,fpr,0.3697120511908994
+43,T5_detectors,libinjection 4.0.1,fpr_plain_input,0.0
+43,T5_detectors,libinjection 4.0.1,worst_recall_A,0.0
+43,T5_detectors,libinjection 4.0.1,worst_is::double_url_encode,1.0
+43,HTTPPARAMS,libinjection 4.0.1,recall,0.9678676680292804
+43,HTTPPARAMS,libinjection 4.0.1,fpr,0.0
+43,HTTPPARAMS,libinjection 4.0.1,recall_alt_whitespace_A,0.9721397797989468
+43,T5_detectors,LR baza,recall,0.9918981481481481
+43,T5_detectors,LR baza,fpr,0.0
+43,T5_detectors,LR baza,fpr_plain_input,0.0
+43,T5_detectors,LR baza,worst_recall_A,0.30930232558139537
+43,T5_detectors,LR baza,worst_is::double_url_encode,1.0
+43,HTTPPARAMS,LR baza,recall,0.9565548055898849
+43,HTTPPARAMS,LR baza,fpr,0.00015194104687381296
+43,HTTPPARAMS,LR baza,recall_alt_whitespace_A,0.7523216850167544
+43,T5_detectors,LR + normallaşdırma,recall,0.9895833333333334
+43,T5_detectors,LR + normallaşdırma,fpr,0.0
+43,T5_detectors,LR + normallaşdırma,fpr_plain_input,0.0
+43,T5_detectors,LR + normallaşdırma,worst_recall_A,0.9941860465116279
+43,T5_detectors,LR + normallaşdırma,worst_is::url_encode,1.0
+43,HTTPPARAMS,LR + normallaşdırma,recall,0.9998098678581614
+43,HTTPPARAMS,LR + normallaşdırma,fpr,0.00015194104687381296
+43,HTTPPARAMS,LR + normallaşdırma,recall_alt_whitespace_A,1.0
+43,T5_detectors,LR + norm. + augmentation,recall,0.9918981481481481
+43,T5_detectors,LR + norm. + augmentation,fpr,0.0
+43,T5_detectors,LR + norm. + augmentation,fpr_plain_input,0.0
+43,T5_detectors,LR + norm. + augmentation,worst_recall_A,0.9965116279069768
+43,T5_detectors,LR + norm. + augmentation,worst_is::url_encode,1.0
+43,HTTPPARAMS,LR + norm. + augmentation,recall,0.9998098678581614
+43,HTTPPARAMS,LR + norm. + augmentation,fpr,0.00022791157031071943
+43,HTTPPARAMS,LR + norm. + augmentation,recall_alt_whitespace_A,1.0
+43,HTTPPARAMS,RF baza,recall,0.9400133092499287
+43,HTTPPARAMS,RF baza,fpr,0.00015194104687381296
+43,HTTPPARAMS,SVM baza,recall,0.9671071394619261
+43,HTTPPARAMS,SVM baza,fpr,0.00030388209374762593
+44,meta,-,n_train,21178.0
+44,meta,-,n_test,4540.0
+44,meta,-,n_test_malicious,1688.0
+44,meta,-,n_httpparams,23704.0
+44,T2_baseline,LR,f1,0.9970308788598575
+44,T2_baseline,LR,recall,0.9946682464454977
+44,T2_baseline,LR,fpr,0.0003506311360448808
+44,T2_baseline,LR,f1_human,0.9707851491174682
+44,T3_obf_A,LR,random_case,0.9975975975975976
+44,T3_obf_A,LR,inline_comment_space,0.9994044073853484
+44,T3_obf_A,LR,alt_whitespace,0.8290649195949971
+44,T3_obf_A,LR,alt_whitespace_url,0.8290649195949971
+44,T3_obf_A,LR,url_encode,0.9970273483947681
+44,T3_obf_A,LR,double_url_encode,0.8882282996432818
+44,T3_obf_A,LR,versioned_comment,1.0
+44,T3_obf_A,LR,logical_operator,1.0
+44,T3_obf_A,LR,hex_strings,0.9966777408637874
+44,T3_obf_A,LR,keyword_split_comment,0.9993642720915448
+44,T3_obf_A,LR,combination,0.9648058252427184
+44,T3_obf_B,LR,random_case,0.9975975975975976
+44,T3_obf_B,LR,inline_comment_space,0.9994044073853484
+44,T3_obf_B,LR,alt_whitespace,0.8290649195949971
+44,T3_obf_B,LR,alt_whitespace_url,0.7873734365693865
+44,T3_obf_B,LR,url_encode,0.8882282996432818
+44,T3_obf_B,LR,double_url_encode,0.178359096313912
+44,T3_obf_B,LR,versioned_comment,1.0
+44,T3_obf_B,LR,logical_operator,1.0
+44,T3_obf_B,LR,hex_strings,0.9966777408637874
+44,T3_obf_B,LR,keyword_split_comment,0.9993642720915448
+44,T3_obf_B,LR,combination,0.8264563106796117
+44,T3_obf_A,LR,original,0.9946682464454977
+44,T3_obf_B,LR,original,0.9946682464454977
+44,T2_baseline,SVM,f1,0.9976275207591934
+44,T2_baseline,SVM,recall,0.9964454976303317
+44,T2_baseline,SVM,fpr,0.0007012622720897616
+44,T2_baseline,SVM,f1_human,0.9669926650366747
+44,T3_obf_A,SVM,random_case,0.9987987987987988
+44,T3_obf_A,SVM,inline_comment_space,1.0
+44,T3_obf_A,SVM,alt_whitespace,0.8141751042287075
+44,T3_obf_A,SVM,alt_whitespace_url,0.8141751042287075
+44,T3_obf_A,SVM,url_encode,0.9988109393579072
+44,T3_obf_A,SVM,double_url_encode,0.920332936979786
+44,T3_obf_A,SVM,versioned_comment,1.0
+44,T3_obf_A,SVM,logical_operator,1.0
+44,T3_obf_A,SVM,hex_strings,0.9983388704318937
+44,T3_obf_A,SVM,keyword_split_comment,1.0
+44,T3_obf_A,SVM,combination,0.9690533980582524
+44,T3_obf_B,SVM,random_case,0.9987987987987988
+44,T3_obf_B,SVM,inline_comment_space,1.0
+44,T3_obf_B,SVM,alt_whitespace,0.8141751042287075
+44,T3_obf_B,SVM,alt_whitespace_url,0.6914830256104825
+44,T3_obf_B,SVM,url_encode,0.920332936979786
+44,T3_obf_B,SVM,double_url_encode,0.2080856123662307
+44,T3_obf_B,SVM,versioned_comment,1.0
+44,T3_obf_B,SVM,logical_operator,1.0
+44,T3_obf_B,SVM,hex_strings,0.9983388704318937
+44,T3_obf_B,SVM,keyword_split_comment,1.0
+44,T3_obf_B,SVM,combination,0.8531553398058253
+44,T3_obf_A,SVM,original,0.9964454976303317
+44,T3_obf_B,SVM,original,0.9964454976303317
+44,T2_baseline,RF,f1,0.9961344038061255
+44,T2_baseline,RF,recall,0.9922985781990521
+44,T2_baseline,RF,fpr,0.0
+44,T2_baseline,RF,f1_human,0.9217502395400831
+44,T3_obf_A,RF,random_case,0.9951951951951952
+44,T3_obf_A,RF,inline_comment_space,0.5699821322215605
+44,T3_obf_A,RF,alt_whitespace,0.258487194758785
+44,T3_obf_A,RF,alt_whitespace_url,0.258487194758785
+44,T3_obf_A,RF,url_encode,0.995243757431629
+44,T3_obf_A,RF,double_url_encode,0.03745541022592152
+44,T3_obf_A,RF,versioned_comment,0.9507507507507508
+44,T3_obf_A,RF,logical_operator,0.9990671641791045
+44,T3_obf_A,RF,hex_strings,0.9983388704318937
+44,T3_obf_A,RF,keyword_split_comment,0.9955499046408137
+44,T3_obf_A,RF,combination,0.5946601941747572
+44,T3_obf_B,RF,random_case,0.9951951951951952
+44,T3_obf_B,RF,inline_comment_space,0.5699821322215605
+44,T3_obf_B,RF,alt_whitespace,0.258487194758785
+44,T3_obf_B,RF,alt_whitespace_url,0.33353186420488384
+44,T3_obf_B,RF,url_encode,0.03745541022592152
+44,T3_obf_B,RF,double_url_encode,0.0
+44,T3_obf_B,RF,versioned_comment,0.9507507507507508
+44,T3_obf_B,RF,logical_operator,0.9990671641791045
+44,T3_obf_B,RF,hex_strings,0.9983388704318937
+44,T3_obf_B,RF,keyword_split_comment,0.9955499046408137
+44,T3_obf_B,RF,combination,0.4362864077669903
+44,T3_obf_A,RF,original,0.9922985781990521
+44,T3_obf_B,RF,original,0.9922985781990521
+44,T2_baseline,NB,f1,0.9397590361445783
+44,T2_baseline,NB,recall,0.9934834123222749
+44,T2_baseline,NB,fpr,0.07152875175315568
+44,T2_baseline,NB,f1_human,0.9368863955119214
+44,T3_obf_A,NB,random_case,0.9951951951951952
+44,T3_obf_A,NB,inline_comment_space,1.0
+44,T3_obf_A,NB,alt_whitespace,0.9821322215604527
+44,T3_obf_A,NB,alt_whitespace_url,0.9821322215604527
+44,T3_obf_A,NB,url_encode,0.995243757431629
+44,T3_obf_A,NB,double_url_encode,0.9887039239001189
+44,T3_obf_A,NB,versioned_comment,0.9975975975975976
+44,T3_obf_A,NB,logical_operator,0.9990671641791045
+44,T3_obf_A,NB,hex_strings,1.0
+44,T3_obf_A,NB,keyword_split_comment,0.9980928162746344
+44,T3_obf_A,NB,combination,0.9939320388349514
+44,T3_obf_B,NB,random_case,0.9951951951951952
+44,T3_obf_B,NB,inline_comment_space,1.0
+44,T3_obf_B,NB,alt_whitespace,0.9821322215604527
+44,T3_obf_B,NB,alt_whitespace_url,0.7284097677188803
+44,T3_obf_B,NB,url_encode,0.9887039239001189
+44,T3_obf_B,NB,double_url_encode,0.990487514863258
+44,T3_obf_B,NB,versioned_comment,0.9975975975975976
+44,T3_obf_B,NB,logical_operator,0.9990671641791045
+44,T3_obf_B,NB,hex_strings,1.0
+44,T3_obf_B,NB,keyword_split_comment,0.9980928162746344
+44,T3_obf_B,NB,combination,0.9939320388349514
+44,T3_obf_A,NB,original,0.9934834123222749
+44,T3_obf_B,NB,original,0.9934834123222749
+44,T2_baseline,Length-only LR,f1,0.6457105435494433
+44,T2_baseline,Length-only LR,recall,0.5841232227488151
+44,T2_baseline,Length-only LR,fpr,0.1332398316970547
+44,NORM_all,LR | Baseline,f1_test,0.9970308788598575
+44,NORM_all,LR | Baseline,fpr_test,0.0003506311360448808
+44,NORM_all,LR | Baseline,f1_human,0.9707851491174682
+44,NORM_all,LR | Baseline,min_recall_A,0.8290649195949971
+44,NORM_all,LR | Normallaşdırma,f1_test,0.9970308788598575
+44,NORM_all,LR | Normallaşdırma,fpr_test,0.0003506311360448808
+44,NORM_all,LR | Normallaşdırma,f1_human,0.9970308788598575
+44,NORM_all,LR | Normallaşdırma,min_recall_A,0.9969660194174758
+44,NORM_all,SVM | Baseline,f1_test,0.9976275207591934
+44,NORM_all,SVM | Baseline,fpr_test,0.0007012622720897616
+44,NORM_all,SVM | Baseline,f1_human,0.9669926650366747
+44,NORM_all,SVM | Baseline,min_recall_A,0.8141751042287075
+44,NORM_all,SVM | Normallaşdırma,f1_test,0.9976275207591934
+44,NORM_all,SVM | Normallaşdırma,fpr_test,0.0007012622720897616
+44,NORM_all,SVM | Normallaşdırma,f1_human,0.9976275207591934
+44,NORM_all,SVM | Normallaşdırma,min_recall_A,0.9981796116504854
+44,NORM_all,RF | Baseline,f1_test,0.9961344038061255
+44,NORM_all,RF | Baseline,fpr_test,0.0
+44,NORM_all,RF | Baseline,f1_human,0.9217502395400831
+44,NORM_all,RF | Baseline,min_recall_A,0.03745541022592152
+44,NORM_all,RF | Normallaşdırma,f1_test,0.9967310549777118
+44,NORM_all,RF | Normallaşdırma,fpr_test,0.0
+44,NORM_all,RF | Normallaşdırma,f1_human,0.9967310549777118
+44,NORM_all,RF | Normallaşdırma,min_recall_A,0.989192625556262
+44,NORM_all,NB | Baseline,f1_test,0.9397590361445783
+44,NORM_all,NB | Baseline,fpr_test,0.07152875175315568
+44,NORM_all,NB | Baseline,f1_human,0.9368863955119214
+44,NORM_all,NB | Baseline,min_recall_A,0.9821322215604527
+44,NORM_all,NB | Normallaşdırma,f1_test,0.9378499440089584
+44,NORM_all,NB | Normallaşdırma,fpr_test,0.07328190743338009
+44,NORM_all,NB | Normallaşdırma,f1_human,0.9378499440089584
+44,NORM_all,NB | Normallaşdırma,min_recall_A,0.993993993993994
+44,T4_defense_A,Baza,random_case,0.9975975975975976
+44,T4_defense_A,Baza,inline_comment_space,0.9994044073853484
+44,T4_defense_A,Baza,alt_whitespace,0.8290649195949971
+44,T4_defense_A,Baza,alt_whitespace_url,0.8290649195949971
+44,T4_defense_A,Baza,url_encode,0.9970273483947681
+44,T4_defense_A,Baza,double_url_encode,0.8882282996432818
+44,T4_defense_A,Baza,versioned_comment,1.0
+44,T4_defense_A,Baza,logical_operator,1.0
+44,T4_defense_A,Baza,hex_strings,0.9966777408637874
+44,T4_defense_A,Baza,keyword_split_comment,0.9993642720915448
+44,T4_defense_A,Baza,combination,0.9648058252427184
+44,T4_defense_A,Baza,original,0.9946682464454977
+44,T4_defense_A,Baza,f1_test,0.9970308788598575
+44,T4_defense_A,Baza,fpr_test,0.0003506311360448808
+44,T4_defense_A,Baza,f1_human,0.9707851491174682
+44,T4_defense_A,Baza,fpr_human,0.0010518934081346423
+44,T4_defense_A,Normallaşdırma,random_case,0.996996996996997
+44,T4_defense_A,Normallaşdırma,inline_comment_space,0.9976176295413937
+44,T4_defense_A,Normallaşdırma,alt_whitespace,0.9976176295413937
+44,T4_defense_A,Normallaşdırma,alt_whitespace_url,0.9976176295413937
+44,T4_defense_A,Normallaşdırma,url_encode,0.9970273483947681
+44,T4_defense_A,Normallaşdırma,double_url_encode,0.9970273483947681
+44,T4_defense_A,Normallaşdırma,versioned_comment,0.9975975975975976
+44,T4_defense_A,Normallaşdırma,logical_operator,0.9990671641791045
+44,T4_defense_A,Normallaşdırma,hex_strings,1.0
+44,T4_defense_A,Normallaşdırma,keyword_split_comment,0.9980928162746344
+44,T4_defense_A,Normallaşdırma,combination,0.9969660194174758
+44,T4_defense_A,Normallaşdırma,original,0.9946682464454977
+44,T4_defense_A,Normallaşdırma,f1_test,0.9970308788598575
+44,T4_defense_A,Normallaşdırma,fpr_test,0.0003506311360448808
+44,T4_defense_A,Normallaşdırma,f1_human,0.9970308788598575
+44,T4_defense_A,Normallaşdırma,fpr_human,0.0003506311360448808
+44,T4_defense_A,Augmentation (LOTO),original,0.9940758293838863
+44,T4_defense_A,Augmentation (LOTO),f1_test,0.996437054631829
+44,T4_defense_A,Augmentation (LOTO),fpr_test,0.0007012622720897616
+44,T4_defense_A,Augmentation (LOTO),f1_human,0.9788647342995169
+44,T4_defense_A,Augmentation (LOTO),fpr_human,0.0010518934081346423
+44,T4_defense_A,Augmentation (görmüş),random_case,0.9975975975975976
+44,T4_defense_A,Augmentation (görmüş),inline_comment_space,1.0
+44,T4_defense_A,Augmentation (görmüş),alt_whitespace,0.9988088147706968
+44,T4_defense_A,Augmentation (görmüş),alt_whitespace_url,0.9988088147706968
+44,T4_defense_A,Augmentation (görmüş),url_encode,0.9964328180737217
+44,T4_defense_A,Augmentation (görmüş),double_url_encode,0.9988109393579072
+44,T4_defense_A,Augmentation (görmüş),versioned_comment,1.0
+44,T4_defense_A,Augmentation (görmüş),logical_operator,0.9981343283582089
+44,T4_defense_A,Augmentation (görmüş),hex_strings,0.9983388704318937
+44,T4_defense_A,Augmentation (görmüş),keyword_split_comment,1.0
+44,T4_defense_A,Augmentation (görmüş),combination,0.9987864077669902
+44,T4_defense_A,Hər ikisi (LOTO),original,0.9946682464454977
+44,T4_defense_A,Hər ikisi (LOTO),f1_test,0.9970308788598575
+44,T4_defense_A,Hər ikisi (LOTO),fpr_test,0.0003506311360448808
+44,T4_defense_A,Hər ikisi (LOTO),f1_human,0.9970308788598575
+44,T4_defense_A,Hər ikisi (LOTO),fpr_human,0.0003506311360448808
+44,T4_defense_A,Hər ikisi (görmüş),random_case,0.9975975975975976
+44,T4_defense_A,Hər ikisi (görmüş),inline_comment_space,0.9982132221560452
+44,T4_defense_A,Hər ikisi (görmüş),alt_whitespace,0.9982132221560452
+44,T4_defense_A,Hər ikisi (görmüş),alt_whitespace_url,0.9982132221560452
+44,T4_defense_A,Hər ikisi (görmüş),url_encode,0.9970273483947681
+44,T4_defense_A,Hər ikisi (görmüş),double_url_encode,0.9970273483947681
+44,T4_defense_A,Hər ikisi (görmüş),versioned_comment,0.9981981981981982
+44,T4_defense_A,Hər ikisi (görmüş),logical_operator,1.0
+44,T4_defense_A,Hər ikisi (görmüş),hex_strings,0.9966777408637874
+44,T4_defense_A,Hər ikisi (görmüş),keyword_split_comment,0.9987285441830897
+44,T4_defense_A,Hər ikisi (görmüş),combination,0.9969660194174758
+44,T4_defense_A,Augmentation (LOTO),random_case,0.9981981981981982
+44,T4_defense_A,Hər ikisi (LOTO),random_case,0.9975975975975976
+44,T4_defense_A,Augmentation (LOTO),inline_comment_space,0.9994044073853484
+44,T4_defense_A,Hər ikisi (LOTO),inline_comment_space,0.9982132221560452
+44,T4_defense_A,Augmentation (LOTO),alt_whitespace,0.8689696247766527
+44,T4_defense_A,Hər ikisi (LOTO),alt_whitespace,0.9982132221560452
+44,T4_defense_A,Augmentation (LOTO),alt_whitespace_url,0.9988088147706968
+44,T4_defense_A,Hər ikisi (LOTO),alt_whitespace_url,0.9982132221560452
+44,T4_defense_A,Augmentation (LOTO),url_encode,0.9976218787158145
+44,T4_defense_A,Hər ikisi (LOTO),url_encode,0.9970273483947681
+44,T4_defense_A,Augmentation (LOTO),double_url_encode,0.9976218787158145
+44,T4_defense_A,Hər ikisi (LOTO),double_url_encode,0.9970273483947681
+44,T4_defense_A,Augmentation (LOTO),versioned_comment,0.9993993993993994
+44,T4_defense_A,Hər ikisi (LOTO),versioned_comment,0.9975975975975976
+44,T4_defense_A,Augmentation (LOTO),logical_operator,1.0
+44,T4_defense_A,Hər ikisi (LOTO),logical_operator,0.9990671641791045
+44,T4_defense_A,Augmentation (LOTO),hex_strings,0.9966777408637874
+44,T4_defense_A,Hər ikisi (LOTO),hex_strings,0.9933554817275747
+44,T4_defense_A,Augmentation (LOTO),keyword_split_comment,0.9993642720915448
+44,T4_defense_A,Hər ikisi (LOTO),keyword_split_comment,0.9987285441830897
+44,T4_defense_A,Augmentation (LOTO),combination,0.9981796116504854
+44,T4_defense_A,Hər ikisi (LOTO),combination,0.9963592233009708
+44,T5_detectors,Qara siyahı (sanitizeInput),recall,0.9768957345971564
+44,T5_detectors,Qara siyahı (sanitizeInput),fpr,0.644109396914446
+44,T5_detectors,Qara siyahı (sanitizeInput),fpr_plain_input,0.09697508896797152
+44,T5_detectors,Qara siyahı (sanitizeInput),worst_recall_A,0.9209274673008323
+44,T5_detectors,Qara siyahı (sanitizeInput),worst_is::double_url_encode,1.0
+44,HTTPPARAMS,Qara siyahı (sanitizeInput),recall,0.9948639908693171
+44,HTTPPARAMS,Qara siyahı (sanitizeInput),fpr,0.08468536770280516
+44,HTTPPARAMS,Qara siyahı (sanitizeInput),recall_alt_whitespace_A,0.9971264367816092
+44,T5_detectors,Qara siyahı (sanitizeSearch),recall,0.9419431279620853
+44,T5_detectors,Qara siyahı (sanitizeSearch),fpr,0.6076437587657784
+44,T5_detectors,Qara siyahı (sanitizeSearch),fpr_plain_input,0.016903914590747332
+44,T5_detectors,Qara siyahı (sanitizeSearch),worst_recall_A,0.7009512485136742
+44,T5_detectors,Qara siyahı (sanitizeSearch),worst_is::double_url_encode,1.0
+44,HTTPPARAMS,Qara siyahı (sanitizeSearch),recall,0.9638577135248241
+44,HTTPPARAMS,Qara siyahı (sanitizeSearch),fpr,0.002274450341167551
+44,HTTPPARAMS,Qara siyahı (sanitizeSearch),recall_alt_whitespace_A,0.9659003831417624
+44,T5_detectors,libinjection 4.0.1,recall,0.908175355450237
+44,T5_detectors,libinjection 4.0.1,fpr,0.3695652173913043
+44,T5_detectors,libinjection 4.0.1,fpr_plain_input,0.0
+44,T5_detectors,libinjection 4.0.1,worst_recall_A,0.0
+44,T5_detectors,libinjection 4.0.1,worst_is::double_url_encode,1.0
+44,HTTPPARAMS,libinjection 4.0.1,recall,0.9680426098535286
+44,HTTPPARAMS,libinjection 4.0.1,fpr,0.0
+44,HTTPPARAMS,libinjection 4.0.1,recall_alt_whitespace_A,0.9724137931034482
+44,T5_detectors,LR baza,recall,0.9946682464454977
+44,T5_detectors,LR baza,fpr,0.0003506311360448808
+44,T5_detectors,LR baza,fpr_plain_input,0.0
+44,T5_detectors,LR baza,worst_recall_A,0.8290649195949971
+44,T5_detectors,LR baza,worst_is::alt_whitespace,1.0
+44,HTTPPARAMS,LR baza,recall,0.9753661784287616
+44,HTTPPARAMS,LR baza,fpr,0.00015163002274450342
+44,HTTPPARAMS,LR baza,recall_alt_whitespace_A,0.8805555555555555
+44,T5_detectors,LR + normallaşdırma,recall,0.9946682464454977
+44,T5_detectors,LR + normallaşdırma,fpr,0.0003506311360448808
+44,T5_detectors,LR + normallaşdırma,fpr_plain_input,0.0
+44,T5_detectors,LR + normallaşdırma,worst_recall_A,0.9969660194174758
+44,T5_detectors,LR + normallaşdırma,worst_is::combination,1.0
+44,HTTPPARAMS,LR + normallaşdırma,recall,0.9998097774396043
+44,HTTPPARAMS,LR + normallaşdırma,fpr,0.0002274450341167551
+44,HTTPPARAMS,LR + normallaşdırma,recall_alt_whitespace_A,1.0
+44,T5_detectors,LR + norm. + augmentation,recall,0.9946682464454977
+44,T5_detectors,LR + norm. + augmentation,fpr,0.0003506311360448808
+44,T5_detectors,LR + norm. + augmentation,fpr_plain_input,0.0
+44,T5_detectors,LR + norm. + augmentation,worst_recall_A,0.9966777408637874
+44,T5_detectors,LR + norm. + augmentation,worst_is::hex_strings,1.0
+44,HTTPPARAMS,LR + norm. + augmentation,recall,0.9998097774396043
+44,HTTPPARAMS,LR + norm. + augmentation,fpr,0.00015163002274450342
+44,HTTPPARAMS,LR + norm. + augmentation,recall_alt_whitespace_A,1.0
+44,HTTPPARAMS,RF baza,recall,0.9375118889100247
+44,HTTPPARAMS,RF baza,fpr,7.581501137225171e-05
+44,HTTPPARAMS,SVM baza,recall,0.9744150656267834
+44,HTTPPARAMS,SVM baza,fpr,0.0005307050796057619
+45,meta,-,n_train,21179.0
+45,meta,-,n_test,4538.0
+45,meta,-,n_test_malicious,1667.0
+45,meta,-,n_httpparams,23703.0
+45,T2_baseline,LR,f1,0.9969915764139591
+45,T2_baseline,LR,recall,0.994001199760048
+45,T2_baseline,LR,fpr,0.0
+45,T2_baseline,LR,f1_human,0.9577993122850891
+45,T3_obf_A,LR,random_case,0.9975654290931223
+45,T3_obf_A,LR,inline_comment_space,1.0
+45,T3_obf_A,LR,alt_whitespace,0.7551266586248492
+45,T3_obf_A,LR,alt_whitespace_url,0.7551266586248492
+45,T3_obf_A,LR,url_encode,0.9987944544906571
+45,T3_obf_A,LR,double_url_encode,0.8800482218203737
+45,T3_obf_A,LR,versioned_comment,1.0
+45,T3_obf_A,LR,logical_operator,1.0
+45,T3_obf_A,LR,hex_strings,1.0
+45,T3_obf_A,LR,keyword_split_comment,1.0
+45,T3_obf_A,LR,combination,0.9627139364303179
+45,T3_obf_B,LR,random_case,0.9975654290931223
+45,T3_obf_B,LR,inline_comment_space,1.0
+45,T3_obf_B,LR,alt_whitespace,0.7551266586248492
+45,T3_obf_B,LR,alt_whitespace_url,0.7002412545235223
+45,T3_obf_B,LR,url_encode,0.8800482218203737
+45,T3_obf_B,LR,double_url_encode,0.1784207353827607
+45,T3_obf_B,LR,versioned_comment,1.0
+45,T3_obf_B,LR,logical_operator,1.0
+45,T3_obf_B,LR,hex_strings,1.0
+45,T3_obf_B,LR,keyword_split_comment,1.0
+45,T3_obf_B,LR,combination,0.8490220048899756
+45,T3_obf_A,LR,original,0.994001199760048
+45,T3_obf_B,LR,original,0.994001199760048
+45,T2_baseline,SVM,f1,0.9969915764139591
+45,T2_baseline,SVM,recall,0.994001199760048
+45,T2_baseline,SVM,fpr,0.0
+45,T2_baseline,SVM,f1_human,0.9642746194470332
+45,T3_obf_A,SVM,random_case,0.9975654290931223
+45,T3_obf_A,SVM,inline_comment_space,1.0
+45,T3_obf_A,SVM,alt_whitespace,0.761761158021713
+45,T3_obf_A,SVM,alt_whitespace_url,0.761761158021713
+45,T3_obf_A,SVM,url_encode,0.9987944544906571
+45,T3_obf_A,SVM,double_url_encode,0.9547920433996383
+45,T3_obf_A,SVM,versioned_comment,1.0
+45,T3_obf_A,SVM,logical_operator,1.0
+45,T3_obf_A,SVM,hex_strings,1.0
+45,T3_obf_A,SVM,keyword_split_comment,1.0
+45,T3_obf_A,SVM,combination,0.9663814180929096
+45,T3_obf_B,SVM,random_case,0.9975654290931223
+45,T3_obf_B,SVM,inline_comment_space,1.0
+45,T3_obf_B,SVM,alt_whitespace,0.761761158021713
+45,T3_obf_B,SVM,alt_whitespace_url,0.6127864897466827
+45,T3_obf_B,SVM,url_encode,0.9547920433996383
+45,T3_obf_B,SVM,double_url_encode,0.20735382760699217
+45,T3_obf_B,SVM,versioned_comment,1.0
+45,T3_obf_B,SVM,logical_operator,1.0
+45,T3_obf_B,SVM,hex_strings,1.0
+45,T3_obf_B,SVM,keyword_split_comment,1.0
+45,T3_obf_B,SVM,combination,0.8759168704156479
+45,T3_obf_A,SVM,original,0.994001199760048
+45,T3_obf_B,SVM,original,0.994001199760048
+45,T2_baseline,RF,f1,0.994571773220748
+45,T2_baseline,RF,recall,0.9892021595680864
+45,T2_baseline,RF,fpr,0.0
+45,T2_baseline,RF,f1_human,0.9314102564102564
+45,T3_obf_A,RF,random_case,0.9933049300060864
+45,T3_obf_A,RF,inline_comment_space,0.4837153196622437
+45,T3_obf_A,RF,alt_whitespace,0.3112183353437877
+45,T3_obf_A,RF,alt_whitespace_url,0.3112183353437877
+45,T3_obf_A,RF,url_encode,0.9939722724532851
+45,T3_obf_A,RF,double_url_encode,0.05605786618444846
+45,T3_obf_A,RF,versioned_comment,0.9586122945830797
+45,T3_obf_A,RF,logical_operator,0.996135265700483
+45,T3_obf_A,RF,hex_strings,1.0
+45,T3_obf_A,RF,keyword_split_comment,0.9878594249201278
+45,T3_obf_A,RF,combination,0.621638141809291
+45,T3_obf_B,RF,random_case,0.9933049300060864
+45,T3_obf_B,RF,inline_comment_space,0.4837153196622437
+45,T3_obf_B,RF,alt_whitespace,0.3112183353437877
+45,T3_obf_B,RF,alt_whitespace_url,0.3600723763570567
+45,T3_obf_B,RF,url_encode,0.05605786618444846
+45,T3_obf_B,RF,double_url_encode,0.0024110910186859553
+45,T3_obf_B,RF,versioned_comment,0.9586122945830797
+45,T3_obf_B,RF,logical_operator,0.996135265700483
+45,T3_obf_B,RF,hex_strings,1.0
+45,T3_obf_B,RF,keyword_split_comment,0.9878594249201278
+45,T3_obf_B,RF,combination,0.44926650366748166
+45,T3_obf_A,RF,original,0.9892021595680864
+45,T3_obf_B,RF,original,0.9892021595680864
+45,T2_baseline,NB,f1,0.9354473386183465
+45,T2_baseline,NB,recall,0.991001799640072
+45,T2_baseline,NB,fpr,0.0741901776384535
+45,T2_baseline,NB,f1_human,0.9336734693877552
+45,T3_obf_A,NB,random_case,0.995739500912964
+45,T3_obf_A,NB,inline_comment_space,1.0
+45,T3_obf_A,NB,alt_whitespace,0.9794933655006032
+45,T3_obf_A,NB,alt_whitespace_url,0.9794933655006032
+45,T3_obf_A,NB,url_encode,0.9957805907172996
+45,T3_obf_A,NB,double_url_encode,0.9921639541892706
+45,T3_obf_A,NB,versioned_comment,1.0
+45,T3_obf_A,NB,logical_operator,1.0
+45,T3_obf_A,NB,hex_strings,1.0
+45,T3_obf_A,NB,keyword_split_comment,1.0
+45,T3_obf_A,NB,combination,0.9963325183374083
+45,T3_obf_B,NB,random_case,0.995739500912964
+45,T3_obf_B,NB,inline_comment_space,1.0
+45,T3_obf_B,NB,alt_whitespace,0.9794933655006032
+45,T3_obf_B,NB,alt_whitespace_url,0.7104945717732207
+45,T3_obf_B,NB,url_encode,0.9921639541892706
+45,T3_obf_B,NB,double_url_encode,0.9885473176612417
+45,T3_obf_B,NB,versioned_comment,1.0
+45,T3_obf_B,NB,logical_operator,1.0
+45,T3_obf_B,NB,hex_strings,1.0
+45,T3_obf_B,NB,keyword_split_comment,1.0
+45,T3_obf_B,NB,combination,0.9957212713936431
+45,T3_obf_A,NB,original,0.991001799640072
+45,T3_obf_B,NB,original,0.991001799640072
+45,T2_baseline,Length-only LR,f1,0.6403479424556707
+45,T2_baseline,Length-only LR,recall,0.5740851829634073
+45,T2_baseline,Length-only LR,fpr,0.12713340299547196
+45,NORM_all,LR | Baseline,f1_test,0.9969915764139591
+45,NORM_all,LR | Baseline,fpr_test,0.0
+45,NORM_all,LR | Baseline,f1_human,0.9577993122850891
+45,NORM_all,LR | Baseline,min_recall_A,0.7551266586248492
+45,NORM_all,LR | Normallaşdırma,f1_test,0.996389891696751
+45,NORM_all,LR | Normallaşdırma,fpr_test,0.00034831069313827936
+45,NORM_all,LR | Normallaşdırma,f1_human,0.996389891696751
+45,NORM_all,LR | Normallaşdırma,min_recall_A,0.9929712460063898
+45,NORM_all,SVM | Baseline,f1_test,0.9969915764139591
+45,NORM_all,SVM | Baseline,fpr_test,0.0
+45,NORM_all,SVM | Baseline,f1_human,0.9642746194470332
+45,NORM_all,SVM | Baseline,min_recall_A,0.761761158021713
+45,NORM_all,SVM | Normallaşdırma,f1_test,0.9969915764139591
+45,NORM_all,SVM | Normallaşdırma,fpr_test,0.0
+45,NORM_all,SVM | Normallaşdırma,f1_human,0.9969915764139591
+45,NORM_all,SVM | Normallaşdırma,min_recall_A,0.9942492012779552
+45,NORM_all,RF | Baseline,f1_test,0.994571773220748
+45,NORM_all,RF | Baseline,fpr_test,0.0
+45,NORM_all,RF | Baseline,f1_human,0.9314102564102564
+45,NORM_all,RF | Baseline,min_recall_A,0.05605786618444846
+45,NORM_all,RF | Normallaşdırma,f1_test,0.9942684766214178
+45,NORM_all,RF | Normallaşdırma,fpr_test,0.0
+45,NORM_all,RF | Normallaşdırma,f1_human,0.9942684766214178
+45,NORM_all,RF | Normallaşdırma,min_recall_A,0.9891373801916933
+45,NORM_all,NB | Baseline,f1_test,0.9354473386183465
+45,NORM_all,NB | Baseline,fpr_test,0.0741901776384535
+45,NORM_all,NB | Baseline,f1_human,0.9336734693877552
+45,NORM_all,NB | Baseline,min_recall_A,0.9794933655006032
+45,NORM_all,NB | Normallaşdırma,f1_test,0.9326923076923078
+45,NORM_all,NB | Normallaşdırma,fpr_test,0.07662835249042145
+45,NORM_all,NB | Normallaşdırma,f1_human,0.9326923076923078
+45,NORM_all,NB | Normallaşdırma,min_recall_A,0.9923322683706071
+45,T4_defense_A,Baza,random_case,0.9975654290931223
+45,T4_defense_A,Baza,inline_comment_space,1.0
+45,T4_defense_A,Baza,alt_whitespace,0.7551266586248492
+45,T4_defense_A,Baza,alt_whitespace_url,0.7551266586248492
+45,T4_defense_A,Baza,url_encode,0.9987944544906571
+45,T4_defense_A,Baza,double_url_encode,0.8800482218203737
+45,T4_defense_A,Baza,versioned_comment,1.0
+45,T4_defense_A,Baza,logical_operator,1.0
+45,T4_defense_A,Baza,hex_strings,1.0
+45,T4_defense_A,Baza,keyword_split_comment,1.0
+45,T4_defense_A,Baza,combination,0.9627139364303179
+45,T4_defense_A,Baza,original,0.994001199760048
+45,T4_defense_A,Baza,f1_test,0.9969915764139591
+45,T4_defense_A,Baza,fpr_test,0.0
+45,T4_defense_A,Baza,f1_human,0.9577993122850891
+45,T4_defense_A,Baza,fpr_human,0.0
+45,T4_defense_A,Normallaşdırma,random_case,0.996956786366403
+45,T4_defense_A,Normallaşdırma,inline_comment_space,0.9981905910735827
+45,T4_defense_A,Normallaşdırma,alt_whitespace,0.9981905910735827
+45,T4_defense_A,Normallaşdırma,alt_whitespace_url,0.9981905910735827
+45,T4_defense_A,Normallaşdırma,url_encode,0.9981916817359855
+45,T4_defense_A,Normallaşdırma,double_url_encode,0.9981916817359855
+45,T4_defense_A,Normallaşdırma,versioned_comment,0.996956786366403
+45,T4_defense_A,Normallaşdırma,logical_operator,1.0
+45,T4_defense_A,Normallaşdırma,hex_strings,1.0
+45,T4_defense_A,Normallaşdırma,keyword_split_comment,0.9929712460063898
+45,T4_defense_A,Normallaşdırma,combination,0.9969437652811736
+45,T4_defense_A,Normallaşdırma,original,0.9934013197360528
+45,T4_defense_A,Normallaşdırma,f1_test,0.996389891696751
+45,T4_defense_A,Normallaşdırma,fpr_test,0.00034831069313827936
+45,T4_defense_A,Normallaşdırma,f1_human,0.996389891696751
+45,T4_defense_A,Normallaşdırma,fpr_human,0.00034831069313827936
+45,T4_defense_A,Augmentation (LOTO),original,0.994001199760048
+45,T4_defense_A,Augmentation (LOTO),f1_test,0.9966917293233083
+45,T4_defense_A,Augmentation (LOTO),fpr_test,0.00034831069313827936
+45,T4_defense_A,Augmentation (LOTO),f1_human,0.973206036341238
+45,T4_defense_A,Augmentation (LOTO),fpr_human,0.0
+45,T4_defense_A,Augmentation (görmüş),random_case,0.9975654290931223
+45,T4_defense_A,Augmentation (görmüş),inline_comment_space,1.0
+45,T4_defense_A,Augmentation (görmüş),alt_whitespace,1.0
+45,T4_defense_A,Augmentation (görmüş),alt_whitespace_url,1.0
+45,T4_defense_A,Augmentation (görmüş),url_encode,0.9987944544906571
+45,T4_defense_A,Augmentation (görmüş),double_url_encode,1.0
+45,T4_defense_A,Augmentation (görmüş),versioned_comment,1.0
+45,T4_defense_A,Augmentation (görmüş),logical_operator,1.0
+45,T4_defense_A,Augmentation (görmüş),hex_strings,1.0
+45,T4_defense_A,Augmentation (görmüş),keyword_split_comment,1.0
+45,T4_defense_A,Augmentation (görmüş),combination,1.0
+45,T4_defense_A,Hər ikisi (LOTO),original,0.9928014397120576
+45,T4_defense_A,Hər ikisi (LOTO),f1_test,0.9960878724044537
+45,T4_defense_A,Hər ikisi (LOTO),fpr_test,0.00034831069313827936
+45,T4_defense_A,Hər ikisi (LOTO),f1_human,0.9960878724044537
+45,T4_defense_A,Hər ikisi (LOTO),fpr_human,0.00034831069313827936
+45,T4_defense_A,Hər ikisi (görmüş),random_case,0.996956786366403
+45,T4_defense_A,Hər ikisi (görmüş),inline_comment_space,0.9975874547647768
+45,T4_defense_A,Hər ikisi (görmüş),alt_whitespace,0.9975874547647768
+45,T4_defense_A,Hər ikisi (görmüş),alt_whitespace_url,0.9975874547647768
+45,T4_defense_A,Hər ikisi (görmüş),url_encode,0.997588908981314
+45,T4_defense_A,Hər ikisi (görmüş),double_url_encode,0.997588908981314
+45,T4_defense_A,Hər ikisi (görmüş),versioned_comment,0.996956786366403
+45,T4_defense_A,Hər ikisi (görmüş),logical_operator,1.0
+45,T4_defense_A,Hər ikisi (görmüş),hex_strings,1.0
+45,T4_defense_A,Hər ikisi (görmüş),keyword_split_comment,0.9980830670926517
+45,T4_defense_A,Hər ikisi (görmüş),combination,0.9963325183374083
+45,T4_defense_A,Augmentation (LOTO),random_case,0.9975654290931223
+45,T4_defense_A,Hər ikisi (LOTO),random_case,0.9975654290931223
+45,T4_defense_A,Augmentation (LOTO),inline_comment_space,1.0
+45,T4_defense_A,Hər ikisi (LOTO),inline_comment_space,0.9987937273823885
+45,T4_defense_A,Augmentation (LOTO),alt_whitespace,0.9077201447527141
+45,T4_defense_A,Hər ikisi (LOTO),alt_whitespace,0.9987937273823885
+45,T4_defense_A,Augmentation (LOTO),alt_whitespace_url,0.9993968636911942
+45,T4_defense_A,Hər ikisi (LOTO),alt_whitespace_url,0.9987937273823885
+45,T4_defense_A,Augmentation (LOTO),url_encode,0.9987944544906571
+45,T4_defense_A,Hər ikisi (LOTO),url_encode,0.997588908981314
+45,T4_defense_A,Augmentation (LOTO),double_url_encode,1.0
+45,T4_defense_A,Hər ikisi (LOTO),double_url_encode,0.997588908981314
+45,T4_defense_A,Augmentation (LOTO),versioned_comment,1.0
+45,T4_defense_A,Hər ikisi (LOTO),versioned_comment,0.9975654290931223
+45,T4_defense_A,Augmentation (LOTO),logical_operator,1.0
+45,T4_defense_A,Hər ikisi (LOTO),logical_operator,1.0
+45,T4_defense_A,Augmentation (LOTO),hex_strings,1.0
+45,T4_defense_A,Hər ikisi (LOTO),hex_strings,1.0
+45,T4_defense_A,Augmentation (LOTO),keyword_split_comment,1.0
+45,T4_defense_A,Hər ikisi (LOTO),keyword_split_comment,0.9968051118210862
+45,T4_defense_A,Augmentation (LOTO),combination,1.0
+45,T4_defense_A,Hər ikisi (LOTO),combination,0.9963325183374083
+45,T5_detectors,Qara siyahı (sanitizeInput),recall,0.9784043191361728
+45,T5_detectors,Qara siyahı (sanitizeInput),fpr,0.6468129571577848
+45,T5_detectors,Qara siyahı (sanitizeInput),fpr_plain_input,0.10424028268551237
+45,T5_detectors,Qara siyahı (sanitizeInput),worst_recall_A,0.917420132610006
+45,T5_detectors,Qara siyahı (sanitizeInput),worst_is::double_url_encode,1.0
+45,HTTPPARAMS,Qara siyahı (sanitizeInput),recall,0.9948630136986302
+45,HTTPPARAMS,Qara siyahı (sanitizeInput),fpr,0.08505799408687742
+45,HTTPPARAMS,Qara siyahı (sanitizeInput),recall_alt_whitespace_A,0.9971258861850929
+45,T5_detectors,Qara siyahı (sanitizeSearch),recall,0.9412117576484703
+45,T5_detectors,Qara siyahı (sanitizeSearch),fpr,0.6078021595262975
+45,T5_detectors,Qara siyahı (sanitizeSearch),fpr_plain_input,0.02120141342756184
+45,T5_detectors,Qara siyahı (sanitizeSearch),worst_recall_A,0.7148884870403858
+45,T5_detectors,Qara siyahı (sanitizeSearch),worst_is::double_url_encode,1.0
+45,HTTPPARAMS,Qara siyahı (sanitizeSearch),recall,0.9639459665144596
+45,HTTPPARAMS,Qara siyahı (sanitizeSearch),fpr,0.002350087180653476
+45,HTTPPARAMS,Qara siyahı (sanitizeSearch),recall_alt_whitespace_A,0.9659896531902663
+45,T5_detectors,libinjection 4.0.1,recall,0.9160167966406718
+45,T5_detectors,libinjection 4.0.1,fpr,0.3719958202716823
+45,T5_detectors,libinjection 4.0.1,fpr_plain_input,0.0
+45,T5_detectors,libinjection 4.0.1,worst_recall_A,0.0
+45,T5_detectors,libinjection 4.0.1,worst_is::double_url_encode,1.0
+45,HTTPPARAMS,libinjection 4.0.1,recall,0.9680365296803652
+45,HTTPPARAMS,libinjection 4.0.1,fpr,0.0
+45,HTTPPARAMS,libinjection 4.0.1,recall_alt_whitespace_A,0.9722168997892316
+45,T5_detectors,LR baza,recall,0.994001199760048
+45,T5_detectors,LR baza,fpr,0.0
+45,T5_detectors,LR baza,fpr_plain_input,0.0
+45,T5_detectors,LR baza,worst_recall_A,0.7551266586248492
+45,T5_detectors,LR baza,worst_is::alt_whitespace,1.0
+45,HTTPPARAMS,LR baza,recall,0.9683219178082192
+45,HTTPPARAMS,LR baza,fpr,0.00015161852778409522
+45,HTTPPARAMS,LR baza,recall_alt_whitespace_A,0.8194098486300058
+45,T5_detectors,LR + normallaşdırma,recall,0.9934013197360528
+45,T5_detectors,LR + normallaşdırma,fpr,0.00034831069313827936
+45,T5_detectors,LR + normallaşdırma,fpr_plain_input,0.0
+45,T5_detectors,LR + normallaşdırma,worst_recall_A,0.9969437652811736
+45,T5_detectors,LR + normallaşdırma,worst_is::combination,1.0
+45,HTTPPARAMS,LR + normallaşdırma,recall,0.9998097412480974
+45,HTTPPARAMS,LR + normallaşdırma,fpr,7.580926389204761e-05
+45,HTTPPARAMS,LR + normallaşdırma,recall_alt_whitespace_A,1.0
+45,T5_detectors,LR + norm. + augmentation,recall,0.9928014397120576
+45,T5_detectors,LR + norm. + augmentation,fpr,0.00034831069313827936
+45,T5_detectors,LR + norm. + augmentation,fpr_plain_input,0.0
+45,T5_detectors,LR + norm. + augmentation,worst_recall_A,0.9963325183374083
+45,T5_detectors,LR + norm. + augmentation,worst_is::combination,1.0
+45,HTTPPARAMS,LR + norm. + augmentation,recall,0.9998097412480974
+45,HTTPPARAMS,LR + norm. + augmentation,fpr,0.00022742779167614282
+45,HTTPPARAMS,LR + norm. + augmentation,recall_alt_whitespace_A,1.0
+45,HTTPPARAMS,RF baza,recall,0.943968797564688
+45,HTTPPARAMS,RF baza,fpr,0.00015161852778409522
+45,HTTPPARAMS,SVM baza,recall,0.9763127853881278
+45,HTTPPARAMS,SVM baza,fpr,0.00037904631946023806
+46,meta,-,n_train,21179.0
+46,meta,-,n_test,4539.0
+46,meta,-,n_test_malicious,1727.0
+46,meta,-,n_httpparams,23693.0
+46,T2_baseline,LR,f1,0.9970980847359256
+46,T2_baseline,LR,recall,0.9947886508396062
+46,T2_baseline,LR,fpr,0.00035561877667140827
+46,T2_baseline,LR,f1_human,0.9643392268504645
+46,T3_obf_A,LR,random_case,0.9994107248084856
+46,T3_obf_A,LR,inline_comment_space,0.9976689976689976
+46,T3_obf_A,LR,alt_whitespace,0.7552447552447552
+46,T3_obf_A,LR,alt_whitespace_url,0.7552447552447552
+46,T3_obf_A,LR,url_encode,0.9982558139534884
+46,T3_obf_A,LR,double_url_encode,0.5145348837209303
+46,T3_obf_A,LR,versioned_comment,1.0
+46,T3_obf_A,LR,logical_operator,0.9990942028985508
+46,T3_obf_A,LR,hex_strings,0.9951456310679612
+46,T3_obf_A,LR,keyword_split_comment,1.0
+46,T3_obf_A,LR,combination,0.9208972845336482
+46,T3_obf_B,LR,random_case,0.9994107248084856
+46,T3_obf_B,LR,inline_comment_space,0.9976689976689976
+46,T3_obf_B,LR,alt_whitespace,0.7552447552447552
+46,T3_obf_B,LR,alt_whitespace_url,0.5297202797202797
+46,T3_obf_B,LR,url_encode,0.5145348837209303
+46,T3_obf_B,LR,double_url_encode,0.05406976744186046
+46,T3_obf_B,LR,versioned_comment,1.0
+46,T3_obf_B,LR,logical_operator,0.9990942028985508
+46,T3_obf_B,LR,hex_strings,0.9951456310679612
+46,T3_obf_B,LR,keyword_split_comment,1.0
+46,T3_obf_B,LR,combination,0.7426210153482881
+46,T3_obf_A,LR,original,0.9947886508396062
+46,T3_obf_B,LR,original,0.9947886508396062
+46,T2_baseline,SVM,f1,0.9968088192631274
+46,T2_baseline,SVM,recall,0.9947886508396062
+46,T2_baseline,SVM,fpr,0.0007112375533428165
+46,T2_baseline,SVM,f1_human,0.9652902453620587
+46,T3_obf_A,SVM,random_case,0.9994107248084856
+46,T3_obf_A,SVM,inline_comment_space,0.9994172494172494
+46,T3_obf_A,SVM,alt_whitespace,0.743006993006993
+46,T3_obf_A,SVM,alt_whitespace_url,0.743006993006993
+46,T3_obf_A,SVM,url_encode,0.9988372093023256
+46,T3_obf_A,SVM,double_url_encode,0.7604651162790698
+46,T3_obf_A,SVM,versioned_comment,1.0
+46,T3_obf_A,SVM,logical_operator,1.0
+46,T3_obf_A,SVM,hex_strings,0.9967637540453075
+46,T3_obf_A,SVM,keyword_split_comment,1.0
+46,T3_obf_A,SVM,combination,0.9421487603305785
+46,T3_obf_B,SVM,random_case,0.9994107248084856
+46,T3_obf_B,SVM,inline_comment_space,0.9994172494172494
+46,T3_obf_B,SVM,alt_whitespace,0.743006993006993
+46,T3_obf_B,SVM,alt_whitespace_url,0.5285547785547785
+46,T3_obf_B,SVM,url_encode,0.7604651162790698
+46,T3_obf_B,SVM,double_url_encode,0.12558139534883722
+46,T3_obf_B,SVM,versioned_comment,1.0
+46,T3_obf_B,SVM,logical_operator,1.0
+46,T3_obf_B,SVM,hex_strings,0.9967637540453075
+46,T3_obf_B,SVM,keyword_split_comment,1.0
+46,T3_obf_B,SVM,combination,0.8034238488783944
+46,T3_obf_A,SVM,original,0.9947886508396062
+46,T3_obf_B,SVM,original,0.9947886508396062
+46,T2_baseline,RF,f1,0.9970980847359256
+46,T2_baseline,RF,recall,0.9947886508396062
+46,T2_baseline,RF,fpr,0.00035561877667140827
+46,T2_baseline,RF,f1_human,0.9330040135844396
+46,T3_obf_A,RF,random_case,0.9976428992339422
+46,T3_obf_A,RF,inline_comment_space,0.23368298368298368
+46,T3_obf_A,RF,alt_whitespace,0.23251748251748253
+46,T3_obf_A,RF,alt_whitespace_url,0.23251748251748253
+46,T3_obf_A,RF,url_encode,0.997093023255814
+46,T3_obf_A,RF,double_url_encode,0.08604651162790698
+46,T3_obf_A,RF,versioned_comment,0.9575721862109605
+46,T3_obf_A,RF,logical_operator,1.0
+46,T3_obf_A,RF,hex_strings,0.9935275080906149
+46,T3_obf_A,RF,keyword_split_comment,0.9882207067575945
+46,T3_obf_A,RF,combination,0.5584415584415584
+46,T3_obf_B,RF,random_case,0.9976428992339422
+46,T3_obf_B,RF,inline_comment_space,0.23368298368298368
+46,T3_obf_B,RF,alt_whitespace,0.23251748251748253
+46,T3_obf_B,RF,alt_whitespace_url,0.2703962703962704
+46,T3_obf_B,RF,url_encode,0.08604651162790698
+46,T3_obf_B,RF,double_url_encode,0.0029069767441860465
+46,T3_obf_B,RF,versioned_comment,0.9575721862109605
+46,T3_obf_B,RF,logical_operator,1.0
+46,T3_obf_B,RF,hex_strings,0.9935275080906149
+46,T3_obf_B,RF,keyword_split_comment,0.9882207067575945
+46,T3_obf_B,RF,combination,0.38902007083825263
+46,T3_obf_A,RF,original,0.9947886508396062
+46,T3_obf_B,RF,original,0.9947886508396062
+46,T2_baseline,NB,f1,0.9380821917808219
+46,T2_baseline,NB,recall,0.9913144180660104
+46,T2_baseline,NB,fpr,0.07503556187766713
+46,T2_baseline,NB,f1_human,0.9371742112482854
+46,T3_obf_A,NB,random_case,0.995875073659399
+46,T3_obf_A,NB,inline_comment_space,0.9994172494172494
+46,T3_obf_A,NB,alt_whitespace,0.9819347319347319
+46,T3_obf_A,NB,alt_whitespace_url,0.9819347319347319
+46,T3_obf_A,NB,url_encode,0.9947674418604651
+46,T3_obf_A,NB,double_url_encode,0.9918604651162791
+46,T3_obf_A,NB,versioned_comment,0.9976428992339422
+46,T3_obf_A,NB,logical_operator,0.9981884057971014
+46,T3_obf_A,NB,hex_strings,1.0
+46,T3_obf_A,NB,keyword_split_comment,0.9993800371977681
+46,T3_obf_A,NB,combination,0.9940968122786304
+46,T3_obf_B,NB,random_case,0.995875073659399
+46,T3_obf_B,NB,inline_comment_space,0.9994172494172494
+46,T3_obf_B,NB,alt_whitespace,0.9819347319347319
+46,T3_obf_B,NB,alt_whitespace_url,0.7552447552447552
+46,T3_obf_B,NB,url_encode,0.9918604651162791
+46,T3_obf_B,NB,double_url_encode,0.9912790697674418
+46,T3_obf_B,NB,versioned_comment,0.9976428992339422
+46,T3_obf_B,NB,logical_operator,0.9981884057971014
+46,T3_obf_B,NB,hex_strings,1.0
+46,T3_obf_B,NB,keyword_split_comment,0.9993800371977681
+46,T3_obf_B,NB,combination,0.9935064935064936
+46,T3_obf_A,NB,original,0.9913144180660104
+46,T3_obf_B,NB,original,0.9913144180660104
+46,T2_baseline,Length-only LR,f1,0.6583172768143866
+46,T2_baseline,Length-only LR,recall,0.5935147654892878
+46,T2_baseline,Length-only LR,fpr,0.1287339971550498
+46,NORM_all,LR | Baseline,f1_test,0.9970980847359256
+46,NORM_all,LR | Baseline,fpr_test,0.00035561877667140827
+46,NORM_all,LR | Baseline,f1_human,0.9643392268504645
+46,NORM_all,LR | Baseline,min_recall_A,0.5145348837209303
+46,NORM_all,LR | Normallaşdırma,f1_test,0.9968088192631274
+46,NORM_all,LR | Normallaşdırma,fpr_test,0.0007112375533428165
+46,NORM_all,LR | Normallaşdırma,f1_human,0.9968088192631274
+46,NORM_all,LR | Normallaşdırma,min_recall_A,0.9976689976689976
+46,NORM_all,SVM | Baseline,f1_test,0.9968088192631274
+46,NORM_all,SVM | Baseline,fpr_test,0.0007112375533428165
+46,NORM_all,SVM | Baseline,f1_human,0.9652902453620587
+46,NORM_all,SVM | Baseline,min_recall_A,0.743006993006993
+46,NORM_all,SVM | Normallaşdırma,f1_test,0.9973905479849232
+46,NORM_all,SVM | Normallaşdırma,fpr_test,0.0007112375533428165
+46,NORM_all,SVM | Normallaşdırma,f1_human,0.9973905479849232
+46,NORM_all,SVM | Normallaşdırma,min_recall_A,0.9967637540453075
+46,NORM_all,RF | Baseline,f1_test,0.9970980847359256
+46,NORM_all,RF | Baseline,fpr_test,0.00035561877667140827
+46,NORM_all,RF | Baseline,f1_human,0.9330040135844396
+46,NORM_all,RF | Baseline,min_recall_A,0.08604651162790698
+46,NORM_all,RF | Normallaşdırma,f1_test,0.9970980847359256
+46,NORM_all,RF | Normallaşdırma,fpr_test,0.00035561877667140827
+46,NORM_all,RF | Normallaşdırma,f1_human,0.9970980847359256
+46,NORM_all,RF | Normallaşdırma,min_recall_A,0.9913205207687539
+46,NORM_all,NB | Baseline,f1_test,0.9380821917808219
+46,NORM_all,NB | Baseline,fpr_test,0.07503556187766713
+46,NORM_all,NB | Baseline,f1_human,0.9371742112482854
+46,NORM_all,NB | Baseline,min_recall_A,0.9819347319347319
+46,NORM_all,NB | Normallaşdırma,f1_test,0.9361818679813749
+46,NORM_all,NB | Normallaşdırma,fpr_test,0.07645803698435277
+46,NORM_all,NB | Normallaşdırma,f1_human,0.9361818679813749
+46,NORM_all,NB | Normallaşdırma,min_recall_A,0.993006993006993
+46,T4_defense_A,Baza,random_case,0.9994107248084856
+46,T4_defense_A,Baza,inline_comment_space,0.9976689976689976
+46,T4_defense_A,Baza,alt_whitespace,0.7552447552447552
+46,T4_defense_A,Baza,alt_whitespace_url,0.7552447552447552
+46,T4_defense_A,Baza,url_encode,0.9982558139534884
+46,T4_defense_A,Baza,double_url_encode,0.5145348837209303
+46,T4_defense_A,Baza,versioned_comment,1.0
+46,T4_defense_A,Baza,logical_operator,0.9990942028985508
+46,T4_defense_A,Baza,hex_strings,0.9951456310679612
+46,T4_defense_A,Baza,keyword_split_comment,1.0
+46,T4_defense_A,Baza,combination,0.9208972845336482
+46,T4_defense_A,Baza,original,0.9947886508396062
+46,T4_defense_A,Baza,f1_test,0.9970980847359256
+46,T4_defense_A,Baza,fpr_test,0.00035561877667140827
+46,T4_defense_A,Baza,f1_human,0.9643392268504645
+46,T4_defense_A,Baza,fpr_human,0.00035561877667140827
+46,T4_defense_A,Normallaşdırma,random_case,0.9994107248084856
+46,T4_defense_A,Normallaşdırma,inline_comment_space,0.9976689976689976
+46,T4_defense_A,Normallaşdırma,alt_whitespace,0.9976689976689976
+46,T4_defense_A,Normallaşdırma,alt_whitespace_url,0.9976689976689976
+46,T4_defense_A,Normallaşdırma,url_encode,0.9976744186046511
+46,T4_defense_A,Normallaşdırma,double_url_encode,0.9976744186046511
+46,T4_defense_A,Normallaşdırma,versioned_comment,0.9994107248084856
+46,T4_defense_A,Normallaşdırma,logical_operator,1.0
+46,T4_defense_A,Normallaşdırma,hex_strings,1.0
+46,T4_defense_A,Normallaşdırma,keyword_split_comment,1.0
+46,T4_defense_A,Normallaşdırma,combination,0.9982290436835891
+46,T4_defense_A,Normallaşdırma,original,0.9947886508396062
+46,T4_defense_A,Normallaşdırma,f1_test,0.9968088192631274
+46,T4_defense_A,Normallaşdırma,fpr_test,0.0007112375533428165
+46,T4_defense_A,Normallaşdırma,f1_human,0.9968088192631274
+46,T4_defense_A,Normallaşdırma,fpr_human,0.0007112375533428165
+46,T4_defense_A,Augmentation (LOTO),original,0.9942096120440069
+46,T4_defense_A,Augmentation (LOTO),f1_test,0.9968069666182874
+46,T4_defense_A,Augmentation (LOTO),fpr_test,0.00035561877667140827
+46,T4_defense_A,Augmentation (LOTO),f1_human,0.9711567053226285
+46,T4_defense_A,Augmentation (LOTO),fpr_human,0.0010668563300142249
+46,T4_defense_A,Augmentation (görmüş),random_case,0.9994107248084856
+46,T4_defense_A,Augmentation (görmüş),inline_comment_space,0.9994172494172494
+46,T4_defense_A,Augmentation (görmüş),alt_whitespace,0.9988344988344988
+46,T4_defense_A,Augmentation (görmüş),alt_whitespace_url,0.9988344988344988
+46,T4_defense_A,Augmentation (görmüş),url_encode,0.9982558139534884
+46,T4_defense_A,Augmentation (görmüş),double_url_encode,0.9994186046511628
+46,T4_defense_A,Augmentation (görmüş),versioned_comment,1.0
+46,T4_defense_A,Augmentation (görmüş),logical_operator,1.0
+46,T4_defense_A,Augmentation (görmüş),hex_strings,0.9935275080906149
+46,T4_defense_A,Augmentation (görmüş),keyword_split_comment,1.0
+46,T4_defense_A,Augmentation (görmüş),combination,0.9988193624557261
+46,T4_defense_A,Hər ikisi (LOTO),original,0.9947886508396062
+46,T4_defense_A,Hər ikisi (LOTO),f1_test,0.9968088192631274
+46,T4_defense_A,Hər ikisi (LOTO),fpr_test,0.0007112375533428165
+46,T4_defense_A,Hər ikisi (LOTO),f1_human,0.9968088192631274
+46,T4_defense_A,Hər ikisi (LOTO),fpr_human,0.0007112375533428165
+46,T4_defense_A,Hər ikisi (görmüş),random_case,0.9994107248084856
+46,T4_defense_A,Hər ikisi (görmüş),inline_comment_space,0.9982517482517482
+46,T4_defense_A,Hər ikisi (görmüş),alt_whitespace,0.9982517482517482
+46,T4_defense_A,Hər ikisi (görmüş),alt_whitespace_url,0.9982517482517482
+46,T4_defense_A,Hər ikisi (görmüş),url_encode,0.9976744186046511
+46,T4_defense_A,Hər ikisi (görmüş),double_url_encode,0.9976744186046511
+46,T4_defense_A,Hər ikisi (görmüş),versioned_comment,0.9994107248084856
+46,T4_defense_A,Hər ikisi (görmüş),logical_operator,1.0
+46,T4_defense_A,Hər ikisi (görmüş),hex_strings,0.9983818770226537
+46,T4_defense_A,Hər ikisi (görmüş),keyword_split_comment,1.0
+46,T4_defense_A,Hər ikisi (görmüş),combination,0.9982290436835891
+46,T4_defense_A,Augmentation (LOTO),random_case,0.9994107248084856
+46,T4_defense_A,Hər ikisi (LOTO),random_case,0.9994107248084856
+46,T4_defense_A,Augmentation (LOTO),inline_comment_space,0.9994172494172494
+46,T4_defense_A,Hər ikisi (LOTO),inline_comment_space,0.9982517482517482
+46,T4_defense_A,Augmentation (LOTO),alt_whitespace,0.8414918414918415
+46,T4_defense_A,Hər ikisi (LOTO),alt_whitespace,0.9982517482517482
+46,T4_defense_A,Augmentation (LOTO),alt_whitespace_url,0.9988344988344988
+46,T4_defense_A,Hər ikisi (LOTO),alt_whitespace_url,0.9982517482517482
+46,T4_defense_A,Augmentation (LOTO),url_encode,0.9982558139534884
+46,T4_defense_A,Hər ikisi (LOTO),url_encode,0.9959302325581395
+46,T4_defense_A,Augmentation (LOTO),double_url_encode,0.9994186046511628
+46,T4_defense_A,Hər ikisi (LOTO),double_url_encode,0.9959302325581395
+46,T4_defense_A,Augmentation (LOTO),versioned_comment,1.0
+46,T4_defense_A,Hər ikisi (LOTO),versioned_comment,1.0
+46,T4_defense_A,Augmentation (LOTO),logical_operator,1.0
+46,T4_defense_A,Hər ikisi (LOTO),logical_operator,1.0
+46,T4_defense_A,Augmentation (LOTO),hex_strings,0.9967637540453075
+46,T4_defense_A,Hər ikisi (LOTO),hex_strings,1.0
+46,T4_defense_A,Augmentation (LOTO),keyword_split_comment,1.0
+46,T4_defense_A,Hər ikisi (LOTO),keyword_split_comment,1.0
+46,T4_defense_A,Augmentation (LOTO),combination,0.999409681227863
+46,T4_defense_A,Hər ikisi (LOTO),combination,0.9988193624557261
+46,T5_detectors,Qara siyahı (sanitizeInput),recall,0.9774174869716271
+46,T5_detectors,Qara siyahı (sanitizeInput),fpr,0.6507823613086771
+46,T5_detectors,Qara siyahı (sanitizeInput),fpr_plain_input,0.11291779584462511
+46,T5_detectors,Qara siyahı (sanitizeInput),worst_recall_A,0.9267441860465117
+46,T5_detectors,Qara siyahı (sanitizeInput),worst_is::double_url_encode,1.0
+46,HTTPPARAMS,Qara siyahı (sanitizeInput),recall,0.9948639908693171
+46,HTTPPARAMS,Qara siyahı (sanitizeInput),fpr,0.08627361711814249
+46,HTTPPARAMS,Qara siyahı (sanitizeInput),recall_alt_whitespace_A,0.9971264367816092
+46,T5_detectors,Qara siyahı (sanitizeSearch),recall,0.9519397799652577
+46,T5_detectors,Qara siyahı (sanitizeSearch),fpr,0.6063300142247511
+46,T5_detectors,Qara siyahı (sanitizeSearch),fpr_plain_input,0.017163504968383016
+46,T5_detectors,Qara siyahı (sanitizeSearch),worst_recall_A,0.7302325581395349
+46,T5_detectors,Qara siyahı (sanitizeSearch),worst_is::double_url_encode,1.0
+46,HTTPPARAMS,Qara siyahı (sanitizeSearch),recall,0.9639528248050219
+46,HTTPPARAMS,Qara siyahı (sanitizeSearch),fpr,0.002579861901509978
+46,HTTPPARAMS,Qara siyahı (sanitizeSearch),recall_alt_whitespace_A,0.9659961685823755
+46,T5_detectors,libinjection 4.0.1,recall,0.924145917776491
+46,T5_detectors,libinjection 4.0.1,fpr,0.37197724039829305
+46,T5_detectors,libinjection 4.0.1,fpr_plain_input,0.0
+46,T5_detectors,libinjection 4.0.1,worst_recall_A,0.0
+46,T5_detectors,libinjection 4.0.1,worst_is::double_url_encode,1.0
+46,HTTPPARAMS,libinjection 4.0.1,recall,0.9679474985733308
+46,HTTPPARAMS,libinjection 4.0.1,fpr,0.0
+46,HTTPPARAMS,libinjection 4.0.1,recall_alt_whitespace_A,0.9720306513409962
+46,T5_detectors,LR baza,recall,0.9947886508396062
+46,T5_detectors,LR baza,fpr,0.00035561877667140827
+46,T5_detectors,LR baza,fpr_plain_input,0.0
+46,T5_detectors,LR baza,worst_recall_A,0.5145348837209303
+46,T5_detectors,LR baza,worst_is::double_url_encode,1.0
+46,HTTPPARAMS,LR baza,recall,0.9727981738634202
+46,HTTPPARAMS,LR baza,fpr,0.0
+46,HTTPPARAMS,LR baza,recall_alt_whitespace_A,0.8049808429118774
+46,T5_detectors,LR + normallaşdırma,recall,0.9947886508396062
+46,T5_detectors,LR + normallaşdırma,fpr,0.0007112375533428165
+46,T5_detectors,LR + normallaşdırma,fpr_plain_input,0.0009033423667570009
+46,T5_detectors,LR + normallaşdırma,worst_recall_A,0.9976689976689976
+46,T5_detectors,LR + normallaşdırma,worst_is::inline_comment_space,1.0
+46,HTTPPARAMS,LR + normallaşdırma,recall,0.9996195548792087
+46,HTTPPARAMS,LR + normallaşdırma,fpr,0.0003035131648835268
+46,HTTPPARAMS,LR + normallaşdırma,recall_alt_whitespace_A,1.0
+46,T5_detectors,LR + norm. + augmentation,recall,0.9947886508396062
+46,T5_detectors,LR + norm. + augmentation,fpr,0.0007112375533428165
+46,T5_detectors,LR + norm. + augmentation,fpr_plain_input,0.0009033423667570009
+46,T5_detectors,LR + norm. + augmentation,worst_recall_A,0.9976744186046511
+46,T5_detectors,LR + norm. + augmentation,worst_is::url_encode,1.0
+46,HTTPPARAMS,LR + norm. + augmentation,recall,0.9997146661594065
+46,HTTPPARAMS,LR + norm. + augmentation,fpr,0.0003035131648835268
+46,HTTPPARAMS,LR + norm. + augmentation,recall_alt_whitespace_A,1.0
+46,HTTPPARAMS,RF baza,recall,0.9434087882822902
+46,HTTPPARAMS,RF baza,fpr,0.0001517565824417634
+46,HTTPPARAMS,SVM baza,recall,0.9718470610614419
+46,HTTPPARAMS,SVM baza,fpr,0.0001517565824417634

@@ -1,0 +1,87 @@
+model,metric,mean,std,min,max,count
+Augmentation (LOTO),alt_whitespace,86.49,3.39,82.22,90.77,5
+Augmentation (LOTO),alt_whitespace_url,99.91,0.03,99.88,99.94,5
+Augmentation (LOTO),combination,99.93,0.08,99.82,100.0,5
+Augmentation (LOTO),double_url_encode,99.85,0.11,99.76,100.0,5
+Augmentation (LOTO),f1_human,97.5,0.47,97.09,98.11,5
+Augmentation (LOTO),f1_test,99.63,0.05,99.57,99.68,5
+Augmentation (LOTO),fpr_human,0.09,0.05,0.0,0.11,5
+Augmentation (LOTO),fpr_test,0.06,0.03,0.03,0.11,5
+Augmentation (LOTO),hex_strings,99.71,0.23,99.36,100.0,5
+Augmentation (LOTO),inline_comment_space,99.96,0.03,99.94,100.0,5
+Augmentation (LOTO),keyword_split_comment,99.97,0.03,99.94,100.0,5
+Augmentation (LOTO),logical_operator,99.96,0.08,99.81,100.0,5
+Augmentation (LOTO),original,99.35,0.1,99.19,99.42,5
+Augmentation (LOTO),random_case,99.8,0.09,99.71,99.94,5
+Augmentation (LOTO),url_encode,99.71,0.18,99.42,99.88,5
+Augmentation (LOTO),versioned_comment,99.96,0.05,99.88,100.0,5
+Augmentation (görmüş),alt_whitespace,99.92,0.05,99.88,100.0,5
+Augmentation (görmüş),alt_whitespace_url,99.92,0.05,99.88,100.0,5
+Augmentation (görmüş),combination,99.91,0.1,99.76,100.0,5
+Augmentation (görmüş),double_url_encode,99.92,0.1,99.77,100.0,5
+Augmentation (görmüş),hex_strings,99.67,0.25,99.35,100.0,5
+Augmentation (görmüş),inline_comment_space,99.99,0.03,99.94,100.0,5
+Augmentation (görmüş),keyword_split_comment,99.99,0.03,99.94,100.0,5
+Augmentation (görmüş),logical_operator,99.93,0.1,99.81,100.0,5
+Augmentation (görmüş),random_case,99.8,0.09,99.71,99.94,5
+Augmentation (görmüş),url_encode,99.73,0.12,99.6,99.88,5
+Augmentation (görmüş),versioned_comment,100.0,0.0,100.0,100.0,5
+Baza,alt_whitespace,76.25,4.82,69.53,82.91,5
+Baza,alt_whitespace_url,76.25,4.82,69.53,82.91,5
+Baza,combination,93.36,4.76,85.51,96.48,5
+Baza,double_url_encode,71.52,28.91,30.93,98.39,5
+Baza,f1_human,95.91,1.05,94.25,97.08,5
+Baza,f1_test,99.68,0.05,99.59,99.71,5
+Baza,fpr_human,0.06,0.06,0.0,0.14,5
+Baza,fpr_test,0.04,0.04,0.0,0.11,5
+Baza,hex_strings,99.77,0.18,99.51,100.0,5
+Baza,inline_comment_space,99.92,0.1,99.77,100.0,5
+Baza,keyword_split_comment,99.97,0.03,99.94,100.0,5
+Baza,logical_operator,99.98,0.04,99.91,100.0,5
+Baza,original,99.42,0.17,99.13,99.6,5
+Baza,random_case,99.86,0.11,99.76,100.0,5
+Baza,url_encode,99.79,0.11,99.65,99.89,5
+Baza,versioned_comment,100.0,0.0,100.0,100.0,5
+Hər ikisi (LOTO),alt_whitespace,99.8,0.12,99.59,99.88,5
+Hər ikisi (LOTO),alt_whitespace_url,99.8,0.12,99.59,99.88,5
+Hər ikisi (LOTO),combination,99.72,0.1,99.63,99.88,5
+Hər ikisi (LOTO),double_url_encode,99.64,0.21,99.3,99.83,5
+Hər ikisi (LOTO),f1_human,99.64,0.05,99.59,99.7,5
+Hər ikisi (LOTO),f1_test,99.64,0.05,99.59,99.7,5
+Hər ikisi (LOTO),fpr_human,0.04,0.03,0.0,0.07,5
+Hər ikisi (LOTO),fpr_test,0.04,0.03,0.0,0.07,5
+Hər ikisi (LOTO),hex_strings,99.73,0.28,99.34,100.0,5
+Hər ikisi (LOTO),inline_comment_space,99.8,0.12,99.59,99.88,5
+Hər ikisi (LOTO),keyword_split_comment,99.82,0.12,99.68,100.0,5
+Hər ikisi (LOTO),logical_operator,99.94,0.08,99.81,100.0,5
+Hər ikisi (LOTO),original,99.36,0.12,99.19,99.48,5
+Hər ikisi (LOTO),random_case,99.77,0.11,99.65,99.94,5
+Hər ikisi (LOTO),url_encode,99.64,0.21,99.3,99.83,5
+Hər ikisi (LOTO),versioned_comment,99.83,0.11,99.76,100.0,5
+Hər ikisi (görmüş),alt_whitespace,99.79,0.03,99.76,99.83,5
+Hər ikisi (görmüş),alt_whitespace_url,99.79,0.03,99.76,99.83,5
+Hər ikisi (görmüş),combination,99.72,0.07,99.63,99.82,5
+Hər ikisi (görmüş),double_url_encode,99.71,0.06,99.65,99.77,5
+Hər ikisi (görmüş),hex_strings,99.8,0.14,99.65,100.0,5
+Hər ikisi (görmüş),inline_comment_space,99.79,0.03,99.76,99.83,5
+Hər ikisi (görmüş),keyword_split_comment,99.84,0.1,99.75,100.0,5
+Hər ikisi (görmüş),logical_operator,100.0,0.0,100.0,100.0,5
+Hər ikisi (görmüş),random_case,99.79,0.09,99.7,99.94,5
+Hər ikisi (görmüş),url_encode,99.71,0.06,99.65,99.77,5
+Hər ikisi (görmüş),versioned_comment,99.8,0.09,99.7,99.94,5
+Normallaşdırma,alt_whitespace,99.76,0.11,99.59,99.88,5
+Normallaşdırma,alt_whitespace_url,99.76,0.11,99.59,99.88,5
+Normallaşdırma,combination,99.71,0.12,99.53,99.82,5
+Normallaşdırma,double_url_encode,99.7,0.16,99.42,99.82,5
+Normallaşdırma,f1_human,99.63,0.09,99.48,99.7,5
+Normallaşdırma,f1_test,99.63,0.09,99.48,99.7,5
+Normallaşdırma,fpr_human,0.06,0.05,0.0,0.14,5
+Normallaşdırma,fpr_test,0.06,0.05,0.0,0.14,5
+Normallaşdırma,hex_strings,99.93,0.16,99.65,100.0,5
+Normallaşdırma,inline_comment_space,99.76,0.11,99.59,99.88,5
+Normallaşdırma,keyword_split_comment,99.65,0.27,99.3,100.0,5
+Normallaşdırma,logical_operator,99.91,0.16,99.63,100.0,5
+Normallaşdırma,original,99.35,0.22,98.96,99.48,5
+Normallaşdırma,random_case,99.76,0.15,99.59,99.94,5
+Normallaşdırma,url_encode,99.7,0.16,99.42,99.82,5
+Normallaşdırma,versioned_comment,99.77,0.14,99.59,99.94,5

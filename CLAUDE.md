@@ -49,3 +49,8 @@ Versiya təsdiqləndi (2026-11-03): birinci məqalənin Şəkil 8–10-u bu kodl
 - `src/blacklist.py` = `server.js`-dəki `sanitizeInput`/`sanitizeSearch`-in Python portu; Node.js ilə 50/50 eyniliyi notebook-da sübut olunub (ASCII case-fold, JS `trim()` boşluq dəsti).
 - MySQL testi: ayrıca `sqli_ml_eval` bazası, yalnız SELECT hüquqlu `sqli_eval` istifadəçisi (`sql/setup_eval_db.sql`, şifrə `.env`-də). Bazanı root ilə Workbench-dən qurmaq lazımdır (root şifrəsi dəyişib, `mysql2026` işləmir).
 - `data/processed/05_mysql_runs.csv` (13 MB) git-də izlənmir — notebook-dan yenidən yaranır.
+
+## Xarici datasetlər (10)
+- `notebooks/10_cross_dataset.ipynb`; fayllar `data/raw/external/` (git-də yox, notebook yükləyir, SHA-256 yoxlanır).
+- SQLiV3 / sqliv2 (Kaggle `syedsaqlainhussain`) bizim datasetin ≥98% eynisidir — müstəqil test deyil.
+- **HttpParamsDataset** (GitHub Morzeux) müstəqildir, ikiqat boşluq artefaktı yoxdur → əsas xarici test (train/val ilə üst-üstə düşənlər çıxarılır).

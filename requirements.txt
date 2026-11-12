@@ -115,3 +115,5 @@ webcolors==25.10.0
 webencodings==0.6.1
 websocket-client==1.9.2
 widgetsnbextension==4.0.16
+ziglang==0.17.1
+# torch==2.15.0 (CPU): pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
