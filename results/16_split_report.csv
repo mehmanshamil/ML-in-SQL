@@ -1,0 +1,3 @@
+file,bytes,sqlparse_statements,sqlparse_max_len,sqlparse_over_2000_chars,sqlparse_share_of_bytes_in_over_2000,template_split_statements,identical_statements
+attacks.sql,19999954,3262,18944655,46,0.9675550443807126,117029,2667
+sane.sql,19999967,91586,111134,676,0.6580417233304042,264925,88138

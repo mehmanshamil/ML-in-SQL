@@ -1,0 +1,27 @@
+repo,file,n,LR baza,SVM baza,RF baza,NB baza,LR + normallaşdırma,LR + norm. + augmentation,Qara siyahı (sanitizeInput),Qara siyahı (sanitizeSearch),libinjection 4.0.1
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,17,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,88.2
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,105,93.3,96.2,92.4,86.7,99.0,99.0,100.0,95.2,82.9
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL-WHERE_Time.txt,40,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,70.0
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL.txt,15,86.7,100.0,80.0,53.3,100.0,100.0,100.0,100.0,66.7
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,11,45.5,45.5,36.4,63.6,45.5,45.5,100.0,100.0,0.0
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MYSQL.txt,1,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MySQL-WHERE_Time.txt,45,100.0,100.0,100.0,100.0,100.0,100.0,100.0,88.9,73.3
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MySQL_ReadLocalFiles.txt,1,0.0,0.0,0.0,0.0,0.0,0.0,100.0,100.0,0.0
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_Oracle.txt,52,96.2,100.0,11.5,98.1,100.0,100.0,100.0,100.0,98.1
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,17,0.0,0.0,0.0,5.9,0.0,0.0,100.0,100.0,58.8
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_ErrorBased.txt,150,84.0,88.7,90.0,74.7,96.7,96.7,97.3,43.3,5.3
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_Fuzz.txt,4,100.0,75.0,75.0,75.0,75.0,75.0,100.0,100.0,100.0
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_TimeBased.txt,96,90.6,88.5,78.1,96.9,100.0,100.0,91.7,78.1,82.3
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_UnionSelect.txt,418,99.8,99.5,91.6,100.0,100.0,100.0,100.0,99.0,51.0
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,37,83.8,81.1,67.6,81.1,86.5,89.2,91.9,81.1,70.3
+PayloadsAllTheThings,SQL Injection/Intruder/SQLi_Polyglots.txt,2,100.0,100.0,50.0,100.0,100.0,100.0,100.0,100.0,100.0
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,95,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,32.6
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-INSERT,90,100.0,100.0,78.9,100.0,100.0,100.0,88.9,88.9,100.0
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-ORDER_BY,18,100.0,100.0,0.0,100.0,100.0,100.0,100.0,100.0,33.3
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,2,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,0.0
+fuzzdb,attack/sql-injection/detect/MSSQL_blind.txt,8,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0
+fuzzdb,attack/sql-injection/detect/MySQL.txt,3,33.3,33.3,33.3,0.0,66.7,66.7,100.0,66.7,66.7
+fuzzdb,attack/sql-injection/detect/MySQL_MSSQL.txt,1,100.0,100.0,100.0,0.0,100.0,100.0,100.0,100.0,100.0
+fuzzdb,attack/sql-injection/detect/xplatform.txt,49,93.9,98.0,83.7,81.6,100.0,100.0,100.0,100.0,77.6
+fuzzdb,attack/sql-injection/exploit/db2-enumeration.txt,12,0.0,0.0,0.0,41.7,0.0,0.0,100.0,100.0,75.0
+fuzzdb,attack/sql-injection/exploit/mysql-injection-login-bypass.txt,4,100.0,100.0,100.0,75.0,100.0,100.0,100.0,100.0,75.0

@@ -7,7 +7,8 @@ obfuscation: an experimental analysis and a normalization-based defense"* (in Az
 score comes from a formatting artifact: 95% of malicious queries carry sqlmap-style double spacing (`1  =  1`)
 against 30% of benign ones. Replacing whitespace characters drops LR recall to ~78% and RF to ~33%. Canonicalizing
 the input before the model (`src/normalize.py`) removes the effect; augmentation does not generalize to unseen
-techniques. Results are checked on 5 group-aware splits, an external dataset (HttpParamsDataset), a char-CNN,
+techniques. Results are checked on 5 group-aware splits, an external dataset (HttpParamsDataset), hand-written
+payload lists (PayloadsAllTheThings, fuzzdb), real benign web traffic (open-appsec), the WAF-A-MoLE dataset, a char-CNN,
 libinjection, the blacklist filter from the author's earlier paper, real MySQL execution, and a pure-JS Express
 middleware.
 
@@ -21,7 +22,7 @@ Requirements: Python 3.13, Node.js ≥ 20, (optional) MySQL 8.0 for notebooks 05
 python -m venv venv
 venv\Scripts\activate                     # Linux/macOS: source venv/bin/activate
 pip install -r requirements.txt
-pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu   # notebook 13 only
+pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu   # notebooks 13, 15, 16
 python tools/build_libinjection.py        # notebooks 11, 12: builds libinjection 4.0.1 with zig cc
 ```
 
@@ -32,6 +33,9 @@ Data:
 | `data/raw/Modified_SQL_Dataset.csv` | Kaggle `sajid576/sql-injection-dataset` | download manually (columns `Query`, `Label`) |
 | `data/raw/external/httpparams/payload_full.csv` | GitHub `Morzeux/HttpParamsDataset` | notebook 10 downloads it, SHA-256 checked |
 | `data/raw/external/sqliv3/*.csv` | Kaggle `syedsaqlainhussain/sql-injection-dataset` v5 | notebook 10 downloads it via `kagglehub`, SHA-256 checked |
+| `data/raw/external/openappsec/legitimate.zip` | open-appsec WAF Comparison Project, legitimate set (URL in the project's `config.py`; the repository itself has no data folder) | notebook 15 downloads it in 64 MB range requests, size and SHA-256 checked (`src/openappsec.py`) |
+| `data/raw/external/wafamole/repo/` | GitHub `zangobot/wafamole_dataset` | notebook 16 clones the pinned commit with `core.autocrlf=false` (`src/wafamole.py`) |
+| `data/raw/external/handwritten/` | GitHub `swisskyrepo/PayloadsAllTheThings` (`SQL Injection/Intruder/*`) and `fuzzdb-project/fuzzdb` (`attack/sql-injection/**/*.txt`) | notebook 14 does a sparse checkout of pinned commits (`src/handwritten.py`); the cleaned list is `data/processed/14_handwritten_payloads.csv` |
 
 `data/raw/`, `models/`, `third_party/` and the large MySQL run logs are not tracked; every notebook regenerates
 what the next one needs. Run the notebooks **in numeric order** (from `notebooks/` or the repo root):
@@ -40,7 +44,7 @@ what the next one needs. Run the notebooks **in numeric order** (from `notebooks
 jupyter nbconvert --to notebook --execute --inplace notebooks/01_data_analysis.ipynb   # etc.
 ```
 
-Random seed is always 42 (notebooks 12 and 13 use seeds 42–46). Figures are saved as 300 dpi PNG to `figures/`,
+Random seed is always 42 (notebooks 12–15 use seeds 42–46). Figures are saved as 300 dpi PNG to `figures/`,
 tables as CSV to `results/`.
 
 ### MySQL execution test (notebooks 05, 06, 09)
@@ -54,6 +58,34 @@ MYSQL_EVAL_PASSWORD=...
 ```
 
 Notebooks 09, 11 and 12 read the saved `data/processed/06_mysql_effectiveness.csv` and do not need MySQL.
+
+### open-appsec legitimate traffic (notebook 15)
+
+The legitimate set of the open-appsec WAF Comparison Project (Apache 2.0; 1 040 242 browser-recorded requests from 185
+sites, one JSON file per site with `method`, `url`, `headers`, `data`). Only this set is used; the malicious set is not.
+Our models score single parameter values, so each request is reduced to the values the Express middleware
+(`middleware/src/sqliGuard.js`) would score:
+
+- **query string**: parsed like Express (`urllib.parse.parse_qsl`, one percent-decode, `+` → space, blank values kept);
+- **body**, by `Content-Type`: `application/json` → every string leaf (numbers, booleans and `null` are not strings and are
+  skipped, as in `stringValues()`); `application/x-www-form-urlencoded` → `parse_qsl` values; `multipart/form-data` → text
+  fields (parts without a filename). Other bodies (text/plain, protobuf, binary beacons, CSP reports, …) are not parsed,
+  as `express.json()` / `express.urlencoded()` leave `req.body` empty for them;
+- keys are not scored; values longer than 4 096 characters are truncated (middleware default).
+
+This gives 9 520 543 values (833 477 unique) in 657 160 requests. Detectors run on the unique values; a request counts
+as blocked when any of its values is blocked. The server drops long connections, so `src/openappsec.py` downloads the zip
+in 64 MB HTTP range requests and checks size and SHA-256.
+
+### WAF-A-MoLE (notebook 16)
+
+The chunks are concatenated byte for byte as the dataset README says (`cat attacks.sql.* > attacks.sql`), with git's CRLF
+conversion disabled because payloads contain LF. The README's `sqlparse.split()` does **not** split `attacks.sql`
+correctly: the generator puts payloads into quoted literals without escaping, and sqlparse glues the following statements
+together (the first 20 MB come out as 3 262 "statements", one of them 18.9 MB; see `results/16_split_report.csv`).
+`src/wafamole.py` therefore cuts the file where one of the generator's four templates starts (``SELECT `…``/`SELECT *`,
+``INSERT INTO `tab` ``, ``UPDATE `tab` ``, ``DELETE FROM `tab` ``, right after `;\n`) and splits the remaining segment
+(the DDL header of `sane.sql`) with `sqlparse.split()`: 1 004 669 attacks, 1 000 209 benign statements.
 
 ### Middleware (`middleware/`)
 
@@ -83,9 +115,11 @@ over 5 splits):
 | Table 6 | Input length vs processing time (DoS) | `middleware/bench/dos_test.js` | `middleware_dos.csv` |
 | Table 7 | Middleware latency | `middleware/bench/run_bench.js`, 09 | `middleware_latency.csv` |
 | Cross-dataset | HttpParamsDataset, dataset overlap, independence | 10, 12 | `10_*.csv`, `12_HTTPPARAMS_mean_std.csv` |
-| char-CNN | Does a neural model learn the artifact too? | 13 | `13_char_cnn_mean_std.csv`, `13_cnn_vs_lr.csv` |
+| Hand-written payloads | PayloadsAllTheThings + fuzzdb: independence, recall of all detectors, alt. whitespace; FPR on HttpParams benign | 14 | `14_*.csv`, `figures/paper/14_handwritten_recall.png` |
+| Real benign traffic | open-appsec legitimate requests: value- and request-level FPR of all detectors, top false blocks | 15 | `15_*.csv`, `figures/paper/15_openappsec_fpr.png` |
+| WAF-A-MoLE | Artifact statistics, our models on 20k + 20k, LR trained on WAF-A-MoLE | 16 | `16_*.csv`, `figures/paper/16_wafamole.png` |
+| char-CNN | Does a neural model learn the artifact too? | 13 (after 14) | `13_char_cnn_table.csv`, `13_char_cnn_mean_std.csv`, `13_cnn_vs_lr.csv`, `figures/paper/13_char_cnn_artifact.png` |
 | Fig. 1 | LR defenses, scenario A | 04 | `figures/04_defense_recall_A.png` |
-| Paper figures | Pipeline, FPR–recall, HttpParams | 14 | `figures/paper/*.png` |
 
 All notebooks:
 
@@ -103,18 +137,22 @@ All notebooks:
 | 10 | `10_cross_dataset` | External datasets: overlap, HttpParamsDataset test, independence analysis |
 | 11 | `11_libinjection` | libinjection 4.0.1 on the same test sets |
 | 12 | `12_multiseed` | All main tables over seeds 42–46 (mean ± std) + seed-42 reproduction check |
-| 13 | `13_char_cnn` | Byte-level CNN (PyTorch, CPU), baseline vs normalization |
-| 14 | `14_paper_figures` | Figures for the paper → `figures/paper/` |
+| 13 | `13_char_cnn` | Byte-level CNN (PyTorch, CPU), baseline vs normalization; needs the payload list from 14 |
+| 14 | `14_handwritten_payloads` | Hand-written payload lists (PayloadsAllTheThings, fuzzdb): cleaning, independence, all detectors over seeds 42–46 |
+| 15 | `15_openappsec_benign` | open-appsec real benign traffic: parameter values extracted like the middleware; FPR per value and per request, seeds 42–46 |
+| 16 | `16_wafamole` | WAF-A-MoLE dataset: split, artifact statistics, transfer in both directions |
 
 ## Layout
 
 ```
-src/            normalize.py, obfuscation.py, blacklist.py, libinj.py (ctypes), experiments.py (shared helpers)
+src/            normalize.py, obfuscation.py, blacklist.py, libinj.py (ctypes), experiments.py (shared helpers),
+                detectors.py (TF-IDF models of notebook 12, cached), charcnn.py (CNN of notebook 13, cached),
+                handwritten.py (payload lists, 13/14), openappsec.py (15), wafamole.py (16)
 tools/          build_libinjection.py
-notebooks/      01–14, run in order
+notebooks/      01–16, run in order (except: 14 before 13)
 data/processed/ cleaned data, splits, obfuscated test set, MySQL effectiveness
 results/        CSV tables
-figures/        300 dpi PNG; figures/paper/ = figures used in the paper
+figures/        300 dpi PNG; figures/paper/ = figures of notebooks 13–16 used in the paper
 middleware/     Express middleware (pure JS) with parity test, attack test and benchmarks
 sql/            MySQL setup for the execution test
 ```
@@ -131,3 +169,17 @@ applied, so it sees the same input as the other detectors.
 
 The middleware package is MIT (`middleware/package.json`); a license for the rest of the repository will be added
 before it is made public. The datasets belong to their authors and are not redistributed here.
+
+Exception: `data/processed/14_handwritten_payloads.csv` contains cleaned lines from two payload collections,
+redistributed under their licenses:
+
+| Source | Commit | License |
+|---|---|---|
+| [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings), `SQL Injection/Intruder/` | `08ea40e` | MIT, Copyright (c) 2019 Swissky |
+| [fuzzdb-project/fuzzdb](https://github.com/fuzzdb-project/fuzzdb), `attack/sql-injection/` | `5656ab2` | BSD 3-Clause and CC BY 3.0, Copyright (c) 2010-2019 Adam Muntner (see `_copyright.txt` in the repository) |
+
+Several PayloadsAllTheThings Intruder files are themselves copies of fuzzdb lists (`FUZZDB_*`, `payloads-sql-blind-*`).
+
+Not redistributed: the open-appsec legitimate set (Apache 2.0, per the project README) and the WAF-A-MoLE dataset
+(no license file in the repository; cite Demetrio et al., *WAF-A-MoLE: Evading Web Application Firewalls through
+Adversarial Machine Learning*, ACM SAC 2020). Notebooks 15 and 16 download them.

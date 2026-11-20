@@ -1,0 +1,23 @@
+detector,input,recall,fpr,f1
+LR baza,normal,0.90825,0.2131,0.8562943408678436
+LR baza,alt_whitespace,0.8656,0.1003,0.8806144768299508
+SVM baza,normal,0.88805,0.11885,0.8849967611739499
+SVM baza,alt_whitespace,0.79085,0.0197,0.8736019441606142
+RF baza,normal,0.7012,0.1884,0.7421676545300593
+RF baza,alt_whitespace,0.19495,0.0,0.3262898029206243
+NB baza,normal,0.80545,0.2162,0.79682437612841
+NB baza,alt_whitespace,0.77575,0.35625,0.727720450281426
+LR + normallaşdırma,normal,0.95945,0.26545,0.8624657287967998
+LR + normallaşdırma,alt_whitespace,0.95945,0.26545,0.8624657287967998
+LR + norm. + augmentation,normal,0.9524,0.21715,0.8779700859625268
+LR + norm. + augmentation,alt_whitespace,0.9524,0.21715,0.8779700859625268
+CNN baza,normal,0.46495,0.0373,0.619004826094192
+CNN baza,alt_whitespace,0.02335,0.0,0.045634435921239065
+CNN + normallaşdırma,normal,0.95505,0.3995,0.8112378161432121
+CNN + normallaşdırma,alt_whitespace,0.95505,0.3995,0.8112378161432121
+Qara siyahı (sanitizeInput),normal,1.0,1.0,0.6666666666666666
+Qara siyahı (sanitizeInput),alt_whitespace,1.0,1.0,0.6666666666666666
+Qara siyahı (sanitizeSearch),normal,1.0,1.0,0.6666666666666666
+Qara siyahı (sanitizeSearch),alt_whitespace,1.0,1.0,0.6666666666666666
+libinjection 4.0.1,normal,0.78115,0.45055,0.7000492897790922
+libinjection 4.0.1,alt_whitespace,0.779,0.45055,0.698795721109641

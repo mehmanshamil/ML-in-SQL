@@ -1,0 +1,41 @@
+repo,file,sha256,lines,empty,comment,no_sql_token,duplicate,kept_unique
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,236969c5b9bd6b52,78,0,0,10,0,68
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,da7f2e1159d0534e,121,0,0,4,8,109
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL-WHERE_Time.txt,13567396b2e0057b,40,0,0,0,0,40
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL.txt,2df3981c63ef2a4c,17,0,1,0,1,15
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,7f1825aa6c6b895c,15,0,4,0,0,11
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MySQL-WHERE_Time.txt,b5794d86031d6383,45,0,0,0,0,45
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MYSQL.txt,89bce04d45a522b1,6,0,0,1,0,5
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MySQL_ReadLocalFiles.txt,be514dcda35c50d8,3,0,2,0,0,1
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_Oracle.txt,f1c407dc2f8401d1,56,1,1,0,1,53
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,97156d4f0b69e2e4,20,0,1,0,1,18
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_ErrorBased.txt,b7cf254190733c02,154,0,0,0,0,154
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_Fuzz.txt,57dc54806d681efb,12,0,0,6,2,4
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_TimeBased.txt,1686c10e748c0deb,105,0,1,1,0,103
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_UnionSelect.txt,58a079b2ec56c41b,424,0,0,0,6,418
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,cf0183aa57b9c7a7,107,0,0,0,12,95
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,b9f09d1cc23cbf53,40,0,0,0,40,0
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-INSERT,a23f0220d4320976,90,0,0,0,0,90
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-ORDER_BY,3451118b7034b301,18,0,0,0,0,18
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,a0b09be9391b02ed,45,0,0,0,45,0
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,b25c8f922cd5cb8c,68,0,1,28,2,37
+PayloadsAllTheThings,SQL Injection/Intruder/SQLi_Polyglots.txt,42fcfbb910afbc90,2,0,0,0,0,2
+fuzzdb,attack/sql-injection/detect/Generic_SQLI.txt,7eb70257593da06f,1,1,0,0,0,0
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,1246971c4e6fcea4,31,0,0,0,31,0
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,13bd822cdf39b35b,12,0,0,1,9,2
+fuzzdb,attack/sql-injection/detect/MSSQL_blind.txt,4ece554be36557d6,8,0,0,0,0,8
+fuzzdb,attack/sql-injection/detect/MySQL.txt,853dd184befe7e04,9,0,0,1,5,3
+fuzzdb,attack/sql-injection/detect/MySQL_MSSQL.txt,53938528387c1761,10,1,0,2,0,7
+fuzzdb,attack/sql-injection/detect/oracle.txt,934a0f1173e6077d,55,1,0,0,54,0
+fuzzdb,attack/sql-injection/detect/xplatform.txt,1bdedb5dc3d2c627,193,0,0,57,32,104
+fuzzdb,attack/sql-injection/exploit/db2-enumeration.txt,facc98f639fa4e6a,12,0,0,0,0,12
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,935ad4155c23fb34,11,0,0,0,11,0
+fuzzdb,attack/sql-injection/exploit/mysql-injection-login-bypass.txt,624f9ca42b2a53c2,5,0,0,0,0,5
+fuzzdb,attack/sql-injection/exploit/mysql-read-local-files.txt,e7722da0a445805e,1,0,0,0,1,0
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,bb0e5600838b87da,19,0,0,0,19,0
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,0cf8159e96491864,107,0,0,0,107,0
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,13567396b2e0057b,40,0,0,0,40,0
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,be0d6216b9d4b0ff,90,0,0,0,90,0
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,3451118b7034b301,18,0,0,0,18,0
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,b5794d86031d6383,45,0,0,0,45,0
+CƏMİ,,,2133,4,11,111,580,1427

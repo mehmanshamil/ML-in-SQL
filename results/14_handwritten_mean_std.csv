@@ -1,0 +1,46 @@
+detector,metric,mean,std,min,max
+LR + norm. + augmentation,fpr_httpparams_clean,0.024,0.006,0.015,0.03
+LR + norm. + augmentation,recall_hw,95.16,1.197,93.446,96.302
+LR + norm. + augmentation,recall_hw_alt_whitespace,95.265,1.274,93.392,96.457
+LR + norm. + augmentation,recall_hw_file_macro,82.865,0.85,81.783,83.868
+LR + norm. + augmentation,recall_hw_novel,95.065,1.262,93.237,96.305
+LR + normallaşdırma,fpr_httpparams_clean,0.021,0.01,0.008,0.03
+LR + normallaşdırma,recall_hw,95.099,0.673,94.53,96.21
+LR + normallaşdırma,recall_hw_alt_whitespace,95.201,0.689,94.686,96.365
+LR + normallaşdırma,recall_hw_file_macro,82.959,1.032,81.203,83.883
+LR + normallaşdırma,recall_hw_novel,95.015,0.717,94.426,96.225
+LR baza,fpr_httpparams_clean,0.015,0.011,0.0,0.03
+LR baza,recall_hw,92.786,2.29,89.514,95.378
+LR baza,recall_hw_alt_whitespace,81.829,2.661,77.196,83.655
+LR baza,recall_hw_file_macro,79.976,2.241,76.051,81.668
+LR baza,recall_hw_novel,92.591,2.369,89.211,95.234
+NB baza,fpr_httpparams_clean,29.275,0.249,29.043,29.646
+NB baza,recall_hw,91.244,0.329,90.776,91.68
+NB baza,recall_hw_alt_whitespace,91.044,0.391,90.522,91.546
+NB baza,recall_hw_file_macro,75.104,1.978,73.583,78.43
+NB baza,recall_hw_novel,91.207,0.372,90.647,91.599
+Qara siyahı (sanitizeInput),fpr_httpparams_clean,8.555,0.093,8.469,8.681
+Qara siyahı (sanitizeInput),recall_hw,98.058,0.034,97.997,98.078
+Qara siyahı (sanitizeInput),recall_hw_alt_whitespace,98.872,0.002,98.869,98.876
+Qara siyahı (sanitizeInput),recall_hw_file_macro,98.819,0.025,98.784,98.838
+Qara siyahı (sanitizeInput),recall_hw_novel,98.022,0.075,97.9,98.072
+Qara siyahı (sanitizeSearch),fpr_httpparams_clean,0.235,0.013,0.227,0.258
+Qara siyahı (sanitizeSearch),recall_hw,89.179,0.142,88.983,89.327
+Qara siyahı (sanitizeSearch),recall_hw_alt_whitespace,89.836,0.127,89.694,89.984
+Qara siyahı (sanitizeSearch),recall_hw_file_macro,92.575,1.728,89.826,93.895
+Qara siyahı (sanitizeSearch),recall_hw_novel,89.003,0.128,88.853,89.157
+RF baza,fpr_httpparams_clean,0.014,0.003,0.008,0.015
+RF baza,recall_hw,84.768,1.452,82.521,86.276
+RF baza,recall_hw_alt_whitespace,35.587,10.001,22.329,46.334
+RF baza,recall_hw_file_macro,68.306,1.478,66.971,70.773
+RF baza,recall_hw_novel,84.327,1.457,82.088,85.91
+SVM baza,fpr_httpparams_clean,0.03,0.016,0.015,0.053
+SVM baza,recall_hw,93.618,1.517,91.673,95.223
+SVM baza,recall_hw_alt_whitespace,83.648,2.464,81.099,86.957
+SVM baza,recall_hw_file_macro,81.438,1.041,79.826,82.406
+SVM baza,recall_hw_novel,93.394,1.555,91.385,94.992
+libinjection 4.0.1,fpr_httpparams_clean,0.0,0.0,0.0,0.0
+libinjection 4.0.1,recall_hw,58.286,0.143,58.134,58.475
+libinjection 4.0.1,recall_hw_alt_whitespace,57.104,0.113,56.97,57.246
+libinjection 4.0.1,recall_hw_file_macro,64.368,1.226,62.979,65.655
+libinjection 4.0.1,recall_hw_novel,57.444,0.149,57.314,57.671

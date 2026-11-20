@@ -1,0 +1,35 @@
+model,test,metric,value
+LR baza (WAF-A-MoLE),WAF-A-MoLE nümunə,recall,0.9987
+LR baza (WAF-A-MoLE),WAF-A-MoLE nümunə,fpr,0.00295
+LR baza (WAF-A-MoLE),WAF-A-MoLE nümunə,f1,0.9978767516798641
+LR baza (WAF-A-MoLE),Kaggle test,recall,0.828080229226361
+LR baza (WAF-A-MoLE),Kaggle test,fpr,0.36649964209019326
+LR baza (WAF-A-MoLE),Kaggle test,f1,0.6858092074038918
+LR baza (WAF-A-MoLE),"Kaggle test, insan formatı",recall,0.8315186246418338
+LR baza (WAF-A-MoLE),"Kaggle test, insan formatı",fpr,0.31531853972798857
+LR baza (WAF-A-MoLE),"Kaggle test, insan formatı",f1,0.7117978906058376
+LR baza (WAF-A-MoLE),HttpParams,recall,0.950976778474014
+LR baza (WAF-A-MoLE),HttpParams,fpr,0.00020721094073767094
+LR baza (WAF-A-MoLE),HttpParams,f1,0.9746883264072534
+LR baza (WAF-A-MoLE),Əl ilə yazılmış payload-lar,recall,0.9215136650315346
+LR baza (WAF-A-MoLE),WAF-A-MoLE nümunə,recall_alt_whitespace,0.97185
+LR baza (WAF-A-MoLE),Kaggle test,recall_alt_whitespace,0.5681293302540416
+LR baza (WAF-A-MoLE),HttpParams,recall_alt_whitespace,0.7684669636228656
+LR baza (WAF-A-MoLE),Əl ilə yazılmış payload-lar,recall_alt_whitespace,0.7976539589442815
+LR + norm. (WAF-A-MoLE),WAF-A-MoLE nümunə,recall,0.9967
+LR + norm. (WAF-A-MoLE),WAF-A-MoLE nümunə,fpr,0.0039
+LR + norm. (WAF-A-MoLE),WAF-A-MoLE nümunə,f1,0.9964010796760973
+LR + norm. (WAF-A-MoLE),Kaggle test,recall,0.9088825214899714
+LR + norm. (WAF-A-MoLE),Kaggle test,fpr,0.5805297065139585
+LR + norm. (WAF-A-MoLE),Kaggle test,f1,0.6404199475065616
+LR + norm. (WAF-A-MoLE),"Kaggle test, insan formatı",recall,0.9088825214899714
+LR + norm. (WAF-A-MoLE),"Kaggle test, insan formatı",fpr,0.5805297065139585
+LR + norm. (WAF-A-MoLE),"Kaggle test, insan formatı",f1,0.6404199475065616
+LR + norm. (WAF-A-MoLE),HttpParams,recall,0.9363251013638039
+LR + norm. (WAF-A-MoLE),HttpParams,fpr,0.03398259428097804
+LR + norm. (WAF-A-MoLE),HttpParams,f1,0.9378374636577599
+LR + norm. (WAF-A-MoLE),Əl ilə yazılmış payload-lar,recall,0.96916608269096
+LR + norm. (WAF-A-MoLE),WAF-A-MoLE nümunə,recall_alt_whitespace,0.9967
+LR + norm. (WAF-A-MoLE),Kaggle test,recall_alt_whitespace,0.9145496535796767
+LR + norm. (WAF-A-MoLE),HttpParams,recall_alt_whitespace,0.9412583518930958
+LR + norm. (WAF-A-MoLE),Əl ilə yazılmış payload-lar,recall_alt_whitespace,0.9765395894428153

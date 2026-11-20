@@ -1,0 +1,4 @@
+göstərici,LR baza,LR + norm.,CNN baza,CNN + normallaşdırma
+"F1, insan formatı",95.91 ± 1.05,99.63 ± 0.09,57.35 ± 7.16,99.65 ± 0.08
+"Recall, alt. whitespace (A)",76.25 ± 4.82,99.76 ± 0.11,25.19 ± 11.50,99.73 ± 0.05
+"Recall, kombinasiya (A)",93.36 ± 4.76,99.71 ± 0.12,71.97 ± 2.80,99.70 ± 0.12

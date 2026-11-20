@@ -1,0 +1,421 @@
+seed,config,metric,value
+42,CNN baza,epochs,10.0
+42,CNN baza,val_f1,0.9982025164769324
+42,CNN baza,f1_test,0.9959770114942529
+42,CNN baza,recall_test,0.9931232091690544
+42,CNN baza,fpr_test,0.0007158196134574087
+42,CNN baza,f1_human,0.6449359720605355
+42,CNN baza,recall_human,0.47621776504297997
+42,CNN baza,fpr_human,0.00035790980672870435
+42,CNN baza,f1_httpparams,0.6716276723213722
+42,CNN baza,recall_httpparams,0.5056499857563385
+42,CNN baza,fpr_httpparams,7.582075972401244e-05
+42,CNN baza,recall_A_original,0.9931232091690544
+42,CNN baza,recall_A_random_case,0.9982497082847142
+42,CNN baza,recall_A_inline_comment_space,0.5023094688221709
+42,CNN baza,recall_A_alt_whitespace,0.17321016166281755
+42,CNN baza,recall_A_alt_whitespace_url,0.15069284064665128
+42,CNN baza,recall_A_url_encode,0.9959770114942529
+42,CNN baza,recall_A_double_url_encode,0.5310344827586206
+42,CNN baza,recall_A_versioned_comment,0.9964994165694282
+42,CNN baza,recall_A_logical_operator,1.0
+42,CNN baza,recall_A_hex_strings,0.9920382165605095
+42,CNN baza,recall_A_keyword_split_comment,0.9987856709168185
+42,CNN baza,recall_A_combination,0.6822977725674091
+42,CNN baza,recall_B_original,0.9931232091690544
+42,CNN baza,recall_B_random_case,0.9982497082847142
+42,CNN baza,recall_B_inline_comment_space,0.5023094688221709
+42,CNN baza,recall_B_alt_whitespace,0.17321016166281755
+42,CNN baza,recall_B_alt_whitespace_url,0.49018475750577367
+42,CNN baza,recall_B_url_encode,0.5310344827586206
+42,CNN baza,recall_B_double_url_encode,0.18333333333333332
+42,CNN baza,recall_B_versioned_comment,0.9964994165694282
+42,CNN baza,recall_B_logical_operator,1.0
+42,CNN baza,recall_B_hex_strings,0.9920382165605095
+42,CNN baza,recall_B_keyword_split_comment,0.9987856709168185
+42,CNN baza,recall_B_combination,0.5498241500586166
+42,CNN baza,recall_httpparams_alt_whitespace_A,0.14363584201969973
+42,CNN baza,recall_hw,0.5846867749419954
+42,CNN baza,recall_hw_novel,0.5759036144578313
+42,CNN baza,recall_hw_alt_whitespace,0.23667205169628433
+42,CNN baza,n_hw,1293.0
+42,CNN baza,httpparams_missed,5206.0
+42,CNN baza,httpparams_missed_recovered_by_sqlmap_spacing,0.9994237418363426
+42,CNN + normallaşdırma,epochs,10.0
+42,CNN + normallaşdırma,val_f1,0.9976019184652278
+42,CNN + normallaşdırma,f1_test,0.9956908934214307
+42,CNN + normallaşdırma,recall_test,0.9931232091690544
+42,CNN + normallaşdırma,fpr_test,0.0010737294201861132
+42,CNN + normallaşdırma,f1_human,0.9956908934214307
+42,CNN + normallaşdırma,recall_human,0.9931232091690544
+42,CNN + normallaşdırma,fpr_human,0.0010737294201861132
+42,CNN + normallaşdırma,f1_httpparams,0.999810084512392
+42,CNN + normallaşdırma,recall_httpparams,0.999810084512392
+42,CNN + normallaşdırma,fpr_httpparams,0.00015164151944802487
+42,CNN + normallaşdırma,recall_A_original,0.9931232091690544
+42,CNN + normallaşdırma,recall_A_random_case,0.9976662777129521
+42,CNN + normallaşdırma,recall_A_inline_comment_space,0.9976905311778291
+42,CNN + normallaşdırma,recall_A_alt_whitespace,0.9976905311778291
+42,CNN + normallaşdırma,recall_A_alt_whitespace_url,0.9976905311778291
+42,CNN + normallaşdırma,recall_A_url_encode,0.9959770114942529
+42,CNN + normallaşdırma,recall_A_double_url_encode,0.9959770114942529
+42,CNN + normallaşdırma,recall_A_versioned_comment,0.9976662777129521
+42,CNN + normallaşdırma,recall_A_logical_operator,1.0
+42,CNN + normallaşdırma,recall_A_hex_strings,0.9952229299363057
+42,CNN + normallaşdırma,recall_A_keyword_split_comment,0.9975713418336369
+42,CNN + normallaşdırma,recall_A_combination,0.9964830011723329
+42,CNN + normallaşdırma,recall_B_original,0.9931232091690544
+42,CNN + normallaşdırma,recall_B_random_case,0.9976662777129521
+42,CNN + normallaşdırma,recall_B_inline_comment_space,0.9976905311778291
+42,CNN + normallaşdırma,recall_B_alt_whitespace,0.9976905311778291
+42,CNN + normallaşdırma,recall_B_alt_whitespace_url,0.9976905311778291
+42,CNN + normallaşdırma,recall_B_url_encode,0.9959770114942529
+42,CNN + normallaşdırma,recall_B_double_url_encode,0.9959770114942529
+42,CNN + normallaşdırma,recall_B_versioned_comment,0.9976662777129521
+42,CNN + normallaşdırma,recall_B_logical_operator,1.0
+42,CNN + normallaşdırma,recall_B_hex_strings,0.9952229299363057
+42,CNN + normallaşdırma,recall_B_keyword_split_comment,0.9975713418336369
+42,CNN + normallaşdırma,recall_B_combination,0.9964830011723329
+42,CNN + normallaşdırma,recall_httpparams_alt_whitespace_A,1.0
+42,CNN + normallaşdırma,recall_hw,0.9675174013921114
+42,CNN + normallaşdırma,recall_hw_novel,0.9670682730923694
+42,CNN + normallaşdırma,recall_hw_alt_whitespace,0.968497576736672
+42,CNN + normallaşdırma,n_hw,1293.0
+42,CNN + normallaşdırma,httpparams_missed,2.0
+42,CNN + normallaşdırma,httpparams_missed_recovered_by_sqlmap_spacing,0.0
+43,CNN baza,epochs,10.0
+43,CNN baza,val_f1,0.9968454258675079
+43,CNN baza,f1_test,0.9962264150943396
+43,CNN baza,recall_test,0.9930555555555556
+43,CNN baza,fpr_test,0.00035549235691432633
+43,CNN baza,f1_human,0.5036780614452618
+43,CNN baza,recall_human,0.3368055555555556
+43,CNN baza,fpr_human,0.00035549235691432633
+43,CNN baza,f1_httpparams,0.5119864224595149
+43,CNN baza,recall_httpparams,0.34413917672782585
+43,CNN baza,fpr_httpparams,0.00015194104687381296
+43,CNN baza,recall_A_original,0.9930555555555556
+43,CNN baza,recall_A_random_case,0.9982290436835891
+43,CNN baza,recall_A_inline_comment_space,0.8327485380116959
+43,CNN baza,recall_A_alt_whitespace,0.16140350877192983
+43,CNN baza,recall_A_alt_whitespace_url,0.20292397660818715
+43,CNN baza,recall_A_url_encode,0.9965116279069768
+43,CNN baza,recall_A_double_url_encode,0.5279069767441861
+43,CNN baza,recall_A_versioned_comment,0.9958677685950413
+43,CNN baza,recall_A_logical_operator,1.0
+43,CNN baza,recall_A_hex_strings,0.9982608695652174
+43,CNN baza,recall_A_keyword_split_comment,0.9981401115933044
+43,CNN baza,recall_A_combination,0.7314487632508834
+43,CNN baza,recall_B_original,0.9930555555555556
+43,CNN baza,recall_B_random_case,0.9982290436835891
+43,CNN baza,recall_B_inline_comment_space,0.8327485380116959
+43,CNN baza,recall_B_alt_whitespace,0.16140350877192983
+43,CNN baza,recall_B_alt_whitespace_url,0.24619883040935672
+43,CNN baza,recall_B_url_encode,0.5279069767441861
+43,CNN baza,recall_B_double_url_encode,0.15988372093023256
+43,CNN baza,recall_B_versioned_comment,0.9958677685950413
+43,CNN baza,recall_B_logical_operator,1.0
+43,CNN baza,recall_B_hex_strings,0.9982608695652174
+43,CNN baza,recall_B_keyword_split_comment,0.9981401115933044
+43,CNN baza,recall_B_combination,0.5959952885747939
+43,CNN baza,recall_httpparams_alt_whitespace_A,0.12331258975586405
+43,CNN baza,recall_hw,0.5546995377503852
+43,CNN baza,recall_hw_novel,0.5395799676898223
+43,CNN baza,recall_hw_alt_whitespace,0.27375201288244766
+43,CNN baza,n_hw,1298.0
+43,CNN baza,httpparams_missed,6899.0
+43,CNN baza,httpparams_missed_recovered_by_sqlmap_spacing,0.9997101029134657
+43,CNN + normallaşdırma,epochs,10.0
+43,CNN + normallaşdırma,val_f1,0.9962718669343276
+43,CNN + normallaşdırma,f1_test,0.9968088192631273
+43,CNN + normallaşdırma,recall_test,0.9942129629629629
+43,CNN + normallaşdırma,fpr_test,0.00035549235691432633
+43,CNN + normallaşdırma,f1_human,0.9968088192631273
+43,CNN + normallaşdırma,recall_human,0.9942129629629629
+43,CNN + normallaşdırma,fpr_human,0.00035549235691432633
+43,CNN + normallaşdırma,f1_httpparams,0.9996198080030415
+43,CNN + normallaşdırma,recall_httpparams,0.9998098678581614
+43,CNN + normallaşdırma,fpr_httpparams,0.00045582314062143887
+43,CNN + normallaşdırma,recall_A_original,0.9942129629629629
+43,CNN + normallaşdırma,recall_A_random_case,0.9970484061393152
+43,CNN + normallaşdırma,recall_A_inline_comment_space,0.9976608187134502
+43,CNN + normallaşdırma,recall_A_alt_whitespace,0.9976608187134502
+43,CNN + normallaşdırma,recall_A_alt_whitespace_url,0.9976608187134502
+43,CNN + normallaşdırma,recall_A_url_encode,0.997093023255814
+43,CNN + normallaşdırma,recall_A_double_url_encode,0.997093023255814
+43,CNN + normallaşdırma,recall_A_versioned_comment,0.9970484061393152
+43,CNN + normallaşdırma,recall_A_logical_operator,1.0
+43,CNN + normallaşdırma,recall_A_hex_strings,1.0
+43,CNN + normallaşdırma,recall_A_keyword_split_comment,0.9981401115933044
+43,CNN + normallaşdırma,recall_A_combination,0.9982332155477032
+43,CNN + normallaşdırma,recall_B_original,0.9942129629629629
+43,CNN + normallaşdırma,recall_B_random_case,0.9970484061393152
+43,CNN + normallaşdırma,recall_B_inline_comment_space,0.9976608187134502
+43,CNN + normallaşdırma,recall_B_alt_whitespace,0.9976608187134502
+43,CNN + normallaşdırma,recall_B_alt_whitespace_url,0.9976608187134502
+43,CNN + normallaşdırma,recall_B_url_encode,0.997093023255814
+43,CNN + normallaşdırma,recall_B_double_url_encode,0.997093023255814
+43,CNN + normallaşdırma,recall_B_versioned_comment,0.9970484061393152
+43,CNN + normallaşdırma,recall_B_logical_operator,1.0
+43,CNN + normallaşdırma,recall_B_hex_strings,1.0
+43,CNN + normallaşdırma,recall_B_keyword_split_comment,0.9981401115933044
+43,CNN + normallaşdırma,recall_B_combination,0.9982332155477032
+43,CNN + normallaşdırma,recall_httpparams_alt_whitespace_A,1.0
+43,CNN + normallaşdırma,recall_hw,0.9537750385208013
+43,CNN + normallaşdırma,recall_hw_novel,0.9515347334410339
+43,CNN + normallaşdırma,recall_hw_alt_whitespace,0.9573268921095008
+43,CNN + normallaşdırma,n_hw,1298.0
+43,CNN + normallaşdırma,httpparams_missed,2.0
+43,CNN + normallaşdırma,httpparams_missed_recovered_by_sqlmap_spacing,0.0
+44,CNN baza,epochs,9.0
+44,CNN baza,val_f1,0.996437054631829
+44,CNN baza,f1_test,0.9979222321163549
+44,CNN baza,recall_test,0.9958530805687204
+44,CNN baza,fpr_test,0.0
+44,CNN baza,f1_human,0.49083594099240047
+44,CNN baza,recall_human,0.32523696682464454
+44,CNN baza,fpr_human,0.0
+44,CNN baza,f1_httpparams,0.4650076625556448
+44,CNN baza,recall_httpparams,0.30302453871029106
+44,CNN baza,fpr_httpparams,0.0002274450341167551
+44,CNN baza,recall_A_original,0.9958530805687204
+44,CNN baza,recall_A_random_case,0.9981981981981982
+44,CNN baza,recall_A_inline_comment_space,0.97736748064324
+44,CNN baza,recall_A_alt_whitespace,0.17391304347826086
+44,CNN baza,recall_A_alt_whitespace_url,0.12209648600357356
+44,CNN baza,recall_A_url_encode,0.9982164090368609
+44,CNN baza,recall_A_double_url_encode,0.42984542211652793
+44,CNN baza,recall_A_versioned_comment,0.9981981981981982
+44,CNN baza,recall_A_logical_operator,1.0
+44,CNN baza,recall_A_hex_strings,0.9983388704318937
+44,CNN baza,recall_A_keyword_split_comment,0.9987285441830897
+44,CNN baza,recall_A_combination,0.7111650485436893
+44,CNN baza,recall_B_original,0.9958530805687204
+44,CNN baza,recall_B_random_case,0.9981981981981982
+44,CNN baza,recall_B_inline_comment_space,0.97736748064324
+44,CNN baza,recall_B_alt_whitespace,0.17391304347826086
+44,CNN baza,recall_B_alt_whitespace_url,0.1816557474687314
+44,CNN baza,recall_B_url_encode,0.42984542211652793
+44,CNN baza,recall_B_double_url_encode,0.09690844233055886
+44,CNN baza,recall_B_versioned_comment,0.9981981981981982
+44,CNN baza,recall_B_logical_operator,1.0
+44,CNN baza,recall_B_hex_strings,0.9983388704318937
+44,CNN baza,recall_B_keyword_split_comment,0.9987285441830897
+44,CNN baza,recall_B_combination,0.5515776699029126
+44,CNN baza,recall_httpparams_alt_whitespace_A,0.11896551724137931
+44,CNN baza,recall_hw,0.5395849346656418
+44,CNN baza,recall_hw_novel,0.5315747402078337
+44,CNN baza,recall_hw_alt_whitespace,0.2859437751004016
+44,CNN baza,n_hw,1301.0
+44,CNN baza,httpparams_missed,7328.0
+44,CNN baza,httpparams_missed_recovered_by_sqlmap_spacing,0.9997270742358079
+44,CNN + normallaşdırma,epochs,9.0
+44,CNN + normallaşdırma,val_f1,0.996437054631829
+44,CNN + normallaşdırma,f1_test,0.997624703087886
+44,CNN + normallaşdırma,recall_test,0.995260663507109
+44,CNN + normallaşdırma,fpr_test,0.0
+44,CNN + normallaşdırma,f1_human,0.997624703087886
+44,CNN + normallaşdırma,recall_human,0.995260663507109
+44,CNN + normallaşdırma,fpr_human,0.0
+44,CNN + normallaşdırma,f1_httpparams,0.9997622331066621
+44,CNN + normallaşdırma,recall_httpparams,0.9998097774396043
+44,CNN + normallaşdırma,fpr_httpparams,0.0002274450341167551
+44,CNN + normallaşdırma,recall_A_original,0.995260663507109
+44,CNN + normallaşdırma,recall_A_random_case,0.9975975975975976
+44,CNN + normallaşdırma,recall_A_inline_comment_space,0.9976176295413937
+44,CNN + normallaşdırma,recall_A_alt_whitespace,0.9976176295413937
+44,CNN + normallaşdırma,recall_A_alt_whitespace_url,0.9976176295413937
+44,CNN + normallaşdırma,recall_A_url_encode,0.9976218787158145
+44,CNN + normallaşdırma,recall_A_double_url_encode,0.9976218787158145
+44,CNN + normallaşdırma,recall_A_versioned_comment,0.996996996996997
+44,CNN + normallaşdırma,recall_A_logical_operator,1.0
+44,CNN + normallaşdırma,recall_A_hex_strings,1.0
+44,CNN + normallaşdırma,recall_A_keyword_split_comment,0.9980928162746344
+44,CNN + normallaşdırma,recall_A_combination,0.9963592233009708
+44,CNN + normallaşdırma,recall_B_original,0.995260663507109
+44,CNN + normallaşdırma,recall_B_random_case,0.9975975975975976
+44,CNN + normallaşdırma,recall_B_inline_comment_space,0.9976176295413937
+44,CNN + normallaşdırma,recall_B_alt_whitespace,0.9976176295413937
+44,CNN + normallaşdırma,recall_B_alt_whitespace_url,0.9976176295413937
+44,CNN + normallaşdırma,recall_B_url_encode,0.9976218787158145
+44,CNN + normallaşdırma,recall_B_double_url_encode,0.9976218787158145
+44,CNN + normallaşdırma,recall_B_versioned_comment,0.996996996996997
+44,CNN + normallaşdırma,recall_B_logical_operator,1.0
+44,CNN + normallaşdırma,recall_B_hex_strings,1.0
+44,CNN + normallaşdırma,recall_B_keyword_split_comment,0.9980928162746344
+44,CNN + normallaşdırma,recall_B_combination,0.9963592233009708
+44,CNN + normallaşdırma,recall_httpparams_alt_whitespace_A,1.0
+44,CNN + normallaşdırma,recall_hw,0.9392774788624135
+44,CNN + normallaşdırma,recall_hw_novel,0.9376498800959233
+44,CNN + normallaşdırma,recall_hw_alt_whitespace,0.9413654618473896
+44,CNN + normallaşdırma,n_hw,1301.0
+44,CNN + normallaşdırma,httpparams_missed,2.0
+44,CNN + normallaşdırma,httpparams_missed_recovered_by_sqlmap_spacing,0.0
+45,CNN baza,epochs,10.0
+45,CNN baza,val_f1,0.9976649153531816
+45,CNN baza,f1_test,0.9963877182420229
+45,CNN baza,recall_test,0.9928014397120576
+45,CNN baza,fpr_test,0.0
+45,CNN baza,f1_human,0.6285479226655698
+45,CNN baza,recall_human,0.45830833833233353
+45,CNN baza,fpr_human,0.0
+45,CNN baza,f1_httpparams,0.6149996707710542
+45,CNN baza,recall_httpparams,0.4442541856925419
+45,CNN baza,fpr_httpparams,0.00037904631946023806
+45,CNN baza,recall_A_original,0.9928014397120576
+45,CNN baza,recall_A_random_case,0.996956786366403
+45,CNN baza,recall_A_inline_comment_space,0.22014475271411338
+45,CNN baza,recall_A_alt_whitespace,0.3455971049457177
+45,CNN baza,recall_A_alt_whitespace_url,0.2882991556091677
+45,CNN baza,recall_A_url_encode,0.997588908981314
+45,CNN baza,recall_A_double_url_encode,0.7269439421338155
+45,CNN baza,recall_A_versioned_comment,0.9939135727328059
+45,CNN baza,recall_A_logical_operator,1.0
+45,CNN baza,recall_A_hex_strings,0.9982425307557118
+45,CNN baza,recall_A_keyword_split_comment,0.997444089456869
+45,CNN baza,recall_A_combination,0.715158924205379
+45,CNN baza,recall_B_original,0.9928014397120576
+45,CNN baza,recall_B_random_case,0.996956786366403
+45,CNN baza,recall_B_inline_comment_space,0.22014475271411338
+45,CNN baza,recall_B_alt_whitespace,0.3455971049457177
+45,CNN baza,recall_B_alt_whitespace_url,0.8721351025331725
+45,CNN baza,recall_B_url_encode,0.7269439421338155
+45,CNN baza,recall_B_double_url_encode,0.2808921036769138
+45,CNN baza,recall_B_versioned_comment,0.9939135727328059
+45,CNN baza,recall_B_logical_operator,1.0
+45,CNN baza,recall_B_hex_strings,0.9982425307557118
+45,CNN baza,recall_B_keyword_split_comment,0.997444089456869
+45,CNN baza,recall_B_combination,0.6081907090464548
+45,CNN baza,recall_httpparams_alt_whitespace_A,0.23395286453343553
+45,CNN baza,recall_hw,0.6278890600924499
+45,CNN baza,recall_hw_novel,0.6141479099678456
+45,CNN baza,recall_hw_alt_whitespace,0.4138486312399356
+45,CNN baza,n_hw,1298.0
+45,CNN baza,httpparams_missed,5842.0
+45,CNN baza,httpparams_missed_recovered_by_sqlmap_spacing,0.999657651489216
+45,CNN + normallaşdırma,epochs,10.0
+45,CNN + normallaşdırma,val_f1,0.9967845659163987
+45,CNN + normallaşdırma,f1_test,0.9960855164107197
+45,CNN + normallaşdırma,recall_test,0.9922015596880623
+45,CNN + normallaşdırma,fpr_test,0.0
+45,CNN + normallaşdırma,f1_human,0.9960855164107197
+45,CNN + normallaşdırma,recall_human,0.9922015596880623
+45,CNN + normallaşdırma,fpr_human,0.0
+45,CNN + normallaşdırma,f1_httpparams,0.9997146390183582
+45,CNN + normallaşdırma,recall_httpparams,0.9998097412480974
+45,CNN + normallaşdırma,fpr_httpparams,0.00030323705556819044
+45,CNN + normallaşdırma,recall_A_original,0.9922015596880623
+45,CNN + normallaşdırma,recall_A_random_case,0.995739500912964
+45,CNN + normallaşdırma,recall_A_inline_comment_space,0.996984318455971
+45,CNN + normallaşdırma,recall_A_alt_whitespace,0.996984318455971
+45,CNN + normallaşdırma,recall_A_alt_whitespace_url,0.996984318455971
+45,CNN + normallaşdırma,recall_A_url_encode,0.9969861362266426
+45,CNN + normallaşdırma,recall_A_double_url_encode,0.9969861362266426
+45,CNN + normallaşdırma,recall_A_versioned_comment,0.9963481436396835
+45,CNN + normallaşdırma,recall_A_logical_operator,1.0
+45,CNN + normallaşdırma,recall_A_hex_strings,1.0
+45,CNN + normallaşdırma,recall_A_keyword_split_comment,0.9955271565495207
+45,CNN + normallaşdırma,recall_A_combination,0.9957212713936431
+45,CNN + normallaşdırma,recall_B_original,0.9922015596880623
+45,CNN + normallaşdırma,recall_B_random_case,0.995739500912964
+45,CNN + normallaşdırma,recall_B_inline_comment_space,0.996984318455971
+45,CNN + normallaşdırma,recall_B_alt_whitespace,0.996984318455971
+45,CNN + normallaşdırma,recall_B_alt_whitespace_url,0.996984318455971
+45,CNN + normallaşdırma,recall_B_url_encode,0.9969861362266426
+45,CNN + normallaşdırma,recall_B_double_url_encode,0.9969861362266426
+45,CNN + normallaşdırma,recall_B_versioned_comment,0.9963481436396835
+45,CNN + normallaşdırma,recall_B_logical_operator,1.0
+45,CNN + normallaşdırma,recall_B_hex_strings,1.0
+45,CNN + normallaşdırma,recall_B_keyword_split_comment,0.9955271565495207
+45,CNN + normallaşdırma,recall_B_combination,0.9957212713936431
+45,CNN + normallaşdırma,recall_httpparams_alt_whitespace_A,1.0
+45,CNN + normallaşdırma,recall_hw,0.9553158705701078
+45,CNN + normallaşdırma,recall_hw_novel,0.954983922829582
+45,CNN + normallaşdırma,recall_hw_alt_whitespace,0.9573268921095008
+45,CNN + normallaşdırma,n_hw,1298.0
+45,CNN + normallaşdırma,httpparams_missed,2.0
+45,CNN + normallaşdırma,httpparams_missed_recovered_by_sqlmap_spacing,0.0
+46,CNN baza,epochs,10.0
+46,CNN baza,val_f1,0.9982486865148862
+46,CNN baza,f1_test,0.9968069666182874
+46,CNN baza,recall_test,0.9942096120440069
+46,CNN baza,fpr_test,0.00035561877667140827
+46,CNN baza,f1_human,0.5996758508914101
+46,CNN baza,recall_human,0.4284887087434858
+46,CNN baza,fpr_human,0.00035561877667140827
+46,CNN baza,f1_httpparams,0.6657786235331431
+46,CNN baza,recall_httpparams,0.4991439984782195
+46,CNN baza,fpr_httpparams,0.00022763487366264513
+46,CNN baza,recall_A_original,0.9942096120440069
+46,CNN baza,recall_A_random_case,0.9976428992339422
+46,CNN baza,recall_A_inline_comment_space,0.504079254079254
+46,CNN baza,recall_A_alt_whitespace,0.40559440559440557
+46,CNN baza,recall_A_alt_whitespace_url,0.317016317016317
+46,CNN baza,recall_A_url_encode,0.997093023255814
+46,CNN baza,recall_A_double_url_encode,0.7412790697674418
+46,CNN baza,recall_A_versioned_comment,0.9952857984678845
+46,CNN baza,recall_A_logical_operator,1.0
+46,CNN baza,recall_A_hex_strings,0.9967637540453075
+46,CNN baza,recall_A_keyword_split_comment,0.9987600743955363
+46,CNN baza,recall_A_combination,0.7585596221959858
+46,CNN baza,recall_B_original,0.9942096120440069
+46,CNN baza,recall_B_random_case,0.9976428992339422
+46,CNN baza,recall_B_inline_comment_space,0.504079254079254
+46,CNN baza,recall_B_alt_whitespace,0.40559440559440557
+46,CNN baza,recall_B_alt_whitespace_url,0.4976689976689977
+46,CNN baza,recall_B_url_encode,0.7412790697674418
+46,CNN baza,recall_B_double_url_encode,0.17267441860465116
+46,CNN baza,recall_B_versioned_comment,0.9952857984678845
+46,CNN baza,recall_B_logical_operator,1.0
+46,CNN baza,recall_B_hex_strings,0.9967637540453075
+46,CNN baza,recall_B_keyword_split_comment,0.9987600743955363
+46,CNN baza,recall_B_combination,0.6174734356552538
+46,CNN baza,recall_httpparams_alt_whitespace_A,0.22739463601532567
+46,CNN baza,recall_hw,0.6175790285273709
+46,CNN baza,recall_hw_novel,0.6103059581320451
+46,CNN baza,recall_hw_alt_whitespace,0.40773569701853346
+46,CNN baza,n_hw,1297.0
+46,CNN baza,httpparams_missed,5266.0
+46,CNN baza,httpparams_missed_recovered_by_sqlmap_spacing,0.9996202050892518
+46,CNN + normallaşdırma,epochs,10.0
+46,CNN + normallaşdırma,val_f1,0.9973722627737225
+46,CNN + normallaşdırma,f1_test,0.9962264150943396
+46,CNN + normallaşdırma,recall_test,0.9936305732484076
+46,CNN + normallaşdırma,fpr_test,0.0007112375533428165
+46,CNN + normallaşdırma,f1_human,0.9962264150943396
+46,CNN + normallaşdırma,recall_human,0.9936305732484076
+46,CNN + normallaşdırma,fpr_human,0.0007112375533428165
+46,CNN + normallaşdırma,f1_httpparams,0.9996671580048498
+46,CNN + normallaşdırma,recall_httpparams,0.9998097774396043
+46,CNN + normallaşdırma,fpr_httpparams,0.00037939145610440855
+46,CNN + normallaşdırma,recall_A_original,0.9936305732484076
+46,CNN + normallaşdırma,recall_A_random_case,0.9976428992339422
+46,CNN + normallaşdırma,recall_A_inline_comment_space,0.9965034965034965
+46,CNN + normallaşdırma,recall_A_alt_whitespace,0.9965034965034965
+46,CNN + normallaşdırma,recall_A_alt_whitespace_url,0.9965034965034965
+46,CNN + normallaşdırma,recall_A_url_encode,0.9965116279069768
+46,CNN + normallaşdırma,recall_A_double_url_encode,0.9965116279069768
+46,CNN + normallaşdırma,recall_A_versioned_comment,0.9976428992339422
+46,CNN + normallaşdırma,recall_A_logical_operator,1.0
+46,CNN + normallaşdırma,recall_A_hex_strings,0.9983818770226537
+46,CNN + normallaşdırma,recall_A_keyword_split_comment,0.9969001859888407
+46,CNN + normallaşdırma,recall_A_combination,0.9982290436835891
+46,CNN + normallaşdırma,recall_B_original,0.9936305732484076
+46,CNN + normallaşdırma,recall_B_random_case,0.9976428992339422
+46,CNN + normallaşdırma,recall_B_inline_comment_space,0.9965034965034965
+46,CNN + normallaşdırma,recall_B_alt_whitespace,0.9965034965034965
+46,CNN + normallaşdırma,recall_B_alt_whitespace_url,0.9965034965034965
+46,CNN + normallaşdırma,recall_B_url_encode,0.9965116279069768
+46,CNN + normallaşdırma,recall_B_double_url_encode,0.9965116279069768
+46,CNN + normallaşdırma,recall_B_versioned_comment,0.9976428992339422
+46,CNN + normallaşdırma,recall_B_logical_operator,1.0
+46,CNN + normallaşdırma,recall_B_hex_strings,0.9983818770226537
+46,CNN + normallaşdırma,recall_B_keyword_split_comment,0.9969001859888407
+46,CNN + normallaşdırma,recall_B_combination,0.9982290436835891
+46,CNN + normallaşdırma,recall_httpparams_alt_whitespace_A,1.0
+46,CNN + normallaşdırma,recall_hw,0.9390902081727063
+46,CNN + normallaşdırma,recall_hw_novel,0.9371980676328503
+46,CNN + normallaşdırma,recall_hw_alt_whitespace,0.9403706688154714
+46,CNN + normallaşdırma,n_hw,1297.0
+46,CNN + normallaşdırma,httpparams_missed,2.0
+46,CNN + normallaşdırma,httpparams_missed_recovered_by_sqlmap_spacing,0.0

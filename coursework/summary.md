@@ -141,7 +141,7 @@ Seed 42 nəticələri orijinal notebook-larla üst-üstə düşür: fərq ≤ 0.
 | F1 (test) | 99.68 ± 0.05 | 99.71 ± 0.05 | 99.57 ± 0.10 | 93.72 ± 0.17 |
 | F1 ("insan formatı" test) | 95.91 ± 1.05 | 96.21 ± 0.54 | 92.77 ± 1.08 | 93.59 ± 0.14 |
 | Ən pis texnikada recall, ssenari A, baza | 63.71 ± 21.97 | 75.55 ± 4.79 | 4.53 ± 2.98 | 98.16 ± 0.12 |
-| Ən pis texnikada recall, ssenari A, normallaşdırma ilə | 99.56 ± 0.20 | — | 98.96 ± 0.11 | 99.28 ± 0.08 |
+| Ən pis texnikada recall, ssenari A, normallaşdırma ilə | 99.56 ± 0.20 | 99.60 ± 0.15 | 98.96 ± 0.11 | 99.28 ± 0.08 |
 
 LR üçün müdafiə nəticələri (ssenari A, recall %):
 
@@ -174,11 +174,9 @@ Son sütun MySQL-də real işləyən 996 effektiv hücum formasından detektorda
   olmasıdır. Adi giriş dəyərlərində (`fpr_plain_input`) və HttpParams-da libinjection-un FPR-i 0-dır.
 - `keyword_split_comment` texnikasında libinjection 9.8% recall verir. Lakin bu texnika MySQL-də işləmir.
 
-### 5.3. Simvol səviyyəli CNN (notebook 13) — **bitməyib**
+### 5.3. Simvol səviyyəli CNN (notebook 13) — **bitib**
 
-`notebooks/13_char_cnn.ipynb` yazılıb (PyTorch, CPU, 5 seed, baza və normallaşdırma), amma hələ icra olunmayıb:
-0/7 kod hücrəsi işə salınıb. `results/13_*` və `figures/13_char_cnn_artifact.png` faylları yoxdur. Ona görə
-CNN nəticəsi bu xülasəyə daxil edilməyib.
+Nəticələr 8-ci bölmədədir (Section 14–13).
 
 ## 6. Notebook-ların siyahısı
 
@@ -197,7 +195,10 @@ CNN nəticəsi bu xülasəyə daxil edilməyib.
 | 10 | `10_cross_dataset` | Xarici datasetlər: üst-üstə düşmə, HttpParams testi, müstəqillik analizi, əks istiqamət | icra olunub |
 | 11 | `11_libinjection` | libinjection 4.0.1 eyni test dəstlərində | icra olunub |
 | 12 | `12_multiseed` | Bütün əsas cədvəllər 42–46 seed-lərində (orta ± std) və seed 42 üçün yoxlama | icra olunub |
-| 13 | `13_char_cnn` | Bayt səviyyəli CNN: neyron model də artefaktı öyrənirmi? | **icra olunmayıb** |
+| 13 | `13_char_cnn` | Bayt səviyyəli CNN: neyron model də artefaktı öyrənirmi? (14-dən sonra işə salınır) | icra olunub |
+| 14 | `14_handwritten_payloads` | PayloadsAllTheThings + fuzzdb payload siyahıları, bütün detektorlar, 5 seed | icra olunub |
+| 15 | `15_openappsec_benign` | open-appsec real təmiz trafiki: dəyər və sorğu səviyyəsində FPR, 5 seed | (bax bölmə 9) |
+| 16 | `16_wafamole` | WAF-A-MoLE: artefakt statistikası, köçürmə, əks istiqamət | icra olunub |
 
 Notebook-lardan kənar yalnız middleware ölçmələri aparılıb (`middleware/`, Node.js):
 
@@ -217,3 +218,142 @@ Notebook-lardan kənar yalnız middleware ölçmələri aparılıb (`middleware/
 | 6 | `04_defense_recall_A.png` | Nəticə | Normallaşdırma və augmentation müdafiələrinin müqayisəsi. |
 | 7 | `05_blacklist_vs_ml.png` | Nəticə | Qara siyahı filtri ML detektorları ilə müqayisədə. |
 | 8 | `10_cross_dataset_recall.png` | Nəticə | Xarici datasetdə yoxlama: artefakt hipotezinin təsdiqi. |
+
+## 8. Section 14–13: əl ilə yazılmış payload-lar və char-CNN
+
+### 8.1. Əl ilə yazılmış payload siyahıları (notebook 14)
+
+**Məlumat.** `swisskyrepo/PayloadsAllTheThings` (`SQL Injection/Intruder/`, MIT) və `fuzzdb-project/fuzzdb`
+(`attack/sql-injection/`, BSD-3 / CC BY 3.0), sabit commit-lər. 42 fayl, 2 133 sətir → boş (4), şərh (11), SQL tokeni
+olmayan fuzz sətirləri (111) və dublikatlar (580) çıxarıldıqdan sonra **1 427 unikal payload**
+(fayl üzrə saylar: `results/14_payload_sources.csv`). Model girişi = bir dəfə URL decode (ssenari A).
+FPR üçün siyahılarda təmiz sinif olmadığından **HttpParams-ın təmiz sinfi** (train+val ilə üst-üstə düşənlər çıxarılıb) istifadə olunur.
+
+**Müstəqillik** (seed 42 train ilə):
+
+| Dəst | n | Tam üst-üstə düşmə % | Normallaşdırılmış üst-üstə düşmə % | İkiqat boşluq % | sqlmap skeleti train-də % | Median uzunluq |
+|---|---|---|---|---|---|---|
+| Əl ilə yazılmış (hamısı) | 1 427 | 1.8 | 7.5 | **0.3** | 11.5 | 39 |
+| Bizim test, zərərli | 1 745 | 0.0 | 0.1 | 94.5 | 28.7 | 84 |
+| HttpParams, zərərli | 10 852 | 2.4 | 55.3 | 0.0 | 63.4 | 75 |
+
+Train+val ilə normallaşdırılmış formada üst-üstə düşənlər hər seed-də testdən çıxarılır (126–134), ~1 297 payload qalır.
+
+**Recall və FPR** (%, orta ± std, 5 seed):
+
+| Detektor | Recall | Recall, skeleti yeni | Recall, alt. whitespace (A) | FPR (HttpParams təmiz) |
+|---|---|---|---|---|
+| LR baza | 92.79 ± 2.29 | 92.59 ± 2.37 | 81.83 ± 2.66 | 0.02 ± 0.01 |
+| SVM baza | 93.62 ± 1.52 | 93.39 ± 1.55 | 83.65 ± 2.46 | 0.03 ± 0.02 |
+| RF baza | 84.77 ± 1.45 | 84.33 ± 1.46 | **35.59 ± 10.00** | 0.01 ± 0.00 |
+| NB baza | 91.24 ± 0.33 | 91.21 ± 0.37 | 91.04 ± 0.39 | 29.28 ± 0.25 |
+| LR + normallaşdırma | 95.10 ± 0.67 | 95.02 ± 0.72 | 95.20 ± 0.69 | 0.02 ± 0.01 |
+| LR + norm. + augmentation | 95.16 ± 1.20 | 95.07 ± 1.26 | 95.26 ± 1.27 | 0.02 ± 0.01 |
+| Qara siyahı (`sanitizeInput`) | 98.06 ± 0.03 | 98.02 ± 0.07 | 98.87 ± 0.00 | 8.56 ± 0.09 |
+| Qara siyahı (`sanitizeSearch`) | 89.18 ± 0.14 | 89.00 ± 0.13 | 89.84 ± 0.13 | 0.24 ± 0.01 |
+| libinjection 4.0.1 | 58.29 ± 0.14 | 57.44 ± 0.15 | 57.10 ± 0.11 | 0.00 ± 0.00 |
+| CNN baza (13) | 58.49 ± 3.83 | 57.43 ± 3.85 | 32.36 ± 8.17 | 0.02 ± 0.01 |
+| CNN + normallaşdırma (13) | 95.10 ± 1.20 | 94.97 ± 1.26 | 95.30 ± 1.20 | 0.03 ± 0.01 |
+
+Seed 42–46 üçün HttpParams FPR-i notebook 12 ilə eynidir (fərq 0.0, `14_reproduction_check.csv`).
+Qrafik: `figures/paper/14_handwritten_recall.png`.
+
+**Şərh.** sqlmap formatında olmayan, insan tərəfindən yazılmış payload-larda baza modellər artıq daha zəifdir və alternativ
+whitespace onları yenə salır (RF 84.8% → 35.6%), normallaşdırılmış LR isə bu dəstdə də sabit qalır (95.1% / 95.2%). Ən yaxşı
+LR-in buraxdığı payload-ların əksəriyyəti (seed 42-də 48-dən 34-ü) tam SQL operatorlarıdır (`select current_user;`), çünki
+Kaggle-da təmiz sinif tam SQL sorğularıdır — bu, datasetin ikinci, semantik məhdudiyyətidir. Qara siyahı recall-da öndədir,
+amma real form dəyərlərində 8.6% FPR ilə; libinjection isə FPR-i sıfır saxlayaraq bu payload-ların yalnız 58%-ini tanıyır.
+
+### 8.2. Simvol səviyyəli CNN (notebook 13)
+
+Bayt embedding (32) → üç paralel Conv1d (kernel 3/5/7, 64 filtr) → global max-pool → dropout 0.3; Adam, maksimum 10 epoxa,
+validation F1-ə görə ən yaxşı epoxa; 5 seed. **Baza** = yalnız kiçik hərf, **normallaşdırma** = `src/normalize.py`.
+
+| Göstərici (%, orta ± std) | CNN baza | CNN + normallaşdırma | LR baza (12) | LR + norm. (12) |
+|---|---|---|---|---|
+| F1, Kaggle test | 99.67 ± 0.08 | 99.65 ± 0.08 | 99.68 ± 0.05 | 99.63 ± 0.09 |
+| FPR, Kaggle test | 0.03 ± 0.03 | 0.04 ± 0.05 | 0.04 ± 0.04 | 0.06 ± 0.05 |
+| F1, insan formatı | **57.35 ± 7.16** | 99.65 ± 0.08 | 95.91 ± 1.05 | 99.63 ± 0.09 |
+| Recall, alt. whitespace (A) | **25.19 ± 11.50** | 99.73 ± 0.05 | 76.25 ± 4.82 | 99.76 ± 0.11 |
+| Recall, inline şərh (A) | 60.73 ± 29.97 | 99.73 ± 0.05 | — | — |
+| Recall, `double_url_encode` (A) | 59.14 ± 13.66 | 99.68 ± 0.06 | — | — |
+| Recall, kombinasiya (A) | 71.97 ± 2.80 | 99.70 ± 0.12 | 93.36 ± 4.76 | 99.71 ± 0.12 |
+| Recall, HttpParams | **41.92 ± 9.17** | 99.98 ± 0.00 | 96.91 ± 0.75 | 99.98 ± 0.01 |
+| FPR, HttpParams | 0.02 ± 0.01 | 0.03 ± 0.01 | — | — |
+| Recall, HttpParams + alt. whitespace | 16.95 ± 5.67 | 100.00 ± 0.00 | — | — |
+| Recall, əl ilə yazılmış payload-lar | 58.49 ± 3.83 | 95.10 ± 1.20 | 92.79 ± 2.29 | 95.10 ± 0.67 |
+| Recall, əl ilə yazılmış + alt. whitespace | 32.36 ± 8.17 | 95.30 ± 1.20 | 81.83 ± 2.66 | 95.20 ± 0.69 |
+
+Baza CNN-in HttpParams-da buraxdığı payload-lar (orta 6 108) sqlmap boşluq formatına salındıqda **99.96%**-i tutulur.
+Qrafik: `figures/paper/13_char_cnn_artifact.png`.
+
+**Şərh.** Neyron şəbəkə artefaktdan qorunmur, əksinə ona TF-IDF modellərindən daha çox söykənir: Kaggle testində F1 99.7%
+olan baza CNN "insan formatı"nda 57%-ə, HttpParams-da recall 42%-ə, alternativ whitespace ilə 25%-ə düşür. HttpParams-da
+buraxılan payload-ların 99.96%-i yalnız sqlmap boşluqları əlavə olunanda tutulduğundan, CNN-in öyrəndiyi əsas siqnalın format
+olduğu birbaşa görünür. Eyni normallaşdırma CNN-də də problemi tam aradan qaldırır və onu normallaşdırılmış LR ilə eyni
+səviyyəyə gətirir — müdafiə model arxitekturasından asılı deyil.
+
+## 9. Section 15–16: real təmiz trafik və WAF-A-MoLE
+
+### 9.1. open-appsec real təmiz trafiki (notebook 15)
+
+_Nəticələr hesablanır — notebook bitəndə əlavə olunacaq._
+
+### 9.2. WAF-A-MoLE (notebook 16)
+
+**Məlumat və bölmə.** `zangobot/wafamole_dataset` (Demetrio et al., SAC 2020; repoda lisenziya faylı yoxdur — paylanmır).
+Parçalar README-dəki kimi birləşdirilib. README-nin `sqlparse.split()` üsulu hücum faylında **işləmir**: generator
+payload-ları dırnaqları escape etmədən literal içinə qoyur və sqlparse sonrakı sorğuları yapışdırır (faylın ilk 20 MB-ı
+3 262 "statement" verir, biri 18.9 MB; baytların 96.8%-i 2 000 simvoldan uzun "statement"-lərdədir). Ona görə fayl generatorun
+dörd şablonunun (`SELECT`, ``INSERT INTO `tab` ``, ``UPDATE `tab` ``, ``DELETE FROM `tab` ``) başlanğıcında kəsilib,
+yalnız təmiz faylın DDL başlığı sqlparse ilə bölünüb (`src/wafamole.py`, `16_split_report.csv`).
+Nəticə: 1 004 669 hücum (745 593 unikal), 1 000 209 təmiz (923 425 unikal); 8 353 sorğu hər iki sinifdə olduğu üçün çıxarılıb.
+
+**Artefakt statistikası** (10-cu notebook-un cədvəli ilə eyni format):
+
+| Dataset | Sinif | n | İkiqat boşluq % | `=` ətrafında boşluq % | Mötərizə içində boşluq % | Böyük hərf % | Median uzunluq | Bizimlə üst-üstə düşmə % (normallaşdırılmış) |
+|---|---|---|---|---|---|---|---|---|
+| Modified_SQL_Dataset | zərərli | 11 370 | 94.9 | 81.1 | 86.9 | 2.0 | 85.5 | — |
+| Modified_SQL_Dataset | təmiz | 18 885 | 29.8 | 14.8 | 24.4 | 61.3 | 37 | — |
+| HttpParamsDataset | zərərli | 10 852 | 0.0 | 0.0 | 0.0 | 0.0 | 75 | 79.1 |
+| HttpParamsDataset | təmiz | 19 304 | 0.0 | 0.0 | 0.0 | 0.0 | 9 | 37.3 |
+| WAF-A-MoLE | zərərli | 737 240 | 3.5 | 52.8 | 22.4 | 100.0 | 174 | 0.0 |
+| WAF-A-MoLE | təmiz | 915 072 | 0.0 | 47.4 | 22.7 | 100.0 | 70 | 0.0 |
+
+WAF-A-MoLE-də ikiqat boşluq artefaktı demək olar ki, yoxdur, amma siniflər başqa formatda fərqlənir: hücumların 28.6%-ində
+sətir sonu, 58.9%-ində şərh (`--`, `#`, `/*`) var, təmizlərdə 0%; təmiz sorğulardakı sətir literalları təsadüfi hərflərdən
+ibarətdir (`'nrgbrgef'`) — WAF-A-MoLE-də öyrədilmiş LR-in ən güclü "təmiz" n-gram-ları tək hərflərdir (`j`, `z`, `q`).
+
+**Bizim modellər WAF-A-MoLE-də** (20 000 hücum + 20 000 təmiz, seed 42; alternativ whitespace hər iki sinfə tətbiq olunur), %:
+
+| Detektor | Recall | FPR | Recall, alt. whitespace | FPR, alt. whitespace |
+|---|---|---|---|---|
+| LR baza | 90.83 | 21.31 | 86.56 | 10.03 |
+| SVM baza | 88.81 | 11.89 | 79.09 | 1.97 |
+| RF baza | 70.12 | 18.84 | **19.50** | 0.00 |
+| NB baza | 80.55 | 21.62 | 77.58 | 35.63 |
+| LR + normallaşdırma | 95.95 | 26.55 | 95.95 | 26.55 |
+| LR + norm. + augmentation | 95.24 | 21.72 | 95.24 | 21.72 |
+| CNN baza | 46.50 | 3.73 | **2.34** | 0.00 |
+| CNN + normallaşdırma | 95.51 | 39.95 | 95.51 | 39.95 |
+| Qara siyahı (`sanitizeInput` / `sanitizeSearch`) | 100.00 | 100.00 | 100.00 | 100.00 |
+| libinjection 4.0.1 | 78.12 | 45.06 | 77.90 | 45.06 |
+
+**Əks test: baza LR WAF-A-MoLE-də öyrədilir** (nümunədən kənar 20k + 20k train, 5k + 5k val), %:
+
+| Test dəsti | LR baza: recall | LR baza: FPR | LR baza: recall, alt. whitespace | LR + norm.: recall | LR + norm.: FPR | LR + norm.: recall, alt. whitespace |
+|---|---|---|---|---|---|---|
+| WAF-A-MoLE nümunə | 99.87 | 0.30 | 97.19 | 99.67 | 0.39 | 99.67 |
+| Kaggle test | 82.81 | 36.65 | **56.81** | 90.89 | 58.05 | 91.46 |
+| HttpParams | 95.10 | 0.02 | **76.85** | 93.63 | 3.40 | 94.13 |
+| Əl ilə yazılmış payload-lar | 92.15 | — | **79.77** | 96.92 | — | 97.65 |
+
+Qrafik: `figures/paper/16_wafamole.png`.
+
+**Şərh.** WAF-A-MoLE-də sqlmap-ə xas ikiqat boşluq yoxdur, amma onun da öz format artefaktları var (yalnız hücumlarda sətir sonu
+və şərh, təmiz sinifdə təsadüfi hərf literalları), və orada öyrədilmiş baza LR eyni zəifliyi göstərir: öz testində 99.9% recall
+verən model alternativ whitespace ilə Kaggle-da 82.8% → 56.8%, HttpParams-da 95.1% → 76.9% düşür, normallaşdırılmış variant isə
+sabit qalır. Bizim baza modellərimiz bu tam SQL sorğularına zəif köçür — xüsusilə CNN baza (46.5%, alt. whitespace ilə 2.3%) və
+RF baza (70.1% → 19.5%) — normallaşdırılmış modellər recall-u ~95%-ə qaldırır. Lakin FPR hər iki istiqamətdə yüksəkdir
+(21–40%), çünki iki datasetin təmiz sinifləri tam fərqli paylanmadır; bu, "təmiz" sinfin tərifinin datasetlər arasında
+köçürülə bilmədiyini göstərir və qara siyahı burada hər sorğunu bloklayır.

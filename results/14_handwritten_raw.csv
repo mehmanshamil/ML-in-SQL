@@ -1,0 +1,251 @@
+seed,detector,metric,value
+42,meta,n_hw,1293.0
+42,meta,n_hw_removed_overlap,134.0
+42,meta,n_hw_novel,1245.0
+42,meta,n_hw_alt_whitespace,1238.0
+42,meta,n_httpparams_clean,13189.0
+42,LR baza,recall_hw,0.9288476411446249
+42,LR baza,recall_hw_novel,0.9269076305220884
+42,LR baza,recall_hw_file_macro,0.8103803174215986
+42,LR baza,recall_hw_alt_whitespace,0.8231017770597738
+42,LR baza,fpr_httpparams_clean,0.00030328303889604974
+42,SVM baza,recall_hw,0.9373549883990719
+42,SVM baza,recall_hw_novel,0.9365461847389558
+42,SVM baza,recall_hw_file_macro,0.8099032631410451
+42,SVM baza,recall_hw_alt_whitespace,0.8109854604200323
+42,SVM baza,fpr_httpparams_clean,0.00015164151944802487
+42,RF baza,recall_hw,0.8252126836813611
+42,RF baza,recall_hw_novel,0.8208835341365461
+42,RF baza,recall_hw_file_macro,0.6801915783534493
+42,RF baza,recall_hw_alt_whitespace,0.2851373182552504
+42,RF baza,fpr_httpparams_clean,0.00015164151944802487
+42,NB baza,recall_hw,0.9126063418406806
+42,NB baza,recall_hw_novel,0.9124497991967871
+42,NB baza,recall_hw_file_macro,0.7436606565885009
+42,NB baza,recall_hw_alt_whitespace,0.9119547657512116
+42,NB baza,fpr_httpparams_clean,0.29410872696944423
+42,LR + normallaşdırma,recall_hw,0.9621036349574633
+42,LR + normallaşdırma,recall_hw_novel,0.9622489959839358
+42,LR + normallaşdırma,recall_hw_file_macro,0.8343546093546094
+42,LR + normallaşdırma,recall_hw_alt_whitespace,0.9636510500807755
+42,LR + normallaşdırma,fpr_httpparams_clean,0.00030328303889604974
+42,LR + norm. + augmentation,recall_hw,0.962877030162413
+42,LR + norm. + augmentation,recall_hw_novel,0.9630522088353414
+42,LR + norm. + augmentation,recall_hw_file_macro,0.8353941103941103
+42,LR + norm. + augmentation,recall_hw_alt_whitespace,0.9644588045234249
+42,LR + norm. + augmentation,fpr_httpparams_clean,0.00030328303889604974
+42,Qara siyahı (sanitizeInput),recall_hw,0.9806651198762568
+42,Qara siyahı (sanitizeInput),recall_hw_novel,0.980722891566265
+42,Qara siyahı (sanitizeInput),recall_hw_file_macro,0.9883772233772233
+42,Qara siyahı (sanitizeInput),recall_hw_alt_whitespace,0.9886914378029079
+42,Qara siyahı (sanitizeInput),fpr_httpparams_clean,0.08681476988399424
+42,Qara siyahı (sanitizeSearch),recall_hw,0.8932714617169374
+42,Qara siyahı (sanitizeSearch),recall_hw_novel,0.891566265060241
+42,Qara siyahı (sanitizeSearch),recall_hw_file_macro,0.9389480831915044
+42,Qara siyahı (sanitizeSearch),recall_hw_alt_whitespace,0.8998384491114702
+42,Qara siyahı (sanitizeSearch),fpr_httpparams_clean,0.002274622791720373
+42,libinjection 4.0.1,recall_hw,0.5839133797370456
+42,libinjection 4.0.1,recall_hw_novel,0.576706827309237
+42,libinjection 4.0.1,recall_hw_file_macro,0.6565491141878165
+42,libinjection 4.0.1,recall_hw_alt_whitespace,0.5718901453957996
+42,libinjection 4.0.1,fpr_httpparams_clean,0.0
+43,meta,n_hw,1298.0
+43,meta,n_hw_removed_overlap,129.0
+43,meta,n_hw_novel,1238.0
+43,meta,n_hw_alt_whitespace,1242.0
+43,meta,n_httpparams_clean,13163.0
+43,LR baza,recall_hw,0.9537750385208013
+43,LR baza,recall_hw_novel,0.9523424878836834
+43,LR baza,recall_hw_file_macro,0.8166814436812202
+43,LR baza,recall_hw_alt_whitespace,0.8244766505636071
+43,LR baza,fpr_httpparams_clean,0.00015194104687381296
+43,SVM baza,recall_hw,0.9522342064714946
+43,SVM baza,recall_hw_novel,0.9499192245557351
+43,SVM baza,recall_hw_file_macro,0.8192929125162377
+43,SVM baza,recall_hw_alt_whitespace,0.8494363929146538
+43,SVM baza,fpr_httpparams_clean,0.00030388209374762593
+43,RF baza,recall_hw,0.8574730354391371
+43,RF baza,recall_hw_novel,0.8521809369951535
+43,RF baza,recall_hw_file_macro,0.6834624670554944
+43,RF baza,recall_hw_alt_whitespace,0.3784219001610306
+43,RF baza,fpr_httpparams_clean,0.00015194104687381296
+43,NB baza,recall_hw,0.9167950693374423
+43,NB baza,recall_hw_novel,0.9159935379644588
+43,NB baza,recall_hw_file_macro,0.7842996928749989
+43,NB baza,recall_hw_alt_whitespace,0.9114331723027376
+43,NB baza,fpr_httpparams_clean,0.29127098685709946
+43,LR + normallaşdırma,recall_hw,0.9460708782742681
+43,LR + normallaşdırma,recall_hw_novel,0.944264943457189
+43,LR + normallaşdırma,recall_hw_file_macro,0.8301179504377677
+43,LR + normallaşdırma,recall_hw_alt_whitespace,0.9468599033816425
+43,LR + normallaşdırma,fpr_httpparams_clean,0.00015194104687381296
+43,LR + norm. + augmentation,recall_hw,0.963020030816641
+43,LR + norm. + augmentation,recall_hw_novel,0.9620355411954766
+43,LR + norm. + augmentation,recall_hw_file_macro,0.8386814086814087
+43,LR + norm. + augmentation,recall_hw_alt_whitespace,0.964573268921095
+43,LR + norm. + augmentation,fpr_httpparams_clean,0.00022791157031071943
+43,Qara siyahı (sanitizeInput),recall_hw,0.9799691833590138
+43,Qara siyahı (sanitizeInput),recall_hw_novel,0.9789983844911146
+43,Qara siyahı (sanitizeInput),recall_hw_file_macro,0.9880137552302501
+43,Qara siyahı (sanitizeInput),recall_hw_alt_whitespace,0.9887278582930756
+43,Qara siyahı (sanitizeInput),fpr_httpparams_clean,0.08493504520246145
+43,Qara siyahı (sanitizeSearch),recall_hw,0.8898305084745762
+43,Qara siyahı (sanitizeSearch),recall_hw_novel,0.8885298869143781
+43,Qara siyahı (sanitizeSearch),recall_hw_file_macro,0.8982648596750137
+43,Qara siyahı (sanitizeSearch),recall_hw_alt_whitespace,0.8969404186795491
+43,Qara siyahı (sanitizeSearch),fpr_httpparams_clean,0.0022791157031071944
+43,libinjection 4.0.1,recall_hw,0.5847457627118644
+43,libinjection 4.0.1,recall_hw_novel,0.5751211631663974
+43,libinjection 4.0.1,recall_hw_file_macro,0.6563695480549275
+43,libinjection 4.0.1,recall_hw_alt_whitespace,0.572463768115942
+43,libinjection 4.0.1,fpr_httpparams_clean,0.0
+44,meta,n_hw,1301.0
+44,meta,n_hw_removed_overlap,126.0
+44,meta,n_hw_novel,1251.0
+44,meta,n_hw_alt_whitespace,1245.0
+44,meta,n_httpparams_clean,13190.0
+44,LR baza,recall_hw,0.9177555726364335
+44,LR baza,recall_hw_novel,0.9152677857713829
+44,LR baza,recall_hw_file_macro,0.8060700923019499
+44,LR baza,recall_hw_alt_whitespace,0.8353413654618473
+44,LR baza,fpr_httpparams_clean,0.00015163002274450342
+44,SVM baza,recall_hw,0.9254419677171407
+44,SVM baza,recall_hw_novel,0.9224620303756994
+44,SVM baza,recall_hw_file_macro,0.820395732870286
+44,SVM baza,recall_hw_alt_whitespace,0.8385542168674699
+44,SVM baza,fpr_httpparams_clean,0.0005307050796057619
+44,RF baza,recall_hw,0.8439661798616449
+44,RF baza,recall_hw_novel,0.8393285371702638
+44,RF baza,recall_hw_file_macro,0.674180150644038
+44,RF baza,recall_hw_alt_whitespace,0.22329317269076304
+44,RF baza,fpr_httpparams_clean,7.581501137225171e-05
+44,NB baza,recall_hw,0.9077632590315142
+44,NB baza,recall_hw_novel,0.9064748201438849
+44,NB baza,recall_hw_file_macro,0.7380773672404317
+44,NB baza,recall_hw_alt_whitespace,0.9052208835341365
+44,NB baza,fpr_httpparams_clean,0.2915087187263078
+44,LR + normallaşdırma,recall_hw,0.9500384319754035
+44,LR + normallaşdırma,recall_hw_novel,0.9488409272581935
+44,LR + normallaşdırma,recall_hw_file_macro,0.8388313844917619
+44,LR + normallaşdırma,recall_hw_alt_whitespace,0.951004016064257
+44,LR + normallaşdırma,fpr_httpparams_clean,0.0002274450341167551
+44,LR + norm. + augmentation,recall_hw,0.9469638739431206
+44,LR + norm. + augmentation,recall_hw_novel,0.9464428457234213
+44,LR + norm. + augmentation,recall_hw_file_macro,0.8276636783240557
+44,LR + norm. + augmentation,recall_hw_alt_whitespace,0.9485943775100402
+44,LR + norm. + augmentation,fpr_httpparams_clean,0.00015163002274450342
+44,Qara siyahı (sanitizeInput),recall_hw,0.9807840122982321
+44,Qara siyahı (sanitizeInput),recall_hw_novel,0.9800159872102319
+44,Qara siyahı (sanitizeInput),recall_hw_file_macro,0.9883772233772233
+44,Qara siyahı (sanitizeInput),recall_hw_alt_whitespace,0.9887550200803212
+44,Qara siyahı (sanitizeInput),fpr_httpparams_clean,0.08468536770280516
+44,Qara siyahı (sanitizeSearch),recall_hw,0.8908531898539584
+44,Qara siyahı (sanitizeSearch),recall_hw_novel,0.8888888888888888
+44,Qara siyahı (sanitizeSearch),recall_hw_file_macro,0.9367127006495181
+44,Qara siyahı (sanitizeSearch),recall_hw_alt_whitespace,0.8971887550200803
+44,Qara siyahı (sanitizeSearch),fpr_httpparams_clean,0.002274450341167551
+44,libinjection 4.0.1,recall_hw,0.5818601076095311
+44,libinjection 4.0.1,recall_hw_novel,0.5731414868105515
+44,libinjection 4.0.1,recall_hw_file_macro,0.6352428879313679
+44,libinjection 4.0.1,recall_hw_alt_whitespace,0.570281124497992
+44,libinjection 4.0.1,fpr_httpparams_clean,0.0
+45,meta,n_hw,1298.0
+45,meta,n_hw_removed_overlap,129.0
+45,meta,n_hw_novel,1244.0
+45,meta,n_hw_alt_whitespace,1242.0
+45,meta,n_httpparams_clean,13191.0
+45,LR baza,recall_hw,0.9437596302003082
+45,LR baza,recall_hw_novel,0.9429260450160771
+45,LR baza,recall_hw_file_macro,0.8051617383637152
+45,LR baza,recall_hw_alt_whitespace,0.8365539452495975
+45,LR baza,fpr_httpparams_clean,0.00015161852778409522
+45,SVM baza,recall_hw,0.9491525423728814
+45,SVM baza,recall_hw_novel,0.9469453376205788
+45,SVM baza,recall_hw_file_macro,0.8240552859011472
+45,SVM baza,recall_hw_alt_whitespace,0.8695652173913043
+45,SVM baza,fpr_httpparams_clean,0.00037904631946023806
+45,RF baza,recall_hw,0.8489984591679507
+45,RF baza,recall_hw_novel,0.844855305466238
+45,RF baza,recall_hw_file_macro,0.6697143253002271
+45,RF baza,recall_hw_alt_whitespace,0.42914653784219003
+45,RF baza,fpr_httpparams_clean,0.00015161852778409522
+45,NB baza,recall_hw,0.911402157164869
+45,NB baza,recall_hw_novel,0.9107717041800643
+45,NB baza,recall_hw_file_macro,0.7533523579745035
+45,NB baza,recall_hw_alt_whitespace,0.9154589371980676
+45,NB baza,fpr_httpparams_clean,0.2904252899704344
+45,LR + normallaşdırma,recall_hw,0.9453004622496148
+45,LR + normallaşdırma,recall_hw_novel,0.9453376205787781
+45,LR + normallaşdırma,recall_hw_file_macro,0.8120253637130858
+45,LR + normallaşdırma,recall_hw_alt_whitespace,0.9468599033816425
+45,LR + normallaşdırma,fpr_httpparams_clean,7.580926389204761e-05
+45,LR + norm. + augmentation,recall_hw,0.9506933744221879
+45,LR + norm. + augmentation,recall_hw_novel,0.9493569131832797
+45,LR + norm. + augmentation,recall_hw_file_macro,0.8236855517945135
+45,LR + norm. + augmentation,recall_hw_alt_whitespace,0.9516908212560387
+45,LR + norm. + augmentation,fpr_httpparams_clean,0.00022742779167614282
+45,Qara siyahı (sanitizeInput),recall_hw,0.9807395993836672
+45,Qara siyahı (sanitizeInput),recall_hw_novel,0.9807073954983923
+45,Qara siyahı (sanitizeInput),recall_hw_file_macro,0.988336601688774
+45,Qara siyahı (sanitizeInput),recall_hw_alt_whitespace,0.9887278582930756
+45,Qara siyahı (sanitizeInput),fpr_httpparams_clean,0.08505799408687742
+45,Qara siyahı (sanitizeSearch),recall_hw,0.8921417565485362
+45,Qara siyahı (sanitizeSearch),recall_hw_novel,0.8906752411575563
+45,Qara siyahı (sanitizeSearch),recall_hw_file_macro,0.9190776186007553
+45,Qara siyahı (sanitizeSearch),recall_hw_alt_whitespace,0.8985507246376812
+45,Qara siyahı (sanitizeSearch),fpr_httpparams_clean,0.002350087180653476
+45,libinjection 4.0.1,recall_hw,0.5824345146379045
+45,libinjection 4.0.1,recall_hw_novel,0.5739549839228296
+45,libinjection 4.0.1,recall_hw_file_macro,0.6297904667500895
+45,libinjection 4.0.1,recall_hw_alt_whitespace,0.57085346215781
+45,libinjection 4.0.1,fpr_httpparams_clean,0.0
+46,meta,n_hw,1297.0
+46,meta,n_hw_removed_overlap,130.0
+46,meta,n_hw_novel,1242.0
+46,meta,n_hw_alt_whitespace,1241.0
+46,meta,n_httpparams_clean,13179.0
+46,LR baza,recall_hw,0.8951426368542791
+46,LR baza,recall_hw_novel,0.8921095008051529
+46,LR baza,recall_hw_file_macro,0.760513914668002
+46,LR baza,recall_hw_alt_whitespace,0.7719580983078163
+46,LR baza,fpr_httpparams_clean,0.0
+46,SVM baza,recall_hw,0.9167309175019275
+46,SVM baza,recall_hw_novel,0.9138486312399355
+46,SVM baza,recall_hw_file_macro,0.7982639420444572
+46,SVM baza,recall_hw_alt_whitespace,0.8138597904915391
+46,SVM baza,fpr_httpparams_clean,0.0001517565824417634
+46,RF baza,recall_hw,0.8627602158828065
+46,RF baza,recall_hw_novel,0.8590982286634461
+46,RF baza,recall_hw_file_macro,0.7077332377256229
+46,RF baza,recall_hw_alt_whitespace,0.46333601933924257
+46,RF baza,fpr_httpparams_clean,0.0001517565824417634
+46,NB baza,recall_hw,0.9136468774094063
+46,NB baza,recall_hw_novel,0.9146537842190016
+46,NB baza,recall_hw_file_macro,0.7358299899854344
+46,NB baza,recall_hw_alt_whitespace,0.9081385979049154
+46,NB baza,fpr_httpparams_clean,0.29645648379998485
+46,LR + normallaşdırma,recall_hw,0.9514263685427911
+46,LR + normallaşdırma,recall_hw_novel,0.9500805152979066
+46,LR + normallaşdırma,recall_hw_file_macro,0.8326113022113023
+46,LR + normallaşdırma,recall_hw_alt_whitespace,0.951651893634166
+46,LR + normallaşdırma,fpr_httpparams_clean,0.0003035131648835268
+46,LR + norm. + augmentation,recall_hw,0.9344641480339244
+46,LR + norm. + augmentation,recall_hw_novel,0.9323671497584541
+46,LR + norm. + augmentation,recall_hw_file_macro,0.8178257166257166
+46,LR + norm. + augmentation,recall_hw_alt_whitespace,0.9339242546333602
+46,LR + norm. + augmentation,fpr_httpparams_clean,0.0003035131648835268
+46,Qara siyahı (sanitizeInput),recall_hw,0.9807247494217425
+46,Qara siyahı (sanitizeInput),recall_hw_novel,0.9806763285024155
+46,Qara siyahı (sanitizeInput),recall_hw_file_macro,0.9878413903264968
+46,Qara siyahı (sanitizeInput),recall_hw_alt_whitespace,0.9887187751813054
+46,Qara siyahı (sanitizeInput),fpr_httpparams_clean,0.08627361711814249
+46,Qara siyahı (sanitizeSearch),recall_hw,0.8928296067848882
+46,Qara siyahı (sanitizeSearch),recall_hw_novel,0.8904991948470209
+46,Qara siyahı (sanitizeSearch),recall_hw_file_macro,0.9357331138090376
+46,Qara siyahı (sanitizeSearch),recall_hw_alt_whitespace,0.8992747784045125
+46,Qara siyahı (sanitizeSearch),fpr_httpparams_clean,0.002579861901509978
+46,libinjection 4.0.1,recall_hw,0.5813415574402467
+46,libinjection 4.0.1,recall_hw_novel,0.573268921095008
+46,libinjection 4.0.1,recall_hw_file_macro,0.6404330197070597
+46,libinjection 4.0.1,recall_hw_alt_whitespace,0.5697018533440773
+46,libinjection 4.0.1,fpr_httpparams_clean,0.0

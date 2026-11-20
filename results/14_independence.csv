@@ -1,0 +1,6 @@
+set,n,overlap_train_exact_pct,overlap_clean_v2_exact_pct,overlap_train_ws_pct,overlap_clean_v2_ws_pct,overlap_train_norm_pct,overlap_clean_v2_norm_pct,double_space_pct,sqlmap_skeleton_in_train_pct,median_len
+Əl ilə yazılmış (hamısı),1427,1.8,2.2,2.0,2.6,7.5,10.7,0.3,11.5,39.0
+  PayloadsAllTheThings,1286,0.9,1.0,0.9,1.0,4.4,6.6,0.3,8.3,41.0
+  fuzzdb,141,9.9,13.5,12.8,17.0,36.2,48.2,0.0,40.4,21.0
+"Bizim test, zərərli (seed 42)",1745,0.0,100.0,0.0,100.0,0.1,100.0,94.5,28.7,84.0
+"HttpParams, zərərli",10852,2.4,3.6,2.4,3.6,55.3,79.1,0.0,63.4,75.0

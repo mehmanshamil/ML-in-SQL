@@ -1,0 +1,25 @@
+metric,CNN + normallaşdırma,CNN baza
+f1_test,99.65 ± 0.08,99.67 ± 0.08
+recall_test,99.37 ± 0.11,99.38 ± 0.13
+fpr_test,0.04 ± 0.05,0.03 ± 0.03
+f1_human,99.65 ± 0.08,57.35 ± 7.16
+recall_human,99.37 ± 0.11,40.50 ± 6.98
+recall_A_original,99.37 ± 0.11,99.38 ± 0.13
+recall_A_random_case,99.71 ± 0.08,99.79 ± 0.06
+recall_A_inline_comment_space,99.73 ± 0.05,60.73 ± 29.97
+recall_A_alt_whitespace,99.73 ± 0.05,25.19 ± 11.50
+recall_A_alt_whitespace_url,99.73 ± 0.05,21.62 ± 8.47
+recall_A_url_encode,99.68 ± 0.06,99.71 ± 0.09
+recall_A_double_url_encode,99.68 ± 0.06,59.14 ± 13.66
+recall_A_versioned_comment,99.71 ± 0.05,99.60 ± 0.16
+recall_A_logical_operator,100.00 ± 0.00,100.00 ± 0.00
+recall_A_hex_strings,99.87 ± 0.21,99.67 ± 0.27
+recall_A_keyword_split_comment,99.72 ± 0.11,99.84 ± 0.06
+recall_A_combination,99.70 ± 0.12,71.97 ± 2.80
+recall_httpparams,99.98 ± 0.00,41.92 ± 9.17
+fpr_httpparams,0.03 ± 0.01,0.02 ± 0.01
+recall_httpparams_alt_whitespace_A,100.00 ± 0.00,16.95 ± 5.67
+httpparams_missed_recovered_by_sqlmap_spacing,0.00 ± 0.00,99.96 ± 0.01
+recall_hw,95.10 ± 1.20,58.49 ± 3.83
+recall_hw_novel,94.97 ± 1.26,57.43 ± 3.85
+recall_hw_alt_whitespace,95.30 ± 1.20,32.36 ± 8.17
