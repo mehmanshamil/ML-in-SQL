@@ -1,0 +1,105 @@
+detector,səbəb,unikal_dəyər,bloklanan_sorğu
+LR baza,JSON / strukturlaşdırılmış mətn,39,3797
+LR baza,SQL açar sözü təbii mətndə/identifikatorda,188,1443
+LR baza,URL / yol,187,1178
+LR baza,"bərabərlik / müqayisə (=, <, >)",174,4902
+LR baza,digər,6496,30125
+LR baza,dırnaq / apostrof,975,3632
+LR baza,mötərizə / funksiya çağırışına bənzər,64,323
+LR baza,rəqəm / qısa kod,568,158425
+LR baza,token / base64 / hash,69,324
+LR baza,"şərh və ya ayırıcı simvol (--, #, /*, ;)",181,4410
+SVM baza,JSON / strukturlaşdırılmış mətn,44,3772
+SVM baza,SQL açar sözü təbii mətndə/identifikatorda,54,590
+SVM baza,URL / yol,136,1165
+SVM baza,"bərabərlik / müqayisə (=, <, >)",142,4253
+SVM baza,digər,4852,27866
+SVM baza,dırnaq / apostrof,951,3269
+SVM baza,mötərizə / funksiya çağırışına bənzər,38,140
+SVM baza,rəqəm / qısa kod,220,24270
+SVM baza,token / base64 / hash,15,162
+SVM baza,"şərh və ya ayırıcı simvol (--, #, /*, ;)",116,4290
+RF baza,JSON / strukturlaşdırılmış mətn,4,8988
+RF baza,SQL açar sözü təbii mətndə/identifikatorda,208,967
+RF baza,URL / yol,9,335
+RF baza,"bərabərlik / müqayisə (=, <, >)",12,513
+RF baza,digər,1895,16372
+RF baza,dırnaq / apostrof,329,1644
+RF baza,mötərizə / funksiya çağırışına bənzər,21,58
+RF baza,rəqəm / qısa kod,400,312922
+RF baza,"şərh və ya ayırıcı simvol (--, #, /*, ;)",33,3884
+NB baza,JSON / strukturlaşdırılmış mətn,3138,8303
+NB baza,SQL açar sözü təbii mətndə/identifikatorda,387,5456
+NB baza,URL / yol,538,3578
+NB baza,"bərabərlik / müqayisə (=, <, >)",1352,10738
+NB baza,digər,146536,365330
+NB baza,dırnaq / apostrof,2931,7590
+NB baza,mötərizə / funksiya çağırışına bənzər,256,3467
+NB baza,rəqəm / qısa kod,124565,1625944
+NB baza,token / base64 / hash,41711,191334
+NB baza,"şərh və ya ayırıcı simvol (--, #, /*, ;)",896,6796
+LR + normallaşdırma,JSON / strukturlaşdırılmış mətn,42,3779
+LR + normallaşdırma,SQL açar sözü təbii mətndə/identifikatorda,90,1156
+LR + normallaşdırma,URL / yol,277,2273
+LR + normallaşdırma,"bərabərlik / müqayisə (=, <, >)",365,4666
+LR + normallaşdırma,digər,4716,21500
+LR + normallaşdırma,dırnaq / apostrof,1290,4661
+LR + normallaşdırma,mötərizə / funksiya çağırışına bənzər,318,1052
+LR + normallaşdırma,rəqəm / qısa kod,466,150886
+LR + normallaşdırma,token / base64 / hash,42,238
+LR + normallaşdırma,"şərh və ya ayırıcı simvol (--, #, /*, ;)",188,4396
+LR + norm. + augmentation,JSON / strukturlaşdırılmış mətn,52,3879
+LR + norm. + augmentation,SQL açar sözü təbii mətndə/identifikatorda,242,1525
+LR + norm. + augmentation,URL / yol,195,1747
+LR + norm. + augmentation,"bərabərlik / müqayisə (=, <, >)",340,7828
+LR + norm. + augmentation,digər,6673,34251
+LR + norm. + augmentation,dırnaq / apostrof,1385,4851
+LR + norm. + augmentation,mötərizə / funksiya çağırışına bənzər,366,1370
+LR + norm. + augmentation,rəqəm / qısa kod,1002,164672
+LR + norm. + augmentation,token / base64 / hash,105,413
+LR + norm. + augmentation,"şərh və ya ayırıcı simvol (--, #, /*, ;)",156,4393
+CNN baza,JSON / strukturlaşdırılmış mətn,7,5410
+CNN baza,SQL açar sözü təbii mətndə/identifikatorda,125,2092
+CNN baza,URL / yol,101,494
+CNN baza,"bərabərlik / müqayisə (=, <, >)",38,246
+CNN baza,digər,3653,26994
+CNN baza,dırnaq / apostrof,891,4193
+CNN baza,mötərizə / funksiya çağırışına bənzər,28,55
+CNN baza,rəqəm / qısa kod,763,272528
+CNN baza,token / base64 / hash,37,192
+CNN baza,"şərh və ya ayırıcı simvol (--, #, /*, ;)",299,4953
+CNN + normallaşdırma,JSON / strukturlaşdırılmış mətn,71,5522
+CNN + normallaşdırma,SQL açar sözü təbii mətndə/identifikatorda,1300,4009
+CNN + normallaşdırma,URL / yol,2963,9916
+CNN + normallaşdırma,"bərabərlik / müqayisə (=, <, >)",1245,13282
+CNN + normallaşdırma,digər,7216,35766
+CNN + normallaşdırma,dırnaq / apostrof,3527,10254
+CNN + normallaşdırma,mötərizə / funksiya çağırışına bənzər,651,1969
+CNN + normallaşdırma,rəqəm / qısa kod,839,228392
+CNN + normallaşdırma,token / base64 / hash,611,2180
+CNN + normallaşdırma,"şərh və ya ayırıcı simvol (--, #, /*, ;)",1613,8314
+Qara siyahı (sanitizeInput),JSON / strukturlaşdırılmış mətn,768,1392
+Qara siyahı (sanitizeInput),SQL açar sözü təbii mətndə/identifikatorda,15208,94730
+Qara siyahı (sanitizeInput),URL / yol,18625,116315
+Qara siyahı (sanitizeInput),"bərabərlik / müqayisə (=, <, >)",2286,6328
+Qara siyahı (sanitizeInput),digər,18212,94148
+Qara siyahı (sanitizeInput),dırnaq / apostrof,33299,89351
+Qara siyahı (sanitizeInput),mötərizə / funksiya çağırışına bənzər,1479,9519
+Qara siyahı (sanitizeInput),rəqəm / qısa kod,1658,54688
+Qara siyahı (sanitizeInput),token / base64 / hash,14536,56562
+Qara siyahı (sanitizeInput),"şərh və ya ayırıcı simvol (--, #, /*, ;)",11227,36404
+Qara siyahı (sanitizeSearch),JSON / strukturlaşdırılmış mətn,7,113
+Qara siyahı (sanitizeSearch),SQL açar sözü təbii mətndə/identifikatorda,11149,72566
+Qara siyahı (sanitizeSearch),URL / yol,419,2043
+Qara siyahı (sanitizeSearch),"bərabərlik / müqayisə (=, <, >)",217,543
+Qara siyahı (sanitizeSearch),digər,1719,9747
+Qara siyahı (sanitizeSearch),dırnaq / apostrof,33273,89181
+Qara siyahı (sanitizeSearch),mötərizə / funksiya çağırışına bənzər,660,4688
+Qara siyahı (sanitizeSearch),rəqəm / qısa kod,58,709
+Qara siyahı (sanitizeSearch),token / base64 / hash,356,1395
+Qara siyahı (sanitizeSearch),"şərh və ya ayırıcı simvol (--, #, /*, ;)",10520,33130
+libinjection 4.0.1,SQL açar sözü təbii mətndə/identifikatorda,126,144
+libinjection 4.0.1,digər,19,22
+libinjection 4.0.1,dırnaq / apostrof,350,561
+libinjection 4.0.1,mötərizə / funksiya çağırışına bənzər,4,8
+libinjection 4.0.1,"şərh və ya ayırıcı simvol (--, #, /*, ;)",132,3121

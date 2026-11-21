@@ -1,0 +1,45 @@
+detector,metric,mean,std
+CNN + normallaşdırma,fpr_request,25.1885,7.0639
+CNN + normallaşdırma,fpr_request_all,15.9125,4.4625
+CNN + normallaşdırma,fpr_value_unique,2.7342,0.7015
+CNN + normallaşdırma,fpr_value_weighted,5.2237,1.9033
+CNN baza,fpr_request,27.5011,5.8118
+CNN baza,fpr_request_all,17.3735,3.6715
+CNN baza,fpr_value_unique,0.7609,0.4635
+CNN baza,fpr_value_weighted,5.7911,1.5104
+LR + norm. + augmentation,fpr_request,22.3226,7.3846
+LR + norm. + augmentation,fpr_request_all,14.102,4.6651
+LR + norm. + augmentation,fpr_value_unique,1.242,0.1745
+LR + norm. + augmentation,fpr_value_weighted,4.8847,1.9676
+LR + normallaşdırma,fpr_request,22.7205,9.455
+LR + normallaşdırma,fpr_request_all,14.3534,5.9731
+LR + normallaşdırma,fpr_value_unique,0.9968,0.2687
+LR + normallaşdırma,fpr_value_weighted,5.584,3.3129
+LR baza,fpr_request,16.9567,8.7984
+LR baza,fpr_request_all,10.7122,5.5583
+LR baza,fpr_value_unique,0.8713,0.1327
+LR baza,fpr_value_weighted,3.8228,2.5225
+NB baza,fpr_request,73.0435,0.5406
+NB baza,fpr_request_all,46.1443,0.3415
+NB baza,fpr_value_unique,37.7125,0.6376
+NB baza,fpr_value_weighted,33.5312,0.3924
+Qara siyahı (sanitizeInput),fpr_request,35.3941,0.0
+Qara siyahı (sanitizeInput),fpr_request_all,22.3598,0.0
+Qara siyahı (sanitizeInput),fpr_value_unique,14.0733,0.0
+Qara siyahı (sanitizeInput),fpr_value_weighted,8.6282,0.0
+Qara siyahı (sanitizeSearch),fpr_request,20.3002,0.0
+Qara siyahı (sanitizeSearch),fpr_request_all,12.8244,0.0
+Qara siyahı (sanitizeSearch),fpr_value_unique,7.0042,0.0
+Qara siyahı (sanitizeSearch),fpr_value_weighted,2.8417,0.0
+RF baza,fpr_request,34.5294,5.315
+RF baza,fpr_request_all,21.8135,3.3577
+RF baza,fpr_value_unique,0.3475,0.0094
+RF baza,fpr_value_weighted,9.8493,3.1386
+SVM baza,fpr_request,14.2873,8.5253
+SVM baza,fpr_request_all,9.0258,5.3858
+SVM baza,fpr_value_unique,0.9926,0.1911
+SVM baza,fpr_value_weighted,3.0062,2.4712
+libinjection 4.0.1,fpr_request,0.5711,0.0
+libinjection 4.0.1,fpr_request_all,0.3608,0.0
+libinjection 4.0.1,fpr_value_unique,0.0757,0.0
+libinjection 4.0.1,fpr_value_weighted,0.0408,0.0

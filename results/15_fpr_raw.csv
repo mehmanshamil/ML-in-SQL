@@ -1,0 +1,276 @@
+seed,detector,metric,value
+42,Qara siyahı (sanitizeInput),fpr_value_unique,0.14073333757260248
+42,Qara siyahı (sanitizeInput),fpr_value_weighted,0.0862819484140768
+42,Qara siyahı (sanitizeInput),fpr_request,0.35394120153387304
+42,Qara siyahı (sanitizeInput),fpr_request_all,0.2235979704722555
+42,Qara siyahı (sanitizeInput),blocked_requests,232596.0
+43,Qara siyahı (sanitizeInput),fpr_value_unique,0.14073333757260248
+43,Qara siyahı (sanitizeInput),fpr_value_weighted,0.0862819484140768
+43,Qara siyahı (sanitizeInput),fpr_request,0.35394120153387304
+43,Qara siyahı (sanitizeInput),fpr_request_all,0.2235979704722555
+43,Qara siyahı (sanitizeInput),blocked_requests,232596.0
+44,Qara siyahı (sanitizeInput),fpr_value_unique,0.14073333757260248
+44,Qara siyahı (sanitizeInput),fpr_value_weighted,0.0862819484140768
+44,Qara siyahı (sanitizeInput),fpr_request,0.35394120153387304
+44,Qara siyahı (sanitizeInput),fpr_request_all,0.2235979704722555
+44,Qara siyahı (sanitizeInput),blocked_requests,232596.0
+45,Qara siyahı (sanitizeInput),fpr_value_unique,0.14073333757260248
+45,Qara siyahı (sanitizeInput),fpr_value_weighted,0.0862819484140768
+45,Qara siyahı (sanitizeInput),fpr_request,0.35394120153387304
+45,Qara siyahı (sanitizeInput),fpr_request_all,0.2235979704722555
+45,Qara siyahı (sanitizeInput),blocked_requests,232596.0
+46,Qara siyahı (sanitizeInput),fpr_value_unique,0.14073333757260248
+46,Qara siyahı (sanitizeInput),fpr_value_weighted,0.0862819484140768
+46,Qara siyahı (sanitizeInput),fpr_request,0.35394120153387304
+46,Qara siyahı (sanitizeInput),fpr_request_all,0.2235979704722555
+46,Qara siyahı (sanitizeInput),blocked_requests,232596.0
+42,Qara siyahı (sanitizeSearch),fpr_value_unique,0.07004152484111739
+42,Qara siyahı (sanitizeSearch),fpr_value_weighted,0.02841665648692517
+42,Qara siyahı (sanitizeSearch),fpr_request,0.20300231298313956
+42,Qara siyahı (sanitizeSearch),fpr_request_all,0.12824419702338494
+42,Qara siyahı (sanitizeSearch),blocked_requests,133405.0
+43,Qara siyahı (sanitizeSearch),fpr_value_unique,0.07004152484111739
+43,Qara siyahı (sanitizeSearch),fpr_value_weighted,0.02841665648692517
+43,Qara siyahı (sanitizeSearch),fpr_request,0.20300231298313956
+43,Qara siyahı (sanitizeSearch),fpr_request_all,0.12824419702338494
+43,Qara siyahı (sanitizeSearch),blocked_requests,133405.0
+44,Qara siyahı (sanitizeSearch),fpr_value_unique,0.07004152484111739
+44,Qara siyahı (sanitizeSearch),fpr_value_weighted,0.02841665648692517
+44,Qara siyahı (sanitizeSearch),fpr_request,0.20300231298313956
+44,Qara siyahı (sanitizeSearch),fpr_request_all,0.12824419702338494
+44,Qara siyahı (sanitizeSearch),blocked_requests,133405.0
+45,Qara siyahı (sanitizeSearch),fpr_value_unique,0.07004152484111739
+45,Qara siyahı (sanitizeSearch),fpr_value_weighted,0.02841665648692517
+45,Qara siyahı (sanitizeSearch),fpr_request,0.20300231298313956
+45,Qara siyahı (sanitizeSearch),fpr_request_all,0.12824419702338494
+45,Qara siyahı (sanitizeSearch),blocked_requests,133405.0
+46,Qara siyahı (sanitizeSearch),fpr_value_unique,0.07004152484111739
+46,Qara siyahı (sanitizeSearch),fpr_value_weighted,0.02841665648692517
+46,Qara siyahı (sanitizeSearch),fpr_request,0.20300231298313956
+46,Qara siyahı (sanitizeSearch),fpr_request_all,0.12824419702338494
+46,Qara siyahı (sanitizeSearch),blocked_requests,133405.0
+42,libinjection 4.0.1,fpr_value_unique,0.0007570694812214375
+42,libinjection 4.0.1,fpr_value_weighted,0.0004075397800314541
+42,libinjection 4.0.1,fpr_request,0.005710937975531073
+42,libinjection 4.0.1,fpr_request_all,0.0036078143355103907
+42,libinjection 4.0.1,blocked_requests,3753.0
+43,libinjection 4.0.1,fpr_value_unique,0.0007570694812214375
+43,libinjection 4.0.1,fpr_value_weighted,0.0004075397800314541
+43,libinjection 4.0.1,fpr_request,0.005710937975531073
+43,libinjection 4.0.1,fpr_request_all,0.0036078143355103907
+43,libinjection 4.0.1,blocked_requests,3753.0
+44,libinjection 4.0.1,fpr_value_unique,0.0007570694812214375
+44,libinjection 4.0.1,fpr_value_weighted,0.0004075397800314541
+44,libinjection 4.0.1,fpr_request,0.005710937975531073
+44,libinjection 4.0.1,fpr_request_all,0.0036078143355103907
+44,libinjection 4.0.1,blocked_requests,3753.0
+45,libinjection 4.0.1,fpr_value_unique,0.0007570694812214375
+45,libinjection 4.0.1,fpr_value_weighted,0.0004075397800314541
+45,libinjection 4.0.1,fpr_request,0.005710937975531073
+45,libinjection 4.0.1,fpr_request_all,0.0036078143355103907
+45,libinjection 4.0.1,blocked_requests,3753.0
+46,libinjection 4.0.1,fpr_value_unique,0.0007570694812214375
+46,libinjection 4.0.1,fpr_value_weighted,0.0004075397800314541
+46,libinjection 4.0.1,fpr_request,0.005710937975531073
+46,libinjection 4.0.1,fpr_request_all,0.0036078143355103907
+46,libinjection 4.0.1,blocked_requests,3753.0
+42,LR baza,fpr_value_unique,0.01072735060475574
+42,LR baza,fpr_value_weighted,0.05694727706182305
+42,LR baza,fpr_request,0.23693621035972975
+42,LR baza,fpr_request_all,0.14968151641637234
+42,LR baza,blocked_requests,155705.0
+42,SVM baza,fpr_value_unique,0.007880241446374645
+42,SVM baza,fpr_value_weighted,0.013031294538557307
+42,SVM baza,fpr_request,0.08353825552376895
+42,SVM baza,fpr_request_all,0.052774258297588444
+42,SVM baza,blocked_requests,54898.0
+42,RF baza,fpr_value_unique,0.003492597876126156
+42,RF baza,fpr_value_weighted,0.09721661884201353
+42,RF baza,fpr_request,0.3420262949662183
+42,RF baza,fpr_request_all,0.21607087581543524
+42,RF baza,blocked_requests,224766.0
+42,NB baza,fpr_value_unique,0.38670533200076307
+42,NB baza,fpr_value_weighted,0.3418600178582251
+42,NB baza,fpr_request,0.7397026599306105
+42,NB baza,fpr_request_all,0.46729799412059886
+42,NB baza,blocked_requests,486103.0
+42,LR + normallaşdırma,fpr_value_unique,0.009351187855213761
+42,LR + normallaşdırma,fpr_value_weighted,0.054526091631538244
+42,LR + normallaşdırma,fpr_request,0.2274408058920202
+42,LR + normallaşdırma,fpr_request_all,0.14368291224541982
+42,LR + normallaşdırma,blocked_requests,149465.0
+42,LR + norm. + augmentation,fpr_value_unique,0.012617024824920183
+42,LR + norm. + augmentation,fpr_value_weighted,0.058411584297240186
+42,LR + norm. + augmentation,fpr_request,0.24058524560228864
+42,LR + norm. + augmentation,fpr_request_all,0.15198674923719674
+42,LR + norm. + augmentation,blocked_requests,158103.0
+42,CNN baza,fpr_value_unique,0.007129170930931507
+42,CNN baza,fpr_value_weighted,0.0684688888018257
+42,CNN baza,fpr_request,0.30862955748980464
+42,CNN baza,fpr_request_all,0.1949729005366059
+42,CNN baza,blocked_requests,202819.0
+42,CNN + normallaşdırma,fpr_value_unique,0.024039055666803043
+42,CNN + normallaşdırma,fpr_value_weighted,0.06650975684895284
+42,CNN + normallaşdırma,fpr_request,0.31035059954957694
+42,CNN + normallaşdırma,fpr_request_all,0.19606014754259105
+42,CNN + normallaşdırma,blocked_requests,203950.0
+43,LR baza,fpr_value_unique,0.007839448479082207
+43,LR baza,fpr_value_weighted,0.012890966408113486
+43,LR baza,fpr_request,0.0845319252541238
+43,LR baza,fpr_request_all,0.05340199684304229
+43,LR baza,blocked_requests,55551.0
+43,SVM baza,fpr_value_unique,0.011598400435764874
+43,SVM baza,fpr_value_weighted,0.0131307636549722
+43,SVM baza,fpr_request,0.08719337756406355
+43,SVM baza,fpr_request_all,0.055083336377496774
+43,SVM baza,blocked_requests,57300.0
+43,RF baza,fpr_value_unique,0.0033486226974469603
+43,RF baza,fpr_value_weighted,0.0548628371301931
+43,RF baza,fpr_request,0.272661147970053
+43,RF baza,fpr_request_all,0.17225030329481025
+43,RF baza,blocked_requests,179182.0
+43,NB baza,fpr_value_unique,0.37123159967221653
+43,NB baza,fpr_value_weighted,0.3317768744912974
+43,NB baza,fpr_request,0.7274286322965487
+43,NB baza,fpr_request_all,0.45954402917782594
+43,NB baza,blocked_requests,478037.0
+43,LR + normallaşdırma,fpr_value_unique,0.00835535953601599
+43,LR + normallaşdırma,fpr_value_weighted,0.05332353417236811
+43,LR + normallaşdırma,fpr_request,0.2540994582750015
+43,LR + normallaşdırma,fpr_request_all,0.16052418571832325
+43,LR + normallaşdırma,blocked_requests,166984.0
+43,LR + norm. + augmentation,fpr_value_unique,0.014481503388815768
+43,LR + norm. + augmentation,fpr_value_weighted,0.05787579552972977
+43,LR + norm. + augmentation,fpr_request,0.2708092397589628
+43,LR + norm. + augmentation,fpr_request_all,0.17108038321852032
+43,LR + norm. + augmentation,blocked_requests,177965.0
+43,CNN baza,fpr_value_unique,0.004339651844022091
+43,CNN baza,fpr_value_weighted,0.05900440762674986
+43,CNN baza,fpr_request,0.2878522734189543
+43,CNN baza,fpr_request_all,0.1818471086535633
+43,CNN baza,blocked_requests,189165.0
+43,CNN + normallaşdırma,fpr_value_unique,0.025015687295510253
+43,CNN + normallaşdırma,fpr_value_weighted,0.07061677049302754
+43,CNN + normallaşdırma,fpr_request,0.3002602106032017
+43,CNN + normallaşdırma,fpr_request_all,0.189685669296183
+43,CNN + normallaşdırma,blocked_requests,197319.0
+44,LR baza,fpr_value_unique,0.008547326440921585
+44,LR baza,fpr_value_weighted,0.0548403594206759
+44,LR baza,fpr_request,0.22703451214316148
+44,LR baza,fpr_request_all,0.14342624120156655
+44,LR baza,blocked_requests,149198.0
+44,SVM baza,fpr_value_unique,0.010084261473321999
+44,SVM baza,fpr_value_weighted,0.055993339875677256
+44,SVM baza,fpr_request,0.23213220524681966
+44,SVM baza,fpr_request_all,0.1466466456843696
+44,SVM baza,blocked_requests,152548.0
+44,RF baza,fpr_value_unique,0.0036101776053808323
+44,RF baza,fpr_value_weighted,0.09545936613069234
+44,RF baza,fpr_request,0.3435403859029764
+44,RF baza,fpr_request_all,0.2170273840125663
+44,RF baza,blocked_requests,225761.0
+44,NB baza,fpr_value_unique,0.3713947715413863
+44,NB baza,fpr_value_weighted,0.3348637782529841
+44,NB baza,fpr_request,0.7275168908637166
+44,NB baza,fpr_request_all,0.4595997854345431
+44,NB baza,blocked_requests,478095.0
+44,LR + normallaşdırma,fpr_value_unique,0.01472386160625908
+44,LR + normallaşdırma,fpr_value_weighted,0.058995164456481106
+44,LR + normallaşdırma,fpr_request,0.26857386329052285
+44,LR + normallaşdırma,fpr_request_all,0.1696682118199419
+44,LR + normallaşdırma,blocked_requests,176496.0
+44,LR + norm. + augmentation,fpr_value_unique,0.011972735900330782
+44,LR + norm. + augmentation,fpr_value_weighted,0.013721486263966246
+44,LR + norm. + augmentation,fpr_request,0.09391776736259054
+44,LR + norm. + augmentation,fpr_request_all,0.05933138635048383
+44,LR + norm. + augmentation,blocked_requests,61719.0
+44,CNN baza,fpr_value_unique,0.006956400716516473
+44,CNN baza,fpr_value_weighted,0.05559042168078018
+44,CNN baza,fpr_request,0.27141335443423215
+44,CNN baza,fpr_request_all,0.17146202518260173
+44,CNN baza,blocked_requests,178362.0
+44,CNN + normallaşdırma,fpr_value_unique,0.019405454499644263
+44,CNN + normallaşdırma,fpr_value_weighted,0.060489406959245914
+44,CNN + normallaşdırma,fpr_request,0.29928327956662
+44,CNN + normallaşdırma,fpr_request_all,0.18906850521321
+44,CNN + normallaşdırma,blocked_requests,196677.0
+45,LR baza,fpr_value_unique,0.009153221984529867
+45,LR baza,fpr_value_weighted,0.05800047329233217
+45,LR baza,fpr_request,0.23655882890011565
+45,LR baza,fpr_request_all,0.14944311035316782
+45,LR baza,blocked_requests,155457.0
+45,SVM baza,fpr_value_unique,0.011979934659264743
+45,SVM baza,fpr_value_weighted,0.05817462302307757
+45,SVM baza,fpr_request,0.2398715685677765
+45,SVM baza,fpr_request_all,0.15153589260960432
+45,SVM baza,blocked_requests,157634.0
+45,RF baza,fpr_value_unique,0.0034770005651025763
+45,RF baza,fpr_value_weighted,0.1434019047022843
+45,RF baza,fpr_request,0.42281940471118146
+45,RF baza,fpr_request_all,0.267110922266165
+45,RF baza,blocked_requests,277860.0
+45,NB baza,fpr_value_unique,0.3773745406291955
+45,NB baza,fpr_value_weighted,0.3328593757729995
+45,NB baza,fpr_request,0.7267819100371294
+45,NB baza,fpr_request_all,0.4591354704001569
+45,NB baza,blocked_requests,477612.0
+45,LR + normallaşdırma,fpr_value_unique,0.008486136989982927
+45,LR + normallaşdırma,fpr_value_weighted,0.009422886908866437
+45,LR + normallaşdırma,fpr_request,0.06849930001826039
+45,LR + normallaşdırma,fpr_request_all,0.043273584415933986
+45,LR + normallaşdırma,blocked_requests,45015.0
+45,LR + norm. + augmentation,fpr_value_unique,0.013251715404264305
+45,LR + norm. + augmentation,fpr_value_weighted,0.058724276545991126
+45,LR + norm. + augmentation,fpr_request,0.2704988130744415
+45,LR + norm. + augmentation,fpr_request_all,0.17088427500523917
+45,LR + norm. + augmentation,blocked_requests,177761.0
+45,CNN baza,fpr_value_unique,0.015506126743749378
+45,CNN baza,fpr_value_weighted,0.0726230636214762
+45,CNN baza,fpr_request,0.32869468622557674
+45,CNN baza,fpr_request_all,0.20764879710682707
+45,CNN baza,blocked_requests,216005.0
+45,CNN + normallaşdırma,fpr_value_unique,0.03769750095083608
+45,CNN + normallaşdırma,fpr_value_weighted,0.03295127179195556
+45,CNN + normallaşdırma,fpr_request,0.18023312435327773
+45,CNN + normallaşdırma,fpr_request_all,0.1138600441051217
+45,CNN + normallaşdırma,blocked_requests,118442.0
+46,LR baza,fpr_value_unique,0.007299541559035222
+46,LR baza,fpr_value_weighted,0.008462857633225332
+46,LR baza,fpr_request,0.06277466674782398
+46,LR baza,fpr_request_all,0.03965711824748472
+46,LR baza,blocked_requests,41253.0
+46,SVM baza,fpr_value_unique,0.008085406075992499
+46,SVM baza,fpr_value_weighted,0.009979262737429998
+46,SVM baza,fpr_request,0.0716294357538499
+46,SVM baza,fpr_request_all,0.045251008899852146
+46,SVM baza,blocked_requests,47072.0
+46,RF baza,fpr_value_unique,0.0034482055293667373
+46,RF baza,fpr_value_weighted,0.10152204553878912
+46,RF baza,fpr_request,0.3454212064033112
+46,RF baza,fpr_request_all,0.21821556906950498
+46,RF baza,blocked_requests,226997.0
+46,NB baza,fpr_value_unique,0.37891747462737424
+46,NB baza,fpr_value_weighted,0.33520115396779365
+46,NB baza,fpr_request,0.7307444153630774
+46,NB baza,fpr_request_all,0.4616387340638044
+46,NB baza,blocked_requests,480216.0
+46,LR + normallaşdırma,fpr_value_unique,0.008924061491798814
+46,LR + normallaşdırma,fpr_value_weighted,0.10293194411285154
+46,LR + normallaşdırma,fpr_request,0.31740976322356806
+46,LR + normallaşdırma,fpr_request_all,0.20051968676519502
+46,LR + normallaşdırma,blocked_requests,208589.0
+46,LR + norm. + augmentation,fpr_value_unique,0.009774714839161728
+46,LR + norm. + augmentation,fpr_value_weighted,0.05550198134707233
+46,LR + norm. + augmentation,fpr_request,0.2403204699007852
+46,LR + norm. + augmentation,fpr_request_all,0.15181948046704516
+46,LR + norm. + augmentation,blocked_requests,157929.0
+46,CNN baza,fpr_value_unique,0.0041116911444466974
+46,CNN baza,fpr_value_weighted,0.033870021909464615
+46,CNN baza,fpr_request,0.17846643131048756
+46,CNN baza,fpr_request_all,0.11274395765600696
+46,CNN baza,blocked_requests,117281.0
+46,CNN + normallaşdırma,fpr_value_unique,0.030552732708880988
+46,CNN + normallaşdırma,fpr_value_weighted,0.030617581371146584
+46,CNN + normallaşdırma,fpr_request,0.1692997139205064
+46,CNN + normallaşdırma,fpr_request_all,0.10695299747558741
+46,CNN + normallaşdırma,blocked_requests,111257.0

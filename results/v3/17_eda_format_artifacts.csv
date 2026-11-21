@@ -1,0 +1,8 @@
+mənbə,sinif,n,double_space,newline,comment
+Kaggle,zərərli,11203,95.22,0.0,52.21
+Kaggle,təmiz,18884,29.8,0.0,0.04
+HttpParams,zərərli,2271,0.0,0.0,66.36
+HttpParams,təmiz,12098,0.0,0.0,0.0
+WAF-A-MoLE,zərərli,40000,3.34,28.46,59.08
+WAF-A-MoLE,təmiz,40000,0.0,0.0,0.0
+open-appsec,təmiz,39924,0.44,0.35,1.12

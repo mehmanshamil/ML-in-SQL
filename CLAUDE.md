@@ -26,7 +26,7 @@ Bu, elmi məqalə üçün tədqiqat layihəsidir.
 - Python mühiti: `venv/` (`venv\Scripts\activate`). Dərin öyrənmə üçün PyTorch (TensorFlow yox — Python 3.13).
 
 ## Birinci məqalənin qara siyahı filtri (4-cü mərhələ üçün)
-Orijinal kod: `C:\Users\Mehman\OneDrive\Desktop\Aztu-projects\meqale son\project-teqdimat\sql-injection - Copy (2)\server.js`
+Orijinal kod: birinci məqalənin layihəsi (bu repoda deyil), `project-teqdimat/sql-injection - Copy (2)/server.js`
 — `sanitizeInput()` və `sanitizeSearch()`. Python-a eyni məntiqlə (eyni regex ardıcıllığı) köçürülməlidir.
 
 Versiya təsdiqləndi (2026-11-03): birinci məqalənin Şəkil 8–10-u bu kodla üst-üstə düşür.
@@ -47,7 +47,7 @@ Versiya təsdiqləndi (2026-11-03): birinci məqalənin Şəkil 8–10-u bu kodl
 
 ## Qara siyahı filtri (05) və MySQL testi
 - `src/blacklist.py` = `server.js`-dəki `sanitizeInput`/`sanitizeSearch`-in Python portu; Node.js ilə 50/50 eyniliyi notebook-da sübut olunub (ASCII case-fold, JS `trim()` boşluq dəsti).
-- MySQL testi: ayrıca `sqli_ml_eval` bazası, yalnız SELECT hüquqlu `sqli_eval` istifadəçisi (`sql/setup_eval_db.sql`, şifrə `.env`-də). Bazanı root ilə Workbench-dən qurmaq lazımdır (root şifrəsi dəyişib, `mysql2026` işləmir).
+- MySQL testi: ayrıca `sqli_ml_eval` bazası, yalnız SELECT hüquqlu `sqli_eval` istifadəçisi (`sql/setup_eval_db.sql`, şifrə `.env`-də). Bazanı root ilə Workbench-dən qurmaq lazımdır.
 - `data/processed/05_mysql_runs.csv` (13 MB) git-də izlənmir — notebook-dan yenidən yaranır.
 
 ## Xarici datasetlər (10)

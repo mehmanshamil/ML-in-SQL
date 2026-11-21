@@ -9,3 +9,20 @@ data/processed/06_mysql_effectiveness.csv
 middleware/node_modules/
 middleware/npm-debug.log
 third_party/
+
+# Not redistributable (Kaggle sajid576 dataset: license "Unknown"; WAF-A-MoLE: no license).
+# Regenerated locally: notebooks 01/02/02_v2 (data/processed), 03 (obfuscated test), 05 (fp lists),
+# middleware/scripts/export_model.py (fixtures), 17 (data/v3).
+data/processed/clean.csv
+data/processed/clean_v2.csv
+data/processed/train.csv
+data/processed/val.csv
+data/processed/test.csv
+data/processed/train_v2.csv
+data/processed/val_v2.csv
+data/processed/test_v2.csv
+data/processed/obfuscated_test_v2.csv
+data/v3/
+results/05_fp_input.csv
+results/05_fp_search.csv
+middleware/test/fixtures/parity.json

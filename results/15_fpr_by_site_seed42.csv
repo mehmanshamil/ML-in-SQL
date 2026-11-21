@@ -1,0 +1,12 @@
+detector,sessiyalar,FPR>0 olan sessiyalar,FPR>1% olan sessiyalar,max sessiya FPR %,median sessiya FPR %
+LR baza,692,677,642,96.31,23.945
+SVM baza,692,636,573,85.43,5.288
+RF baza,692,687,675,96.39,35.32
+NB baza,692,692,692,100.0,76.152
+LR + normallaşdırma,692,676,637,96.31,23.736
+LR + norm. + augmentation,692,678,643,96.81,25.159
+CNN baza,692,688,680,99.73,31.284
+CNN + normallaşdırma,692,690,675,96.02,32.265
+Qara siyahı (sanitizeInput),692,690,683,97.59,35.27
+Qara siyahı (sanitizeSearch),692,670,637,95.62,17.06
+libinjection 4.0.1,692,126,48,40.64,0.0

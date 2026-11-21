@@ -1,6 +1,6 @@
 # Layihə haqqında məlumat (SQLi ML məqaləsi)
 
-> Son yenilənmə: 2026-11-20 (tam review: fayllar, notebook çıxışları, `results/` CSV-ləri, keşlənmiş modellər yoxlanılıb).
+> Son yenilənmə: 2026-11-21 (notebook 15 icra olunub; böyüdülmüş v3 dataseti — notebook 17 və `coursework/summary_v3.md`; public hazırlıq yoxlaması).
 > Bu fayl layihənin bütün hissələrini bir yerdə toplayır: mövzu, məlumat, kod, eksperimentlər, nəticələr,
 > qəbul olunmuş qərarlar və açıq qalan işlər. Ətraflı nəticələr: `coursework/summary.md`, reproduksiya: `README.md`.
 
@@ -35,7 +35,7 @@ Girişi modeldən əvvəl kanonik formaya salmaq (`src/normalize.py`) effekti ar
 | 2 | HttpParamsDataset | GitHub `Morzeux/HttpParamsDataset` | **Xarici test** (sqli + norm, 30 156 sorğu: 10 852 / 19 304). İkiqat boşluq artefaktı yoxdur. Train/val ilə üst-üstə düşənlər çıxarılır | Paylanmır |
 | 3 | SQLiV3 / sqliv2 | Kaggle `syedsaqlainhussain/sql-injection-dataset` v5 | Yalnız üst-üstə düşmə analizi — bizim datasetlə 98.4–99.9% eynidir, müstəqil test deyil | Paylanmır |
 | 4 | Əl ilə yazılmış payload-lar | `swisskyrepo/PayloadsAllTheThings` (`SQL Injection/Intruder/`, commit `08ea40e`) + `fuzzdb-project/fuzzdb` (`attack/sql-injection/`, commit `5656ab2`) | Notebook 14: sqlmap formatında olmayan insan payload-ları. Təmizlənmiş siyahı `data/processed/14_handwritten_payloads.csv` | MIT; BSD-3 / CC BY 3.0 — lisenziyalar README-də, siyahı repoda paylanır |
-| 5 | open-appsec legitimate | `openappsec/waf-comparison-project` → `legitimate.zip` (1.2 GB, SHA-256 `58faee18…`, 2026-11-17 yüklənib) | Notebook 15: real saytların təmiz HTTP trafiki (**692 JSON qeyd faylı**, 1 040 242 sorğu) — FPR | Apache 2.0, paylanmır. ⚠ "185 sayt" rəqəmi yoxlanmalıdır (bax §8) |
+| 5 | open-appsec legitimate | `openappsec/waf-comparison-project` → `legitimate.zip` (1.2 GB, SHA-256 `58faee18…`, 2026-11-17 yüklənib) | Notebook 15: **692 brauzer sessiyasının** (hər sessiya bir JSON faylı) təmiz HTTP trafiki, 1 040 242 sorğu — FPR; notebook 17-də v3-ün təmiz mənbəyi (40 000 unikal dəyər) | Apache 2.0, paylanmır |
 | 6 | WAF-A-MoLE | `zangobot/wafamole_dataset` (commit `3eb1cef`) | Notebook 16: başqa açıq dataset — artefakt yoxlaması, köçürmə, əks istiqamət | Repoda lisenziya faylı yoxdur — paylanmır, yalnız istinad (Demetrio et al., SAC 2020) |
 
 `data/raw/` git-də izlənmir; notebook-lar faylları özləri yükləyir və SHA-256 / sabit commit ilə yoxlayır.
@@ -86,14 +86,15 @@ Python 3.13 venv, PyTorch 2.15.0 CPU (TensorFlow yox); `requirements.txt`-ə `sq
 | 12 | `12_multiseed` | Bütün əsas cədvəllər seed 42–46 (orta ± std) | ✅ |
 | 13 | `13_char_cnn` | Bayt səviyyəli CNN: baza vs normallaşdırma, 5 seed; Kaggle, insan formatı, obfuskasiya, HttpParams, payload siyahıları | ✅ (2026-11-17 17:09, 7/7 hüceyrə, xətasız) |
 | 14 | `14_handwritten_payloads` | PayloadsAllTheThings + fuzzdb, bütün detektorlar, 5 seed | ✅ |
-| 15 | `15_openappsec_benign` | open-appsec təmiz trafiki: dəyər və sorğu səviyyəsində FPR, 11 detektor, 5 seed; top-20 yanlış bloklama, səbəb qrupları, sayt üzrə FPR | ❌ **icra olunmayıb** (0/9 hüceyrə, `results/15_*` yoxdur) |
+| 15 | `15_openappsec_benign` | open-appsec təmiz trafiki: dəyər və sorğu səviyyəsində FPR, 11 detektor, 5 seed; top-20 yanlış bloklama, səbəb qrupları, sayt üzrə FPR | ✅ (2026-11-21 12:53, xətasız; bütün 833 477 unikal dəyər, nümunə götürülməyib) |
 | 16 | `16_wafamole` | WAF-A-MoLE: artefakt statistikası, 20k+20k nümunədə bizim modellər, WAF-A-MoLE-də öyrədilmiş LR | ✅ (2026-11-17 16:41, 9/9 hüceyrə, xətasız) |
+| 17 | `17_combined_v3` | **v3**: Kaggle + HttpParams + WAF-A-MoLE (40k/sinif) + open-appsec (40k təmiz), təmizləmə, EDA (a–d), 5 model × baza/norm. × 5 seed; test A (birləşdirilmiş + mənbə üzrə), B (LODO), C (payload siyahıları), hamısı alt. whitespace ilə; top-20 n-gram artefakt yoxlaması | ✅ (2026-11-21 22:40, xətasız, ≈9.7 saat) |
 
-İcra ardıcıllığı: 01 → 12, sonra **14 → 13 → 15 → 16** (13 payload siyahısını 14-dən götürür). 16 15-dən asılı deyil (artıq bitib).
+İcra ardıcıllığı: 01 → 12, sonra **14 → 13 → 15 → 16 → 17** (13 payload siyahısını 14-dən götürür; 17 14-ün payload siyahısını və 15-in dəyər keşini istifadə edir).
 
-**15-in vəziyyəti.** Notebook-da heç bir çıxış yoxdur; işləyən proses yoxdur. Görünür, `nbconvert --inplace` ilə işə salınıb
-və yarımçıq kəsilib (nbconvert çıxışı yalnız sonda yazır). Hazır olanlar: dəyər keşi (`openappsec_values.pkl`),
-TF-IDF modelləri (5 seed), CNN modellərinin 9/10-u — **`charcnn_norm_46.pt` çatışmır**, növbəti icrada öyrədiləcək.
+**Bərpa olunan icra.** 15 proqnozları `models/15_preds/`-də, 17 modelləri `models/v3/`-də və qiymətləndirmə sətirlərini
+`models/v3/rows/`-da keşləyir — yarımçıq kəsilsə, eyni `nbconvert` əmri bitmiş işi təkrarlamır. 15-in ilk icrası 2026-11-20 17:26-da
+kompüterin yuxu rejiminə keçməsi ilə kəsilib, keşlə yenidən işə salınıb.
 
 ---
 
@@ -166,9 +167,34 @@ Gecikmə p50 2.3 → 3.3 ms; ötürmə 3 423 → 2 648 req/s; 1 MB giriş limits
   HttpParams-da 95.1 → **76.9**; LR + norm. variantı sabit (91.5 / 94.1), amma Kaggle-da FPR 58%.
 - Şərh: təmiz sinfin tərifi datasetlər arasında köçmür (FPR hər iki istiqamətdə 21–58%). Qrafik: `figures/paper/16_wafamole.png`.
 
-### 5.8. Notebook 15 — open-appsec ⏳ (yalnız dəyər çıxarılması hazırdır, FPR hesablanmayıb)
-Keşdən yoxlanılıb: 1 040 242 sorğu, 692 fayl, 657 160 sorğuda ən azı bir dəyər, 9 520 543 dəyər (833 477 unikal),
-6 968 dəyər 4 096 simvoldan uzun olduğu üçün kəsilib.
+### 5.8. Notebook 15 — open-appsec ✅ (v2 modelləri, 5 seed, %)
+692 brauzer sessiyası, 1 040 242 sorğu, 657 160 sorğuda ən azı bir dəyər, 9 520 543 dəyər (**833 477 unikal**, hamısı yoxlanılıb).
+
+| Detektor | Unikal dəyər FPR | Sorğu FPR |
+|---|---|---|
+| LR baza | 0.87 ± 0.13 | 16.96 ± 8.80 |
+| SVM baza | 0.99 ± 0.19 | 14.29 ± 8.53 |
+| RF baza | 0.35 ± 0.01 | 34.53 ± 5.32 |
+| LR + norm. + aug. (yerləşdirilən) | 1.24 ± 0.17 | 22.32 ± 7.39 |
+| CNN baza / + norm. | 0.76 / 2.73 | 27.50 / 25.19 |
+| Qara siyahı sanitizeInput / sanitizeSearch | 14.07 / 7.00 | 35.39 / 20.30 |
+| libinjection 4.0.1 | **0.08** | **0.57** |
+
+Sorğu səviyyəsində yüksək FPR tez-tez təkrarlanan qısa dəyərlərdən gəlir (`0` — 394 min dəfə, yerləşdirilən model 118 min halını bloklayır;
+`c`, `-1`, `{}`); səbəb qrupu "rəqəm / qısa kod" üstünlük təşkil edir. LR baza 692 sessiyanın 642-də >1% yanlış blok verir, libinjection 48-də.
+Ətraflı: `coursework/summary_v3.md` §9.
+
+### 5.9. Notebook 17 — v3 birləşdirilmiş dataset ✅ (5 seed, %)
+Təmizləmədən sonra 164 380 sətir (53 474 zərərli): Kaggle 30 087, HttpParams 14 369 (52% Kaggle ilə üst-üstə düşdüyündən çıxarılıb),
+WAF-A-MoLE 80 000, open-appsec 39 924. Hər mənbə ayrıca qrup əsaslı 70/15/15.
+- **A, birləşdirilmiş test:** bütün modellər F1 99.60–99.80, FPR 0.12–0.22; ən yaxşı CNN baza (F1 99.80 ± 0.03). Alt. whitespace: baza
+  modellər recall 75.6 (RF) – 96.6 (CNN), norm. modellər dəyişmir. Mənbə üzrə: Kaggle alt. ws. recall RF baza **23.3**.
+- **B, LODO:** Kaggle çıxarılanda F1 73–94, FPR 4–21; WAF-A-MoLE çıxarılanda F1 76–93, FPR 0.3–19; open-appsec FPR 0.24–1.59.
+  Normallaşdırma ən etibarlı yaxşılaşmadır (SVM Kaggle recall 82 → 94; alt. ws. RF 3.5 → 78.8).
+- **C, payload siyahıları (1 427, yalnız test):** recall 86.6–91.5; alt. ws. baza 38.3–84.9, norm. 87.9–91.5; open-appsec test FPR 0.01–0.13.
+- **Artefakt:** LR baza top-20 zərərli n-gram-ın 9-u format n-gram-ı (şərh `--`, `#` + boşluq parçaları), təmiz tərəfdə 7 tək hərf;
+  sətir sonu n-gram-ı top-20-də yoxdur.
+Ətraflı: `coursework/summary_v3.md`.
 
 ---
 
@@ -191,22 +217,28 @@ Keşdən yoxlanılıb: 1 040 242 sorğu, 692 fayl, 657 160 sorğuda ən azı bir
    Windows-da git CRLF çevirməsi söndürülüb (`core.autocrlf=false`), çünki payload-ların içində LF var.
 4. **CNN modelləri** 15/16 üçün `src/charcnn.py` ilə yenidən öyrədilir (13 ilə eyni kod və seed, deterministik).
    **Yoxlanılıb (2026-11-20):** 9 keşlənmiş modelin hamısında epoxa sayı və val F1 `13_char_cnn_raw.csv` ilə tam eynidir
-   (fərq < 1e-9). `charcnn_norm_46.pt` hələ yoxdur.
+   (fərq < 1e-9). `charcnn_norm_46.pt` 2026-11-21-də notebook 15-in icrası zamanı öyrədilib.
 5. **13-ün icra müddəti:** bəzi CNN təlimləri anormal uzun çəkib (seed 43 norm. 13 431 s, digərləri 281–3 649 s) — kompüter yuxusu
    və paralel icra (15-in CNN təlimi və 16 eyni vaxtda) səbəbindən. Təlim deterministik olduğundan nəticələrə təsir etmir (4-cü bəndə bax).
+6. **"185 sayt" → "692 brauzer sessiyası":** 185 rəqəminin mənbəyi tapılmadı; `legitimate.zip`-də 692 JSON faylı (sessiya) var.
+   README, `src/openappsec.py`, notebook 15 və summary-lərdə "692 brauzer sessiyası (open-appsec `legitimate.zip`)" yazılıb.
+7. **Notebook 15 nümunəsiz:** limit 6 saat idi, ölçülmüş iş vaxtı ≈4 saat → bütün 833 477 unikal dəyər istifadə olunub (200 000-lik nümunə lazım olmayıb).
+8. **v3 (17):** WAF-A-MoLE-dan hər sinifdən 40 000, open-appsec-dən 40 000 unikal təmiz dəyər (seed 42). Hər iki sinifdə görünən
+   WAF-A-MoLE sorğuları nümunədən əvvəl çıxarılır. open-appsec-dən UTF-8-də yazıla bilməyən 1 binar dəyər (tək surrogate) nümunədən
+   əvvəl çıxarılıb. Mənbələr arası dublikatda prioritet: Kaggle → HttpParams → WAF-A-MoLE → open-appsec. Payload siyahıları (14)
+   normallaşdırılmış formada v3-dən çıxarılıb (168 sətir) — yalnız test. CNN 5 epoxa; LODO-da CNN yalnız seed 42 (vaxt səbəbi ilə).
 
 ---
 
 ## 7. Açıq qalan işlər
 
-- [ ] **Notebook 15-i icra etmək** (yeganə qalan hesablama). `charcnn_norm_46` öyrədiləcək; 833 477 unikal dəyər × 11 detektor × 5 seed —
-      bir neçə saat. Kompüter yuxu rejiminə keçməməlidir; başqa ağır iş paralel işlədilməməlidir.
-- [ ] "185 sayt" rəqəmini mənbədən yoxlamaq (bax §8) və README / notebook 15 / summary-də düzəltmək
-- [ ] `coursework/summary.md` §9.1-ə 15-in nəticələri: cədvəl + 3 cümləlik şərh; §6-da 15-in statusu
-- [x] `coursework/summary.md` — Section 14–13 və 16 yazılıb
-- [x] README: 15/16 məlumat mənbələri, çıxarma üsulu, lisenziyalar yazılıb
-- [ ] Commit (push yox — istifadəçinin göstərişi). Commit edilməmiş: 4 dəyişdirilmiş fayl + 30-dan çox yeni fayl
-      (`src/` 5 modul, notebook 14–16, `results/13_*`, `14_*`, `16_*`, `figures/paper/`, `data/processed/14_handwritten_payloads.csv`, bu fayl)
+- [x] Notebook 15 icra olunub (2026-11-21), `charcnn_norm_46` öyrədilib
+- [x] "185 sayt" → "692 brauzer sessiyası" (README, `src/openappsec.py`, notebook 15)
+- [x] `coursework/summary.md` §9.1 və §6; `coursework/summary_v3.md` (notebook 15 + 17)
+- [x] Notebook 17 (v3) icra olunub
+- [x] Public hazırlıq yoxlaması (bax §8.1)
+- [ ] ⚠ **Git tarixçəsi** — istifadəçinin qərarı lazımdır (bax §8.1): `git filter-repo` ilə təmizləmək və ya təmiz yeni repo kimi yayımlamaq
+- [ ] Push — istifadəçinin göstərişi ilə edilməyib
 
 ---
 
@@ -225,11 +257,31 @@ Keşdən yoxlanılıb: 1 040 242 sorğu, 692 fayl, 657 160 sorğuda ən azı bir
 - `README.md`: torch "notebook 13 only" yazılmışdı — 15 və 16 da `src/charcnn.py`-ni import edir → "notebooks 13, 15, 16";
   seed qeydi "12 and 13" → "12–15".
 
-**Həll olunmamış (istifadəçinin qərarı lazımdır):**
-- ⚠ **"185 sayt"**: `legitimate.zip`-də 692 JSON faylı var (məs. `browsing_2024_airbnb`, `browsing_2024_airbnb_al` — eyni saytın
-  müxtəlif sessiyaları); suffix-lər (`_al`, `_hl`, `_ni`) atılanda ~649 ad qalır. 185 rəqəminin lokal mənbəyi yoxdur
-  (`repo/` qovluğu boşdur). README, notebook 15-in giriş mətni və bu fayl 185 deyir; notebook 15-in özü isə "saytlar (fayllar)" = 692 çıxaracaq.
-  Məqaləyə yazmazdan əvvəl open-appsec mənbəsindən yoxlanmalı, ya da "692 brauzer sessiyası" kimi yazılmalıdır.
+**"185 sayt" (həll olunub, 2026-11-21):** `legitimate.zip`-də 692 JSON faylı var (məs. `browsing_2024_airbnb`, `browsing_2024_airbnb_al` —
+eyni saytın müxtəlif sessiyaları); 185 rəqəminin mənbəyi yoxdur. Bütün sənədlərdə "692 brauzer sessiyası" yazılıb.
+
+### 8.1. Public hazırlıq yoxlaması (2026-11-21)
+
+**İş ağacı (növbəti commit-ə düşəcək fayllar) — təmizdir:**
+- `.env` və digər gizli fayllar repoda yoxdur (`.gitignore`: `.env`); tracked fayllarda şifrə yoxdur (`MYSQL_EVAL_PASSWORD` yalnız env-dən oxunur).
+- `CLAUDE.md`-dən köhnə MySQL root şifrəsi və lokal yol çıxarılıb.
+- Paylanması qadağan / lisenziyası olmayan datasetlər (Kaggle — Unknown, WAF-A-MoLE — lisenziya yoxdur) repodan çıxarılıb
+  (`git rm --cached`) və `.gitignore`-a əlavə olunub: `data/processed/{clean,clean_v2,train,val,test,*_v2,obfuscated_test_v2}.csv`,
+  `data/v3/`, `results/05_fp_input.csv`, `results/05_fp_search.csv`, `middleware/test/fixtures/parity.json`. `data/raw/`, `models/` artıq ignore olunur.
+  Hamısı notebook-larla yenidən yaradılır (README-də siyahı var).
+- Qalan `data/processed/14_handwritten_payloads.csv` — PayloadsAllTheThings (MIT) + fuzzdb (BSD-3 / CC BY 3.0), atribusiya ilə paylanır.
+- open-appsec dəyərləri olan nəticələr (`results/15_top20_*`) — Apache-2.0, paylanma icazəlidir.
+
+**Qalan kiçik risklər (qərar istifadəçinindir):**
+- `middleware/demo/attacks.json` (~222 Kaggle sətri) — `npm run attack-test` üçün lazımdır, generatoru yoxdur; tracked saxlanılıb.
+- Kiçik Kaggle çıxarışları: `results/02_misclassified.csv` (~31 sətir), `results/05_node_equivalence.csv`, bəzi notebook çıxışları.
+- `middleware/src/model.json` (8.9 MB) — Kaggle-da öyrədilmiş modelin TF-IDF lüğəti və çəkiləri (datasetin özü deyil).
+
+**Git tarixçəsi — təmiz deyil:**
+- Köhnə MySQL root şifrəsi commit `ca6eb68`-də (`CLAUDE.md`) qalır.
+- Kaggle-dan törəmə `data/processed/*.csv` faylları köhnə commit-lərdədir.
+- Variantlar: (1) `git filter-repo` ilə həmin faylları/sətri tarixçədən silmək (bütün commit hash-ləri dəyişir);
+  (2) public üçün tarixçəsiz yeni repo (`git checkout --orphan`) yaratmaq. Hər iki halda köhnə şifrə dəyişdirilmiş hesab olunmalıdır.
 
 ---
 

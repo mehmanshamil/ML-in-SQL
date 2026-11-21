@@ -38,7 +38,10 @@ Data:
 | `data/raw/external/handwritten/` | GitHub `swisskyrepo/PayloadsAllTheThings` (`SQL Injection/Intruder/*`) and `fuzzdb-project/fuzzdb` (`attack/sql-injection/**/*.txt`) | notebook 14 does a sparse checkout of pinned commits (`src/handwritten.py`); the cleaned list is `data/processed/14_handwritten_payloads.csv` |
 
 `data/raw/`, `models/`, `third_party/` and the large MySQL run logs are not tracked; every notebook regenerates
-what the next one needs. Run the notebooks **in numeric order** (from `notebooks/` or the repo root):
+what the next one needs. Files derived from datasets that may not be redistributed are not tracked either and are
+regenerated locally: the cleaned Kaggle data and splits in `data/processed/` (notebooks 01, 02, 02_v2), the obfuscated
+test set (03), the blacklist false-positive lists `results/05_fp_*.csv` (05), the combined dataset `data/v3/` (17) and
+the middleware parity fixture (`middleware/scripts/export_model.py`). Run the notebooks **in numeric order** (from `notebooks/` or the repo root):
 
 ```bash
 jupyter nbconvert --to notebook --execute --inplace notebooks/01_data_analysis.ipynb   # etc.
@@ -61,8 +64,8 @@ Notebooks 09, 11 and 12 read the saved `data/processed/06_mysql_effectiveness.cs
 
 ### open-appsec legitimate traffic (notebook 15)
 
-The legitimate set of the open-appsec WAF Comparison Project (Apache 2.0; 1 040 242 browser-recorded requests from 185
-sites, one JSON file per site with `method`, `url`, `headers`, `data`). Only this set is used; the malicious set is not.
+The legitimate set of the open-appsec WAF Comparison Project (Apache 2.0; 1 040 242 browser-recorded requests in 692
+browser sessions, one JSON file per session in `legitimate.zip`, with `method`, `url`, `headers`, `data`). Only this set is used; the malicious set is not.
 Our models score single parameter values, so each request is reduced to the values the Express middleware
 (`middleware/src/sqliGuard.js`) would score:
 
@@ -118,6 +121,7 @@ over 5 splits):
 | Hand-written payloads | PayloadsAllTheThings + fuzzdb: independence, recall of all detectors, alt. whitespace; FPR on HttpParams benign | 14 | `14_*.csv`, `figures/paper/14_handwritten_recall.png` |
 | Real benign traffic | open-appsec legitimate requests: value- and request-level FPR of all detectors, top false blocks | 15 | `15_*.csv`, `figures/paper/15_openappsec_fpr.png` |
 | WAF-A-MoLE | Artifact statistics, our models on 20k + 20k, LR trained on WAF-A-MoLE | 16 | `16_*.csv`, `figures/paper/16_wafamole.png` |
+| Combined dataset v3 | Kaggle + HttpParams + WAF-A-MoLE + open-appsec: cleaning, EDA, 5 models × baseline/normalized × 5 seeds, per-source test, leave-one-dataset-out, payload lists, n-gram artifact check | 17 | `results/v3/17_*.csv`, `figures/v3/`, summary in `coursework/summary_v3.md` |
 | char-CNN | Does a neural model learn the artifact too? | 13 (after 14) | `13_char_cnn_table.csv`, `13_char_cnn_mean_std.csv`, `13_cnn_vs_lr.csv`, `figures/paper/13_char_cnn_artifact.png` |
 | Fig. 1 | LR defenses, scenario A | 04 | `figures/04_defense_recall_A.png` |
 
@@ -141,18 +145,20 @@ All notebooks:
 | 14 | `14_handwritten_payloads` | Hand-written payload lists (PayloadsAllTheThings, fuzzdb): cleaning, independence, all detectors over seeds 42–46 |
 | 15 | `15_openappsec_benign` | open-appsec real benign traffic: parameter values extracted like the middleware; FPR per value and per request, seeds 42–46 |
 | 16 | `16_wafamole` | WAF-A-MoLE dataset: split, artifact statistics, transfer in both directions |
+| 17 | `17_combined_v3` | Combined v3 dataset (4 sources), cross-source cleaning, EDA, all models over seeds 42–46, tests A/B/C with alternative whitespace (~10 h on 4 CPU cores) |
 
 ## Layout
 
 ```
 src/            normalize.py, obfuscation.py, blacklist.py, libinj.py (ctypes), experiments.py (shared helpers),
                 detectors.py (TF-IDF models of notebook 12, cached), charcnn.py (CNN of notebook 13, cached),
-                handwritten.py (payload lists, 13/14), openappsec.py (15), wafamole.py (16)
+                handwritten.py (payload lists, 13/14), openappsec.py (15), wafamole.py (16),
+                v3.py (combined dataset, 17)
 tools/          build_libinjection.py
-notebooks/      01–16, run in order (except: 14 before 13)
+notebooks/      01–17, run in order (except: 14 before 13)
 data/processed/ cleaned data, splits, obfuscated test set, MySQL effectiveness
-results/        CSV tables
-figures/        300 dpi PNG; figures/paper/ = figures of notebooks 13–16 used in the paper
+results/        CSV tables; results/v3/ = notebook 17
+figures/        300 dpi PNG; figures/paper/ = figures of notebooks 13–16 used in the paper; figures/v3/ = notebook 17
 middleware/     Express middleware (pure JS) with parity test, attack test and benchmarks
 sql/            MySQL setup for the execution test
 ```

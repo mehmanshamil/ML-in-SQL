@@ -197,7 +197,8 @@ Nəticələr 8-ci bölmədədir (Section 14–13).
 | 12 | `12_multiseed` | Bütün əsas cədvəllər 42–46 seed-lərində (orta ± std) və seed 42 üçün yoxlama | icra olunub |
 | 13 | `13_char_cnn` | Bayt səviyyəli CNN: neyron model də artefaktı öyrənirmi? (14-dən sonra işə salınır) | icra olunub |
 | 14 | `14_handwritten_payloads` | PayloadsAllTheThings + fuzzdb payload siyahıları, bütün detektorlar, 5 seed | icra olunub |
-| 15 | `15_openappsec_benign` | open-appsec real təmiz trafiki: dəyər və sorğu səviyyəsində FPR, 5 seed | (bax bölmə 9) |
+| 15 | `15_openappsec_benign` | open-appsec real təmiz trafiki: dəyər və sorğu səviyyəsində FPR, 5 seed | icra olunub |
+| 17 | `17_combined_v3` | Böyüdülmüş v3 dataseti (Kaggle + HttpParams + WAF-A-MoLE + open-appsec), 5 model × 2 konfiqurasiya × 5 seed, LODO, payload testi | icra olunub (bax `summary_v3.md`) |
 | 16 | `16_wafamole` | WAF-A-MoLE: artefakt statistikası, köçürmə, əks istiqamət | icra olunub |
 
 Notebook-lardan kənar yalnız middleware ölçmələri aparılıb (`middleware/`, Node.js):
@@ -297,7 +298,19 @@ səviyyəyə gətirir — müdafiə model arxitekturasından asılı deyil.
 
 ### 9.1. open-appsec real təmiz trafiki (notebook 15)
 
-_Nəticələr hesablanır — notebook bitəndə əlavə olunacaq._
+**Məlumat.** 692 brauzer sessiyasında (`legitimate.zip`, hər sessiya bir JSON faylı) 1 040 242 HTTP sorğusu var; onlardan 9 520 543 parametr dəyəri, o cümlədən **833 477 unikal dəyər** çıxarılıb. Bütün unikal dəyərlər yoxlanılıb, nümunə götürülməyib; iş vaxtı ≈4 saat olub.
+
+| Detektor | Unikal dəyər FPR, % | Sorğu FPR, % |
+|---|---|---|
+| LR baza | 0.87 ± 0.13 | 16.96 ± 8.80 |
+| SVM baza | 0.99 ± 0.19 | 14.29 ± 8.53 |
+| RF baza | 0.35 ± 0.01 | 34.53 ± 5.32 |
+| LR + norm. + augmentation (yerləşdirilən) | 1.24 ± 0.17 | 22.32 ± 7.39 |
+| CNN baza / + norm. | 0.76 / 2.73 | 27.50 / 25.19 |
+| Qara siyahı (sanitizeSearch) | 7.00 | 20.30 |
+| libinjection 4.0.1 | **0.08** | **0.57** |
+
+Unikal dəyərlərdə FPR ≈1%-dir, amma sorğu səviyyəsində 14–35%-ə qalxır. Səbəb tez-tez təkrarlanan qısa dəyərlərdir: `0` tək başına 394 min dəfə rast gəlinir və yerləşdirilən model onun 118 min halını bloklayır; `c`, `-1`, `{}` də siyahının başındadır. Tam cədvəllər, top-20 yanlış blok, səbəb qrupları və sessiyalar üzrə bölgü üçün bax: `summary_v3.md`, bölmə 9.
 
 ### 9.2. WAF-A-MoLE (notebook 16)
 

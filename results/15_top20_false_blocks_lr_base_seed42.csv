@@ -1,0 +1,21 @@
+value,bloklanan_sorğu,tezlik,səbəb,digər detektorlar da bloklayır
+0,117976,393986,rəqəm / qısa kod,"RF baza, NB baza, LR + normallaşdırma, LR + norm. + augmentation"
+c,8584,10315,rəqəm / qısa kod,"SVM baza, RF baza, LR + normallaşdırma, LR + norm. + augmentation, CNN baza"
+-1,5121,13216,rəqəm / qısa kod,"SVM baza, RF baza, NB baza, LR + normallaşdırma, LR + norm. + augmentation, CNN baza, CNN + normallaşdırma"
+{},3602,8682,JSON / strukturlaşdırılmış mətn,"SVM baza, RF baza, NB baza, LR + normallaşdırma, LR + norm. + augmentation"
+10000,3287,3289,rəqəm / qısa kod,"NB baza, LR + norm. + augmentation"
+1---,2798,2800,"şərh və ya ayırıcı simvol (--, #, /*, ;)","SVM baza, RF baza, NB baza, LR + normallaşdırma, LR + norm. + augmentation, CNN baza, CNN + normallaşdırma, Qara siyahı (sanitizeInput), Qara siyahı (sanitizeSearch), libinjection 4.0.1"
+/,2620,5301,digər,"SVM baza, RF baza, LR + normallaşdırma, LR + norm. + augmentation, CNN baza, CNN + normallaşdırma"
+-,2225,3414,rəqəm / qısa kod,"SVM baza, RF baza, NB baza, LR + normallaşdırma, LR + norm. + augmentation, CNN baza, CNN + normallaşdırma"
+"0,0",2063,4241,digər,"SVM baza, NB baza, LR + normallaşdırma, LR + norm. + augmentation"
+ ,1741,2247,digər,"SVM baza, RF baza, CNN baza, CNN + normallaşdırma, Qara siyahı (sanitizeInput), Qara siyahı (sanitizeSearch)"
+-5,1254,1255,rəqəm / qısa kod,"SVM baza, NB baza, LR + normallaşdırma, LR + norm. + augmentation"
+"0.9,1.0,8,0",978,978,digər,"SVM baza, NB baza, LR + norm. + augmentation"
+1-0-40,919,919,rəqəm / qısa kod,"SVM baza, NB baza, LR + normallaşdırma, LR + norm. + augmentation"
+ue,898,1223,rəqəm / qısa kod,"LR + normallaşdırma, LR + norm. + augmentation, CNN baza"
+000,828,830,rəqəm / qısa kod,"NB baza, LR + normallaşdırma, LR + norm. + augmentation"
+v,812,829,rəqəm / qısa kod,"RF baza, LR + normallaşdırma, LR + norm. + augmentation, CNN baza, CNN + normallaşdırma"
+es,771,844,rəqəm / qısa kod,
+user,751,953,rəqəm / qısa kod,"NB baza, LR + norm. + augmentation"
+se,743,925,rəqəm / qısa kod,LR + normallaşdırma
+C,648,10260,rəqəm / qısa kod,"SVM baza, RF baza, LR + normallaşdırma, LR + norm. + augmentation, CNN baza"

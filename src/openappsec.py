@@ -2,8 +2,8 @@
 
 Source: github.com/openappsec/waf-comparison-project. The repository has no data
 folder; config.py loads the legitimate set from LEGIT_URL (Apache 2.0). It holds
-1 040 242 browser-recorded HTTP requests from 185 real sites, one JSON file per
-site, each a list of {method, url, headers, data}. Only the legitimate set is used.
+1 040 242 browser-recorded HTTP requests in 692 browser sessions (one JSON file
+per session in legitimate.zip), each a list of {method, url, headers, data}. Only the legitimate set is used.
 
 Our models score single parameter values, so every request is reduced to the
 values the Express middleware (middleware/src/sqliGuard.js) would score:
