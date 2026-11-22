@@ -96,7 +96,7 @@ Sətirlərin neçə faizində artefakt var:
 | WAF-A-MoLE | təmiz | 0.0 | 0.0 | 0.0 |
 | open-appsec | təmiz | 0.44 | 0.35 | 1.12 |
 
-Şərh (`--`, `#`, `/*`) üç mənbədə praktik olaraq yalnız zərərli sinifdə görünür. Kaggle-da ikiqat boşluq, WAF-A-MoLE-da isə sətir sonu da sinfi göstərir. Bu, modelin hücumun mənasını yox, formatı öyrənə biləcəyini göstərir. Bunu 7-ci bölmə yoxlayır.
+Şərh (`--`, `#`, `/*`) üç mənbədə praktik olaraq yalnız zərərli sinifdə görünür. Kaggle-da ikiqat boşluq, WAF-A-MoLE-da isə sətir sonu da sinfi göstərir. Bu, modelin hücumun mənasını yox, formatı öyrənə biləcəyini göstərir. Bunu 8-ci bölmə yoxlayır.
 
 **(d) Mənbələr arası üst-üstə düşmə** — `figures/v3/17d_source_overlap_heatmap.png`, `results/v3/17_eda_overlap_pct.csv`
 
@@ -139,15 +139,22 @@ Mənbə: `results/v3/17_A_combined_table.csv`. Normal giriş:
 Alternativ whitespace ilə (`results/v3/17_A_combined_alt_ws_table.csv`):
 
 - norm. modellərin nəticələri normal girişlə **eynidir**;
-- baza modellərin recall və F1-i düşür:
+- baza modellərin recall və F1-i düşür. FPR dəyişmir, çünki təmiz sətirlərə toxunulmur:
 
-| Model (baza) | Recall | F1 |
-|---|---|---|
-| LR | 88.77 ± 4.25 | 93.86 ± 2.41 |
-| SVM | 92.75 ± 0.87 | 96.10 ± 0.47 |
-| RF | 75.60 ± 1.85 | 85.89 ± 1.20 |
-| NB | 95.08 ± 0.26 | 97.25 ± 0.14 |
-| CNN | 96.56 ± 1.36 | 98.12 ± 0.70 |
+| Model | Accuracy | Precision | Recall | F1 | ROC-AUC | FPR |
+|---|---|---|---|---|---|---|
+| LR baza | 96.23 ± 1.39 | 99.67 ± 0.07 | 88.77 ± 4.25 | 93.86 ± 2.41 | 0.9985 ± 0.0007 | 0.14 ± 0.04 |
+| LR norm. | 99.81 ± 0.02 | 99.71 ± 0.04 | 99.70 ± 0.07 | 99.71 ± 0.03 | 0.9997 ± 0.0002 | 0.14 ± 0.02 |
+| SVM baza | 97.55 ± 0.30 | 99.71 ± 0.05 | 92.75 ± 0.87 | 96.10 ± 0.47 | 0.9994 ± 0.0001 | 0.13 ± 0.02 |
+| SVM norm. | 99.86 ± 0.01 | 99.73 ± 0.04 | 99.84 ± 0.02 | 99.79 ± 0.02 | 0.9998 ± 0.0001 | 0.13 ± 0.02 |
+| RF baza | 91.91 ± 0.55 | 99.44 ± 0.10 | 75.60 ± 1.85 | 85.89 ± 1.20 | 0.9983 ± 0.0003 | 0.21 ± 0.04 |
+| RF norm. | 99.74 ± 0.03 | 99.57 ± 0.07 | 99.64 ± 0.09 | 99.60 ± 0.05 | 0.9998 ± 0.0001 | 0.21 ± 0.03 |
+| NB baza | 98.25 ± 0.09 | 99.53 ± 0.08 | 95.08 ± 0.26 | 97.25 ± 0.14 | 0.9991 ± 0.0001 | 0.22 ± 0.03 |
+| NB norm. | 99.82 ± 0.01 | 99.63 ± 0.03 | 99.83 ± 0.03 | 99.73 ± 0.01 | 0.9999 ± 0.0001 | 0.18 ± 0.02 |
+| CNN baza | 98.80 ± 0.44 | 99.74 ± 0.02 | 96.56 ± 1.36 | 98.12 ± 0.70 | 0.9996 ± 0.0001 | 0.12 ± 0.01 |
+| CNN norm. | 99.87 ± 0.02 | 99.75 ± 0.03 | 99.84 ± 0.06 | 99.79 ± 0.03 | 0.9999 ± 0.0001 | 0.12 ± 0.01 |
+
+Hər mənbə və LODO üçün altı metrikin hamısı (normal və alt. whitespace): `results/v3/17_A_per_source_mean_std.csv`, `results/v3/17_B_lodo_mean_std.csv`.
 
 **Ən yaxşı model** (orta F1): CNN baza. Confusion matrix (seed 42): `figures/v3/17_confusion_matrix_best.png`, `results/v3/17_confusion_matrix_best_seed42.csv`.
 
@@ -368,8 +375,8 @@ Qara siyahılarda əsas səbəblər fərqlidir: dırnaq/apostrof, URL/yol və t�
 | Detektor | Sessiya sayı | Median sessiya FPR |
 |---|---|---|
 | LR baza | 642 | 23.9% |
-| SVM baza | 573 | — |
-| Yerləşdirilən model | 643 | — |
+| SVM baza | 573 | 5.3% |
+| Yerləşdirilən model | 643 | 25.2% |
 | libinjection | 48 | 0% |
 
 **Şərh.**
