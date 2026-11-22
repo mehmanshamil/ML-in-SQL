@@ -24,6 +24,7 @@ import pandas as pd
 import torch
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import GroupShuffleSplit
+from urllib.parse import unquote
 
 import charcnn
 import handwritten as hw
@@ -58,8 +59,11 @@ MODEL_ORDER = [f"{m} {c}" for m in ("LR", "SVM", "RF", "NB", "CNN") for c in CON
 
 # --- 1. sources --------------------------------------------------------------------
 
-def raw_sources():
-    """Concatenated raw rows (Query, Label, source) before cross-source cleaning."""
+def raw_sources(oa_exclude=None):
+    """Concatenated raw rows (Query, Label, source) before cross-source cleaning.
+
+    oa_exclude: set of open-appsec values that must not be sampled (notebook 17b keeps
+    whole browser sessions out; every value seen in them is excluded from the pool)."""
     k = load_clean()[["Query", "Label"]].assign(source="kaggle")
     h = load_httpparams().assign(source="httpparams")
 
@@ -75,6 +79,8 @@ def raw_sources():
     u = u[u.str.strip() != ""]
     # drop values that cannot be written as UTF-8 (lone surrogates from binary junk)
     u = u[~u.str.contains("[\ud800-\udfff]", regex=True)]
+    if oa_exclude is not None:
+        u = u[~u.isin(oa_exclude)]
     u = u.sample(N_OPENAPPSEC, random_state=np.random.RandomState(SAMPLE_SEED))
     o = pd.DataFrame({"Query": u.values, "Label": 0, "source": "openappsec"})
 
@@ -86,8 +92,12 @@ def raw_sources():
 
 # --- 2. cleaning -------------------------------------------------------------------
 
-def clean(raw):
-    """Cross-source cleaning. Returns (clean_df with column nk, per-source report)."""
+def clean(raw, holdout=None):
+    """Cross-source cleaning. Returns (clean_df with column nk, per-source report).
+
+    holdout: optional set of values (notebook 17b: every value of the held-out open-appsec
+    sessions); rows of any source whose query equals one of them are removed, so no value
+    of a held-out session reaches train/val."""
     df = raw.copy()
     rep = {s: {"ilkin": int((df.source == s).sum())} for s in SOURCES}
 
@@ -97,6 +107,8 @@ def clean(raw):
         return df[~mask].reset_index(drop=True)
 
     df = drop(df.Query.str.strip() == "", "boş")
+    if holdout is not None:
+        df = drop(df.Query.isin(holdout), "kənar sessiyaların dəyərləri ilə eyni")
     df = drop(df.duplicated(["source", "Query"]), "mənbə daxilində tam dublikat")
     df["nk"] = df.Query.map(normalize)
     n_labels = df.groupby("nk").Label.nunique()
@@ -232,12 +244,30 @@ def train_models(seed, train, val, tag, cnn=True, cnn_epochs=10):
 # --- 5. evaluation -----------------------------------------------------------------
 
 def alt_ws(queries, label, seed):
-    """alt_whitespace on malicious rows only (attacker-side change); benign unchanged.
-    Applied directly to the model input, as in notebook 14."""
-    q = list(queries)
-    out = [obf.alt_whitespace(x, obf.rng_for("alt_whitespace", i, seed)) if lab == 1 else x
-           for i, (x, lab) in enumerate(zip(q, label))]
-    return out
+    """Alternative whitespace exactly as in notebook 03 (scenario A) and notebook 14.
+
+    Malicious rows only (attacker-side change), benign rows unchanged:
+    obf.apply_technique("alt_whitespace", <malicious rows>, seed) — every whitespace run
+    becomes a raw tab / LF / CR / VT / FF, RNG per (row index among malicious rows, seed) —
+    then the input is URL-decoded once (scenario A, the middleware decodes once).
+    Malicious rows the technique cannot change (no whitespace) are dropped, as in 03/14.
+
+    Returns (inputs aligned with queries, keep mask)."""
+    q, lab = list(queries), np.asarray(label)
+    rows = iter(obf.apply_technique("alt_whitespace", [x for x, l in zip(q, lab) if l == 1], seed=seed))
+    out, keep = list(q), np.ones(len(q), bool)
+    for i, l in enumerate(lab):
+        if l == 1:
+            r = next(rows)
+            out[i], keep[i] = unquote(r["obfuscated"]), r["changed"]
+    return out, keep
+
+
+def _variants(d, seed):
+    """{input name: (model inputs, row mask into d)} for normal and alt_whitespace input."""
+    xs, keep = alt_ws(d.Query, d.Label, seed)
+    return {"normal": (list(d.Query), np.ones(len(d), bool)),
+            "alt_whitespace": ([x for x, k in zip(xs, keep) if k], keep)}
 
 
 def metrics(y, pred, score):
@@ -261,12 +291,12 @@ def evaluate(models, sets, seed, exp):
     """sets: {name: DataFrame(Query, Label)} -> long rows (normal and alt_whitespace input)."""
     rows = []
     for set_name, d in sets.items():
-        variants = {"normal": list(d.Query), "alt_whitespace": alt_ws(d.Query, d.Label, seed)}
-        for var, xs in variants.items():
+        y = d.Label.to_numpy()
+        for var, (xs, keep) in _variants(d, seed).items():
             for mname, m in models.items():
                 pred, score = m.predict_score(xs)
                 rows.append({"experiment": exp, "seed": seed, "model": mname, "test": set_name, "input": var,
-                             **metrics(d.Label, pred, score)})
+                             **metrics(y[keep], pred, score)})
     return rows
 
 
@@ -274,14 +304,14 @@ def evaluate_sliced(models, d, slices, seed, exp):
     """Predict once on d (normal and alt_whitespace), report metrics for every boolean slice."""
     rows = []
     y = d.Label.to_numpy()
-    variants = {"normal": list(d.Query), "alt_whitespace": alt_ws(d.Query, d.Label, seed)}
-    for var, xs in variants.items():
+    for var, (xs, keep) in _variants(d, seed).items():
+        yk = y[keep]
         for mname, m in models.items():
             pred, score = m.predict_score(xs)
             for set_name, mask in slices.items():
-                mask = np.asarray(mask)
+                mask = np.asarray(mask)[keep]
                 rows.append({"experiment": exp, "seed": seed, "model": mname, "test": set_name, "input": var,
-                             **metrics(y[mask], pred[mask], score[mask])})
+                             **metrics(yk[mask], pred[mask], score[mask])})
     return rows
 
 

@@ -37,6 +37,19 @@ Data:
 | `data/raw/external/wafamole/repo/` | GitHub `zangobot/wafamole_dataset` | notebook 16 clones the pinned commit with `core.autocrlf=false` (`src/wafamole.py`) |
 | `data/raw/external/handwritten/` | GitHub `swisskyrepo/PayloadsAllTheThings` (`SQL Injection/Intruder/*`) and `fuzzdb-project/fuzzdb` (`attack/sql-injection/**/*.txt`) | notebook 14 does a sparse checkout of pinned commits (`src/handwritten.py`); the cleaned list is `data/processed/14_handwritten_payloads.csv` |
 
+Datasets and licenses (none of the raw data is included in this repository; download it from the links):
+
+| Dataset | Link | License | Role |
+|---|---|---|---|
+| SQL Injection Dataset (`Modified_SQL_Dataset.csv`), sajid576 | https://www.kaggle.com/datasets/sajid576/sql-injection-dataset | not stated on Kaggle | main dataset (notebooks 01–09, 12–17) |
+| SQL injection dataset v5, syedsaqlainhussain | https://www.kaggle.com/datasets/syedsaqlainhussain/sql-injection-dataset | not stated on Kaggle | overlap analysis (10) |
+| HttpParamsDataset, Morzeux | https://github.com/Morzeux/HttpParamsDataset | MIT | external test (10, 12–14), part of v3 (17) |
+| WAF-A-MoLE dataset, zangobot | https://github.com/zangobot/wafamole_dataset | no license file | 16, part of v3 (17) |
+| open-appsec WAF Comparison Project, legitimate set | https://github.com/openappsec/waf-comparison-project | Apache-2.0 | real benign traffic (15, 17, 17b) |
+| PayloadsAllTheThings, `SQL Injection/Intruder` | https://github.com/swisskyrepo/PayloadsAllTheThings | MIT | hand-written payloads, test only (13, 14, 17) |
+| fuzzdb, `attack/sql-injection` | https://github.com/fuzzdb-project/fuzzdb | BSD-3 / CC BY 3.0 | hand-written payloads, test only (13, 14, 17) |
+| libinjection 4.0.1 | https://github.com/libinjection/libinjection | BSD-3 | baseline detector (11–15, 17b) |
+
 `data/raw/`, `models/`, `third_party/` and the large MySQL run logs are not tracked; every notebook regenerates
 what the next one needs. Files derived from datasets that may not be redistributed are not tracked either and are
 regenerated locally: the cleaned Kaggle data and splits in `data/processed/` (notebooks 01, 02, 02_v2), the obfuscated
