@@ -1,0 +1,14 @@
+detector,fpr_request,"fpr_request (""1"" və boş dəyər çıxmaqla)","""1""-i bloklayan seed (5-dən)",boş dəyəri bloklayan seed (5-dən)
+v3-sess: LR baza,6.696 ± 10.373,2.129 ± 0.514,1,0
+v3-sess: LR norm.,0.900 ± 0.480,0.900 ± 0.480,0,0
+v3-sess: SVM baza,11.286 ± 12.697,2.232 ± 0.417,2,0
+v3-sess: SVM norm.,24.179 ± 0.211,1.323 ± 0.305,5,0
+v3-sess: RF baza,14.572 ± 13.075,0.718 ± 0.817,3,0
+v3-sess: RF norm.,14.734 ± 12.438,0.886 ± 0.486,3,0
+v3-sess: NB baza,11.612 ± 0.282,11.612 ± 0.282,0,0
+v3-sess: NB norm.,11.272 ± 0.219,11.272 ± 0.219,0,0
+v3-sess: CNN baza,6.664 ± 8.766,2.790 ± 0.367,0,1
+v3-sess: CNN norm.,13.285 ± 16.017,2.412 ± 1.622,2,1
+libinjection 4.0.1,0.121 ± 0.000,0.121 ± 0.000,0,0
+v2: LR baza,17.117 ± 9.060,17.117 ± 9.060,0,0
+v2: LR + norm. + aug. (yerləşdirilən),22.670 ± 7.417,15.324 ± 8.173,2,0

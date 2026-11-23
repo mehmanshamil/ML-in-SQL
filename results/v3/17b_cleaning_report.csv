@@ -1,0 +1,6 @@
+,ilkin,boş,kənar sessiyaların dəyərləri ilə eyni,mənbə daxilində tam dublikat,iki sinifdə (normallaşdırılmış forma),"payload siyahıları ilə üst-üstə (14, yalnız test)",mənbələr arası tam dublikat,mənbələr arası normallaşdırılmış dublikat,yekun,zərərli,təmiz
+Kaggle,30255,0,386,0,3,163,0,0,29703,11185,18518
+HttpParams,30156,0,776,0,0,4,7273,8189,13914,2271,11643
+WAF-A-MoLE,80000,0,0,0,0,0,0,0,80000,40000,40000
+open-appsec,40000,0,0,0,3,0,41,8,39948,0,39948
+cəmi,180411,0,1162,0,6,167,7314,8197,163565,53456,110109

@@ -1,0 +1,96 @@
+detector,səbəb,unikal_dəyər,bloklanan_sorğu
+v3-sess: LR baza,SQL açar sözü təbii mətndə/identifikatorda,6,640
+v3-sess: LR baza,"bərabərlik / müqayisə (=, <, >)",1,9
+v3-sess: LR baza,digər,72,1987
+v3-sess: LR baza,dırnaq / apostrof,17,46
+v3-sess: LR baza,mötərizə / funksiya çağırışına bənzər,1,1
+v3-sess: LR baza,rəqəm / qısa kod,14,760
+v3-sess: LR baza,token / base64 / hash,5,7
+v3-sess: LR baza,"şərh və ya ayırıcı simvol (--, #, /*, ;)",2,46
+v3-sess: LR norm.,SQL açar sözü təbii mətndə/identifikatorda,2,10
+v3-sess: LR norm.,URL / yol,2,7
+v3-sess: LR norm.,"bərabərlik / müqayisə (=, <, >)",1,9
+v3-sess: LR norm.,digər,11,44
+v3-sess: LR norm.,dırnaq / apostrof,5,20
+v3-sess: LR norm.,rəqəm / qısa kod,3,501
+v3-sess: LR norm.,"şərh və ya ayırıcı simvol (--, #, /*, ;)",2,46
+v3-sess: SVM baza,SQL açar sözü təbii mətndə/identifikatorda,4,5
+v3-sess: SVM baza,"bərabərlik / müqayisə (=, <, >)",1,9
+v3-sess: SVM baza,digər,51,2428
+v3-sess: SVM baza,dırnaq / apostrof,27,91
+v3-sess: SVM baza,rəqəm / qısa kod,13,647
+v3-sess: SVM baza,"şərh və ya ayırıcı simvol (--, #, /*, ;)",4,78
+v3-sess: SVM norm.,SQL açar sözü təbii mətndə/identifikatorda,8,37
+v3-sess: SVM norm.,URL / yol,3,9
+v3-sess: SVM norm.,"bərabərlik / müqayisə (=, <, >)",3,21
+v3-sess: SVM norm.,digər,30,1158
+v3-sess: SVM norm.,dırnaq / apostrof,33,128
+v3-sess: SVM norm.,mötərizə / funksiya çağırışına bənzər,2,2
+v3-sess: SVM norm.,rəqəm / qısa kod,15,29921
+v3-sess: SVM norm.,"şərh və ya ayırıcı simvol (--, #, /*, ;)",4,78
+v3-sess: RF baza,URL / yol,1,19
+v3-sess: RF baza,digər,6,837
+v3-sess: RF baza,dırnaq / apostrof,3,9
+v3-sess: RF baza,rəqəm / qısa kod,2,29282
+v3-sess: RF norm.,URL / yol,1,3
+v3-sess: RF norm.,digər,6,67
+v3-sess: RF norm.,dırnaq / apostrof,3,9
+v3-sess: RF norm.,rəqəm / qısa kod,4,29482
+v3-sess: NB baza,JSON / strukturlaşdırılmış mətn,2,4
+v3-sess: NB baza,SQL açar sözü təbii mətndə/identifikatorda,9,736
+v3-sess: NB baza,digər,157,1629
+v3-sess: NB baza,dırnaq / apostrof,7,26
+v3-sess: NB baza,mötərizə / funksiya çağırışına bənzər,5,5
+v3-sess: NB baza,rəqəm / qısa kod,198,16302
+v3-sess: NB baza,token / base64 / hash,5,7
+v3-sess: NB baza,"şərh və ya ayırıcı simvol (--, #, /*, ;)",1,1
+v3-sess: NB norm.,JSON / strukturlaşdırılmış mətn,2,4
+v3-sess: NB norm.,SQL açar sözü təbii mətndə/identifikatorda,9,736
+v3-sess: NB norm.,URL / yol,1,3
+v3-sess: NB norm.,digər,120,1218
+v3-sess: NB norm.,dırnaq / apostrof,6,24
+v3-sess: NB norm.,mötərizə / funksiya çağırışına bənzər,4,4
+v3-sess: NB norm.,rəqəm / qısa kod,201,16334
+v3-sess: NB norm.,token / base64 / hash,5,7
+v3-sess: NB norm.,"şərh və ya ayırıcı simvol (--, #, /*, ;)",1,1
+v3-sess: CNN baza,SQL açar sözü təbii mətndə/identifikatorda,9,41
+v3-sess: CNN baza,"bərabərlik / müqayisə (=, <, >)",3,44
+v3-sess: CNN baza,digər,52,2476
+v3-sess: CNN baza,dırnaq / apostrof,57,229
+v3-sess: CNN baza,mötərizə / funksiya çağırışına bənzər,30,69
+v3-sess: CNN baza,rəqəm / qısa kod,12,26722
+v3-sess: CNN baza,"şərh və ya ayırıcı simvol (--, #, /*, ;)",4,70
+v3-sess: CNN norm.,SQL açar sözü təbii mətndə/identifikatorda,9,29
+v3-sess: CNN norm.,URL / yol,3,24
+v3-sess: CNN norm.,"bərabərlik / müqayisə (=, <, >)",4,48
+v3-sess: CNN norm.,digər,58,2431
+v3-sess: CNN norm.,dırnaq / apostrof,50,160
+v3-sess: CNN norm.,mötərizə / funksiya çağırışına bənzər,18,138
+v3-sess: CNN norm.,rəqəm / qısa kod,30,58911
+v3-sess: CNN norm.,token / base64 / hash,1,2
+v3-sess: CNN norm.,"şərh və ya ayırıcı simvol (--, #, /*, ;)",9,79
+libinjection 4.0.1,SQL açar sözü təbii mətndə/identifikatorda,3,3
+libinjection 4.0.1,digər,7,7
+libinjection 4.0.1,dırnaq / apostrof,114,120
+libinjection 4.0.1,mötərizə / funksiya çağırışına bənzər,2,2
+libinjection 4.0.1,"şərh və ya ayırıcı simvol (--, #, /*, ;)",2,47
+v2: LR baza,JSON / strukturlaşdırılmış mətn,15,789
+v2: LR baza,SQL açar sözü təbii mətndə/identifikatorda,29,149
+v2: LR baza,URL / yol,35,154
+v2: LR baza,"bərabərlik / müqayisə (=, <, >)",46,765
+v2: LR baza,digər,1644,6949
+v2: LR baza,dırnaq / apostrof,453,1012
+v2: LR baza,mötərizə / funksiya çağırışına bənzər,8,56
+v2: LR baza,rəqəm / qısa kod,169,28625
+v2: LR baza,token / base64 / hash,18,57
+v2: LR baza,"şərh və ya ayırıcı simvol (--, #, /*, ;)",31,147
+v2: LR + norm. + aug. (yerləşdirilən),JSON / strukturlaşdırılmış mətn,18,797
+v2: LR + norm. + aug. (yerləşdirilən),SQL açar sözü təbii mətndə/identifikatorda,45,140
+v2: LR + norm. + aug. (yerləşdirilən),URL / yol,47,241
+v2: LR + norm. + aug. (yerləşdirilən),"bərabərlik / müqayisə (=, <, >)",84,1146
+v2: LR + norm. + aug. (yerləşdirilən),digər,1754,6350
+v2: LR + norm. + aug. (yerləşdirilən),dırnaq / apostrof,634,1230
+v2: LR + norm. + aug. (yerləşdirilən),mötərizə / funksiya çağırışına bənzər,29,287
+v2: LR + norm. + aug. (yerləşdirilən),rəqəm / qısa kod,272,29773
+v2: LR + norm. + aug. (yerləşdirilən),token / base64 / hash,26,94
+v2: LR + norm. + aug. (yerləşdirilən),"şərh və ya ayırıcı simvol (--, #, /*, ;)",27,157

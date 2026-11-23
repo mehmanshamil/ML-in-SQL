@@ -1,0 +1,326 @@
+seed,detector,qrup,metric,value
+42,libinjection 4.0.1,istinad,fpr_value_unique,0.000652931304485332
+42,libinjection 4.0.1,istinad,fpr_value_weighted,7.276091495021364e-05
+42,libinjection 4.0.1,istinad,fpr_request,0.0012059041065054508
+42,libinjection 4.0.1,istinad,fpr_request_all,0.0007411286895856597
+42,libinjection 4.0.1,istinad,blocked_requests,150.0
+43,libinjection 4.0.1,istinad,fpr_value_unique,0.000652931304485332
+43,libinjection 4.0.1,istinad,fpr_value_weighted,7.276091495021364e-05
+43,libinjection 4.0.1,istinad,fpr_request,0.0012059041065054508
+43,libinjection 4.0.1,istinad,fpr_request_all,0.0007411286895856597
+43,libinjection 4.0.1,istinad,blocked_requests,150.0
+44,libinjection 4.0.1,istinad,fpr_value_unique,0.000652931304485332
+44,libinjection 4.0.1,istinad,fpr_value_weighted,7.276091495021364e-05
+44,libinjection 4.0.1,istinad,fpr_request,0.0012059041065054508
+44,libinjection 4.0.1,istinad,fpr_request_all,0.0007411286895856597
+44,libinjection 4.0.1,istinad,blocked_requests,150.0
+45,libinjection 4.0.1,istinad,fpr_value_unique,0.000652931304485332
+45,libinjection 4.0.1,istinad,fpr_value_weighted,7.276091495021364e-05
+45,libinjection 4.0.1,istinad,fpr_request,0.0012059041065054508
+45,libinjection 4.0.1,istinad,fpr_request_all,0.0007411286895856597
+45,libinjection 4.0.1,istinad,blocked_requests,150.0
+46,libinjection 4.0.1,istinad,fpr_value_unique,0.000652931304485332
+46,libinjection 4.0.1,istinad,fpr_value_weighted,7.276091495021364e-05
+46,libinjection 4.0.1,istinad,fpr_request,0.0012059041065054508
+46,libinjection 4.0.1,istinad,fpr_request_all,0.0007411286895856597
+46,libinjection 4.0.1,istinad,blocked_requests,150.0
+42,v2: LR baza,istinad,fpr_value_unique,0.012487311198281975
+42,v2: LR baza,istinad,fpr_value_weighted,0.040724162151967065
+42,v2: LR baza,istinad,fpr_request,0.24244300093256585
+42,v2: LR baza,istinad,fpr_request_all,0.14900145261223158
+42,v2: LR baza,istinad,blocked_requests,30157.0
+43,v2: LR baza,istinad,fpr_value_unique,0.010023515729013105
+43,v2: LR baza,istinad,fpr_value_weighted,0.01088121191230318
+43,v2: LR baza,istinad,fpr_request,0.0823230536707721
+43,v2: LR baza,istinad,fpr_request_all,0.0505943852090477
+43,v2: LR baza,istinad,blocked_requests,10240.0
+44,v2: LR baza,istinad,fpr_value_unique,0.010304072148909146
+44,v2: LR baza,istinad,fpr_value_weighted,0.0395652718250226
+44,v2: LR baza,istinad,fpr_request,0.23048043219603176
+44,v2: LR baza,istinad,fpr_request_all,0.14164945601154186
+44,v2: LR baza,istinad,blocked_requests,28669.0
+45,v2: LR baza,istinad,fpr_value_unique,0.01124266089910681
+45,v2: LR baza,istinad,fpr_value_weighted,0.04064449098252437
+45,v2: LR baza,istinad,fpr_request,0.23823841528121684
+45,v2: LR baza,istinad,fpr_request_all,0.14641738391454293
+45,v2: LR baza,istinad,blocked_requests,29634.0
+46,v2: LR baza,istinad,fpr_value_unique,0.00926856390820194
+46,v2: LR baza,istinad,fpr_value_weighted,0.007282188778397081
+46,v2: LR baza,istinad,fpr_request,0.062353281667041835
+46,v2: LR baza,istinad,fpr_request_all,0.03832129410950918
+46,v2: LR baza,istinad,blocked_requests,7756.0
+42,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_value_unique,0.014976611796632303
+42,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_value_weighted,0.041362750964183743
+42,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_request,0.23981412998038396
+42,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_request_all,0.14738579206893485
+42,v2: LR + norm. + aug. (yerləşdirilən),istinad,blocked_requests,29830.0
+43,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_value_unique,0.015512219507342927
+43,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_value_weighted,0.04310047672626287
+43,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_request,0.27466475865839146
+43,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_request_all,0.1688044111979604
+43,v2: LR + norm. + aug. (yerləşdirilən),istinad,blocked_requests,34165.0
+44,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_value_unique,0.013782971755620056
+44,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_value_weighted,0.01243683214422758
+44,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_request,0.09738077628067016
+44,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_request_all,0.0598486121130073
+44,v2: LR + norm. + aug. (yerləşdirilən),istinad,blocked_requests,12113.0
+45,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_value_unique,0.014696055376736262
+45,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_value_weighted,0.04433700579485812
+45,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_request,0.27634498504678906
+45,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_request_all,0.16983705050544975
+45,v2: LR + norm. + aug. (yerləşdirilən),istinad,blocked_requests,34374.0
+46,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_value_unique,0.012293472217262891
+46,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_value_weighted,0.039759165436370376
+46,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_request,0.24527285590249864
+46,v2: LR + norm. + aug. (yerləşdirilən),istinad,fpr_request_all,0.1507406346037926
+46,v2: LR + norm. + aug. (yerləşdirilən),istinad,blocked_requests,30509.0
+42,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0006019210463224155
+42,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0033746431056797415
+42,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_request,0.02449593208348072
+42,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_request_all,0.015054794114450033
+42,v3-sess: LR baza,v3 (kənar sessiyalarsız),blocked_requests,3047.0
+42,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.00013262667122358306
+42,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0003032382265522871
+42,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_request,0.005072836608032929
+42,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.0031176813541903417
+42,v3-sess: LR norm.,v3 (kənar sessiyalarsız),blocked_requests,631.0
+42,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0005101025816291656
+42,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0031783105809816787
+42,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_request,0.02337846094478567
+42,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_request_all,0.014368014862100655
+42,v3-sess: SVM baza,v3 (kənar sessiyalarsız),blocked_requests,2908.0
+42,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0004999005299965823
+42,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.035918283395227533
+42,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_request,0.24355243271055085
+42,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.1496832910066504
+42,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),blocked_requests,30295.0
+42,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_value_unique,6.121230979549988e-05
+42,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03490572786930026
+42,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_request,0.23915490240216097
+42,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_request_all,0.146980641718628
+42,v3-sess: RF baza,v3 (kənar sessiyalarsız),blocked_requests,29748.0
+42,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_value_unique,7.141436142808319e-05
+42,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03570081362149365
+42,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_request,0.2369038814033508
+42,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.14559720149806812
+42,v3-sess: RF norm.,v3 (kənar sessiyalarsız),blocked_requests,29468.0
+42,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.001958793913455996
+42,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.014661934090805621
+42,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_request,0.11969804161173103
+42,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_request_all,0.07356443372827258
+42,v3-sess: NB baza,v3 (kənar sessiyalarsız),blocked_requests,14889.0
+42,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.001780258009885788
+42,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0144582848260567
+42,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_request,0.1166350451812072
+42,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.071681966856725
+42,v3-sess: NB norm.,v3 (kənar sessiyalarsız),blocked_requests,14508.0
+42,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0008518713113207065
+42,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.04155298620550609
+42,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_request,0.22332540116409944
+42,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_request_all,0.13725209245333359
+42,v3-sess: CNN baza,v3 (kənar sessiyalarsız),blocked_requests,27779.0
+42,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0009283866985650814
+42,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.08010895438906847
+42,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_request,0.3616988777052449
+42,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.22229413915432275
+42,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),blocked_requests,44991.0
+43,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0003876779620381659
+43,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0023811924009963775
+43,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_request,0.01549988744895006
+43,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_request_all,0.009525974090141012
+43,v3-sess: LR baza,v3 (kənar sessiyalarsız),blocked_requests,1928.0
+43,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0002805564198960411
+43,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0007406166873703312
+43,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_request,0.007364054410393285
+43,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.004525825864403095
+43,v3-sess: LR norm.,v3 (kənar sessiyalarsız),blocked_requests,916.0
+43,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0004233851427522075
+43,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.037403175139993625
+43,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_request,0.2511657073029553
+43,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_request_all,0.1543622834669012
+43,v3-sess: SVM baza,v3 (kənar sessiyalarsız),blocked_requests,31242.0
+43,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.00036727385877299926
+43,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.035554885306034845
+43,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_request,0.24294948065729813
+43,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.14931272666185758
+43,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),blocked_requests,30220.0
+43,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_value_unique,3.060615489774994e-05
+43,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.00013983103208309216
+43,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_request,0.002709264559282246
+43,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_request_all,0.0016650691226024487
+43,v3-sess: RF baza,v3 (kənar sessiyalarsız),blocked_requests,337.0
+43,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_value_unique,7.141436142808319e-05
+43,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0013682303895107214
+43,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_request,0.010226066823166222
+43,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.0062847712876863936
+43,v3-sess: RF norm.,v3 (kənar sessiyalarsız),blocked_requests,1272.0
+43,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.002122026739577329
+43,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.014695672392151252
+43,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_request,0.11652249413126668
+43,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_request_all,0.071612794845697
+43,v3-sess: NB baza,v3 (kənar sessiyalarsız),blocked_requests,14494.0
+43,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0017445508291717463
+43,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.01432251864955742
+43,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_request,0.11189986172299579
+43,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.06877180153561864
+43,v3-sess: NB norm.,v3 (kənar sessiyalarsız),blocked_requests,13919.0
+43,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0008008610531577901
+43,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0053460980638279886
+43,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_request,0.030461137730327683
+43,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_request_all,0.018720910698933762
+43,v3-sess: CNN baza,v3 (kənar sessiyalarsız),blocked_requests,3789.0
+43,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0005305066848943323
+43,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03567723745910755
+43,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_request,0.24200083609351383
+43,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.14872970542605018
+43,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),blocked_requests,30102.0
+44,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.000637628227036457
+44,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0035136611666460715
+44,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_request,0.026465575457439626
+44,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_request_all,0.016265304307439943
+44,v3-sess: LR baza,v3 (kənar sessiyalarsız),blocked_requests,3292.0
+44,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0004794964267314157
+44,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.00154423863628973
+44,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_request,0.017373058494388527
+44,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.01067719398796407
+44,v3-sess: LR norm.,v3 (kənar sessiyalarsız),blocked_requests,2161.0
+44,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.00047439540091512403
+44,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03833646598203659
+44,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_request,0.25269318583786216
+44,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_request_all,0.1553010464737097
+44,v3-sess: SVM baza,v3 (kənar sessiyalarsız),blocked_requests,31432.0
+44,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.00046929437509883235
+44,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03583820574022646
+44,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_request,0.24346399974274047
+44,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.14962894156941411
+44,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),blocked_requests,30284.0
+44,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_value_unique,4.080820653033325e-05
+44,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.001351157996058716
+44,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_request,0.002403768852300865
+44,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_request_all,0.0014773165212407483
+44,v3-sess: RF baza,v3 (kənar sessiyalarsız),blocked_requests,299.0
+44,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_value_unique,8.16164130606665e-05
+44,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0025279336875719477
+44,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_request,0.011962568736534071
+44,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.007351996600689744
+44,v3-sess: RF norm.,v3 (kənar sessiyalarsız),blocked_requests,1488.0
+44,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0020302082748840794
+44,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.014520477116489005
+44,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_request,0.11456089011801782
+44,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_request_all,0.07040722551063766
+44,v3-sess: NB baza,v3 (kənar sessiyalarsız),blocked_requests,14250.0
+44,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.001826167242232413
+44,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.014318453793973607
+44,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_request,0.11165064154098465
+44,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.06861863493977094
+44,v3-sess: NB norm.,v3 (kənar sessiyalarsız),blocked_requests,13888.0
+44,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0004947995041802907
+44,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.003972583362058313
+44,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_request,0.028266392256487763
+44,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_request_all,0.01737205648388786
+44,v3-sess: CNN baza,v3 (kənar sessiyalarsız),blocked_requests,3516.0
+44,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0005254056590780406
+44,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0007223248372431824
+44,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_request,0.008811139338199827
+44,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.005415180291905887
+44,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),blocked_requests,1096.0
+45,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0005713148914246655
+45,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03775193974908459
+45,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_request,0.2523072965237804
+45,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_request_all,0.1550638852930423
+45,v3-sess: LR baza,v3 (kənar sessiyalarsız),blocked_requests,31384.0
+45,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0002550512908145828
+45,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0007442750573957609
+45,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_request,0.007460526738913721
+45,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.004585116159569948
+45,v3-sess: LR norm.,v3 (kənar sessiyalarsız),blocked_requests,928.0
+45,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0003519707813241243
+45,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.002537689340973094
+45,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_request,0.018402096665273177
+45,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_request_all,0.011309623803077167
+45,v3-sess: SVM baza,v3 (kənar sessiyalarsız),blocked_requests,2289.0
+45,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.00030606154897749936
+45,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03507076100600298
+45,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_request,0.23954079171624273
+45,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.14721780289929542
+45,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),blocked_requests,29796.0
+45,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_value_unique,4.590923234662491e-05
+45,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03567764394466593
+45,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_request,0.23675917291057016
+45,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_request_all,0.14550826605531786
+45,v3-sess: RF baza,v3 (kənar sessiyalarsız),blocked_requests,29450.0
+45,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_value_unique,9.691949050954147e-05
+45,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03583373439908427
+45,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_request,0.23732996752098273
+45,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.14585906696838838
+45,v3-sess: RF norm.,v3 (kənar sessiyalarsız),blocked_requests,29521.0
+45,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0020404103265166625
+45,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.014379426627730769
+45,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_request,0.11230986911920764
+45,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_request_all,0.06902378529007777
+45,v3-sess: NB baza,v3 (kənar sessiyalarsız),blocked_requests,13970.0
+45,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0017751569840694964
+45,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.014310730568364367
+45,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_request,0.11167475962311477
+45,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.06863345751356266
+45,v3-sess: NB norm.,v3 (kənar sessiyalarsız),blocked_requests,13891.0
+45,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0005764159172409572
+45,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0030380730633402056
+45,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_request,0.021489211177927132
+45,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_request_all,0.013206913248416455
+45,v3-sess: CNN baza,v3 (kənar sessiyalarsız),blocked_requests,2673.0
+45,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.000652931304485332
+45,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0055806402310138725
+45,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_request,0.03132938868701161
+45,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.019254523355435437
+45,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),blocked_requests,3897.0
+46,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0003723748845892909
+46,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.002681991714198378
+46,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_request,0.01600636717368235
+46,v3-sess: LR baza,v3 (kənar sessiyalarsız),fpr_request_all,0.00983724813976699
+46,v3-sess: LR baza,v3 (kənar sessiyalarsız),blocked_requests,1991.0
+46,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0002907584715286244
+46,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0007580955663807176
+46,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_request,0.007717786281634885
+46,v3-sess: LR norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.004743223613348222
+46,v3-sess: LR norm.,v3 (kənar sessiyalarsız),blocked_requests,960.0
+46,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.00035707180714041596
+46,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.002549070936607764
+46,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_request,0.01865935620799434
+46,v3-sess: SVM baza,v3 (kənar sessiyalarsız),fpr_request_all,0.01146773125685544
+46,v3-sess: SVM baza,v3 (kənar sessiyalarsız),blocked_requests,2321.0
+46,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.00030096052316120773
+46,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03496385530414876
+46,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_request,0.23946039810914235
+46,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.1471683943199897
+46,v3-sess: SVM norm.,v3 (kənar sessiyalarsız),blocked_requests,29786.0
+46,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.00020404103265166625
+46,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03760397900583388
+46,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_request,0.24758015242627907
+46,v3-sess: RF baza,v3 (kənar sessiyalarsız),fpr_request_all,0.1521586608298665
+46,v3-sess: RF baza,v3 (kənar sessiyalarsız),blocked_requests,30796.0
+46,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.00012242461959099975
+46,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.03697351990478482
+46,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_request,0.24025629481943594
+46,v3-sess: RF norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.14765753925511627
+46,v3-sess: RF norm.,v3 (kənar sessiyalarsız),blocked_requests,29885.0
+46,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0020098041716189127
+46,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.014634293072835708
+46,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_request,0.11751937485931119
+46,v3-sess: NB baza,v3 (kənar sessiyalarsız),fpr_request_all,0.07222546122908782
+46,v3-sess: NB baza,v3 (kənar sessiyalarsız),blocked_requests,14618.0
+46,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0018006621131509547
+46,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.01431154353948113
+46,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_request,0.1117471138695051
+46,v3-sess: NB norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.06867792523493779
+46,v3-sess: NB norm.,v3 (kənar sessiyalarsız),blocked_requests,13900.0
+46,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_value_unique,0.0005815169430572488
+46,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_value_weighted,0.004215255240411818
+46,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_request,0.029649162298614015
+46,v3-sess: CNN baza,v3 (kənar sessiyalarsız),fpr_request_all,0.018221884047946085
+46,v3-sess: CNN baza,v3 (kənar sessiyalarsız),blocked_requests,3688.0
+46,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_value_unique,0.0006172241237712904
+46,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_value_weighted,0.0024063945056160044
+46,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_request,0.020428015564202335
+46,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),fpr_request_all,0.012554720001581074
+46,v3-sess: CNN norm.,v3 (kənar sessiyalarsız),blocked_requests,2541.0
