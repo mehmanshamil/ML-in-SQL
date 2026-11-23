@@ -508,11 +508,28 @@ Notebook 17-nin alt. whitespace qiymətləndirməsi yenidən hesablanıb. Modell
 
 **Şərh.**
 
-1. **Görülmüş sessiyalardakı FPR çox optimistdir.** Unikal dəyər səviyyəsində kənar sessiyalarda da FPR aşağıdır (0.01–0.20%). Sorğu səviyyəsində isə LR norm. istisna olmaqla bütün v3 modelləri 6.7–24.2% FPR verir, eyni modellər görülmüş sessiyalarda 0.00–0.12% verirdi.
-2. **Səbəb tez-tez təkrarlanan qısa dəyərlərdir.** Notebook 15-dəki kimi, yanlış blokların çoxu "rəqəm / qısa kod" qrupundadır (`results/v3/17b_fp_reasons_seed42.csv`). Bir neçə dəyər minlərlə sorğuda təkrarlanır. Məsələn, tək `-` dəyəri seed 42-də 470 sorğunu bloklayır. Ona görə bir unikal dəyər səhvi yüzlərlə sorğuya çevrilir.
-3. **Seed-lər arası dağınıqlıq böyükdür** (LR baza 6.7 ± 10.4%, CNN norm. 13.3 ± 16.0%). Belə bir dəyərin bloklanıb-bloklanmaması təsadüfi bölmədən asılıdır, yəni sorğu səviyyəsindəki FPR stabil deyil.
-4. **Ən yaxşısı LR norm.-dur:** 0.90 ± 0.48% sorğu FPR, 138 sessiyadan 19-unda FPR > 1%. Bu, v2-nin yerləşdirilən modelindən (22.7%) təxminən 25 dəfə yaxşıdır, amma libinjection-dan (0.12%) hələ təxminən 7 dəfə pisdir.
-5. **Nəticə:** open-appsec trafikini öyrənməyə əlavə etmək v2 ilə müqayisədə FPR-i kəskin azaldır, amma problemi tam həll etmir. Real yerləşdirmə üçün ML modeli libinjection ilə birlikdə və ya parametr kontekstini (parametr adı, tip) nəzərə alaraq işləməlidir. Qısa dəyərlər üçün minimal uzunluq həddi də sınana bilər.
+1. **Görülmüş sessiyalardakı FPR çox optimistdir.** Unikal dəyər səviyyəsində kənar sessiyalarda da FPR aşağıdır (0.01–0.20%). Sorğu səviyyəsində isə LR norm. istisna olmaqla bütün v3 modelləri orta hesabla 6.7–24.2% FPR verir, eyni modellər görülmüş sessiyalarda 0.00–0.12% verirdi.
+2. **Böyük std-nin səbəbi iki dəyərdir: `"1"` və boş dəyər.** Bir neçə modeldə sorğu FPR seed-dən asılı olaraq ya ≈1–3%, ya ≈24% olur. `"1"` dəyəri olan kənar sorğuların 23.5%-ində, boş dəyər isə 20.5%-ində var. Hər ikisi kənar sessiyalarda göründüyü üçün v3-dən tam çıxarılıb, yəni model onları heç bir sinifdə görməyib. Onları bloklayıb-bloklamaması təsadüfi bölmədən asılıdır: məsələn, SVM norm. `"1"`-i 5 seed-in 5-ində bloklayır, RF 3-ündə, LR norm. heç birində. Bu iki dəyər bloklanmamış kimi sayılanda (`results/v3/17b_holdout_fpr_excl_trivial.csv`, notebook 17b-nin sonuncu hüceyrələri; modellər dəyişmir, yalnız hesablama):
+
+| Detektor | Sorğu FPR | Sorğu FPR, `"1"` və boş dəyər çıxmaqla | `"1"`-i bloklayan seed (5-dən) | Boş dəyəri bloklayan seed (5-dən) |
+|---|---|---|---|---|
+| v3 LR baza | 6.696 ± 10.373 | 2.129 ± 0.514 | 1 | 0 |
+| v3 LR norm. | 0.900 ± 0.480 | 0.900 ± 0.480 | 0 | 0 |
+| v3 SVM baza | 11.286 ± 12.697 | 2.232 ± 0.417 | 2 | 0 |
+| v3 SVM norm. | 24.179 ± 0.211 | 1.323 ± 0.305 | 5 | 0 |
+| v3 RF baza | 14.572 ± 13.075 | 0.718 ± 0.817 | 3 | 0 |
+| v3 RF norm. | 14.734 ± 12.438 | 0.886 ± 0.486 | 3 | 0 |
+| v3 NB baza | 11.612 ± 0.282 | 11.612 ± 0.282 | 0 | 0 |
+| v3 NB norm. | 11.272 ± 0.219 | 11.272 ± 0.219 | 0 | 0 |
+| v3 CNN baza | 6.664 ± 8.766 | 2.790 ± 0.367 | 0 | 1 |
+| v3 CNN norm. | 13.285 ± 16.017 | 2.412 ± 1.622 | 2 | 1 |
+| libinjection 4.0.1 | 0.121 ± 0.000 | 0.121 ± 0.000 | 0 | 0 |
+| v2 LR baza | 17.117 ± 9.060 | 17.117 ± 9.060 | 0 | 0 |
+| v2 LR + norm. + aug. (yerləşdirilən) | 22.670 ± 7.417 | 15.324 ± 8.173 | 2 | 0 |
+
+3. **Bu iki dəyər çıxılanda NB istisna olmaqla bütün v3 modelləri 0.7–2.8% sorğu FPR verir və std kiçilir.** NB-nin 11–12%-i dəyişmir: onun səhvləri başqa tez-tez təkrarlanan qısa dəyərlərdən gəlir (`results/v3/17b_fp_reasons_seed42.csv`, "rəqəm / qısa kod" qrupu). LR norm.-un qalan səhvlərinin ən böyüyü tək `-` dəyəridir: seed 42-də 470 sorğu (`results/v3/17b_top20_false_blocks_LR_norm__seed42.csv`).
+4. **Ən stabil model LR norm.-dur:** 0.90 ± 0.48% sorğu FPR, `"1"`-i və boş dəyəri heç bir seed-də bloklamır, 138 sessiyadan 19-unda FPR > 1%. Bu, v2-nin yerləşdirilən modelindən (22.7%) təxminən 25 dəfə yaxşıdır, amma libinjection-dan (0.12%) hələ təxminən 7 dəfə pisdir.
+5. **Nəticə:** open-appsec trafikini öyrənməyə əlavə etmək v2 ilə müqayisədə FPR-i kəskin azaldır, amma problemi tam həll etmir. Görülməmiş trafikdə bir neçə çox tez-tez təkrarlanan qısa dəyərin (`"1"`, boş dəyər, `-`) taleyi sorğu FPR-ini təyin edir. Ona görə real yerləşdirmə üçün ML modeli libinjection ilə birlikdə və ya parametr kontekstini (parametr adı, tip) nəzərə alaraq işləməlidir. Qısa dəyərlər üçün minimal uzunluq həddi və ya ağ siyahı da sınana bilər.
 
 ### 12.3. Açıq (public) repo
 
